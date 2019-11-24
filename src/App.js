@@ -1,16 +1,28 @@
 import React from 'react';
 import './App.scss';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+//import Navbar from './components/navbar/Navbar';
+import Categories from './components/navbar/Categories';
+import B4Members from './components/Boxes/B4Members';
+import B3images from './components/Boxes/B3images';
 
 
 
 function App() {
   return (
-    <div className="App">
-     <button className="btn">Test</button>
-     <h1>React Base Theme</h1>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis blanditiis consequuntur doloribus quasi exercitationem non odit neque illum, quo ex necessitatibus tenetur officiis perferendis sint, atque, beatae distinctio rerum esse.</p>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta assumenda corrupti sapiente praesentium optio tempore voluptatibus cum obcaecati nam? Similique illo odio debitis in quasi laudantium necessitatibus facilis sit minima?</p>
-    </div>
+    <BrowserRouter>
+        <div className="App">
+          <div className="main">
+            <Categories />
+            <Switch>
+              <Route path="/boxes">
+                <B4Members />
+                <B3images />
+              </Route>
+            </Switch>
+          </div>
+        </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,3 +1,45 @@
+@import "./sass/media";
 @import "./sass/color";
 @import "./sass/font";
 @import "./sass/button";
+
+@import "./sass/navbar";
+
+/** Boxes **/
+@import "./sass/b4member";
+@import "./sass/b3images";
+
+
+
+
+/** **/
+.App{
+  max-width: 1280px;
+  margin: 0px auto;
+
+  .main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+}
+
+
+/** category component **/
+.categories{
+  ul{
+    li{
+      list-style: none;
+      margin: 10px 0px;
+      a{
+        text-decoration: none;
+        padding: 10px 0px;
+        font-size: $medium;
+        &:hover{
+          color: $color_light;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+  
+}

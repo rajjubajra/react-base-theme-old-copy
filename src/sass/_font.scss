@@ -1,12 +1,23 @@
+
+$small: 0.7rem;
+$medium: 0.9rem;
+$large: 1.3rem;
+$larger: 1.5rem;
+
 body{
   font-family: sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-weight: 100;
+  font-weight: 500;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 p{
+  font-weight: 100;
+}
+
+a{
   font-weight: 100;
 }

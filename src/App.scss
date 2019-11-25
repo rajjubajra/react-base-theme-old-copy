@@ -8,6 +8,8 @@
 /** Boxes **/
 @import "./sass/b4member";
 @import "./sass/b3images";
+@import "./sass/b3services";
+@import "./sass/b3cards";
 
 
 
@@ -16,6 +18,10 @@
 .App{
   max-width: 1280px;
   margin: 0px auto;
+
+  h2{
+    text-align: center;
+  }
 
   .main{
     display: grid;
@@ -41,5 +47,4 @@
       }
     }
   }
-  
 }

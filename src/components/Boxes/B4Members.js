@@ -18,7 +18,10 @@ const B4Members = () => {
 
   return (
     <div className="b4members">
-     {profile}
+      <h2>B4Members</h2>
+      <div className="profile">
+        {profile}
+      </div>
     </div>
   )
 }

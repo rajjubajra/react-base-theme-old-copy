@@ -1,10 +1,11 @@
-import React from 'react'
-import img from './../../images/b3image-1.jpg';
+import React from 'react';
 
-const B3Image = () => {
+
+const B3Image = ({imgsrc}) => {
+  console.log(imgsrc);
   return (
     <div>
-      <div className="b3image"><img src={img} alt='images' /></div>
+      <div className="b3image"><img src={imgsrc}  alt="b3img"></img></div>
     </div>
   )
 }

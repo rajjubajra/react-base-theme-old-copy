@@ -1,0 +1,33 @@
+.b3card{
+  display: flex;
+  flex-direction: column;
+  .image{
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .text{
+    
+    button{
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+    }
+  }
+  
+  }
+
+  
+
+
+
+
+.b3cards{
+  h2{text-align: center;}
+  .cards{
+    display: grid;
+    grid-gap: 0em 1.5em;
+    grid-template-columns: repeat(3,(minmax(300px, 1fr)));
+  }
+}

@@ -1,14 +1,15 @@
 /** B4Members **/
 .b4members{
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
   margin: 50px 0px;
+  
 
-  @media(max-width: $media_extra_small){
-    grid-template-columns: 1fr;
-  }
+  .profile{  
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  } 
+  
 }
 
 
@@ -19,6 +20,7 @@
   padding: 20px;
   outline: 1px solid $border_lighter;
   outline-offset: -14px;
+  
   .image{
     grid-column: 1 /4;
     grid-row: 1 / 4;
@@ -32,28 +34,31 @@
     grid-column: 4/13;
     grid-row: 2/4;
   }
-}
 
-@media(max-width: $media_extra_small){
-  .b4member{
-    display: grid;
-    grid-gap: 10px;
-    justify-items: center;
+  @media(max-width: $media_medium){
     .image{
       grid-column: 1 / 13;
-      grid-row: 1 / 1;
-      padding: 20px;
+      grid-row: 1/1;
+      text-align: center;
+      padding: 20px 20px 0px 20px;
     }
     .title{
-      grid-column: 1/13;
-      grid-row: 2/2;
+      grid-column: 1/ 13;
+      grid-row: 2/ 2;
+      text-align: center;
     }
     .text{
-      grid-column: 1/13;
-      grid-row: 3/4;
+      grid-column: 1 / 13;
+      grid-row: 3 / 3;
+      text-align: justify;
+      padding: 0px 20px;
     }
+    
   }
-
 }
+
+
+
+
 
 

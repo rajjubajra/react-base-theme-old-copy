@@ -1,22 +1,21 @@
-import React from 'react'
-import B3Image from './B3Image'
+import React from 'react';
+import img1 from './../../images/b3image-1.jpg';
+import img2 from './../../images/b3image-2.jpg';
+import img3 from './../../images/b3image-3.jpg';
 
-const B3images = () => {
 
-  const jsonObject = [
-    {img: '../images/b3image-1.jps'},
-    {img: '../images/b3image-2.jps'},
-    {img: '../images/b3image-3.jps'},
-  ]
-
+const B3Images = () => {
 
   return (
-    <div className="b3images">
-      <B3Image />
-      <B3Image />
-      <B3Image />
+    <>
+    <h2>B3Images</h2>
+    <div className="b3images">      
+      <img src={img1} alt='top' />
+      <img src={img2} alt='top' />
+      <img src={img3} alt='top' />
     </div>
+    </>
   )
 }
 
-export default B3images
+export default B3Images

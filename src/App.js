@@ -3,8 +3,8 @@ import './App.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 //import Navbar from './components/navbar/Navbar';
 import Categories from './components/navbar/Categories';
-import B4Members from './components/Boxes/B4Members';
-import B3images from './components/Boxes/B3images';
+import Boxes from './components/Boxes/Boxes';
+
 
 
 
@@ -16,8 +16,7 @@ function App() {
             <Categories />
             <Switch>
               <Route path="/boxes">
-                <B4Members />
-                <B3images />
+                  <Boxes />
               </Route>
             </Switch>
           </div>

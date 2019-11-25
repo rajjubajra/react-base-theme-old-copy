@@ -1,0 +1,19 @@
+.b3service{
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid $border_lighter;
+  .fa-coffee{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.b3services{
+ 
+  .services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}

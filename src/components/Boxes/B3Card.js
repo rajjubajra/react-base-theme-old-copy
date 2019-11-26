@@ -12,9 +12,12 @@ const B3Card = ({img, title, text}) => {
       <div className="text">
         <h3>{title}</h3>
         <p>{text}</p>
-        <button className="btn-small-wide">Read More</button>
       </div>
 
+      <div className="nav-btn">
+        <button className="btn-small-wide">Read More</button>
+      </div>
+    
     </div>
   )
 }

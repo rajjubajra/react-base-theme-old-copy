@@ -3,6 +3,7 @@ import B3Card from './B3Card';
 import img1 from './../../images/b3card-1.jpg';
 import img2 from './../../images/b3card-2.jpg';
 import img3 from './../../images/b3card-3.jpg';
+import uuid from 'uuid/v1';
 
 const jsonObject = [
   {
@@ -25,7 +26,7 @@ const jsonObject = [
 ]
 
 const cards = jsonObject.map(item => {
-  return <B3Card title={item.title} text={item.text} img={img1} />
+  return <B3Card title={item.title} text={item.text} img={img1}  key={uuid()}/>
 })
 
 
@@ -35,7 +36,7 @@ const B3Cards = () => {
     <div className="b3cards">
       <h2>B3Cards</h2>
       <div className="cards">
-       {cards}
+      {cards}
       </div>
       
     </div>

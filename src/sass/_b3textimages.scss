@@ -1,0 +1,40 @@
+.b3textimage{
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+
+  .text-on-image{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    h3{
+      width: 80%;
+      padding: 10px 10px;
+      margin: 0px auto;
+      color: $color_lighter;
+      background-color: $background_transparent_light;
+    }
+  }
+}
+
+.b3textimages{
+  padding: 30px;
+  border: 1px solid $border_lighter;
+  text-align: center;
+  p{
+    width: 70%;
+    margin: 0px auto;
+  }
+  .text-image-block{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+  }
+}

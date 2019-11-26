@@ -3,17 +3,36 @@
   padding: 20px;
   margin: 10px;
   border: 1px solid $border_lighter;
+  display: grid;
+  
   .fa-coffee{
     width: 150px;
     height: 150px;
   }
+
+  position: relative;
+  .text{
+    min-height: 150px;
+  }
+  
+  .nav-btn{
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    button{
+      justify-self: center;
+    }
+  }
+  
 }
 
+
 .b3services{
- 
+
   .services{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   
 }

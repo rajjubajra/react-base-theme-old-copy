@@ -1,0 +1,58 @@
+.b2reviews{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+  grid-gap: 20px 10px;
+  
+}
+
+
+.b2review{
+
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  margin: 30px 0px;
+
+  .person{
+    display: flex;
+    align-items: center;
+    
+    img{
+      width: 130px;
+      height: 130px;
+      border-radius: 100px;
+      margin: 0px auto;
+      border: 1px solid $border_lighter;
+      padding: 3px;
+      
+    }
+  }
+  
+  .text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px 20px;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+    &::before{
+      content: ' " ';
+      position: relative;
+      font-size: 3rem;
+      font-family: cursive;
+      top: 25px;
+    }
+    
+  }
+  
+
+}
+
+@media(max-width: $media_extra_small){
+  
+  .b2review,
+  .b2reviews{
+  grid-template-columns: 1fr;
+  }
+  
+
+}

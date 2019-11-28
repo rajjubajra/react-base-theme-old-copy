@@ -1,5 +1,5 @@
 import React from 'react'
-import B2LeftRight_2 from './B2LeftRight_2';
+import B2LeftRightB from './B2LeftRightB';
 import uuid from 'uuid/v1';
 
 
@@ -23,10 +23,10 @@ const jsonObject = [
 ];
 
 const profile = jsonObject.map( item => {
-  return <B2LeftRight_2 name={item.name} info={item.info} img={item.img} key={uuid()} />
+  return <B2LeftRightB name={item.name} info={item.info} img={item.img} key={uuid()} />
 })
 
-const B2LeftRight_2s = () => {
+const B2LeftRightBs = () => {
   return (
     <div>
       {profile}
@@ -34,4 +34,4 @@ const B2LeftRight_2s = () => {
   )
 }
 
-export default B2LeftRight_2s
+export default B2LeftRightBs

@@ -10,6 +10,7 @@ const Categories = () => {
     <div className="categories">
         <ul>
           <li><Link to="/">Home</Link></li> 
+          <li><Link to="/navigation">Navigation</Link></li>
           <li><Link to="/boxes">Boxes</Link></li>
           <li><Link to="/">Call to Action</Link></li>
           <li><Link to="/">Testimonials</Link></li>

@@ -1,0 +1,46 @@
+import React from 'react';
+import NavSlideIn from './NavSlideIn'
+import NavCoverPage from './NavCoverPage';
+
+
+
+
+const Navigation = () => {
+
+  const page = {
+    
+    height: '100vh',
+    position: 'relative',
+    borderTop: '1px solid #ccc',
+  }
+
+  return (
+    <div>
+      <h2>Navigation</h2>
+
+      {/** NAV SLIDE IN  */}
+      <div style={page}>
+        <NavSlideIn />
+        <div style={{width: "70%", margin: "0px auto", marginTop: "50px"}}>
+        <h3>Slide-In Navigation</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sequi, nesciunt ducimus eaque ex asperiores molestiae doloribus dolor. Reiciendis soluta nam corporis voluptatem, voluptates esse consequuntur saepe laboriosam modi necessitatibus.</p>
+        <p>Folor sit, amet consectetur adipisicing elit. Harum corrupti odit voluptatibus. Ea doloribus ad aliquam accusantium molestiae libero minima placeat quia distinctio tempore ducimus maxime, at, vel assumenda. Ad!</p>
+        </div>
+      </div>
+    
+
+
+      {/** NAV COVER PAGE */}
+      <div style={page}>
+        <NavCoverPage />
+        <div style={{width: "70%", margin: "0px auto", marginTop: "50px"}}>
+        <h3>Navigation covering the Page</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sequi, nesciunt ducimus eaque ex asperiores molestiae doloribus dolor. Reiciendis soluta nam corporis voluptatem, voluptates esse consequuntur saepe laboriosam modi necessitatibus.</p>
+        <p>Folor sit, amet consectetur adipisicing elit. Harum corrupti odit voluptatibus. Ea doloribus ad aliquam accusantium molestiae libero minima placeat quia distinctio tempore ducimus maxime, at, vel assumenda. Ad!</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Navigation;

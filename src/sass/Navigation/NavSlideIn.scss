@@ -1,0 +1,48 @@
+.menu-icon{
+  position: absolute;
+  right: 0;
+  transition: 1s ease-in-out;
+}
+.menu-icon.closed{
+  position: absolute;
+  right: 175px;
+  transition: 1s ease-in-out;
+}
+
+
+.nav-slide-in{
+
+  padding: 0px 20px;
+  border: 1px solid #cfcece;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  transform: translateX(100%);
+  transition: 1s ease-out;
+  background-color: $background_lighter;
+  
+
+  ul.nav-list{
+    li.nav-item{
+      list-style: none;
+      margin: 35px 5px;
+      a{
+        text-decoration: none;
+        padding: 15px 5px;
+        transition: 0.5s ease-in-out;
+        &:hover{
+          color: $color_extra_dark;
+          letter-spacing: 1px;
+          transition: 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.nav-slide-in.closed{
+  transform: translateX(0%);
+  transition: 1s ease-in-out;
+  
+}

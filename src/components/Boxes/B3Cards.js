@@ -1,8 +1,8 @@
 import React from 'react'
 import B3Card from './B3Card';
 import img1 from './../../images/b3card-1.jpg';
-import img2 from './../../images/b3card-2.jpg';
-import img3 from './../../images/b3card-3.jpg';
+//import img2 from './../../images/b3card-2.jpg';
+//import img3 from './../../images/b3card-3.jpg';
 import uuid from 'uuid/v1';
 
 const jsonObject = [

@@ -6,6 +6,8 @@ import B3Cards from './B3Cards';
 import B3TextImages from './B3TextImages';
 import B2LeftRight from './B2LeftRight';
 import B2Reviews from './B2Reviews';
+import B3Plans from './B3Plans';
+import B3PlansA from './B3PlansA';
 
 const Boxes = () => {
   return (
@@ -17,6 +19,8 @@ const Boxes = () => {
       <B3TextImages />
       <B2LeftRight />
       <B2Reviews />
+      <B3Plans />
+      <B3PlansA />
     </div>
   )
 }

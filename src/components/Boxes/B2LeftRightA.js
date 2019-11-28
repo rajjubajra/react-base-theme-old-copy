@@ -1,6 +1,6 @@
 import React from 'react'
 
-const B2LeftRight_1 = () => {
+const B2LeftRightA = () => {
   return (
     <div className="b2leftright-1">
       <h1>Customer</h1><h1>Review</h1>
@@ -11,4 +11,4 @@ const B2LeftRight_1 = () => {
   )
 }
 
-export default B2LeftRight_1
+export default B2LeftRightA

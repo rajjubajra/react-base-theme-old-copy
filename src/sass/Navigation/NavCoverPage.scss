@@ -1,0 +1,49 @@
+.btn-position{
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  z-index: 5;
+}
+
+.nav-cover-page{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: $background_dark;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  
+
+
+  ul{
+    li{
+      list-style: none;
+      margin: 30px 0px;
+      a{
+        text-decoration: none;
+        color: $color_lighter;
+        font-size: $large;
+        font-weight: 600;
+        transition: 0.5s;
+        &:hover{
+          letter-spacing: 1px;
+          transition: 0.5s;
+          color: $color_extra_dark;
+        }
+      }
+    }
+  }
+}
+
+.nav-cover-page.closed{
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.5s ease-in;
+  border-radius: 100px  500px;
+}

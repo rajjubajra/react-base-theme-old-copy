@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6{
 $button_color: #ddd;
 $button_background: #333;
 
-
+$border_extra_dark: #000;
 $border_dark: #333;
 $border_light: #666;
 $border_lighter: rgb(207, 206, 206);
@@ -22,7 +22,10 @@ $color_light: #999;
 $color_lighter: #ddd;
 $color_dark: #666;
 $color_darker: #333;
+$color_extra_dark: #000;
 
+
+$background_extra_dark: $color_extra_dark;
 $background_lighter: $color_lighter;
 $background_light: $color_light;
 $background_dark: $color_dark;

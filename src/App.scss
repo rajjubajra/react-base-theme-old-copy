@@ -5,14 +5,24 @@
 
 @import "./sass/navbar";
 
+
 /** Boxes **/
-@import "./sass/b4member";
-@import "./sass/b3images";
-@import "./sass/b3services";
-@import "./sass/b3cards";
-@import "./sass/b3textimages";
-@import "./sass/b2leftright";
-@import "./sass/b2reviews";
+@import "./sass/Boxes/b4member";
+@import "./sass/Boxes/b3images";
+@import "./sass/Boxes/b3services";
+@import "./sass/Boxes/b3cards";
+@import "./sass/Boxes/b3textimages";
+@import "./sass/Boxes/b2leftright";
+@import "./sass/Boxes/b2reviews";
+@import "./sass/Boxes/b3plans";
+@import "./sass/Boxes/b3plans-a";
+
+/** Navigation **/
+@import "./sass/Navigation/BtnThreelines.scss";
+@import "./sass/Navigation/NavSlideIn.scss";
+@import "./sass/Navigation/NavCoverPage.scss";
+
+
 
 
 

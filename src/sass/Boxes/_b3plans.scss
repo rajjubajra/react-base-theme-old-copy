@@ -1,0 +1,67 @@
+.b3plan{
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid $border_extra_dark;
+  background-color: $background_dark;
+  color: $color_lighter !important;
+  outline: 1px solid $border_lighter;
+  outline-offset: -5px;
+
+
+  h2, h1{
+    color: $color_lighter;
+    line-height: 1rem;
+  }
+  
+  .fa-coffee{
+    width: 15px;
+    height: 15px;
+  }
+
+  .rate{
+    h1{
+      font-weight: 800;
+    }
+    .period{
+      position: relative;
+      top: -10px;
+      letter-spacing: 1px;
+      font-weight: 100;
+    }
+  }
+
+  position: relative;
+
+  .text{
+    min-height: 150px;
+    padding: 0px 20px;
+    margin-bottom: 40px;
+    line-height: 1.5rem;
+  }
+  
+  .nav-btn{
+    
+    button{
+      justify-self: center;
+    }
+  }
+  
+}
+
+
+.b3plans{
+
+  margin: 20px 0px;
+  padding: 100px 0px;
+  border-top: 1px solid $border_lighter;
+  border-bottom: 1px solid $border_lighter;
+  text-align: center;
+
+  .plans{
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+}

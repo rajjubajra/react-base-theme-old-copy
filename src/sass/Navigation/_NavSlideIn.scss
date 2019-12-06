@@ -2,6 +2,7 @@
   position: absolute;
   right: 0;
   transition: 1s ease-in-out;
+  z-index: 10;
 }
 .menu-icon.closed{
   position: absolute;
@@ -13,7 +14,7 @@
 .nav-slide-in{
 
   padding: 0px 20px;
-  border: 1px solid #cfcece;
+  border: 0px solid #cfcece;
   text-align: right;
   position: absolute;
   right: 0;
@@ -41,7 +42,7 @@
   }
 }
 
-.nav-slide-in.closed{
+.nav-slide-in.open{
   transform: translateX(0%);
   transition: 1s ease-in-out;
   

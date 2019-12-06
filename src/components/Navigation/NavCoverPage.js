@@ -8,7 +8,7 @@ const NavCoverPage = () => {
   //console.log('btn', btnclosed);
 
   const navToggle = () => {
-    setBtnClosed(btnclosed === '' ? 'closed' : '' );
+    setBtnClosed(btnclosed === '' ? 'open' : '' );
   }
 
 

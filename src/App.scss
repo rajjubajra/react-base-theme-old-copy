@@ -3,7 +3,6 @@
 @import "./sass/font";
 @import "./sass/button";
 
-@import "./sass/navbar";
 
 
 /** Boxes **/
@@ -21,6 +20,14 @@
 @import "./sass/Navigation/BtnThreelines.scss";
 @import "./sass/Navigation/NavSlideIn.scss";
 @import "./sass/Navigation/NavCoverPage.scss";
+@import "./sass/Navigation/NavSlideInLeft.scss";
+@import "./sass/Navigation/navbar";
+
+
+/** Call To Action **/
+@import "./sass/CallToAction/VideoHeadlineButton";
+@import "./sass/CallToAction/CTAwithImage";
+
 
 
 
@@ -61,3 +68,4 @@
     }
   }
 }
+

@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
-import { Link } from 'react-router-dom';
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import BtnThreelines from './BtnThreelines';
 
+const NavSlideInLeft = () => {
 
-const NavSlideIn = () => {
   const [btnclosed , setBtnClosed] = useState('');
   //console.log('btn', btnclosed);
 
@@ -13,13 +13,12 @@ const NavSlideIn = () => {
 
   return (
     <>
-    <div className={`menu-icon ${btnclosed}`}>
+    <div className={`menu-icon-left ${btnclosed}`}>
       <BtnThreelines navToggle={navToggle} btnclosed={btnclosed} />
     </div>
     
-    <nav className={`nav-slide-in ${btnclosed}`}>
+    <nav className={`nav-slide-in-left ${btnclosed}`}>
       <ul className="nav-list">
-        <small>nav-slidin</small>
         <li className="nav-item"><Link to="#">Home</Link></li>
         <li className="nav-item"><Link to="#">About</Link></li>
         <li className="nav-item"><Link to="#">Service</Link></li>
@@ -32,4 +31,4 @@ const NavSlideIn = () => {
   )
 }
 
-export default NavSlideIn;
+export default NavSlideInLeft;

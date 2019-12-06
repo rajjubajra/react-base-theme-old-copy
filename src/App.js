@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Categories from './components/Navigation/Categories';
 import Boxes from './components/Boxes/Boxes';
 import Navigation from './components/Navigation/Navigation';
+import CallToAction from './components/CallToAction/CallToAction';
 
 
 
@@ -21,6 +22,9 @@ function App() {
               </Route>
               <Route path="/navigation">
                   <Navigation /> 
+              </Route>
+              <Route path="/calltoaction" >
+                  <CallToAction />
               </Route>
             </Switch>
           </div>

@@ -48,7 +48,7 @@ button.nav-toggle{
   
 }
 
-button.nav-toggle.closed{
+button.nav-toggle.open{
   border: 1px solid $border_lighter;
   background-color: $background_lighter;
   transition: 1s;

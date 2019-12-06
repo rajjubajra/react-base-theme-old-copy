@@ -1,20 +1,33 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link} from 'react-router-dom';
+import BtnThreelines from './BtnThreelines';
 
 const Navbar = () => {
+
+  const [btnclosed , setBtnClosed] = useState('');
+  //console.log('btn', btnclosed);
+
+  const navToggle = () => {
+    setBtnClosed(btnclosed === '' ? 'open' : '' );
+  }
+
+  
   return (
     
     <div className="navbar">
-      <Link to="/" className="brand-logo">Logo</Link>
-      <button className="mobile-menu-icon">MM</button>
-      <ul className="menu">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/">CSS</Link></li>
-        <li><Link to="/">Components</Link></li>
-        <li><Link to="/">Navigation</Link></li>
-        <li><Link to="/">Form</Link></li>
-        
-      </ul>
+      <div className="row logo"><Link to="#" className="brand-logo">Logo</Link></div>
+      <div className="row menu-icon">
+        <BtnThreelines navToggle={navToggle} btnclosed={btnclosed} />
+      </div>
+      <div className={`row menu ${btnclosed}`}>
+        <ul className="nav-ul inline">
+          <li><Link to="#">Home</Link></li>
+          <li><Link to="#">CSS</Link></li>
+          <li><Link to="#">Components</Link></li>
+          <li><Link to="#">Navigation</Link></li>
+          <li><Link to="#">Form</Link></li>   
+        </ul>
+      </div>
     </div>
 
 )

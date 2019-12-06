@@ -1,6 +1,8 @@
 import React from 'react';
 import NavSlideIn from './NavSlideIn'
 import NavCoverPage from './NavCoverPage';
+import NavSlideInLeft from './NavSlideInLeft';
+import Navbar from './Navbar';
 
 
 
@@ -8,7 +10,6 @@ import NavCoverPage from './NavCoverPage';
 const Navigation = () => {
 
   const page = {
-    
     height: '100vh',
     position: 'relative',
     borderTop: '1px solid #ccc',
@@ -18,7 +19,7 @@ const Navigation = () => {
     <div>
       <h2>Navigation</h2>
 
-      {/** NAV SLIDE IN  */}
+      {/** NAV SLIDE IN 
       <div style={page}>
         <NavSlideIn />
         <div style={{width: "70%", margin: "0px auto", marginTop: "50px"}}>
@@ -27,6 +28,7 @@ const Navigation = () => {
         <p>Folor sit, amet consectetur adipisicing elit. Harum corrupti odit voluptatibus. Ea doloribus ad aliquam accusantium molestiae libero minima placeat quia distinctio tempore ducimus maxime, at, vel assumenda. Ad!</p>
         </div>
       </div>
+      */}  
     
 
 
@@ -39,6 +41,31 @@ const Navigation = () => {
         <p>Folor sit, amet consectetur adipisicing elit. Harum corrupti odit voluptatibus. Ea doloribus ad aliquam accusantium molestiae libero minima placeat quia distinctio tempore ducimus maxime, at, vel assumenda. Ad!</p>
         </div>
       </div>
+
+      {/** NAV COVER PAGE */}
+      <div style={page}>
+        <NavSlideInLeft />
+        <div style={{width: "70%", margin: "0px auto", marginTop: "50px", position: "absolute", top: "20px", zIndex:"-1"}}>
+        <h3>Navigation slide in from left</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sequi, nesciunt ducimus eaque ex asperiores molestiae doloribus dolor. Reiciendis soluta nam corporis voluptatem, voluptates esse consequuntur saepe laboriosam modi necessitatibus.</p>
+        <p>Folor sit, amet consectetur adipisicing elit. Harum corrupti odit voluptatibus. Ea doloribus ad aliquam accusantium molestiae libero minima placeat quia distinctio tempore ducimus maxime, at, vel assumenda. Ad!</p>
+        </div>
+      </div>
+
+
+      {/** NAV RESPONSIVE PAGE */}
+      <div style={page}>
+        <Navbar  />
+        <div style={{width: "70%", margin: "0px auto", marginTop: "50px", position: "absolute", top: "20px", zIndex:"-1"}}>
+        <h3>Navigation Responsive</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sequi, nesciunt ducimus eaque ex asperiores molestiae doloribus dolor. Reiciendis soluta nam corporis voluptatem, voluptates esse consequuntur saepe laboriosam modi necessitatibus.</p>
+        <p>Folor sit, amet consectetur adipisicing elit. Harum corrupti odit voluptatibus. Ea doloribus ad aliquam accusantium molestiae libero minima placeat quia distinctio tempore ducimus maxime, at, vel assumenda. Ad!</p>
+        </div>
+      </div>
+
+
+
+
     </div>
   )
 }

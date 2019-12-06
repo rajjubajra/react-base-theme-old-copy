@@ -1,5 +1,5 @@
 import React from 'react';
-import NavSlideIn from './NavSlideIn'
+//import NavSlideIn from './NavSlideIn'
 import NavCoverPage from './NavCoverPage';
 import NavSlideInLeft from './NavSlideInLeft';
 import Navbar from './Navbar';

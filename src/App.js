@@ -6,6 +6,7 @@ import Categories from './components/Navigation/Categories';
 import Boxes from './components/Boxes/Boxes';
 import Navigation from './components/Navigation/Navigation';
 import CallToAction from './components/CallToAction/CallToAction';
+import Animation from './components/Animation/Animation';
 
 
 
@@ -25,6 +26,9 @@ function App() {
               </Route>
               <Route path="/calltoaction" >
                   <CallToAction />
+              </Route>
+              <Route path="/animation" >
+                  <Animation />
               </Route>
             </Switch>
           </div>

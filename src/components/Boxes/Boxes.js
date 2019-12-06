@@ -8,6 +8,7 @@ import B2LeftRight from './B2LeftRight';
 import B2Reviews from './B2Reviews';
 import B3Plans from './B3Plans';
 import B3PlansA from './B3PlansA';
+import B4BoxBorder from './B4BoxBorder';
 
 const Boxes = () => {
   return (
@@ -21,6 +22,7 @@ const Boxes = () => {
       <B2Reviews />
       <B3Plans />
       <B3PlansA />
+      <B4BoxBorder />
     </div>
   )
 }

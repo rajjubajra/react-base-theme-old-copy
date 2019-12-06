@@ -25,14 +25,3 @@ const VideoHeadlinButton = () => {
 
 export default VideoHeadlinButton
 
-
-{
-  /**
-   *  <div className="text">
-          <div>Logo</div>
-          <h1>Join our climate change mission Create Awareness</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste quis deserunt pariatur quod impedit fugiat non quaerat soluta beatae necessitatibus quibusdam facilis repudiandae fuga laboriosam maxime, dolorum doloremque sed.</p>
-          <button className="btn-large-wide">Join Now</button>
-        </div>
-   */
-}

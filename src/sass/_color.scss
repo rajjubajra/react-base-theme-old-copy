@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6{
   color: #666;
 }
 
+/** BOTTON **/
 $button_color: #ddd;
 $button_background: #333;
 $button_background_hover: #999;
@@ -21,7 +22,11 @@ $border_dark: #333;
 $border_light: #666;
 $border_lighter: rgb(207, 206, 206);
 
+
+/** COLOR **/
 $color_white: #ffffff;
+$color_black: #000000;
+
 $color_light: #999;
 $color_lighter: #ddd;
 $color_dark: #666;
@@ -29,7 +34,10 @@ $color_darker: #333;
 $color_extra_dark: #000;
 
 
+/** BACKGROUND **/
 $background_white: $color_white;
+$background_black: $color_black;
+
 $background_extra_dark: $color_extra_dark;
 $background_lighter: $color_lighter;
 $background_light: $color_light;

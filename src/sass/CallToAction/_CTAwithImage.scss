@@ -25,6 +25,11 @@
     font-size: $extra_large;
     font-weight: 800;
     color: $color_darker;
+    &:hover{
+      transition: 3s ease-in-out;
+      transform:rotate(30deg);
+    }
+    transition: 2s ease-in;
   }
   h4{
     font-size: $large;

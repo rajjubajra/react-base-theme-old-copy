@@ -1,6 +1,8 @@
 import React from 'react'
 
 const CTAwithImage = () => {
+
+
   return (
     <div className="cta-bg-image">
       <h1>Fly with us</h1>

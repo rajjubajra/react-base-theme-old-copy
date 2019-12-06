@@ -2,6 +2,7 @@
 @import "./sass/color";
 @import "./sass/font";
 @import "./sass/button";
+@import "./sass/transition";
 
 
 
@@ -28,6 +29,11 @@
 @import "./sass/CallToAction/VideoHeadlineButton";
 @import "./sass/CallToAction/CTAwithImage";
 
+
+/** Animation **/
+@import "./sass/Animation/smoketext";
+@import "./sass/Animation/rotation";
+@import "./sass/Animation/circle";
 
 
 

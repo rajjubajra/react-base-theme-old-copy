@@ -1,0 +1,22 @@
+.ctalargeimage{
+  display: grid;
+  grid-template-columns: (1fr 2fr);
+  .text-box{
+    .container{
+      position: relative;
+      top: 20%;
+      left: 20%;
+      background: $background_white;
+      z-index: 1;
+      padding: 20px;
+      outline: 1px solid $border_lighter;
+      outline-offset: -5px;
+    }
+
+  }
+
+  img{
+    outline: 1px solid $border_lighter;
+    outline-offset: -5px;
+  }
+}

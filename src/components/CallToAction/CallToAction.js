@@ -2,6 +2,7 @@ import React from 'react'
 import VideoHeadlinButton from './VideoHeadlinButton'
 import CTAwithImage from './CTAwithImage'
 import TwoColumnCTA from './TwoColumnCTA'
+import CTALargImage from './CTALargImage'
 
 const CallToAction = () => {
   const page = {
@@ -21,6 +22,9 @@ const CallToAction = () => {
       </div>
       <div style={page}>
        <TwoColumnCTA />
+       </div>
+       <div style={page}>
+       <CTALargImage />
        </div>
 
     </div>

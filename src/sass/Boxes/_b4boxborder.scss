@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, auto));
   grid-template-rows: 400px;
-  grid-gap: 20px 20px;
-  padding: 40px;
+  grid-gap: 40px 20px;
   position: relative;
   margin: 100px 0px;
 
@@ -23,10 +22,10 @@
       justify-content: center;
       align-items: center;
       background: $background_dark;
-      padding: 20px;;
       color: $color_lighter;
       outline: 1px solid $border_lighter;
       outline-offset: -5px;
+      padding: 20px;
 
       h3{
         color: $color_lighter;

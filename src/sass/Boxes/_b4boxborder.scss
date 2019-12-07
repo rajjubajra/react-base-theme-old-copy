@@ -1,0 +1,80 @@
+.b4boxborder{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  grid-template-rows: 400px;
+  grid-gap: 20px 20px;
+  padding: 40px;
+  position: relative;
+  margin: 100px 0px;
+
+
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+    .container{
+      width: 100%;
+      height: 400px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $background_dark;
+      padding: 20px;;
+      color: $color_lighter;
+      outline: 1px solid $border_lighter;
+      outline-offset: -5px;
+
+      h3{
+        color: $color_lighter;
+        letter-spacing: 0px;
+        transition: 0.5s;
+        z-index: 2;
+      }
+      &::before{
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: $background_black;
+        z-index: -1;
+        transform: skew(2deg, 2deg);
+      }
+      &:hover{
+        h1{
+          top: -25px;
+        }  
+        h3{
+          letter-spacing: 2px;
+        }
+      }
+    
+      h1{
+        position: absolute;
+        top: 60px;
+        font-size: $extra_large;
+        font-weight: 800;
+        text-align: center;
+        transition: 1s ease-out;
+        z-index: 1;
+      }
+
+      
+      
+      button{
+        position: absolute;
+        bottom: 20px;
+      }
+
+    }
+  }
+
+
+
+
+}

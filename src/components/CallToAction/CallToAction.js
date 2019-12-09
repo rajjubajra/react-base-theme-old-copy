@@ -6,7 +6,8 @@ import CTALargImage from './CTALargImage'
 
 const CallToAction = () => {
   const page = {
-    height: '100vh',
+    width: '100%',
+    minHeight: '100vh',
     position: 'relative',
     outline: '1px solid #ccc',
     margin: '50px 0px',
@@ -18,14 +19,15 @@ const CallToAction = () => {
         <VideoHeadlinButton />
       </div>
       <div style={page}>
-       <CTAwithImage />
+        <CTAwithImage />
       </div>
       <div style={page}>
-       <TwoColumnCTA />
-       </div>
-       <div style={page}>
-       <CTALargImage />
-       </div>
+        <TwoColumnCTA />
+      </div>
+      <div style={page}>
+        <CTALargImage />
+      </div>
+      
 
     </div>
   )

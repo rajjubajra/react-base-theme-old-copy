@@ -7,6 +7,7 @@ import Boxes from './components/Boxes/Boxes';
 import Navigation from './components/Navigation/Navigation';
 import CallToAction from './components/CallToAction/CallToAction';
 import Animation from './components/Animation/Animation';
+import Contact from './components/Contact.js/Contact';
 
 
 
@@ -29,6 +30,9 @@ function App() {
               </Route>
               <Route path="/animation" >
                   <Animation />
+              </Route>
+              <Route path="/contact" >
+                  <Contact />
               </Route>
             </Switch>
           </div>

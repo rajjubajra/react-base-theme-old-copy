@@ -14,8 +14,8 @@ const Categories = () => {
           <li><Link to="/boxes">Boxes</Link></li>
           <li><Link to="/calltoaction">Call to Action</Link></li>
           <li><Link to="/animation">Animation</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/">Testimonials</Link></li>
-          <li><Link to="/">Contact</Link></li>
           <li><Link to="/">Entire Page</Link></li>
           <li><Link to="/">Features</Link></li>
           <li><Link to="/">Headers</Link></li>

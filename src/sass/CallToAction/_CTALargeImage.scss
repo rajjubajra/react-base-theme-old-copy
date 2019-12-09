@@ -1,22 +1,112 @@
 .ctalargeimage{
   display: grid;
-  grid-template-columns: (1fr 2fr);
-  .text-box{
+  grid-template-columns: 30% 70%;
+  background: $background_dark;
+  
+  @media(max-width: $media_medium) {
+    grid-template-columns: 1fr;
+    padding: 50px 0px;
+  
+    .text-block{
+      grid-column: 1 /1 !important;
+      grid-row: 2/2 !important;
+      .container{
+        outline-offset: 0px !important;
+        transform: translateX(0px) !important;
+        width: 80%;
+        margin: 0px auto;
+        outline: 0px solid !important;
+
+      
+      }
+    }
+    .image-block{
+      grid-column: 1 /1 !important;
+      grid-row: 1/1 !important;
+    }
+  }
+
+  .text-block{
+    grid-column: 1/1;
+    grid-row: 1/1;
+    display: flex;
+    align-items: center;
+    
     .container{
-      position: relative;
-      top: 20%;
-      left: 20%;
+      display: flex;
+      flex-direction: column;
       background: $background_white;
-      z-index: 1;
+      transform: translateX(6%);
       padding: 20px;
-      outline: 1px solid $border_lighter;
+      z-index: 1;
+      outline: 1px solid $border_dark;
       outline-offset: -5px;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: -9px;
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $background_extra_dark;
+        transform: rotate(135deg);
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        bottom: 1px;
+        right: -8px;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #000;
+        transform: rotate(-45deg);
+      }
+      
     }
 
   }
-
-  img{
-    outline: 1px solid $border_lighter;
+  .image-block{
+    grid-column: 2/2;
+    grid-row: 1/1;
+    padding: 30px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 27px;
+      left: 17px;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #000;
+      transform: rotate(135deg);
+      z-index: 1;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 31px;
+      right: 17px;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #000;
+      transform: rotate(-45deg);
+    }
+    img{
+      width: 100%;
+      height: auto;
+      outline: 1px solid $border_white;
     outline-offset: -5px;
+    }
+
   }
+  
 }

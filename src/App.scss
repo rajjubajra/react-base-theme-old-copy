@@ -42,14 +42,24 @@
 
 
 /** Contact Form **/
-@import "./sass/Contact/ContactFormReg.scss";
-
-
+@import "./sass/Contact/FormRegular";
+@import "./sass/Contact/FormWide";
+@import "./sass/Contact/FormDetails";
+@import "./sass/Contact/FormInBox";
+@import "./sass/Contact/FormGetInTouch";
+@import "./sass/Contact/FormGetQuote";
 
 
 
 
 /** **/
+.ref{
+  font-size: 0.7rem;
+  padding: 10px 20px;
+  background: #000;
+  color: #ccc;
+  letter-spacing: 2px;
+}
 .App{
   max-width: 1280px;
   margin: 0px auto;

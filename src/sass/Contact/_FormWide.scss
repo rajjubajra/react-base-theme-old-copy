@@ -1,0 +1,72 @@
+.formwide{
+ 
+  h2{
+    margin: 20px 0xp;
+  }
+
+  form{
+    box-sizing: border-box;
+    max-width: 700px;
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 50px;
+
+    label{
+      font-weight: 100;
+      letter-spacing: 2px;
+    }
+
+    input, textarea{
+      box-sizing: border-box;
+      outline: 0;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $border_lighter;
+      font-size: $regular;
+    }
+
+    .name{
+      grid-column: 1 / 1;
+      grid-row: 1 / 1;
+    }
+    .email{
+      grid-column: 2 / 2;
+      grid-row: 1 / 1;
+    }
+    .text{
+      grid-column: 1 / 3;
+      grid-row: 2 /2 ;
+      display: flex;
+      flex-direction: column;
+    }
+    .button{
+      grid-column: 1 / 3;
+      grid-row: 3 / 3;
+    }
+
+    @media(max-width: $media_small){
+      .name{
+        grid-column: 1 / 3;
+        grid-row: 1 / 1;
+      }
+      .email{
+        grid-column: 1 / 3;
+        grid-row: 2 / 2;
+      }
+      .text{
+        grid-column: 1 / 3;
+        grid-row: 3 / 3 ;
+      }
+      .button{
+        grid-column: 1 / 3;
+        grid-row: 4 / 4;
+      }
+
+    }
+
+
+  }
+
+}

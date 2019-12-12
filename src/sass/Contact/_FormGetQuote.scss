@@ -1,0 +1,117 @@
+.form-getquote{
+  display: grid;
+  min-height: 100vh;
+  grid-gap: 25px;
+
+  h1{
+    font-weight: 800;
+  }
+  
+
+  div.image{
+    grid-column: 1 / 1;
+    grid-row: 1 / 4;
+    background-image: url('../../images/typewriter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    outline: 1px solid $border_white;
+    outline-offset: -10px;
+  }
+  div.contact{
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+    margin: 25px 0px;
+    h1{
+      line-height: 0rem;
+    }
+    div.address{
+      display: grid;
+      font-size: $small;
+      grid-template-columns: 1fr 1fr;
+      p{line-height: 0.3em;}
+    }
+  }
+
+
+  div.quote{
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+
+
+    form{
+      display: grid;
+      grid-gap: 0px 25px;
+      padding-right: 30px;
+      div{
+        label{ display: none;}
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-weight: 100;
+        letter-spacing: 2px;
+        ::placeholder{
+          font-size: $small;
+        }
+        input, textarea{
+          border: 0;
+          border-bottom: 1px solid $border_lighter;
+          outline: 0px;
+          box-sizing: border-box;
+          padding: 5px 0px;
+          font-size: $regular;
+        }
+        input{
+          height: 45px;
+        }
+        textarea{
+          height: 100px;
+        }
+      }
+      .firstname{
+        grid-column: 1 / 1 ;
+        grid-row: 1 / 1;
+      }
+      .lastname{
+        grid-column: 2 / 3 ;
+        grid-row: 1 / 1;
+      }
+      .phone{
+        grid-column: 1 / 1 ;
+        grid-row: 2 / 2;
+      }
+      .email{
+        grid-column: 2 / 3 ;
+        grid-row: 2 / 2;
+
+      }
+      .text{
+        grid-column: 1 / 3 ;
+        grid-row: 3 / 3;
+      }
+      .button{
+        grid-column: 1 / 3 ;
+        grid-row: 4 / 4;
+      }
+    }
+  }
+
+  div.followus{
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+
+    div.social{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      font-weight: 100;
+      font-size: $small;
+      a{
+        text-decoration: none;
+      }
+      
+    }
+  }
+
+}

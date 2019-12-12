@@ -1,0 +1,48 @@
+
+.formregular{
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+ 
+
+  form{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    box-sizing: border-box;
+    min-width: 260px;
+
+    label{
+      font-weight: 100;
+      margin-top: 10px;
+      letter-spacing: 2px;
+    }
+
+    input, textarea{
+      box-sizing: border-box;
+      width: 100%;
+      border: 0px;
+      padding: 10px 10px;
+      margin: 1px 0px;
+      outline: 0px;
+      font-size: $medium;
+      border-bottom: 1px solid $border_lighter;
+    }
+    input{
+      height: 40px;
+    }
+
+    .name, .email, .text{
+      box-sizing: border-box;
+      margin: 2px 0px;
+    }
+
+  }
+
+
+}

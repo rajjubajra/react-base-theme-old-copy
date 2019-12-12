@@ -1,5 +1,10 @@
 import React from 'react';
-import ContactFormReg from './ContactFormReg';
+import FormRegular from './FormRegular';
+import FormWide from './FormWide';
+import FormDetails from './FormDetails';
+import FormInBox from './FormInBox';
+import FormGetInTouch from './FormGetInTouch';
+import FormGetQuote from './FormGetQuote';
 
 
 const Contact = () => {
@@ -8,13 +13,28 @@ const Contact = () => {
     minHeight: '100vh',
     display: "block",
     position: "relative",
-    backgroundColor: '#eee'
+   
   }
   return (
     <div>
       <h1>Contact Form</h1>
       <div style={page}>
-        <ContactFormReg />
+        <FormRegular />
+      </div>
+      <div style={page}>
+        <FormWide />
+      </div>
+      <div style={page}>
+        <FormDetails />
+      </div>
+      <div style={page}>
+        <FormInBox />
+      </div>
+      <div style={page}>
+        <FormGetInTouch />
+      </div>
+      <div style={page}>
+        <FormGetQuote />
       </div>
     </div>
   )

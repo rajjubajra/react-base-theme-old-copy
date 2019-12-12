@@ -6,9 +6,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 
 
- 
+
 
   form{
     display: grid;
@@ -42,6 +43,19 @@
       margin: 2px 0px;
     }
 
+  }
+
+  .email-background{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: -1;
+    
+    img{
+      width: 90%;
+      height: auto;
+      opacity: 0.05;
+    }
   }
 
 

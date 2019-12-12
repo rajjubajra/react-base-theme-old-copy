@@ -1,4 +1,5 @@
 import React from 'react'
+import email_red_circle from '../../images/email-red-circle.png'
 
 const FormRegular = () => {
   return (
@@ -23,6 +24,7 @@ const FormRegular = () => {
           <button type="submit" className="btn" >Submit</button>
         </div>
       </form>
+      <div className="email-background"><img src={email_red_circle} alt="background" /></div>
     </div>
     </>
   )

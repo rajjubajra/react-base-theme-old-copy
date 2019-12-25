@@ -1,0 +1,35 @@
+.b4boxes{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+
+  div{
+    padding: 10px;
+    border: 1px solid $border_lighter;
+    min-height: 400px;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .boxone{
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+  .boxtwo{
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+
+  }
+  .boxthree{
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+  }
+  .boxfour{
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+
+}

@@ -1,13 +1,13 @@
 .form-getquote{
   display: grid;
   min-height: 100vh;
-  grid-gap: 25px;
+  grid-gap: 10px;
+  margin: 100px 0px;
 
   h1{
     font-weight: 800;
   }
   
-
   div.image{
     grid-column: 1 / 1;
     grid-row: 1 / 4;
@@ -101,12 +101,23 @@
   div.followus{
     grid-column: 2 / 3;
     grid-row: 3 / 3;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+    
     div.social{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       font-weight: 100;
       font-size: $small;
+      padding: 12px 0px;
+
+      img{
+        width: 50px;
+        height: auto;
+      }
       a{
         text-decoration: none;
       }

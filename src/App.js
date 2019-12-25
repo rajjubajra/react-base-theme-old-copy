@@ -8,6 +8,7 @@ import Navigation from './components/Navigation/Navigation';
 import CallToAction from './components/CallToAction/CallToAction';
 import Animation from './components/Animation/Animation';
 import Contact from './components/Contact.js/Contact';
+import Headers from './components/Headers/Headers';
 
 
 
@@ -33,6 +34,9 @@ function App() {
               </Route>
               <Route path="/contact" >
                   <Contact />
+              </Route>
+              <Route path="/headers" >
+                  <Headers />
               </Route>
             </Switch>
           </div>

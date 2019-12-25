@@ -1,0 +1,25 @@
+.ecom-headers-top{
+  display: none;
+  @media(min-width: $medium){
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 30px;
+      background-color: $background_lighter;
+      ul{
+        position: absolute;
+        right: 10px;
+        margin: 5px 0px;
+        li{
+          list-style: none;
+          display: inline-block;
+          a{
+            text-decoration: none;
+            font-size: $small;
+            margin: 0px 10px;
+            color: $color_darker;
+          }
+        }
+      }
+  }
+}

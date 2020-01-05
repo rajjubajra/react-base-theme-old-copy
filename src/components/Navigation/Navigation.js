@@ -3,6 +3,7 @@ import React from 'react';
 import NavCoverPage from './NavCoverPage';
 import NavSlideInLeft from './NavSlideInLeft';
 import Navbar from './Navbar';
+import NavEcom from './NavEcom';
 
 
 
@@ -61,6 +62,14 @@ const Navigation = () => {
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sequi, nesciunt ducimus eaque ex asperiores molestiae doloribus dolor. Reiciendis soluta nam corporis voluptatem, voluptates esse consequuntur saepe laboriosam modi necessitatibus.</p>
         <p>Folor sit, amet consectetur adipisicing elit. Harum corrupti odit voluptatibus. Ea doloribus ad aliquam accusantium molestiae libero minima placeat quia distinctio tempore ducimus maxime, at, vel assumenda. Ad!</p>
         </div>
+      </div>
+
+      {/** NAV DROPDOWN RESPONSIVE */}
+      <NavEcom />
+      <div style={{ width: "100%", height: "100vh", display:"flex", flexDirection: "column"}}>
+        <h3>Navigation DropDown</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sequi, nesciunt ducimus eaque ex asperiores molestiae doloribus dolor. Reiciendis soluta nam corporis voluptatem, voluptates esse consequuntur saepe laboriosam modi necessitatibus.</p>
+        <p>Folor sit, amet consectetur adipisicing elit. Harum corrupti odit voluptatibus. Ea doloribus ad aliquam accusantium molestiae libero minima placeat quia distinctio tempore ducimus maxime, at, vel assumenda. Ad!</p>
       </div>
 
 

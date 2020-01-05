@@ -13,7 +13,8 @@ const Navbar = () => {
 
   
   return (
-    
+    <>
+    <div className="ref">Navbar.js</div>
     <div className="navbar">
       <div className="row logo"><Link to="#" className="brand-logo">Logo</Link></div>
       <div className="row menu-icon">
@@ -29,6 +30,7 @@ const Navbar = () => {
         </ul>
       </div>
     </div>
+  </>
 
 )
 }

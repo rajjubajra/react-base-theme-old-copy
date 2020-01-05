@@ -1,0 +1,17 @@
+.navecom {
+  display: grid;
+  grid-row: 1 / 1;
+  ul {
+    li {
+      list-style: none;
+      display: inline-block;
+      a {
+        text-decoration: none;
+        margin: 5px 10px;
+        font-weight: 100;
+        font-size: $medium;
+        color: $color_dark;
+      }
+    }
+  }
+}

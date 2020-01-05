@@ -13,6 +13,7 @@ const NavSlideIn = () => {
 
   return (
     <>
+    <div className="ref">NavSlideIn.js</div>
     <div className={`menu-icon ${btnclosed}`}>
       <BtnThreelines navToggle={navToggle} btnclosed={btnclosed} />
     </div>

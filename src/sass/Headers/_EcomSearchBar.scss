@@ -2,15 +2,22 @@
   display: grid;
   padding: 20px 0px;
 
+  @media(max-width: $media_medium){
+    .logo{display: none} 
+  }
   .logo{
     grid-column: 1 / 2;
     grid-row:  1 / 1;
     padding: 8px 10px;
-
   }
   .search{
     grid-column: 3 / 8 ;
     grid-row: 1 / 1;
+    @media(max-width: $media_medium){
+      grid-column: 1 / 1;
+      grid-row: 2 / 2;
+      text-align: center;
+    }
     input{
       height: 20px;
       font-size: large;
@@ -18,17 +25,25 @@
       width: 90%;
       outline: 0px;
     }
-
   }
   .user{
-    grid-column: 9 / 13;
+    grid-column: 7 / 13;
     grid-row: 1 / 1;
     position: relative;
     padding: 8px 0px;
+    @media(max-width: $media_medium){
+      grid-column: 1 / 1;
+      grid-row: 1 / 1;
+      ul{
+        position: relative !important;
+        text-align: center;
+      }
+    }
     ul{
       position: absolute;
       right: 10px;
       margin: 0px;
+      padding-inline-start: 0px;
       li{
         list-style: none;
         display: inline-block;

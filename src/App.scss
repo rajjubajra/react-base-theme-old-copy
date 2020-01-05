@@ -4,8 +4,6 @@
 @import "./sass/button";
 @import "./sass/transition";
 
-
-
 /** Boxes **/
 @import "./sass/Boxes/b4member";
 @import "./sass/Boxes/b3images";
@@ -25,7 +23,7 @@
 @import "./sass/Navigation/NavCoverPage.scss";
 @import "./sass/Navigation/NavSlideInLeft.scss";
 @import "./sass/Navigation/navbar";
-
+@import "./sass/Navigation/NavEcom";
 
 /** Call To Action **/
 @import "./sass/CallToAction/VideoHeadlineButton";
@@ -33,14 +31,10 @@
 @import "./sass/CallToAction/TwoColumnCTA.scss";
 @import "./sass/CallToAction/CTALargeImage";
 
-
-
-
 /** Animation **/
 @import "./sass/Animation/smoketext";
 @import "./sass/Animation/rotation";
 @import "./sass/Animation/circle";
-
 
 /** Contact Form **/
 @import "./sass/Contact/FormRegular";
@@ -50,14 +44,12 @@
 @import "./sass/Contact/FormGetInTouch";
 @import "./sass/Contact/FormGetQuote";
 
-
 /** Headers **/
 @import "./sass/Headers/EcomHeadersTop";
 @import "./sass/Headers/EcomSearchBar";
 
-
 /** **/
-.ref{
+.ref {
   font-size: 0.7rem;
   padding: 10px 20px;
   background: #000;
@@ -66,32 +58,31 @@
   width: 200px;
   margin: 15px 0px;
 }
-.App{
+.App {
   max-width: 1280px;
   margin: 0px auto;
 
-  h2{
+  h2 {
     text-align: center;
   }
 
-  .main{
+  .main {
     display: grid;
     grid-template-columns: 20% 80%;
   }
 }
 
-
 /** category component **/
-.categories{
-  ul{
-    li{
+.categories {
+  ul {
+    li {
       list-style: none;
       margin: 10px 0px;
-      a{
+      a {
         text-decoration: none;
         padding: 10px 0px;
         font-size: $medium;
-        &:hover{
+        &:hover {
           color: $color_light;
           transition: 0.5s;
         }
@@ -100,3 +91,7 @@
   }
 }
 
+/* alerts */
+.danger{
+  color: red;
+}

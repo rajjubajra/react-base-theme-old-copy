@@ -14,6 +14,7 @@ const NavCoverPage = () => {
 
   return (
     <>
+    <div className="ref">NavCoverPage.js</div>
     <div className="btn-position">
       <BtnThreelines navToggle={navToggle} btnclosed={btnclosed} />
     </div>

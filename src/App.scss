@@ -18,17 +18,19 @@
 @import "./sass/Boxes/b4boxes";
 
 /** Navigation **/
-@import "./sass/Navigation/BtnThreelines.scss";
-@import "./sass/Navigation/NavSlideIn.scss";
-@import "./sass/Navigation/NavCoverPage.scss";
-@import "./sass/Navigation/NavSlideInLeft.scss";
+@import "./sass/Navigation/MeghaMenu";
+@import "./sass/Navigation/BtnThreelines";
+@import "./sass/Navigation/NavSlideIn";
+@import "./sass/Navigation/NavCoverPage";
+@import "./sass/Navigation/NavSlideInLeft";
 @import "./sass/Navigation/navbar";
 @import "./sass/Navigation/NavEcom";
+
 
 /** Call To Action **/
 @import "./sass/CallToAction/VideoHeadlineButton";
 @import "./sass/CallToAction/CTAwithImage";
-@import "./sass/CallToAction/TwoColumnCTA.scss";
+@import "./sass/CallToAction/TwoColumnCTA";
 @import "./sass/CallToAction/CTALargeImage";
 
 /** Animation **/
@@ -66,11 +68,23 @@
     text-align: center;
   }
 
-  .main {
+  .with-menu {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 1fr;
+  }
+  .without-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 50px;
+  }
+  .show{
+    display: block;
+  }
+  .hide{
+    display: none;
   }
 }
+
 
 /** category component **/
 .categories {

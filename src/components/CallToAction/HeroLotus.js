@@ -1,6 +1,6 @@
 import React from 'react'
-import img_lineOver from '../../images/icon-png/line_over_transparant.png';
-import img_lineOver2 from '../../images/icon-png/line_over_transparant.png'
+import img_lineOver from '../../images/png-image/line_over_transparant.png';
+import img_lineOver2 from '../../images/png-image/line_over_transparant.png'
 
 const HeroLotus = () => {
   return (

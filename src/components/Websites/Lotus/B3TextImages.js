@@ -1,8 +1,8 @@
 import React from 'react'
 import B3TextImage from './B3TextImage'
-import img1 from '../../../images/icon-png/icon_link.png';
-import img2 from '../../../images/icon-png/icon_file.png';
-import img3 from '../../../images/icon-png/icon_pen.png';
+import img1 from '../../../images/png-image/icon_link.png';
+import img2 from '../../../images/png-image/icon_file.png';
+import img3 from '../../../images/png-image/icon_pen.png';
 
 
 const B3TextImages = () => {

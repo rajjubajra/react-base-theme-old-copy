@@ -1,7 +1,7 @@
 import React from 'react'
-import img_link from '../../images/icon-png/icon_link.png';
-import img_file from '../../images/icon-png/icon_file.png';
-import img_pen from '../../images/icon-png/icon_pen.png';
+import img_link from '../../images/png-image/icon_link.png';
+import img_file from '../../images/png-image/icon_file.png';
+import img_pen from '../../images/png-image/icon_pen.png';
 
 
 

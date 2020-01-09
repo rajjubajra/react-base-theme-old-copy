@@ -10,7 +10,7 @@ const MeghaMenu = () => {
     <div className="dropDownNav" >
       <div>
         <ul className="list">
-          <li><Link to="/website">Website</Link></li>
+          <li><Link to="/websites">Websites</Link></li>
           <li><Link to="#">Slider</Link></li>
           <li><Link to="/calltoaction">Hero</Link></li>
           <li><Link to="#">Headers</Link></li>
@@ -19,7 +19,7 @@ const MeghaMenu = () => {
 
             <div className="submenu">
               <ul className="submenu-lists">
-                <li><Link to="#">About</Link></li>
+                <li><Link to="/aboutus">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
                 <li><Link to="#">FAQ</Link></li>
                 <li><Link to="#">Features</Link></li>
@@ -41,6 +41,7 @@ const MeghaMenu = () => {
             <div className="submenu">
               <ul className="submenu-lists" >
                 <h4>Boxes</h4>
+                <li><Link to="/columns">Columns</Link></li>
                 <li><Link to="/boxes">Box</Link></li>
                 <li><Link to="#">Article</Link></li>
                 <li><Link to="#">Zoom</Link></li>
@@ -75,6 +76,7 @@ const MeghaMenu = () => {
                 <h4>Contents</h4>
                 <li><Link to="/navigation">Navigations</Link></li>
                 <li><Link to="/headers">Headers</Link></li>
+                <li><Link to="/footers">Footer</Link></li>
                 <li><Link to="#">Accordion</Link></li>
                 <li><Link to="#">Helper</Link></li>
                 <li><Link to="#">List</Link></li>

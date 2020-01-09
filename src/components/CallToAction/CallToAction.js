@@ -3,6 +3,7 @@ import VideoHeadlinButton from './VideoHeadlinButton'
 import CTAwithImage from './CTAwithImage'
 import TwoColumnCTA from './TwoColumnCTA'
 import CTALargImage from './CTALargImage'
+import HeroLotus from './HeroLotus'
 
 const CallToAction = () => {
   const page = {
@@ -27,7 +28,10 @@ const CallToAction = () => {
       <div style={page}>
         <CTALargImage />
       </div>
-      
+      <div style={page}>
+        <HeroLotus />
+      </div>
+
 
     </div>
   )

@@ -1,0 +1,25 @@
+.websites{
+
+  *{
+    box-sizing: border-box;
+  }
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px , 1fr));
+  grid-gap: 20px;
+  div{
+    border: 1px solid $border_lighter;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    a{
+      text-decoration: none;
+      position: absolute;
+      bottom: 20px;
+    }
+  };
+  
+}

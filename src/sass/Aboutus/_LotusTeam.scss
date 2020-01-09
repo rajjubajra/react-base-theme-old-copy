@@ -1,0 +1,57 @@
+.lotusteam{
+  
+  width: 90%;
+  margin: 0px auto;
+
+  .title{
+    padding: 30px;
+    h1{
+      font-weight: 800;
+      text-shadow: none;
+      color: $color_black;
+    }
+    h2{
+      text-align: left !important;
+      font-size: $medium;
+      font-weight: 600;
+      text-shadow: none;
+    }
+    
+  }
+
+  .team-members{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    grid-gap: 10px;
+      section{
+        padding: 30px;
+        
+        img{
+        width: 100%;
+        margin-bottom: 50px;
+        }
+        h1{
+          font-size: $regular;
+          font-weight: 600;
+          text-shadow: none;
+          color: $color_black;
+          padding: 0px !important;
+          margin: 0px !important;
+        }
+        h2{
+          font-size: $medium;
+          font-weight: 100;
+          text-shadow: none;
+          text-align: left !important;
+          margin: 0px;
+          text-transform: none;
+        }
+        p{
+          font-size: $medium;
+        }
+    }
+    
+    
+  }
+}

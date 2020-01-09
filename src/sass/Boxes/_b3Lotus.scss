@@ -1,0 +1,52 @@
+.b3lotus{
+  *{
+    box-sizing: border-box;
+  }
+  background-color: $background_lighter;
+  width: 100%;
+  min-height: 1000px;
+  background-image: url('../../images/snow-leopard.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(100%);
+
+
+  h1{
+    font-size: $megha_font;
+    color: $color_white;
+    text-transform: capitalize;
+  }
+
+  .boxes{
+    width: 70%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax( 33.33%, 1fr));
+    
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin: 0px 20px;
+      height: 400px;
+      border: 0px solid $border_light;
+      text-align: center;
+      background: rgba(255,255,255,0.56);
+      h2{
+        font-weight: 600;
+        color: $color_dark;
+      }
+      p{
+        color: $color_black;
+      }
+    }
+  }
+}

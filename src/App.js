@@ -9,8 +9,12 @@ import CallToAction from './components/CallToAction/CallToAction';
 import Animation from './components/Animation/Animation';
 import Contact from './components/Contact.js/Contact';
 import Headers from './components/Headers/Headers';
-import Website from './components/Website/Website';
+import Websites from './components/Websites/Websites';
 import MeghaMenu from './components/Navigation/MeghaMenu';
+import Lotus from './components/Websites/Lotus/Lotus';
+import Footers from './components/Footers/Footers';
+import Columns from './components/Columns/Columns';
+import Aboutus from './components/Aboutus/Aboutus';
 
 
 
@@ -18,11 +22,27 @@ function App() {
 
   const [btnShowHide, setBtnShowHide] = useState(true);
 
+
   return (
     <BrowserRouter>
       <div className="App">
-        <div style={{ width: "100%", height: "30px", background: "#000", textAlign: "center" }}>
-          <button style={{ border: '0px', background: '#000', color: "#fff", outline: "0px", cursor: "pointer" }} onClick={() => setBtnShowHide(!btnShowHide)}>
+        <div
+          style={{
+            width: "100%",
+            height: "30px",
+            background: "#000",
+            textAlign: "center"
+          }}>
+
+          <button
+            style={{
+              border: '0px',
+              background: '#000',
+              color: "#fff",
+              outline: "0px",
+              cursor: "pointer"
+            }}
+            onClick={() => setBtnShowHide(!btnShowHide)}>
             {btnShowHide ? 'Hide Menu' : 'Show Menu'}
           </button>
         </div>
@@ -32,11 +52,17 @@ function App() {
             <MeghaMenu />
           </div>
           <Switch>
-            <Route path="/website">
-              <Website />
+            <Route path="/websites">
+              <Websites />
             </Route>
             <Route path="/boxes">
               <Boxes />
+            </Route>
+            <Route path="/aboutus">
+              <Aboutus />
+            </Route>
+            <Route path="/columns">
+              <Columns />
             </Route>
             <Route path="/navigation">
               <Navigation />
@@ -45,17 +71,21 @@ function App() {
               <CallToAction />
             </Route>
             <Route path="/animation" >
-
               <Animation />
             </Route>
             <Route path="/contact" >
-
               <Contact />
             </Route>
             <Route path="/headers" >
-
               <Headers />
             </Route>
+            <Route path="/footers">
+              <Footers />
+            </Route>
+            <Route path="/lotus" >
+              <Lotus />
+            </Route>
+
           </Switch>
         </div>
       </div>

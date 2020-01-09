@@ -16,6 +16,11 @@
 @import "./sass/Boxes/b3plans-a";
 @import "./sass/Boxes/b4boxborder";
 @import "./sass/Boxes/b4boxes";
+@import "./sass/Boxes/b3Lotus";
+
+/** Columns **/
+@import "./sass/Columns/TwoColumns";
+@import "./sass/Columns/TwoColumnsLotus";
 
 /** Navigation **/
 @import "./sass/Navigation/MeghaMenu";
@@ -25,6 +30,7 @@
 @import "./sass/Navigation/NavSlideInLeft";
 @import "./sass/Navigation/navbar";
 @import "./sass/Navigation/NavEcom";
+@import "./sass/Navigation/NavLotus";
 
 
 /** Call To Action **/
@@ -32,6 +38,8 @@
 @import "./sass/CallToAction/CTAwithImage";
 @import "./sass/CallToAction/TwoColumnCTA";
 @import "./sass/CallToAction/CTALargeImage";
+@import "./sass/CallToAction/HeroLotus";
+
 
 /** Animation **/
 @import "./sass/Animation/smoketext";
@@ -49,6 +57,21 @@
 /** Headers **/
 @import "./sass/Headers/EcomHeadersTop";
 @import "./sass/Headers/EcomSearchBar";
+
+
+/** About us **/
+@import "./sass/Aboutus/LotusAboutUs";
+@import "./sass/Aboutus/LotusTeam";
+
+
+/** Websites **/
+@import "./sass/Websites/Websites";
+@import "./sass/Websites/Lotus";
+
+/** Footer **/
+@import "./sass/Footers/CopyRightFooter";
+@import "./sass/Footers/Footer3Column";
+
 
 /** **/
 .ref {

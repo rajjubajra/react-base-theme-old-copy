@@ -1,0 +1,24 @@
+.footer3column{
+  width: 90%;
+  min-height: 300px;
+  margin: 0px auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    section{
+      text-align: left;
+    }
+    p{
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+  
+  
+}

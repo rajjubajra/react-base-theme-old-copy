@@ -11,4 +11,32 @@
     width: 100%;
   }
 
+  .forminbox{
+    form{
+      border: none;
+    }
+  }
+  .b3lotus{
+    filter: grayscale(0%);
+  }
+
+  h1{
+    color: #03496b;
+  }
+  h2{
+    color: #000000;
+  }
+  .btn{
+    background-color: #03496b !important;
+  }
+
+  
+  .b3lotus .boxes div h2,
+  .twocolumnlotus div.text h1, 
+  .twocolumns div h2 {
+    text-align: left !important;
+    font-size: 1.5rem;
+    text-shadow: none;
+    color: black !important;
+  }
 }

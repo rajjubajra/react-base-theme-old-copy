@@ -1,10 +1,16 @@
 import React from 'react'
 
+
 const CopyRightFooter = () => {
   return (
-    <div className="copyrightfooter">
-      <p>&copy; {new Date().getFullYear()} All Right Reserved Yellow-Website.com</p>
-    </div>
+    <>
+      <div className="copyrightfooter">
+        <p>
+          &copy; {new Date().getFullYear()} All Right Reserved
+        <a href="http://yellow-website.com" >Yellow-Website.com</a>
+        </p>
+      </div>
+    </>
   )
 }
 

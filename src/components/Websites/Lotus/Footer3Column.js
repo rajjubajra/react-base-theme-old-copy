@@ -3,11 +3,10 @@ import React from 'react'
 const Footer3Column = () => {
   return (
     <>
-
       <div className="footer3column">
         <div>
           <section>
-            <h2>Company</h2>
+            <h1>Company</h1>
             <p>Level 3, Queen Street</p>
             <p>London, United Kingdom</p>
           </section>

@@ -4,9 +4,9 @@ import React, { useState, useEffect } from 'react'
 const wedo = [
   {
     id: 1,
-    icon: 'drw-android',
+    icon: 'b3textimage-2',
     title: "Adipisicing elit. Hic dolores nam tempore veritatis magni adipisci dolorum atque tenetur fugit fuga rerum accusantium odio enim",
-    text: 'Opsum dolor sit amet consectetur, adipisicing elit. Ipsum tempora neque dicta, repudiandae dolores nostrum hic ullam. Ducimus officiis rem, assumenda tenetur officia ipsam at, recusandae eius, ut ex dolorem.'
+    text: 'Opsum dolor sit amet consectetur, adipisicing elit. Ipsum tempora neque dicta, repudiandae dolores nostrum hic ullam. Ducimus officiis rem, assumenda tenetur officia ipsam at, recusandae eius, ut ex dolorem. adipisicing elit. Ipsum tempora neque dicta, repudiandae dolores nostrum hic ullam. Ducimus officiis rem, assumenda tenetur officia ipsam at, recusandae eius, ut ex dolorem'
   },
   {
     id: 2,
@@ -44,11 +44,16 @@ const LotusWhatWeDo = () => {
   const [ourJob, setOurJob] = useState('');
   useEffect(() => {
     setOurJob(wedo.map(item => {
+      /** first image is jpg  */
+      let picture = item.id === 1
+        ? <img src={require(`../../images/${item.icon}.jpg`)} alt="wedo" />
+        : <img src={require(`../../images/png-image/${item.icon}.png`)} alt="wedo" />;
+
       return (
-        <section>
-          <img src={require(`../../images/png-image/${item.icon}.png`)} alt="icon" />
-          <h2>{item.title}</h2>
-          <p>{item.text}</p>
+        <section key={item.id}>
+          <div className="image">{picture}</div>
+          <div className="title"><h2>{item.title}</h2></div>
+          <div className="text"><p>{item.text}</p></div>
         </section >
       );
     }))
@@ -59,7 +64,7 @@ const LotusWhatWeDo = () => {
     <>
       <div className="ref">LotusWhatWeDo.js</div>
       <div className="lotuswhatwedo">
-        <h1>What we do</h1>
+        <h1 className="title">What we do</h1>
         <div>
           {ourJob}
         </div>

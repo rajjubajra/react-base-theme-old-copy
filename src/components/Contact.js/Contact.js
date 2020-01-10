@@ -5,6 +5,7 @@ import FormDetails from './FormDetails';
 import FormInBox from './FormInBox';
 import FormGetInTouch from './FormGetInTouch';
 import FormGetQuote from './FormGetQuote';
+import LotusContactPage from './LotusContactPage';
 
 
 const Contact = () => {
@@ -13,7 +14,7 @@ const Contact = () => {
     minHeight: '100vh',
     display: "block",
     position: "relative",
-   
+
   }
   return (
     <div>
@@ -35,6 +36,9 @@ const Contact = () => {
       </div>
       <div style={page}>
         <FormGetQuote />
+      </div>
+      <div style={page}>
+        <LotusContactPage />
       </div>
     </div>
   )

@@ -4,7 +4,6 @@ import img_file from '../../images/png-image/icon_file.png';
 import img_pen from '../../images/png-image/icon_pen.png';
 
 
-
 const B3Lotus = () => {
   return (
     <>

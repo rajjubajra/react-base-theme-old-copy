@@ -50,9 +50,10 @@
       grid-row: 3 / 3;
       position: absolute;
       bottom: -20px;
-      left: 35%;
       background: $background_white;
       padding: 0px 10px;
+      display: flex;
+      justify-self: center;
     }
 
     @media(max-width: $media_small){

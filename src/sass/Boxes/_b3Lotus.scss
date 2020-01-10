@@ -21,13 +21,15 @@
     font-size: $megha_font;
     color: $color_white;
     text-transform: capitalize;
+    text-align: center;
   }
 
   .boxes{
     width: 70%;
     margin: 0px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax( 33.33%, 1fr));
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax( 250px, 1fr));
     
     div{
       display: flex;

@@ -1,8 +1,19 @@
+@keyframes appear{
+  0% {top: 35%; color: #03486b2c !important; text-shadow: none; z-index: 1;}
+  100% { top: 40%; color:  #03496b;}
+}
+@keyframes expand{
+  0% {letter-spacing: -1em; color: $color_white}
+  50% {letter-spacing: 0em;}
+  100%{letter-spacing: 1em;}
+}
+
 .lotus{
   *{
     box-sizing: border-box;
   }
-  img{
+  img,
+  .b3lotus{
     filter: grayscale(0%);
   }
   div.divider{
@@ -11,21 +22,22 @@
     width: 100%;
   }
 
+  .navlotus .nav-ul li a,
+  a.brand-logo,
+  h1{
+    color: #03496b !important;
+  }
+
+  h2{
+    color: #000000;
+  }
+
   .forminbox{
     form{
       border: none;
     }
   }
-  .b3lotus{
-    filter: grayscale(0%);
-  }
-
-  h1{
-    color: #03496b;
-  }
-  h2{
-    color: #000000;
-  }
+  
   .btn{
     background-color: #03496b !important;
   }

@@ -16,6 +16,7 @@ import Footers from './components/Footers/Footers';
 import Columns from './components/Columns/Columns';
 import Aboutus from './components/Aboutus/Aboutus';
 import ImageSlider from './components/ImageSlider/ImageSlider';
+import Homepage from './components/HomePage/Homepage';
 
 
 
@@ -58,6 +59,9 @@ function App() {
             </Route>
             <Route path="/boxes">
               <Boxes />
+            </Route>
+            <Route path="/homepage">
+              <Homepage />
             </Route>
             <Route path="/aboutus">
               <Aboutus />

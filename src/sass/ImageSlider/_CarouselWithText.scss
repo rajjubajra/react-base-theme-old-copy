@@ -1,3 +1,139 @@
+@keyframes blurEffect{
+  0%  { filter: blur(9px)}
+  40% { filter: blur(3px)}
+  100%{ filter: blur(0)}
+}
+@keyframes slideDown{
+  0%{ letter-spacing: -10px; transform: translateY(-10px);}
+  100%{ letter-spacing: 2px; transform: translateY(0px);}
+}
+
 .carouselwithtext{
-  display: flex;
+
+  .wrapper{
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .slide-item{
+      width: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .slide-text{
+        
+        h2, p{  
+          margin: 0px;
+          color: $color_white;
+        }
+        font-size: $large;
+        min-width: 100px;
+        height: auto;
+        padding: 20px 60px;
+        font-weight: 800;
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        border-radius: 30px;
+        position: absolute;
+        bottom: 30%;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }    
+    }
+    .slide-item.show{
+      display: flex;
+      img{
+          animation: blurEffect 2s;
+          filter: grayscale(0);
+      }
+      .slide-text{
+          animation: slideDown 2s;
+          transform: translateY(0px);
+          letter-spacing: 2px;
+      }
+    }
+    .slide-item.hide{
+      display: none;
+    }
+
+/** dot navigation */
+    .dot-nav{
+      z-index: 2000;
+      display: flex;
+      position: absolute;
+      bottom: 10%;
+
+      .dot{
+        background-color: $background_black;
+        width: 10px;
+        height: 10px;
+        display: flex;
+        margin: 20px;
+        cursor: pointer;
+      }
+      .dot.active::after{
+          content: "";
+          display: absolute;
+          border: 2px solid $border_white;
+          width: 10px;
+          height: 8px;
+      }
+    }
+
+/** button : next and prev**/
+  .next-prev{
+
+    .next{
+      right: 30px;
+      &::after{
+        transform: rotate(-45deg);
+        top: 8px;
+        left: 5px;
+      }
+    }
+    .prev{
+      left: 30px;
+      &::after{
+        transform: rotate(135deg);
+        top: 8px;
+        left: 11px;
+      }
+    }
+
+    .next, .prev{
+      cursor: pointer;
+      border: 1px solid $border_white;
+      position: absolute;
+      background-color: $background_black;
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      &::after{
+      content: " ";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-right: 1px solid $border_white;;
+      border-bottom: 1px solid $border_white;
+      z-index: 3000;
+      }
+    }
+  }
+
+    
+  }
+
 }

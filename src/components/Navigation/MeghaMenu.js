@@ -19,6 +19,7 @@ const MeghaMenu = () => {
 
             <div className="submenu">
               <ul className="submenu-lists">
+                <li><Link to="/homepage">Home Page</Link></li>
                 <li><Link to="/aboutus">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
                 <li><Link to="#">FAQ</Link></li>

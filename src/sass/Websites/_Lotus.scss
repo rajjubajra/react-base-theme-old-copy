@@ -1,6 +1,11 @@
+:root {
+  --h1-color: rgb(6, 123, 249);
+  --h1-color-trans:  rgba(3, 158, 247, 0.447);
+}
+
 @keyframes appear{
-  0% {top: 35%; color: #03486b2c !important; text-shadow: none; z-index: 1;}
-  100% { top: 40%; color:  #03496b;}
+  0% {top: 35%; color: var(--h1-color-trans) !important; text-shadow: none; z-index: 1;}
+  100% { top: 40%; color: var(--h1-color);}
 }
 @keyframes expand{
   0% {letter-spacing: -1em; color: $color_white}
@@ -22,10 +27,17 @@
     width: 100%;
   }
 
-  .navlotus .nav-ul li a,
-  a.brand-logo,
   h1{
-    color: #03496b !important;
+    font-weight: 800;
+    color: var(--h1-color) !important;
+    text-transform: lowercase;
+    font-size: $megha_font;
+  }
+
+  .navlotus .nav-ul li a,
+  a.brand-logo
+  {
+    color: #000000;
   }
 
   h2{

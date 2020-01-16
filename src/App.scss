@@ -39,12 +39,18 @@
 @import "./sass/CallToAction/TwoColumnCTA";
 @import "./sass/CallToAction/CTALargeImage";
 @import "./sass/CallToAction/HeroLotus";
+@import "./sass/CallToAction/HeroMordernArt";
 
 
 /** Animation **/
 @import "./sass/Animation/smoketext";
 @import "./sass/Animation/rotation";
 @import "./sass/Animation/circle";
+
+//** Image Slider **/
+@import "./sass/ImageSlider/ResponsiveSlider";
+@import "./sass/ImageSlider/Carousel";
+@import "./sass/ImageSlider/CarouselWithText";
 
 /** Contact Form **/
 @import "./sass/Contact/FormRegular";

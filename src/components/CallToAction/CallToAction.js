@@ -4,6 +4,7 @@ import CTAwithImage from './CTAwithImage'
 import TwoColumnCTA from './TwoColumnCTA'
 import CTALargImage from './CTALargImage'
 import HeroLotus from './HeroLotus'
+import HeroMordernArt from './HeroMordernArt'
 
 const CallToAction = () => {
   const page = {
@@ -30,6 +31,9 @@ const CallToAction = () => {
       </div>
       <div style={page}>
         <HeroLotus />
+      </div>
+      <div style={page}>
+        <HeroMordernArt />
       </div>
 
 

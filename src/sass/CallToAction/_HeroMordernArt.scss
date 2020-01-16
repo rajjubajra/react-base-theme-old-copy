@@ -1,0 +1,36 @@
+.heromordenart{
+
+  h1{
+    font-size: $megha_font;
+    font-weight: 100;
+    text-transform: lowercase;
+  }
+  p{
+    line-height: 1.7rem;
+    font-weight: 100;
+  }
+
+  box-sizing: border-box;
+
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+
+  div{
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+
+    section{
+      max-width: 500px;
+      img{
+        max-width: 300px;
+        filter: grayscale(0%);
+      }
+    }
+  }
+
+}

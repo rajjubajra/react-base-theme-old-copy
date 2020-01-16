@@ -47,6 +47,9 @@ const LotusContactPage = () => {
     <>
 
       <div className="lotuscontactpage">
+        <div>
+          <h1>Contact</h1>
+        </div>
         <div className="detail-address">
           {detailAddress}
         </div>
@@ -56,6 +59,7 @@ const LotusContactPage = () => {
           <FormInBox />
         </div>
       </div>
+
     </>
   )
 }

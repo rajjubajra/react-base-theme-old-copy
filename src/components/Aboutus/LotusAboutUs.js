@@ -14,7 +14,7 @@ const article_1 = [
 
 const article_2 = [
   {
-    id: 1,
+    id: 22,
     header: "e imestfdgop0",
     title: "Tpsum dolor sit amet elit. Facere eveniet atque suscipit adipisci et consectetur adipisicing",
     text: "Nipsum dolor sit amet elit. Dolorem quidem voluptatibus dolore veniam temporibus error soluta, consectetur adipisicing impedit inventore repellat voluptatum iorem neque quis possimus excepturi, aut dolor vero rerum fuga aliquam?"
@@ -23,7 +23,7 @@ const article_2 = [
 ]
 const article_3 = [
   {
-    id: 1,
+    id: 33,
     title: "Dolor Tpsum sit amet elit. Facere eveniet atque suscipit adipisci et consectetur adipisicing",
     text: "Temporibus ipsum dolor sit amet elit. Dolorem quidem voluptatibus dolore veniam error soluta, consectetur adipisicing impedit inventore repellat voluptatum iorem neque quis possimus excepturi, aut dolor vero rerum fuga aliquam?"
   }
@@ -39,7 +39,7 @@ const LotusAboutUs = () => {
 
     setArticleOne(
       article_1.map(item => {
-        return <div>
+        return <div key={item.id}>
           <h3>{item.header}</h3>
           <h2>{item.title}</h2>
           <p>{item.text}</p>
@@ -49,7 +49,7 @@ const LotusAboutUs = () => {
 
     setArticleTwo(
       article_2.map(item => {
-        return <div>
+        return <div key={item.id}>
           <h3>{item.header}</h3>
           <h2>{item.title}</h2>
           <p>{item.text}</p>
@@ -59,7 +59,7 @@ const LotusAboutUs = () => {
 
     setArticleThree(
       article_3.map(item => {
-        return <div>
+        return <div key={item.id}>
           <h2>{item.title}</h2>
           <p>{item.text}</p>
         </div>

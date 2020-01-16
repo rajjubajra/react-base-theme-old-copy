@@ -2,6 +2,15 @@
   display: 90%;
   margin: 0px auto;
 
+  div{
+    h1{
+      font-size: 6rem;
+      font-weight: 800;
+      margin: 150px 30px;
+      text-transform: lowercase;
+    }
+  }
+
   h2, h3{
     text-shadow: none;
     text-align: left !important;

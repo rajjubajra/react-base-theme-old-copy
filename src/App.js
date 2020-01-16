@@ -15,6 +15,7 @@ import Lotus from './components/Websites/Lotus/Lotus';
 import Footers from './components/Footers/Footers';
 import Columns from './components/Columns/Columns';
 import Aboutus from './components/Aboutus/Aboutus';
+import ImageSlider from './components/ImageSlider/ImageSlider';
 
 
 
@@ -72,6 +73,9 @@ function App() {
             </Route>
             <Route path="/animation" >
               <Animation />
+            </Route>
+            <Route path="/imageslider" >
+              <ImageSlider />
             </Route>
             <Route path="/contact" >
               <Contact />

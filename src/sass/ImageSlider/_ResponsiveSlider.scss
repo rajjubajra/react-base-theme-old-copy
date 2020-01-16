@@ -1,0 +1,35 @@
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  100%{ opacity: 1;}
+}
+.responsiveslider{
+  position: relative;
+  img{
+    width: 100%;
+    height: auto;
+    outline: 1px solid $border_white;
+    outline-offset: -45px;
+  }
+
+  .next, .prev{
+    position: absolute;
+    top: 50%;
+    font-size: $larger;
+    cursor: pointer;
+    border: 1px solid $border_white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: $background_lighter;
+  }
+  .next{
+    right: 20px;
+  }
+  .prev{
+    left: 20px;
+  }
+  
+}

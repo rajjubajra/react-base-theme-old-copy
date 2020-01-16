@@ -85,6 +85,7 @@ const MeghaMenu = () => {
                 <li><Link to="#">List and Bullets</Link></li>
                 <li><Link to="#">Timeline</Link></li>
                 <li><Link to="/animation">Animation</Link></li>
+                <li><Link to="/imageslider">Image Slider</Link></li>
               </ul>
             </div>
           </li>

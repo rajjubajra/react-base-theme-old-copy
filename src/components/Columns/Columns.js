@@ -3,6 +3,7 @@ import TwoColumns from './TwoColumns'
 import TwoColumnLotus from './TwoColumnLotus'
 import ThreeColumnWheat from './ThreeColumnWheat'
 import TwoColumnWheat from './TwoColumnWheat'
+import TwoColPriceWheat from './TwoColPriceWheat'
 
 const Columns = () => {
   return (
@@ -18,6 +19,9 @@ const Columns = () => {
       </div>
       <div>
         <TwoColumnWheat />
+      </div>
+      <div>
+        <TwoColPriceWheat />
       </div>
 
     </div>

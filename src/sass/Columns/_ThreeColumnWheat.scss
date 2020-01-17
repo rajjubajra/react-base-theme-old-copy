@@ -1,0 +1,64 @@
+.threecolumnwheat{
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+
+  h1{
+    font-size: $larger;
+    font-weight: 800;
+    text-shadow: none;
+    text-transform: none;
+    width: 350px;
+    margin: 0px auto;
+    padding: 50px 0px;
+  }
+
+  h2{
+    font-size: $large;
+    font-weight: 600;
+    text-shadow: none;
+  }
+
+  p{
+    line-height: 1.6rem;
+    padding: 0px 20px;
+  }
+
+  .services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+
+    div{
+      width: 300px;
+      height: 480px;
+      text-align: center;
+      padding: 20px 45px;
+      margin: 10px;
+      div.icon{
+        border-radius: 130px;
+        width: 143px;
+        height: 190px;
+        margin: 0px auto;
+        overflow: hidden;
+        border: 1px solid $border_lighter;
+          img{
+            width: 100%;
+            display: block;
+            transform: scale(2);
+        }
+      } 
+    }
+  }
+
+  button{
+    margin: 50px 0px;
+  }
+
+}

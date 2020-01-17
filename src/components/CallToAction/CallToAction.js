@@ -5,6 +5,7 @@ import TwoColumnCTA from './TwoColumnCTA'
 import CTALargImage from './CTALargImage'
 import HeroLotus from './HeroLotus'
 import HeroMordernArt from './HeroMordernArt'
+import HeroWheat from './HeroWheat'
 
 const CallToAction = () => {
   const page = {
@@ -34,6 +35,9 @@ const CallToAction = () => {
       </div>
       <div style={page}>
         <HeroMordernArt />
+      </div>
+      <div style={page}>
+        <HeroWheat />
       </div>
 
 

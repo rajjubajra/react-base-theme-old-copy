@@ -3,6 +3,7 @@ import LotusAboutUs from './LotusAboutUs'
 import LotusTeam from './LotusTeam'
 import LotusWhatWeDo from './LotusWhatWeDo'
 import LotusWorks from './LotusWorks'
+import TeamWheat from './TeamWheat'
 
 const Aboutus = () => {
   return (
@@ -12,6 +13,7 @@ const Aboutus = () => {
       <LotusTeam />
       <LotusWhatWeDo />
       <LotusWorks />
+      <TeamWheat />
     </div>
   )
 }

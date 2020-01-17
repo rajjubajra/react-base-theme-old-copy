@@ -1,0 +1,50 @@
+.twocolumnwheat{
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 20px;
+
+  h1{
+    font-weight: 800;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: 2px;
+  }
+  p{
+    line-height: 1.5rem;
+  }
+
+  div:nth-child(1){
+    width: 100%;
+    height: auto;
+    img{
+      width: 100%;
+      @media(max-width: $media_medium){
+        width: 50%;
+        display: flex;
+        margin-top: 100px;
+        justify-self: center;
+        align-self: center;
+        margin: 0px auto;
+      }
+    }
+  }
+  div:nth-child(2){
+    width: 100%;
+    margin: 0px auto;
+    max-width: 400px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 10px 60px;
+    
+    button{
+      margin: 50px 0px;
+    }
+  }
+}

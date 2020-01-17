@@ -6,6 +6,7 @@ import FormInBox from './FormInBox';
 import FormGetInTouch from './FormGetInTouch';
 import FormGetQuote from './FormGetQuote';
 import LotusContactPage from './LotusContactPage';
+import ContactWheat from './ContactWheat';
 
 
 const Contact = () => {
@@ -39,6 +40,9 @@ const Contact = () => {
       </div>
       <div style={page}>
         <LotusContactPage />
+      </div>
+      <div style={page}>
+        <ContactWheat />
       </div>
     </div>
   )

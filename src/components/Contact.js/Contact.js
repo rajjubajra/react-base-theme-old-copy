@@ -7,6 +7,7 @@ import FormGetInTouch from './FormGetInTouch';
 import FormGetQuote from './FormGetQuote';
 import LotusContactPage from './LotusContactPage';
 import ContactWheat from './ContactWheat';
+import SubscriptionWheat from './SubscriptionWheat';
 
 
 const Contact = () => {
@@ -43,6 +44,9 @@ const Contact = () => {
       </div>
       <div style={page}>
         <ContactWheat />
+      </div>
+      <div style={page}>
+        <SubscriptionWheat />
       </div>
     </div>
   )

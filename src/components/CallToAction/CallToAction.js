@@ -6,6 +6,8 @@ import CTALargImage from './CTALargImage'
 import HeroLotus from './HeroLotus'
 import HeroMordernArt from './HeroMordernArt'
 import HeroWheat from './HeroWheat'
+import HeroWheatTwo from './HeroWheatTwo'
+
 
 const CallToAction = () => {
   const page = {
@@ -38,6 +40,9 @@ const CallToAction = () => {
       </div>
       <div style={page}>
         <HeroWheat />
+      </div>
+      <div style={page}>
+        <HeroWheatTwo />
       </div>
 
 

@@ -1,17 +1,46 @@
 .contactwheat{
+  width: 95%;
+  margin: 0px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
   h1{
     text-transform: none;
+    margin: 100px 0px;
+    text-shadow: none;
   }
+  h2{
+    text-decoration: none;
+    text-shadow: none;
+    text-align: left !important;
+    color: $color_black;
+  }
+
+  h3{
+    font-size: $small;
+    font-weight: 600;
+    text-shadow: none;
+    color: $color_black;
+    letter-spacing: 3px;
+  }
+
+  p{
+    font-weight: 200;
+    line-height: 0.7rem;
+  }
+
+
   div:nth-child(1){
     grid-column: 1 / 1;
     grid-row: 1 /1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   div:nth-child(2){
     grid-column: 2 / 4;
     grid-row: 1 /1;
+
   }
   div:nth-child(3){
     grid-column: 1 / 1;

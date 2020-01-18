@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Fragment } from 'react'
 
 
 const images_text = [
@@ -100,11 +100,11 @@ const CarasouelWithText = () => {
   }
 
 
-  console.log('loopid', loopId);
-  console.log('slide image', slideImages);
-  console.log('slide text', slideText);
-  console.log('slide Lenght', slideLength);
-  console.log('slide item', slideItems);
+  // console.log('loopid', loopId);
+  // console.log('slide image', slideImages);
+  // console.log('slide text', slideText);
+  // console.log('slide Lenght', slideLength);
+  // console.log('slide item', slideItems);
 
 
   return (
@@ -116,8 +116,8 @@ const CarasouelWithText = () => {
           {
             images_text.map((item) => {
               return (
-                <>
-                  <div className={`slide-item ${item.id === 1 ? 'show' : 'hide'}`} key={item.id}>
+                <Fragment key={item.id}>
+                  <div className={`slide-item ${item.id === 1 ? 'show' : 'hide'}`} >
                     <img
                       className="slide-image"
                       src={require(`../../images/${item.img}.jpg`)}
@@ -127,17 +127,18 @@ const CarasouelWithText = () => {
                       <p className="desc">{item.desc}</p>
                     </div>
                   </div>
-                </>
+                </Fragment>
               )
             })
           }
           < div className="dot-nav">
             {
               images_text.map(item => {
-                return <div
+                return <div key={item.id}
                   onClick={() => navDotValue(item.id - 1)}
                   className={`dot ${item.id - 1 === loopId ? 'active' : ''}`}>
                 </div>
+
               })
             }
           </div>

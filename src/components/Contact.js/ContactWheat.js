@@ -5,7 +5,7 @@ const ContactWheat = () => {
     <>
       <div className="ref">ContactWheat.js</div>
       <div className="contactwheat">
-        <div>logo</div>
+        <div className="logo">LoGo</div>
         <div><h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, vitae facilis. Facilis dolor excepturi.</h1>
         </div>
         <div>
@@ -23,7 +23,7 @@ const ContactWheat = () => {
         </div>
         <div>
           <h3>Quick Contact</h3>
-          <h1>00 +44 (0) 0000-000-000</h1>
+          <h2>+44(0)0000-000-000</h2>
           <p>callmeback@example.com</p>
         </div>
       </div>

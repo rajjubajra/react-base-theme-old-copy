@@ -57,3 +57,56 @@
         transition: 0.5s ease-in;
     }
 }
+
+
+
+
+/** button : next and prev**/
+.next-prev{
+
+    .next{
+        right: 30px;
+        &::after{
+        transform: rotate(-45deg);
+        top: 8px;
+        left: 5px;
+        }
+    }
+    .prev{
+        left: 30px;
+        &::after{
+        transform: rotate(135deg);
+        top: 8px;
+        left: 11px;
+        }
+    }
+
+    .next, .prev{
+        cursor: pointer;
+        border: 1px solid $border_white;
+        position: absolute;
+        background-color: $background_black;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        &::after{
+        content: " ";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-right: 1px solid $border_white;;
+        border-bottom: 1px solid $border_white;
+        z-index: 3000;
+        transition: border 3s;
+        }
+    }
+    .next.inactive, 
+    .prev.inactive{
+        &::after{
+        border: 1px solid white !important;
+        border-radius: 11px;
+        background-color: white;
+        cursor: none;
+        }
+    }
+}

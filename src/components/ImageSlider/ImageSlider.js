@@ -2,6 +2,7 @@ import React from 'react'
 import ResponsiveSlider from './ResponsiveSlider'
 import Carousel from './Carousel'
 import CarasouelWithText from './CarasouelWithText'
+import ScrollOnClick from './ScrollOnClick'
 
 
 const ImageSlider = () => {
@@ -13,6 +14,8 @@ const ImageSlider = () => {
       <Carousel />
       <br />
       <CarasouelWithText />
+      <br />
+      <ScrollOnClick />
 
     </div>
   )

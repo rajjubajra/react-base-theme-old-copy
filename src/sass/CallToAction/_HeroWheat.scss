@@ -12,6 +12,7 @@
     height: 100%;
     z-index: -1;
     background-image: url('../../images/wheat/wheat-1.jpg');
+    filter: grayscale(100%);
     background-size: cover;
     transform: scaleX(-1);
   }

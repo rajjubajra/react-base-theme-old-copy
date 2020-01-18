@@ -14,8 +14,8 @@ const Websites = () => {
           <Link className="btn-small-wide" to="/lotus" >Preview</Link>
         </div>
         <div>
-          <h3>Rose</h3>
-          <Link className="btn-small-wide">Preview</Link>
+          <h3>Wheat</h3>
+          <Link className="btn-small-wide" to="/wheat">Preview</Link>
         </div>
         <div>
           <h3>Bamboo</h3>

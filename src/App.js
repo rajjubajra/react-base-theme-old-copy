@@ -17,6 +17,7 @@ import Columns from './components/Columns/Columns';
 import Aboutus from './components/Aboutus/Aboutus';
 import ImageSlider from './components/ImageSlider/ImageSlider';
 import Homepage from './components/HomePage/Homepage';
+import Wheat from './components/Websites/Wheat/Wheat';
 
 
 
@@ -92,6 +93,9 @@ function App() {
             </Route>
             <Route path="/lotus" >
               <Lotus />
+            </Route>
+            <Route path="/lotus" >
+              <Wheat />
             </Route>
 
           </Switch>

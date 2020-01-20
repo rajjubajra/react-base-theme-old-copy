@@ -6,7 +6,8 @@ button.nav-toggle{
   border: 0px solid $border_lighter;
   position: relative;
   outline: none;
-  background-color: none;
+  background-color: transparent;
+  outline: none;
 
   &:hover{
     .threelines::before,
@@ -48,9 +49,10 @@ button.nav-toggle{
 }
 
 button.nav-toggle.open{
-  border: 1px solid $border_lighter;
+  border: 0px solid $border_lighter;
   background-color: $background_lighter;
   transition: 1s;
+  z-index: 1000;
 
   &:hover{
     .threelines::before,

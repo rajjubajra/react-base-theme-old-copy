@@ -1,0 +1,41 @@
+.wheat{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+
+    img{
+      filter: grayscale(0%);
+    }
+
+    .wheat-navbar{
+      position: relative;
+      z-index: 1000;
+    }
+
+    .body{
+
+        .herowheat{
+        &::before{
+          filter: grayscale(0%) !important; 
+        }
+      }
+
+    }
+
+    
+
+
+}
+
+
+
+@media(max-width: $media_medium){
+  .wheat{
+    display: grid;
+    grid-template-columns: 1fr; 
+  }
+  .wheat.open{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+
+}

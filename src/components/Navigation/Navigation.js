@@ -85,7 +85,12 @@ const Navigation = () => {
 
       {/** NAV WHEAT */}
       <NavWheat />
-      <div style={{ width: "100%", height: "100vh", display: "flex", flexDirection: "column" }}>
+      <div style={{
+        width: "100%",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column"
+      }}>
         <h3>Nav WHEAT</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sequi, nesciunt ducimus eaque ex asperiores molestiae doloribus dolor. Reiciendis soluta nam corporis voluptatem, voluptates esse consequuntur saepe laboriosam modi necessitatibus.</p>
         <p>Folor sit, amet consectetur adipisicing elit. Harum corrupti odit voluptatibus. Ea doloribus ad aliquam accusantium molestiae libero minima placeat quia distinctio tempore ducimus maxime, at, vel assumenda. Ad!</p>

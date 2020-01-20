@@ -47,8 +47,6 @@ const NavLotus = () => {
 
   return (
     <>
-      <div className="ref">NavLotus.js</div>
-
       <div className="navlotus">
         <div className="row logo">
           <Link to="#" className="brand-logo">{logo}</Link>

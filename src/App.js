@@ -29,12 +29,14 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <div
+        {/* <div
           style={{
+
             width: "100%",
             height: "30px",
             background: "#000",
-            textAlign: "center"
+            textAlign: "center",
+            display: `${btnShowHide ? 'block' : 'none'}`
           }}>
 
           <button
@@ -43,58 +45,102 @@ function App() {
               background: '#000',
               color: "#fff",
               outline: "0px",
-              cursor: "pointer"
+              cursor: "pointer",
+
             }}
             onClick={() => setBtnShowHide(!btnShowHide)}>
             {btnShowHide ? 'Hide Menu' : 'Show Menu'}
           </button>
-        </div>
+        </div> */}
 
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
-          <div className={btnShowHide ? 'show' : 'hide'}>
+          {/* <div className={btnShowHide ? 'show' : 'hide'}>
             <MeghaMenu />
-          </div>
+          </div> */}
           <Switch>
+            <Route exact path="/">
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
+              <Websites />
+            </Route>
+
             <Route path="/websites">
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
               <Websites />
             </Route>
             <Route path="/boxes">
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
               <Boxes />
             </Route>
             <Route path="/homepage">
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
               <Homepage />
             </Route>
             <Route path="/aboutus">
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
               <Aboutus />
             </Route>
             <Route path="/columns">
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
               <Columns />
             </Route>
             <Route path="/navigation">
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
               <Navigation />
             </Route>
             <Route path="/calltoaction" >
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
               <CallToAction />
             </Route>
             <Route path="/animation" >
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
               <Animation />
             </Route>
             <Route path="/imageslider" >
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
               <ImageSlider />
             </Route>
             <Route path="/contact" >
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
               <Contact />
             </Route>
             <Route path="/headers" >
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
               <Headers />
             </Route>
             <Route path="/footers">
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
               <Footers />
             </Route>
             <Route path="/lotus" >
               <Lotus />
             </Route>
-            <Route path="/lotus" >
+            <Route path="/wheat" >
               <Wheat />
             </Route>
 

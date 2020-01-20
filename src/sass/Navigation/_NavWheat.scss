@@ -1,15 +1,21 @@
 .navwheat{
+  /*
   display: grid;
   position: relative;
-
+  width: 200px;
 
   @media(max-width: $media_small){
     .mobileNavIcon{
       width: 100%;
       z-index: 10;
       display: flex;
-      justify-content: flex-end;
-      margin: 10px -15px;
+      justify-content: flex-start;
+      margin: 10px 3px;
+      background: transparent;
+      .nav-toggle.open{
+        background: transparent !important;
+        border: none;
+      }
       }
     .menu.open{
       display: block;
@@ -23,7 +29,7 @@
   
 
   .menu{
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 200px;
@@ -31,6 +37,9 @@
     background-color: $background_light;
     text-align: center;
     transition: display 2s;
+    display: flex;
+    flex-direction: column;
+    
 
     .logo{
       width: 50px;
@@ -48,7 +57,7 @@
 
     ul.nav-main{
       padding: 0px;
-      margin: 100px 0px 0px 0px;    
+      margin: 45px 0px 0px 0px;    
         li{
           list-style: none;
           line-height: 1.9rem;
@@ -83,9 +92,8 @@
         line-height: 0.5rem;
       }
     }
-
-  
   }
+  */
 
 
 

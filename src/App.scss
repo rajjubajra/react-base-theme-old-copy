@@ -35,6 +35,7 @@
 @import "./sass/Navigation/NavEcom";
 @import "./sass/Navigation/NavLotus";
 @import "./sass/Navigation/NavWheat";
+@import "./sass/Navigation/NavFixedLeft";
 
 
 
@@ -89,11 +90,13 @@
 /** Websites **/
 @import "./sass/Websites/Websites";
 @import "./sass/Websites/Lotus";
+@import "./sass/Websites/Wheat";
 
 
 /** Footer **/
 @import "./sass/Footers/CopyRightFooter";
 @import "./sass/Footers/Footer3Column";
+
 
 
 
@@ -122,7 +125,7 @@
   .without-menu{
     display: grid;
     grid-template-columns: 1fr;
-    padding: 10px 50px;
+    padding: 0px 0px;
   }
   .show{
     display: block;

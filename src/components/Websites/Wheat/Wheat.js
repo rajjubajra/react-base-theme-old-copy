@@ -24,21 +24,23 @@ const Wheat = () => {
     <>
       <div className={`wheat ${btnClosed}`}>
 
-        <div className="wheat-navbar">
-          <NavFixedLeft navToggle={navToggle} btnClosed={btnClosed} />
+        <div className="navbar-wheat">
+          {/* <NavFixedLeft navToggle={navToggle} btnClosed={btnClosed} /> */}
         </div>
-        <div className="body" >
+        <div className="body-wheat" >
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod maxime possimus! Architecto expedita cum numquam quos accusamus at itaque consequuntur commodi perferendis, porro omnis maxime provident soluta reiciendis obcaecati!</p>
 
+          {/* 
           <HeroWheat />
-          <p></p>
-          <p></p>
-          <p></p>
+          
+          <div className="divider"></div>
           <ThreeColumnWheat />
+          <div className="divider"></div>
           <TwoColumnWheat />
           <TeamWheat />
           <TwoColPriceWheat />
           <ContactWheat />
-          <CopyRightFooter />
+          <CopyRightFooter /> */}
 
 
 

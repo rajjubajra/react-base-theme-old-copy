@@ -53,101 +53,124 @@ function App() {
           </button>
         </div> */}
 
-        <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
-          {/* <div className={btnShowHide ? 'show' : 'hide'}>
-            <MeghaMenu />
-          </div> */}
-          <Switch>
-            <Route exact path="/">
-              <div className={btnShowHide ? 'show' : 'hide'}>
-                <MeghaMenu />
-              </div>
-              <Websites />
-            </Route>
 
-            <Route path="/websites">
+
+        <Switch>
+          <Route exact path="/">
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
               <div className={btnShowHide ? 'show' : 'hide'}>
                 <MeghaMenu />
               </div>
               <Websites />
-            </Route>
-            <Route path="/boxes">
+            </div>
+          </Route>
+
+          <Route path="/websites">
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
+              <Websites />
+            </div>
+          </Route>
+          <Route path="/boxes">
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
               <div className={btnShowHide ? 'show' : 'hide'}>
                 <MeghaMenu />
               </div>
               <Boxes />
-            </Route>
-            <Route path="/homepage">
+            </div>
+          </Route>
+          <Route path="/homepage">
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
               <div className={btnShowHide ? 'show' : 'hide'}>
                 <MeghaMenu />
               </div>
               <Homepage />
-            </Route>
-            <Route path="/aboutus">
+            </div>
+          </Route>
+          <Route path="/aboutus">
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
               <div className={btnShowHide ? 'show' : 'hide'}>
                 <MeghaMenu />
               </div>
               <Aboutus />
-            </Route>
-            <Route path="/columns">
+            </div>
+          </Route>
+          <Route path="/columns">
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
               <div className={btnShowHide ? 'show' : 'hide'}>
                 <MeghaMenu />
               </div>
               <Columns />
-            </Route>
-            <Route path="/navigation">
+            </div>
+          </Route>
+          <Route path="/navigation">
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
               <div className={btnShowHide ? 'show' : 'hide'}>
                 <MeghaMenu />
               </div>
               <Navigation />
-            </Route>
-            <Route path="/calltoaction" >
+            </div>
+          </Route>
+          <Route path="/calltoaction" >
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
               <div className={btnShowHide ? 'show' : 'hide'}>
                 <MeghaMenu />
               </div>
               <CallToAction />
-            </Route>
-            <Route path="/animation" >
+            </div>
+          </Route>
+          <Route path="/animation" >
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
               <div className={btnShowHide ? 'show' : 'hide'}>
                 <MeghaMenu />
               </div>
               <Animation />
-            </Route>
-            <Route path="/imageslider" >
+            </div>
+          </Route>
+          <Route path="/imageslider" >
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
               <div className={btnShowHide ? 'show' : 'hide'}>
                 <MeghaMenu />
               </div>
               <ImageSlider />
-            </Route>
-            <Route path="/contact" >
+            </div>
+          </Route>
+          <Route path="/contact" >
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
               <div className={btnShowHide ? 'show' : 'hide'}>
                 <MeghaMenu />
               </div>
               <Contact />
-            </Route>
-            <Route path="/headers" >
+            </div>
+          </Route>
+          <Route path="/headers" >
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
               <div className={btnShowHide ? 'show' : 'hide'}>
                 <MeghaMenu />
               </div>
               <Headers />
-            </Route>
-            <Route path="/footers">
+            </div>
+          </Route>
+          <Route path="/footers">
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
               <div className={btnShowHide ? 'show' : 'hide'}>
                 <MeghaMenu />
               </div>
               <Footers />
-            </Route>
-            <Route path="/lotus" >
-              <Lotus />
-            </Route>
-            <Route path="/wheat" >
-              <Wheat />
-            </Route>
+            </div>
+          </Route>
+          <Route path="/lotus" >
+            <Lotus />
+          </Route>
+          <Route path="/wheat" >
+            <Wheat />
+          </Route>
 
-          </Switch>
-        </div>
+        </Switch>
       </div>
-    </BrowserRouter>
+    </BrowserRouter >
   );
 }
 

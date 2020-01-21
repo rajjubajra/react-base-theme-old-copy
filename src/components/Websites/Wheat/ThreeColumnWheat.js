@@ -60,8 +60,8 @@ const ThreeColumnWheat = () => {
           {
             dummyText.map(item => {
               // eslint-disable-next-line no-unused-expressions
-              return (<div>
-                <div className="icon">
+              return (<div key={item.id}>
+                <div className="icon" >
                   <img
                     src={require(`../../../images/wheat/${item.icon}.jpg`)} alt="icon" />
                 </div>

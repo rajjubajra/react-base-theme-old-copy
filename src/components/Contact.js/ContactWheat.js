@@ -6,7 +6,8 @@ const ContactWheat = () => {
       <div className="ref">ContactWheat.js</div>
       <div className="contactwheat">
         <div className="logo">LoGo</div>
-        <div><h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, vitae facilis. Facilis dolor excepturi.</h1>
+        <div>
+          <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, vitae facilis. Facilis dolor excepturi.</h1>
         </div>
         <div>
           <h3>Location</h3>
@@ -30,5 +31,4 @@ const ContactWheat = () => {
     </>
   )
 }
-
 export default ContactWheat

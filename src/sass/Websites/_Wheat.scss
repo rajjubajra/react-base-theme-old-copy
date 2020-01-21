@@ -1,4 +1,8 @@
 .wheat{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 
 /** fonts **/
   h1, h2{
@@ -22,14 +26,23 @@
     }
   }
 
-
+/** DIVIDER **/  
+  div.divider{
+    height: 100px;
+    width: 100%;
+    display: block;
+  }
   
-
+/** BUTTON **/
   .btn-small-wide, .btn{
     background-color: #87400c;
   }
+  button.nav-toggle.open {
+    background-color: transparent !important;
+  }
 
 
+/** MAIN BODY GRID **/  
   display: grid;
   grid-template-columns: 200px 1fr;
 
@@ -44,36 +57,24 @@
     }
 
     .body{
-
-
         .herowheat{
-
           @media(max-width: $media_medium){
             grid-template-columns: 1fr;
           }
         &::before{
           filter: grayscale(0%) !important; 
         }
-
-            div:nth-child(1) {
-              height: 0vh;
-              grid-column: 1 / 1;
-              grid-row: 1 / 1;
+          div:nth-child(1) {
+            height: 0vh;
+            grid-column: 1 / 1;
+            grid-row: 1 / 1;
           }
-
-          }
-
-    
-
+        }
     }
-
-    
-
-
 }
 
 
-
+/** MAIN BODY GRID FOR HANDHELD DEVICES **/
 @media(max-width: $media_medium){
   .wheat{
     display: grid;
@@ -83,5 +84,4 @@
     display: grid;
     grid-template-columns: 200px 1fr;
   }
-
 }

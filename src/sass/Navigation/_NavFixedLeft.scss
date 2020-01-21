@@ -1,4 +1,5 @@
 .navfixedleft{
+  position: fixed;
   
   .mobileIcon{
     display: none;
@@ -23,7 +24,7 @@
       width: 200px;
       height: 100vh;
       flex-direction: column;
-      background-color: $background_lighter;
+      background-color: $background_white;
       text-align: center;
       transition: width 2s;
 
@@ -44,18 +45,32 @@
           list-style: none;
           margin: 100px 0px;
           padding: 0px;
+          border-right: 1px solid $border_lighter;
           li{
             line-height: 1.8rem;
             a{
               text-decoration: none;
+              font-weight: 300;
+              font-size: $small;
+              text-transform: uppercase;
+              color: $color_black;
+              letter-spacing: 2px;
+              transition: letter-spacing 1s;
+              &:hover{
+                color: $color_light;
+                letter-spacing: 0px;
+                transition: letter-spacing 0.5s;
+              }
             }
           }
         }
 
         .contact{
           p{
-            font-size: $regular;
-            line-height: 1.0rem;
+            font-size: $medium;
+            line-height: 0.5rem;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
           }
         }
 

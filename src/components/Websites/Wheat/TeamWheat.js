@@ -32,7 +32,7 @@ const TeamWheat = () => {
   return (
     <>
       <div className="teamwheat">
-        <div><p>Team Members</p></div>
+        <div className="header"><p>Team Members</p></div>
         <div><h1>Experience Team Members</h1></div>
         <div className="members">
           {

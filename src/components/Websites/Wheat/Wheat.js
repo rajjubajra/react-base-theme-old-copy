@@ -3,7 +3,7 @@ import NavFixedLeft from './NavFixedLeft'
 import HeroWheat from './HeroWheat'
 import ThreeColumnWheat from './ThreeColumnWheat'
 import TwoColumnWheat from './TwoColumnWheat'
-import HeroWheatTwo from './HeroWheatTwo';
+//import HeroWheatTwo from './HeroWheatTwo';
 import TeamWheat from './TeamWheat'
 import TwoColPriceWheat from './TwoColPriceWheat'
 import ContactWheat from './ContactWheat'
@@ -30,6 +30,9 @@ const Wheat = () => {
         <div className="body" >
 
           <HeroWheat />
+          <p></p>
+          <p></p>
+          <p></p>
           <ThreeColumnWheat />
           <TwoColumnWheat />
           <TeamWheat />

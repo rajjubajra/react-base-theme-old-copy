@@ -23,7 +23,7 @@ const TwoColPriceWheat = () => {
   return (
     <>
       <div className="twocolpricewheat">
-        <div className="header">Price</div>
+        <div className="header"><p>Price</p></div>
         <div><h1>Price List</h1></div>
         <div className="price-group">
           {

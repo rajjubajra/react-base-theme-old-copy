@@ -54,7 +54,7 @@ const ThreeColumnWheat = () => {
   return (
     <>
       <div className="threecolumnwheat">
-        <div><p>Product & Services</p></div>
+        <div className="header"><p>Product & Services</p></div>
         <div><h1>The true luxury experience</h1></div>
         <div className="services">
           {

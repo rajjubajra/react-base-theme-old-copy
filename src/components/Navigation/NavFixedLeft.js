@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import BtnThreelines from './BtnThreelines';
 
-
 const menu = [
   {
     id: 1,
@@ -31,30 +30,17 @@ const menu = [
   },
 ]
 
-const NavWheat = () => {
-
-
-  const [btnclosed, setBtnClosed] = useState('');
-  console.log('btn', btnclosed);
-
-  const navToggle = () => {
-    setBtnClosed(btnclosed === '' ? 'open' : '');
-  }
+const NavFixedLeft = (props) => {
 
   return (
     <>
-      <div className="ref">NavWheat.js</div>
-      <div className="navwheat">
+      <div className="navfixedleft">
 
+        <BtnThreelines navToggle={props.navToggle} btnClosed={props.btnClosed} />
 
-        <div className="mobileNavIcon">
-          <BtnThreelines navToggle={navToggle} btnclosed={btnclosed} />
-        </div>
-
-
-        <div className={`menu ${btnclosed}`}>
+        <div className={`fixed-menu ${props.btnClosed}`}>
           <div className="logo">Logo</div>
-          <p>City Baker</p>
+          <div className="logo-title"><p>City Baker</p></div>
           <ul className="nav-main">
             {
               menu.map(item => {
@@ -63,9 +49,8 @@ const NavWheat = () => {
             }
           </ul>
           <div className='contact'>
-            <h3>+44(0)00-0000-0000</h3>
-            <h3>quickinfo@email.com</h3>
-
+            <p>+44(0)00-0000-0000</p>
+            <p>quickinfo@email.com</p>
           </div>
         </div>
 
@@ -74,4 +59,4 @@ const NavWheat = () => {
   )
 }
 
-export default NavWheat
+export default NavFixedLeft;

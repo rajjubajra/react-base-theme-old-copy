@@ -1,9 +1,41 @@
 .wheat{
+
+/** fonts **/
+  h1, h2{
+    font-family: serif;
+    text-transform: none;
+  }
+  h1{
+    font-size: $extra_large;
+    color: $color_black;
+  }
+  h2{
+    color: $color_darker;
+  }
+  .header{
+    p{
+      text-transform: uppercase;
+      font-size: $small;
+      letter-spacing: 2px;
+      color: #af1e09;;
+      font-weight: 300;
+    }
+  }
+
+
+  
+
+  .btn-small-wide, .btn{
+    background-color: #87400c;
+  }
+
+
   display: grid;
   grid-template-columns: 200px 1fr;
 
     img{
       filter: grayscale(0%);
+      border: 1px solid $border_white 
     }
 
     .wheat-navbar{
@@ -13,11 +45,25 @@
 
     .body{
 
+
         .herowheat{
+
+          @media(max-width: $media_medium){
+            grid-template-columns: 1fr;
+          }
         &::before{
           filter: grayscale(0%) !important; 
         }
-      }
+
+            div:nth-child(1) {
+              height: 0vh;
+              grid-column: 1 / 1;
+              grid-row: 1 / 1;
+          }
+
+          }
+
+    
 
     }
 

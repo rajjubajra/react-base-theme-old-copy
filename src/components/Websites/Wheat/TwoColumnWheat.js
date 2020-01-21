@@ -20,7 +20,7 @@ const TwoColumnWheat = () => {
           <img src={require(`../../../images/wheat/${dummyText[0].img}.jpg`)} alt="tes" />
         </div>
         <div>
-          <p>{dummyText[0].heading}</p>
+          <div className="header"><p>{dummyText[0].heading}</p></div>
           <h1>{dummyText[0].title}</h1>
           <p>{dummyText[0].desc}</p>
           <button className="btn">{dummyText[0].btn}</button>

@@ -56,7 +56,6 @@
   }
 
 /** GLOBAL FONT STYLE **/
-
   p{
     @include paragraph();
   }
@@ -74,7 +73,8 @@
   .twocolumns h1,
   .twocolumnlotus h1,
   .twocolumnlotus .text h1,
-  .lotusaboutus h2
+  .lotusaboutus h2,
+  .formdetails h2
   {
     @media(max-width: $media_small){
       @include page-heading($large);
@@ -82,22 +82,13 @@
       @include page-heading($extra_large);
   }
 
-
   .lotusaboutus h3,
   .lotusaboutus .lotusteam h2,
   .twocolumns h4,
   .twocolumnlotus h3{
     @include small-title();
   }
-
-  .forminbox{
-      h1{
-        text-align: center;
-      }
-  }
-
   
-
   .twocolumncontact{
     h3{
       @include page-heading($large);
@@ -114,14 +105,28 @@
       }
     }
   }
+
+
+  .forminbox h1,
+  .formdetails h2{
+      text-align: center;
+  }
+
   
-
-
   .b3lotus{
     .boxes{
       img{width: 100px; height: auto;}
     }
 
+  }
+
+  .contact-page,
+  .lotuswhatwedo{
+    width: 80%;
+    margin: 0px auto;
+    @media(max-width: $media_small){
+      width: 95%;
+    }
   }
 
 }

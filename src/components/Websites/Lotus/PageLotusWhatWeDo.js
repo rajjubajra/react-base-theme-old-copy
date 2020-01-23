@@ -14,6 +14,7 @@ const PageLotusWhatWeDo = () => {
           <NavLotus />
         </div>
         <div className="lotus-body">
+          <div className="divider"></div>
           <LotusWhatWeDo />
           <div className="divider"></div>
           <div className="divider"></div>

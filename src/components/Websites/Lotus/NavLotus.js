@@ -21,12 +21,12 @@ const menu = [
   {
     id: 4,
     name: 'FAQ',
-    path: 'faq'
+    path: 'lotus-faq'
   },
   {
     id: 5,
     name: 'Contact',
-    path: 'contact'
+    path: 'lotus-contact'
   },
 ]
 

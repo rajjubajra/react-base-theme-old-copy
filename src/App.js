@@ -8,7 +8,7 @@ import Aboutus from './components/Aboutus/Aboutus';
 import Navigation from './components/Navigation/Navigation';
 import CallToAction from './components/CallToAction/CallToAction';
 import Animation from './components/Animation/Animation';
-import Contact from './components/Contact.js/Contact';
+import Contact from './components/Contact/Contact';
 import Headers from './components/Headers/Headers';
 import Websites from './components/Websites/Websites';
 import MeghaMenu from './components/Navigation/MeghaMenu';
@@ -20,6 +20,7 @@ import Homepage from './components/HomePage/Homepage';
 import Wheat from './components/Websites/Wheat/Wheat';
 import PageLotusAbout from './components/Websites/Lotus/PageLotusAbout';
 import PageLotusWhatWeDo from './components/Websites/Lotus/PageLotusWhatWeDo';
+import PageLotusContact from './components/Websites/Lotus/PageLotusContact';
 
 
 
@@ -171,6 +172,7 @@ function App() {
           <Route path="/lotus" component={Lotus} />
           <Route path="/lotus-About-us" component={PageLotusAbout} />
           <Route path='/lotus-What-we-do' component={PageLotusWhatWeDo} />
+          <Route path='/lotus-contact' component={PageLotusContact} />
 
 
 

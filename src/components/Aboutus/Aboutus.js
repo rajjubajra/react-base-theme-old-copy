@@ -5,6 +5,7 @@ import LotusWhatWeDo from './LotusWhatWeDo'
 import LotusWorks from './LotusWorks'
 import TeamWheat from './TeamWheat'
 import WheatAboutus from './WheatAboutus'
+import FAQs from './FAQs'
 
 const Aboutus = () => {
   return (
@@ -16,6 +17,7 @@ const Aboutus = () => {
       <LotusWorks />
       <TeamWheat />
       <WheatAboutus />
+      <FAQs />
     </div>
   )
 }

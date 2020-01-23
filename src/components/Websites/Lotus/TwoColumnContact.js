@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import FormInBox from './FormInBox';
 
 const detail_address = [
   {

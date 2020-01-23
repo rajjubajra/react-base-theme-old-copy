@@ -56,13 +56,14 @@ const FAQs = () => {
 
   return (
     <>
-      <div className="ref">FAQs.js</div>
       <div className="faqs">
         <h1 className="title">FAQ</h1>
         {
           faqdata.map(item => {
             return <div key={item.id}>
-              <h1 onClick={() => setFaqId(item.id)}>{item.header}</h1>
+              <h1
+                className={`${faqId !== item.id ? 'show-faq' : 'hide-faq'}`}
+                onClick={() => setFaqId(item.id)} >{item.header}</h1>
               <div className={`qns-ans ${faqId === item.id ? 'show-faq' : 'hide-faq'}`} >
                 <h2>{item.qua}</h2>
                 <p>{item.ans}</p>

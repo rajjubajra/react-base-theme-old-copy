@@ -53,6 +53,13 @@
     justify-content: center;
     align-items: center;
     outline: 1px solid $border_lighter;
+    .nav-ul li a{
+      font-weight: 800;
+      color: $color_black;
+      &:hover{
+        color: $color_dark;
+      }
+    }
   }
 
 /** GLOBAL FONT STYLE **/
@@ -62,7 +69,8 @@
 
   h1,
   .lotuswhatwedo h1.title,
-  .forminbox h1{
+  .forminbox h1,
+  .faq-page h1.title{
     @media(max-width: $media_small){
       @include page-heading($extra_large);
     }
@@ -89,10 +97,22 @@
     @include small-title();
   }
   
-  .twocolumncontact{
-    h3{
+  
+  .twocolumncontact h3{
       @include page-heading($large);
-    }
+  }
+  
+  .faq-page h1{
+     @include page-heading($large);
+     font-weight: 100;
+  }
+  .faq-page .qns-ans h2{
+    @include page-heading($large);
+  }
+  h2.faq-form-title{
+    @include page-heading($large);
+    font-weight: 800;
+    text-align: center;
   }
 
   .lotusteam{

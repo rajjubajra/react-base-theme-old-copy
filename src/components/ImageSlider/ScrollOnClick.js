@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 const images = [
   {
@@ -21,10 +21,6 @@ const images = [
 
 const ScrollOnClick = () => {
   const [transitionPoint, setTransitionPoint] = useState(-272);
-  const [inActiveBtn, setInActiveBtn] = useState(false);
-
-
-
 
 
   return (

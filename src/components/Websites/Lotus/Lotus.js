@@ -19,8 +19,11 @@ const Lotus = () => {
           <B3Lotus />
           <div className="divider"></div>
           <div className="divider"></div>
+          <div className="divider"></div>
           <TwoColumns />
           <TwoColumnLotus />
+          <div className="divider"></div>
+          <div className="divider"></div>
           <div className="divider"></div>
           <TwoColumnContact />
           <div className="divider"></div>

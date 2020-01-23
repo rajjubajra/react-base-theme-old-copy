@@ -21,8 +21,6 @@ const PageLotusContact = () => {
             <div className="divider"></div>
             <div className="divider"></div>
           </div>
-
-
         </div>
       </div>
       <CopyRightFooter />

@@ -21,6 +21,7 @@ import Wheat from './components/Websites/Wheat/Wheat';
 import PageLotusAbout from './components/Websites/Lotus/PageLotusAbout';
 import PageLotusWhatWeDo from './components/Websites/Lotus/PageLotusWhatWeDo';
 import PageLotusContact from './components/Websites/Lotus/PageLotusContact';
+import PageLotusFAQ from './components/Websites/Lotus/PageLotusFAQ';
 
 
 
@@ -173,6 +174,7 @@ function App() {
           <Route path="/lotus-About-us" component={PageLotusAbout} />
           <Route path='/lotus-What-we-do' component={PageLotusWhatWeDo} />
           <Route path='/lotus-contact' component={PageLotusContact} />
+          <Route path='/lotus-faq' component={PageLotusFAQ} />
 
 
 

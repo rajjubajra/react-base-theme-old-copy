@@ -19,15 +19,15 @@ const Websites = () => {
         </div>
         <div>
           <h3>Bamboo</h3>
-          <Link className="btn-small-wide">Preview</Link>
+          <Link className="btn-small-wide" to="#">Preview</Link>
         </div>
         <div>
           <h3>Herbs</h3>
-          <Link className="btn-small-wide">Preview</Link>
+          <Link className="btn-small-wide" to="#">Preview</Link>
         </div>
         <div>
           <h3>Curry</h3>
-          <Link className="btn-small-wide">Preview</Link>
+          <Link className="btn-small-wide" to="#">Preview</Link>
         </div>
 
 

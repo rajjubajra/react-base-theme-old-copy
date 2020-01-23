@@ -7,7 +7,7 @@ const CopyRightFooter = () => {
       <div className="ref">CopyRightFooter.js</div>
       <div className="copyrightfooter">
         <p>
-          &copy; {new Date().getFullYear()} All Right Reserved
+          &copy; {new Date().getFullYear()} All Right Reserved | Desinged and developed by
         <a href="http://yellow-website.com" >Yellow-Website.com</a>
         </p>
       </div>

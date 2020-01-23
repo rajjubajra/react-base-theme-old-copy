@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 //import Navbar from './components/navbar/Navbar';
 //import Categories from './components/Navigation/Categories';
 import Boxes from './components/Boxes/Boxes';
+import Aboutus from './components/Aboutus/Aboutus';
 import Navigation from './components/Navigation/Navigation';
 import CallToAction from './components/CallToAction/CallToAction';
 import Animation from './components/Animation/Animation';
@@ -14,10 +15,11 @@ import MeghaMenu from './components/Navigation/MeghaMenu';
 import Lotus from './components/Websites/Lotus/Lotus';
 import Footers from './components/Footers/Footers';
 import Columns from './components/Columns/Columns';
-import Aboutus from './components/Aboutus/Aboutus';
 import ImageSlider from './components/ImageSlider/ImageSlider';
 import Homepage from './components/HomePage/Homepage';
 import Wheat from './components/Websites/Wheat/Wheat';
+import PageLotusAbout from './components/Websites/Lotus/PageLotusAbout';
+import PageLotusWhatWeDo from './components/Websites/Lotus/PageLotusWhatWeDo';
 
 
 
@@ -161,9 +163,19 @@ function App() {
               <Footers />
             </div>
           </Route>
-          <Route path="/lotus" >
-            <Lotus />
-          </Route>
+
+
+
+          {/**  WEBSITE TEMPLATE   */}
+          {/** LOTUS */}
+          <Route path="/lotus" component={Lotus} />
+          <Route path="/lotus-About-us" component={PageLotusAbout} />
+          <Route path='/lotus-What-we-do' component={PageLotusWhatWeDo} />
+
+
+
+
+          {/** WHEAT */}
           <Route path="/wheat" >
             <Wheat />
           </Route>

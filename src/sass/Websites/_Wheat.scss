@@ -1,87 +1,10 @@
 .wheat{
   width: 100%;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-
-/** fonts **/
-  h1, h2{
-    font-family: serif;
-    text-transform: none;
-  }
-  h1{
-    font-size: $extra_large;
-    color: $color_black;
-  }
-  h2{
-    color: $color_darker;
-  }
-  .header{
-    p{
-      text-transform: uppercase;
-      font-size: $small;
-      letter-spacing: 2px;
-      color: #af1e09;;
-      font-weight: 300;
-    }
-  }
-
-/** DIVIDER **/  
-  div.divider{
-    height: 100px;
-    width: 100%;
-    display: block;
+  min-height: 100vh;
+  
+  .wheat-navbar{
+    position: fixed;
+    z-index: 1000;
   }
   
-/** BUTTON **/
-  .btn-small-wide, .btn{
-    background-color: #87400c;
-  }
-  button.nav-toggle.open {
-    background-color: transparent !important;
-  }
-
-
-/** MAIN BODY GRID **/  
-  display: grid;
-  grid-template-columns: 200px 1fr;
-
-    img{
-      filter: grayscale(0%);
-      border: 1px solid $border_white 
-    }
-
-    .wheat-navbar{
-      position: relative;
-      z-index: 1000;
-    }
-
-    .body{
-        .herowheat{
-          @media(max-width: $media_medium){
-            grid-template-columns: 1fr;
-          }
-        &::before{
-          filter: grayscale(0%) !important; 
-        }
-          div:nth-child(1) {
-            height: 0vh;
-            grid-column: 1 / 1;
-            grid-row: 1 / 1;
-          }
-        }
-    }
-}
-
-
-/** MAIN BODY GRID FOR HANDHELD DEVICES **/
-@media(max-width: $media_medium){
-  .wheat{
-    display: grid;
-    grid-template-columns: 1fr; 
-  }
-  .wheat.open{
-    display: grid;
-    grid-template-columns: 200px 1fr;
-  }
 }

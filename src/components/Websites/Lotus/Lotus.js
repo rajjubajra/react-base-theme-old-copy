@@ -4,34 +4,30 @@ import HeroLotus from './HeroLotus';
 import B3Lotus from './B3Lotus';
 import TwoColumns from './TwoColumns';
 import TwoColumnLotus from './TwoColumnLotus';
-import LotusContactPage from './LotusContactPage';
 import CopyRightFooter from './CopyRightFooter';
-import LotusAboutUs from './LotusAboutUs';
-import LotusTeam from './LotusTeam';
-import LotusWorks from './LotusWorks';
-import LotusWhatWeDo from './LotusWhatWeDo';
+import TwoColumnContact from './TwoColumnContact';
 
 const Lotus = () => {
   return (
-    <div className="lotus">
-      <NavLotus />
-      <HeroLotus />
-      <B3Lotus />
-      <TwoColumns />
-      <TwoColumnLotus />
-      <div className="divider"></div>
-      <LotusAboutUs />
-      <LotusTeam />
-      <div className="divider"></div>
-      <LotusWhatWeDo />
-      <div className="divider"></div>
-      <LotusWorks />
-      <div className="divider"></div>
-      <LotusContactPage />
-      <div className="divider"></div>
-      <div className="divider"></div>
+    <>
+      <div className="lotus">
+        <div className="lotus-nav">
+          <NavLotus />
+        </div>
+        <div className="lotus-body">
+          <HeroLotus />
+          <B3Lotus />
+          <div className="divider"></div>
+          <div className="divider"></div>
+          <TwoColumns />
+          <TwoColumnLotus />
+          <div className="divider"></div>
+          <TwoColumnContact />
+          <div className="divider"></div>
+        </div>
+      </div>
       <CopyRightFooter />
-    </div>
+    </>
   )
 }
 

@@ -1,8 +1,7 @@
 import React from 'react'
-import img_link from '../../../images/png-image/icon_link.png';
-import img_file from '../../../images/png-image/icon_file.png';
-import img_pen from '../../../images/png-image/icon_pen.png';
-
+import img_link from '../../../images/png-image/phone-blue.png';
+import img_file from '../../../images/png-image/website-blue.png';
+import img_pen from '../../../images/png-image/pinterest-blue.png';
 
 
 const B3Lotus = () => {

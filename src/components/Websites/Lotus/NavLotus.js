@@ -6,27 +6,27 @@ const menu = [
   {
     id: 1,
     name: 'Home',
-    path: '#'
+    path: 'lotus'
   },
   {
     id: 2,
     name: 'Aboutus',
-    path: '#'
+    path: 'lotus-About-us'
   },
   {
     id: 3,
     name: 'What we do',
-    path: '/'
+    path: 'lotus-What-we-do'
   },
   {
     id: 4,
     name: 'FAQ',
-    path: '/'
+    path: 'faq'
   },
   {
     id: 5,
     name: 'Contact',
-    path: '/'
+    path: 'contact'
   },
 ]
 
@@ -61,7 +61,7 @@ const NavLotus = () => {
               menu.map(item => {
                 return (
                   <li key={item.id}>
-                    <Link to={item.path}>{item.name}</Link>
+                    <Link to={`${item.path}`}>{item.name}</Link>
                   </li>
                 );
               })

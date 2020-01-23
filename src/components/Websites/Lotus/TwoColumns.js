@@ -5,8 +5,8 @@ const TwoColumns = () => {
     <>
       <div className="twocolumns">
         <div className="text">
-          <h4>Awareness Plan</h4>
-          <h2>Moments consectetur, adipisicing elit. Ullam ducimus autem iste.</h2>
+          <h4>Plan</h4>
+          <h1>Moments consectetur, adipisicing elit.</h1>
           <section>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sunt voluptatibus maiores facere adipisci reprehenderit placeat est beatae, doloribus eaque accusantium praesentium unde distinctio ratione nesciunt rerum veritatis sit! Consequatur.</p>

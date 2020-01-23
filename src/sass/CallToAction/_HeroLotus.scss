@@ -10,6 +10,8 @@
 }
 
 .herolotus{
+  position: absolute;
+  top: 0px;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -17,6 +19,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 
   h1{
     font-size: $megha_font;
@@ -69,6 +72,10 @@
   button{
     position: absolute;
     z-index: 10;
-    bottom: 50px;
+    bottom: 150px;
+    @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (orientation:landscape) {
+      bottom: 30px;
+    }
+
   }
 }

@@ -1,5 +1,5 @@
 .navfixedleft{
-  position: fixed;
+  position: relative;
   
   .mobileIcon{
     display: none;
@@ -17,7 +17,7 @@
   }
 
     .fixed-menu{
-      position: fixed;
+      position: relative;
       left: 0px;
       top: 0px;
       display: flex;

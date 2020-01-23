@@ -1,3 +1,19 @@
+/** 
+
+body {
+  font-size: calc(
+    [minimum size] + ([maximum size] - [minimum size]) 
+    * ((100vw - [minimum viewport width]) 
+    / ([maximum viewport width] - [minimum viewport width])));
+}
+
+**/
+
+body{
+  font-family: sans-serif;
+}
+
+
 
 $small: 0.7rem;
 $medium: 0.85rem;
@@ -9,9 +25,16 @@ $megha_font: 6rem;
 $gaint_font: 8rem;
 
 
-body{
-  font-family: sans-serif;
-}
+// h1{
+//   font-size: calc( 2rem + (7 - 2) * ((100vw - 300vw) / (1200 - 300)));
+// }
+
+// h1{
+//   font-size: $megha_font;
+//   @media(max-width: $media_medium){
+//     font-size: $extra_large;
+//   }
+// }
 
 h1, h2, h3, h4, h5, h6{
   font-weight: 500;
@@ -19,6 +42,7 @@ h1, h2, h3, h4, h5, h6{
   text-transform: uppercase;
   text-shadow: 1px 1px 4px #00000066;
 }
+
 
 p{
   font-weight: 100;

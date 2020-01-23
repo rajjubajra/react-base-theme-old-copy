@@ -1,5 +1,5 @@
 :root {
-  --h1-color: rgb(6, 123, 249);
+  --h1-color: rgb(0, 0, 0);
   --h1-color-trans:  rgba(3, 158, 247, 0.447);
 }
 
@@ -13,54 +13,115 @@
   100%{letter-spacing: 1em;}
 }
 
+@mixin page-heading($font_size) {
+  font-size: $font_size;
+  font-family: serif;
+  font-weight: 800;
+  color: var(--h1-color) !important;
+  text-transform: capitalize;
+}
+@mixin small-title{
+    text-align: left !important;
+    font-size: $medium;
+    font-weight: 600;
+    text-shadow: none;
+    color: $color_dark;
+    letter-spacing: 1px;
+}
+@mixin paragraph {
+  line-height: 1.4rem;
+  font-weight: 100;
+  color: $color_dark;
+  font-family: sans-serif;
+  font-size: $regular;
+}
+
+
 .lotus{
+  width: 100%;
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns:  1fr;
   *{
     box-sizing: border-box;
   }
-  img,
-  .b3lotus{
-    filter: grayscale(0%);
-  }
-  div.divider{
-    display: block;
-    height: 50px;
+
+/** MAIN - NAVIGATION **/
+  .lotus-nav{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid $border_lighter;
   }
 
-  h1{
-    font-weight: 800;
-    color: var(--h1-color) !important;
-    text-transform: lowercase;
-    font-size: $megha_font;
+/** GLOBAL FONT STYLE **/
+
+  p{
+    @include paragraph();
   }
 
-  .navlotus .nav-ul li a,
-  a.brand-logo
+  h1,
+  .lotuswhatwedo h1.title,
+  .forminbox h1{
+    @media(max-width: $media_small){
+      @include page-heading($extra_large);
+    }
+      @include page-heading($megha_font);
+  }
+
+  .lotuswhatwedo h2,
+  .twocolumns h1,
+  .twocolumnlotus h1,
+  .twocolumnlotus .text h1,
+  .lotusaboutus h2
   {
-    color: #000000;
+    @media(max-width: $media_small){
+      @include page-heading($large);
+    }
+      @include page-heading($extra_large);
   }
 
-  h2{
-    color: #000000;
+
+  .lotusaboutus h3,
+  .lotusaboutus .lotusteam h2,
+  .twocolumns h4,
+  .twocolumnlotus h3{
+    @include small-title();
   }
 
   .forminbox{
-    form{
-      border: none;
-    }
-  }
-  
-  .btn{
-    background-color: #03496b !important;
+      h1{
+        text-align: center;
+      }
   }
 
   
-  .b3lotus .boxes div h2,
-  .twocolumnlotus div.text h1, 
-  .twocolumns div h2 {
-    text-align: left !important;
-    font-size: 1.5rem;
-    text-shadow: none;
-    color: black !important;
+
+  .twocolumncontact{
+    h3{
+      @include page-heading($large);
+    }
   }
+
+  .lotusteam{
+    .team-members{
+      section{
+        h1{
+          @include page-heading($regular);
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+  
+
+
+  .b3lotus{
+    .boxes{
+      img{width: 100px; height: auto;}
+    }
+
+  }
+
 }

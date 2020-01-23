@@ -29,14 +29,12 @@ const HeroWheat = () => {
     <>
       <div className="ref">HeroWheat.js</div>
       <div className="herowheat">
-        <div></div>
-        <div></div>
-        <div>
+        <div className="main">
           <h1>{title}</h1>
           <p>{brief}</p>
         </div>
         <div></div>
-        <div>
+        <div className="buttons">
           <button className="btn-small-wide">{navOne}</button>
           <button className="btn-small-wide">{navTwo}</button>
         </div>

@@ -39,18 +39,14 @@ button.nav-toggle{
     background-color: $background_extra_dark;
     transition: 0.5s;
   }
-
   
   .threelines::before{bottom: 6px;}
   .threelines::after{top: 6px;}
 
-
-  
 }
 
 button.nav-toggle.open{
   border: 0px solid $border_lighter;
-  background-color: $background_lighter;
   transition: 1s;
   z-index: 1000;
 

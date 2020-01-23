@@ -28,16 +28,13 @@ const HeroWheat = (props) => {
   return (
     <>
       <div className={`herowheat`}>
-        <div></div>
-        <div></div>
-        <div>
+        <div className="main">
           <h1>{title}</h1>
           <p>{brief}</p>
-        </div>
-        <div></div>
-        <div>
-          <button className="btn-small-wide">{navOne}</button>
-          <button className="btn-small-wide">{navTwo}</button>
+          <div className="buttons">
+            <button className="btn-small-wide">{navOne}</button>
+            <button className="btn-small-wide">{navTwo}</button>
+          </div>
         </div>
       </div>
     </>

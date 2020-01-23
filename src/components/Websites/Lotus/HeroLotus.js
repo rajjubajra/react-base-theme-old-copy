@@ -12,9 +12,8 @@ const HeroLotus = () => {
           <div></div>
         </div>
 
-        <p>Think</p>
-        <h1>think</h1>
-
+        <p>Lotus</p>
+        <h1>Lotus</h1>
 
         <button className="btn">Read More</button>
         <img className="img1" src={img_lineOver} alt='line over' />

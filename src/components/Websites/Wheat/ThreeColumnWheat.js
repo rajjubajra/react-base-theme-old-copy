@@ -39,14 +39,6 @@ const dummyText = [
 ]
 
 const ThreeColumnWheat = () => {
-  //const [div, setDiv] = useState();
-  // const [divTwo, setDivTwo] = useState();
-  // const [divThree, setDivThree] = useState();
-  // const [divFour, setDivFour] = useState();
-  // const [divFive, setDivFive] = useState();
-  // const [divSix, setDivSix] = useState();
-  // const [divSeven, setDivSeven] = useState();
-  // const [divEight, setDivEight] = useState();
 
 
 
@@ -55,7 +47,7 @@ const ThreeColumnWheat = () => {
     <>
       <div className="threecolumnwheat">
         <div className="header"><p>Product & Services</p></div>
-        <div><h1>The true luxury experience</h1></div>
+        <div><h1>Lorem ipsum dolor Yoks</h1></div>
         <div className="services">
           {
             dummyText.map(item => {

@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
-import NavFixedLeft from './NavFixedLeft'
-import HeroWheat from './HeroWheat'
-import ThreeColumnWheat from './ThreeColumnWheat'
-import TwoColumnWheat from './TwoColumnWheat'
-import ScrollOnClick from './ScrollOnClick'
-import TwoColPriceWheat from './TwoColPriceWheat'
-import ContactWheat from './ContactWheat'
-import CopyRightFooter from './CopyRightFooter'
+import React, { useState } from 'react';
+import NavFixedLeft from './NavFixedLeft';
+import WheatAboutus from './WheatAboutus';
+import CopyRightFooter from './CopyRightFooter';
+import HeroWheatTwo from './HeroWheatTwo';
+import TeamWheat from './TeamWheat';
+import SubscriptionWheat from './SubscriptionWheat';
+import TitleWide from './TitleWide';
 
 
-
-const Wheat = () => {
+const PageWheatAbout = () => {
   const [btnClosed, setBtnClosed] = useState('');
+  const [title] = useState('About us');
+  const [backgroundImage] = useState('cake-44');
 
   const navToggle = () => {
     setBtnClosed(btnClosed === '' ? 'open' : '');
@@ -27,21 +27,17 @@ const Wheat = () => {
           <NavFixedLeft navToggle={navToggle} btnClosed={btnClosed} />
         </div>
         <div className="wheat-body" >
-          <HeroWheat />
+          <TitleWide title={title} backgroundImage={backgroundImage} />
+          <WheatAboutus />
           <div className="divider"></div>
-          <ThreeColumnWheat />
+          <TeamWheat />
           <div className="divider"></div>
-          <TwoColPriceWheat />
+          <HeroWheatTwo />
           <div className="divider"></div>
+          <SubscriptionWheat />
           <div className="divider"></div>
-          <TwoColumnWheat />
-          <div className="divider"></div>
-          <ScrollOnClick />
-          {/* 
-          
           <div className="divider"></div>
 
-          <div className="divider"></div> */}
         </div>
       </div>
 
@@ -52,4 +48,4 @@ const Wheat = () => {
   )
 }
 
-export default Wheat
+export default PageWheatAbout

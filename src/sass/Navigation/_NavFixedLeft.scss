@@ -1,3 +1,7 @@
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  100%{opacity: 1;}
+}
 .navfixedleft{
   position: relative;
   
@@ -26,7 +30,7 @@
       flex-direction: column;
       background-color: $background_white;
       text-align: center;
-      transition: width 2s;
+      
 
         .logo{
           width: 40px;
@@ -44,6 +48,9 @@
         .nav-main{
           list-style: none;
           margin: 100px 0px;
+          @media only screen and (max-width: $media_medium) and (orientation: landscape){
+            margin: 0px 0px;
+          }
           padding: 0px;
           border-right: 1px solid $border_lighter;
           li{
@@ -72,6 +79,16 @@
             font-weight: 500;
             letter-spacing: 0.1rem;
           }
+          @media only screen and (max-width: $media_medium) and (orientation: landscape){
+            margin: 15px 0px;
+          }
+          @media only screen and (max-width: $media_extra_small) and (orientation: landscape){
+            margin: 0px 0px;
+            p{
+              line-height: 0rem;
+            }
+          }
+
         }
 
     }
@@ -79,9 +96,11 @@
     @media(max-width: $media_medium){
       .fixed-menu{
         display: none;
+        animation: fadeIn 2s ease-in;
       } 
       .fixed-menu.open{
         display: flex;
+        animation: fadeIn 1s ease-out;
       }   
     }
 

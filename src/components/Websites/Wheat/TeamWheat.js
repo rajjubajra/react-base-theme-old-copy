@@ -5,25 +5,25 @@ const dummyTeam = [
   {
     id: 1,
     image: 'person-1',
-    name: 'Jackson Brown',
+    name: 'J D Brown',
     position: 'Director'
   },
   {
     id: 2,
     image: 'person-2',
-    name: 'Sason Bedding',
+    name: 'S K Bedding',
     position: 'Marketing Manager'
   },
   {
     id: 3,
     image: 'person-3',
-    name: 'Donald Duck',
+    name: 'D K Duck',
     position: 'Sales Manager'
   },
   {
     id: 4,
     image: 'person-4',
-    name: 'Harry Tyler',
+    name: 'H P Tyler',
     position: 'Production Manager'
   }
 ]
@@ -33,7 +33,7 @@ const TeamWheat = () => {
     <>
       <div className="teamwheat">
         <div className="header"><p>Team Members</p></div>
-        <div><h1>Experience Team Members</h1></div>
+        <div><h1>Our Dedicated Team Members</h1></div>
         <div className="members">
           {
             dummyTeam.map(item => {

@@ -1,10 +1,123 @@
+$large: 2rem;
+
+@mixin font-head{
+  font-family: serif;
+  color: $color_black;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: $extra_large;
+  @media(max-width: $media_medium){
+    font-size: $larger;
+  }
+}
+
+@mixin  font-subhead{
+  font-family: serif;
+  color: $color_darker;
+  font-weight: 100;
+  font-size: $large;
+  text-transform: capitalize;
+  @media(max-width: $media_medium){
+    font-size: $large;
+  } 
+}
+
+@mixin  font-small-header {
+  font-size: $medium;
+  font-weight: 200;
+  letter-spacing: 0.15rem;
+  color: $color_dark;
+  text-transform: uppercase;
+}
+
+@mixin  font-paragraph {
+  font-size: $regular;
+  font-weight: 200;
+  color: $color_dark;
+  line-height: 1.6rem;
+}
+
 .wheat{
   width: 100%;
   min-height: 100vh;
-  
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  @media(max-width: $media_medium){
+    grid-template-columns: 1fr;    
+  }
+
+/** NAVBAR **/
   .wheat-navbar{
-    position: fixed;
-    z-index: 1000;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1 ;
+    z-index: 100;
+    width: 200px;
+   
+    .navfixedleft{
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index: 100;
+      .fixed-menu{
+        position: fixed;
+      }
+    }
+  }
+  .wheat-navbar .open{
+    background-color: $background_white;
+  }
+
+/** MAIN BODY **/  
+  .wheat-body{
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+    @media(max-width: $media_medium){
+      grid-column: 1 / 1;
+    }
+
+    /** FONTS **/
+    h1{
+      @include font-head();
+    }
+    h2,
+    .members .name,
+    .price-group h2,
+    .contactwheat h1{
+      @include font-subhead();
+    }
+    .header{
+      @include font-small-header();
+    }
+    p,
+    .price-group p{
+      @include font-paragraph();
+    }
+    .forminbox h1{
+      text-align: center;
+    }
+    
+    .contactwheat{
+      h2{
+        font-size: $regular;
+        font-weight: 800;
+      }
+      p{
+        line-height: 0px;
+      }
+      
+    }
+
+
+  }/**body closed **/
+
+
+
+
+
+/** FOOTER **/
+  .wheat-footer{
+    grid-column: 1 / 3;
+    grid-row: 2;
   }
   
 }

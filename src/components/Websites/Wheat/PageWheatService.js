@@ -1,24 +1,22 @@
-import React, { useState } from 'react'
-import NavFixedLeft from './NavFixedLeft'
-import HeroWheat from './HeroWheat'
-import ThreeColumnWheat from './ThreeColumnWheat'
-import TwoColumnWheat from './TwoColumnWheat'
-import ScrollOnClick from './ScrollOnClick'
-import TwoColPriceWheat from './TwoColPriceWheat'
-import ContactWheat from './ContactWheat'
-import CopyRightFooter from './CopyRightFooter'
+import React, { useState } from 'react';
+import NavFixedLeft from './NavFixedLeft';
+import CopyRightFooter from './CopyRightFooter';
+import TitleWide from './TitleWide';
+import ThreeColumnWheat from './ThreeColumnWheat';
+import TwoColumnWheat from './TwoColumnWheat';
+import SubscriptionWheat from './SubscriptionWheat';
+import HeroWheatTwo from './HeroWheatTwo';
 
-
-
-const Wheat = () => {
+const PageWheatService = () => {
   const [btnClosed, setBtnClosed] = useState('');
+  const [title] = useState('Services');
+  const [backgroundImage] = useState('cake-44');
 
   const navToggle = () => {
     setBtnClosed(btnClosed === '' ? 'open' : '');
   }
 
   console.log(btnClosed);
-
   return (
     <>
       <div className={`wheat ${btnClosed}`}>
@@ -27,21 +25,16 @@ const Wheat = () => {
           <NavFixedLeft navToggle={navToggle} btnClosed={btnClosed} />
         </div>
         <div className="wheat-body" >
-          <HeroWheat />
+          <TitleWide title={title} backgroundImage={backgroundImage} />
           <div className="divider"></div>
           <ThreeColumnWheat />
           <div className="divider"></div>
-          <TwoColPriceWheat />
-          <div className="divider"></div>
-          <div className="divider"></div>
           <TwoColumnWheat />
           <div className="divider"></div>
-          <ScrollOnClick />
-          {/* 
-          
+          <HeroWheatTwo />
           <div className="divider"></div>
+          <SubscriptionWheat />
 
-          <div className="divider"></div> */}
         </div>
       </div>
 
@@ -52,4 +45,4 @@ const Wheat = () => {
   )
 }
 
-export default Wheat
+export default PageWheatService

@@ -26,6 +26,8 @@
       padding: 5px 5px;
       font-size: $regular;
       outline: none;
+      border: 0px;
+      border-bottom: 1px solid $border_lighter;
     }
     button{
       width: 150px;

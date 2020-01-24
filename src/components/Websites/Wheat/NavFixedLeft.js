@@ -6,27 +6,27 @@ const menu = [
   {
     id: 1,
     name: 'Home',
-    path: '/wheat'
+    path: 'wheat'
   },
   {
     id: 2,
     name: 'Aboutus',
-    path: '/aboutus'
+    path: 'wheat-aboutus'
   },
   {
     id: 3,
     name: 'Services',
-    path: '/services'
+    path: 'wheat-services'
   },
   {
     id: 4,
     name: 'Our Team',
-    path: '/ourteam'
+    path: 'wheat-ourteam'
   },
   {
     id: 5,
     name: 'Contact',
-    path: '/contact'
+    path: 'wheat-contact'
   },
 ]
 
@@ -45,7 +45,7 @@ const NavFixedLeft = (props) => {
             {
               menu.map(item => {
                 return <li key={item.id}>
-                  <Link to={item.id === 1 ? item.path : `/wheat${item.path}`}>{item.name}
+                  <Link to={item.id === 1 ? item.path : `${item.path}`}>{item.name}
                   </Link>
                 </li>
               })

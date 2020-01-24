@@ -30,11 +30,7 @@ const aboutusText = [
 const WheatAboutus = () => {
   return (
     <>
-      <div className="ref">WheatAboutus.js</div>
       <div className="wheataboutus">
-        <div className="header">
-          <h1>About us</h1>
-        </div>
         <div className="body">
           <h1>{aboutusText[0].title}</h1>
           <p>{aboutusText[0].desc}</p>

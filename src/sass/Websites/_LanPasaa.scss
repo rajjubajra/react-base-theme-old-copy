@@ -1,0 +1,34 @@
+.lanpasaa{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .store-name{
+    font-size: $megha_font;
+    font-family: serif;
+    text-transform: lowercase;
+    letter-spacing: 0.3rem;
+    position: relative;
+    &::before{
+      content: "a clothes Store";
+      position: absolute;
+      top: 93px;
+      right: 0px;
+      font-size: 1rem;
+      letter-spacing: 0.45rem;
+      @media(max-width: $media_small){
+        top: 44px;
+        right: 2px;
+        font-size: 0.7rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+    @media(max-width: $media_small){
+      font-size: $extra_large;
+    }
+  }
+}

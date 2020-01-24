@@ -31,8 +31,6 @@ const menu = [
 ]
 
 
-
-
 const NavLotus = () => {
 
 

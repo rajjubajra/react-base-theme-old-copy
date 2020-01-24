@@ -15,6 +15,9 @@
     margin: 0px auto;
     border: 2px solid $border_dark;
     grid-template-columns: repeat(6, 400px);
+    @media(max-width: $media_small){
+      width: 100% !important;
+    }
     overflow: hidden;
     div{
       transition: transform 1s;
@@ -30,6 +33,9 @@
   .nav-button-area{
     position: absolute;
     bottom: 70px;
+    @media(max-width: $media_small){
+      bottom: 10px;
+    }
     ul{
       display: flex;
       li{
@@ -39,9 +45,10 @@
         background-color: $background_dark;
         color: $color_dark;
         list-style: none;
-        cursor: pointer;
         border-radius: 10px;
         text-align: center;
+        border: 2px solid $border_white;
+        cursor: pointer;
       }
       li.active{
         background-color: $background_darker !important;

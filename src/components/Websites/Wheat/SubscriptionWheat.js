@@ -3,7 +3,7 @@ import React from 'react'
 const SubscriptionWheat = () => {
   return (
     <>
-      <div className="ref">SubscriptionWheat.js</div>
+
       <div className="subscriptionwheat">
         <div className="header">Newsletter</div>
         <div><h1>subscribe<br /> to our newsletter</h1></div>

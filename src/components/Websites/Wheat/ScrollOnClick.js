@@ -25,23 +25,22 @@ const ScrollOnClick = () => {
 
   return (
     <>
-      <div className="ref">ScrollOnClick.js</div>
       <div className="scrollonclick">
 
         <div className="slide-view-area">
 
           <div style={{ transform: `translate(${transitionPoint}px, 0px)` }}>
-            <img src={require(`../../images/wheat/${images[3].img}.jpg`)} alt="slide-last" />
+            <img src={require(`../../../images/wheat/${images[3].img}.jpg`)} alt="slide-last" />
           </div>
           {
             images.map(item => {
               return <div key={item.id} style={{ transform: `translate(${transitionPoint}px, 0px)` }} >
-                <img src={require(`../../images/wheat/${item.img}.jpg`)} alt="slides" />
+                <img src={require(`../../../images/wheat/${item.img}.jpg`)} alt="slides" />
               </div>
             })
           }
           <div style={{ transform: `translate(${transitionPoint}px, 0px)` }}>
-            <img src={require(`../../images/wheat/${images[0].img}.jpg`)} alt="slide-first" />
+            <img src={require(`../../../images/wheat/${images[0].img}.jpg`)} alt="slide-first" />
           </div>
         </div>
         <div className="nav-button-area">

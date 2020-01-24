@@ -18,6 +18,10 @@ const Websites = () => {
           <Link className="btn-small-wide" to="/wheat">Preview</Link>
         </div>
         <div>
+          <h3>Lan Pasaa</h3>
+          <Link className="btn-small-wide" to="/lanpasaa">Preview</Link>
+        </div>
+        <div>
           <h3>Bamboo</h3>
           <Link className="btn-small-wide" to="#">Preview</Link>
         </div>

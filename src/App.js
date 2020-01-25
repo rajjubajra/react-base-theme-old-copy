@@ -28,6 +28,8 @@ import PageWheatTeam from './components/Websites/Wheat/PageWheatTeam';
 import PageWheatContact from './components/Websites/Wheat/PageWheatContact';
 import LanPasaa from './components/Websites/LanPasaa/LanPasaa';
 import PageLanPasaaShop from './components/Websites/LanPasaa/PageLanPasaaShop';
+import PageLanPasaaAbout from './components/Websites/LanPasaa/PageLanPasaaAbout';
+import PageLanPasaaContat from './components/Websites/LanPasaa/PageLanPasaaContat';
 
 
 
@@ -195,6 +197,8 @@ function App() {
           {/** LAN PASAA */}
           <Route path="/lanpasaa" component={LanPasaa} />
           <Route path="/lanpasaa-shop" component={PageLanPasaaShop} />
+          <Route path="/lanpasaa-about" component={PageLanPasaaAbout} />
+          <Route path="/lanpasaa-contact" component={PageLanPasaaContat} />
 
 
         </Switch>

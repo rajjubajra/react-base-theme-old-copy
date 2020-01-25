@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import NavMainLanPasaa from './NavMainLanPasaa';
+import LanPasaaTitle from './LanPasaaTitle';
 
 
 const LanPasaa = () => {
   const [shopName] = useState('Lan Pasaa');
   return (
     <div className="lanpasaa">
-      <h1 className="store-name">{shopName}</h1>
+      <LanPasaaTitle title={shopName} />
       <NavMainLanPasaa />
     </div>
   )

@@ -1,0 +1,30 @@
+
+.lanpasaatitle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  h1{
+    font-size: $megha_font;
+    font-family: serif;
+    text-transform: lowercase;
+    letter-spacing: 0.3rem;
+    position: relative;
+    &::before{
+      content: "a clothes Store";
+      position: absolute;
+      top: 93px;
+      right: 0px;
+      font-size: 1rem;
+      letter-spacing: 0.45rem;
+      @media(max-width: $media_small){
+        top: 44px;
+        right: 2px;
+        font-size: 0.7rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+    @media(max-width: $media_small){
+      font-size: $extra_large;
+    }
+  }
+}

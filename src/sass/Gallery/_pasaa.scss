@@ -1,0 +1,46 @@
+.pasaa{
+  width: 90%;
+  margin: 0px auto;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax( 350px , 1fr));
+  @media(max-width: $media_small){
+    grid-template-columns: repeat(auto-fit, minmax(320px , 1fr));
+
+  }
+  @media(max-width: $media_extra_small){
+    grid-template-columns: repeat(auto-fit, minmax(270px , 1fr));
+
+  }
+  .product{
+    outline: 0px solid $border_light;
+    padding: 20px;
+    .product-image{
+      img{
+        width: 100%;
+        margin: 0px auto;
+        border: 1px solid $border_lighter;
+        background: $background_lighter;
+      }
+    }
+    .product-name{
+      font-size: $large;
+      font-weight: 400;
+      letter-spacing: 2px;
+      display: flex;
+      justify-content: space-between;
+      .status{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 800;
+      }
+    }
+    
+    .rate{
+      font-size: $regular;
+      font-weight: 800;
+    }
+  }
+
+  
+}

@@ -1,0 +1,41 @@
+@keyframes hoverAnim{
+  0% {padding: 0px 0px 0px 0px; border-bottom: 0px solid $border_light;}
+  100%{ padding: 0px 0px 10px 0px; border-bottom: 1px solid $border_light;}
+}
+.navshoplanpasaa{
+  width: 100%;
+  margin: 0px auto;
+  ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    margin-left: 47px;    
+    padding: 0px;
+    @media(max-width: $media_small){
+      margin-left: 20px;
+    }
+    li{
+      margin: 0px 48px 0px 0px;
+      padding: 0px;
+      @media(max-width: $media_small){
+        margin: 0px 20px 0px 0px;
+      }
+      a{
+        text-decoration: none;
+        color: $color_black;
+        padding: 0px 0px 10px 0px;
+        border-bottom: none;
+        letter-spacing: 1px;
+        &:hover{
+          color: $color_dark;
+          border-bottom: 1px solid $border_light;
+          animation: hoverAnim 0.5s;
+        }
+        &:active{
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}

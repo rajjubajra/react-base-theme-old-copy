@@ -41,7 +41,7 @@ const NavShopLanPasaa = () => {
           {
             shop_menu.map(item => {
               return (
-                <li kay={item.id}>
+                <li key={item.id}>
                   <Link to={item.path}>{item.name}</Link>
                 </li>)
             })

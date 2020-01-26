@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './App.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-//import Navbar from './components/navbar/Navbar';
-//import Categories from './components/Navigation/Categories';
 import Boxes from './components/Boxes/Boxes';
 import Aboutus from './components/Aboutus/Aboutus';
 import Navigation from './components/Navigation/Navigation';
@@ -11,6 +9,7 @@ import Animation from './components/Animation/Animation';
 import Contact from './components/Contact/Contact';
 import Headers from './components/Headers/Headers';
 import Websites from './components/Websites/Websites';
+import Apps from './components/Apps/Apps';
 import MeghaMenu from './components/Navigation/MeghaMenu';
 import Lotus from './components/Websites/Lotus/Lotus';
 import Footers from './components/Footers/Footers';
@@ -29,13 +28,15 @@ import PageWheatContact from './components/Websites/Wheat/PageWheatContact';
 import LanPasaa from './components/Websites/LanPasaa/LanPasaa';
 import PageLanPasaaShop from './components/Websites/LanPasaa/PageLanPasaaShop';
 import PageLanPasaaAbout from './components/Websites/LanPasaa/PageLanPasaaAbout';
-import PageLanPasaaContat from './components/Websites/LanPasaa/PageLanPasaaContat';
+import PageLanPasaaContact from './components/Websites/LanPasaa/PageLanPasaaContact';
+import ReduxCounter from './components/Apps/ReduxCounter/ReduxCounter';
+import ReduxAppTodo from './components/Apps/ReduxAppTodo/ReduxAppTodo';
 
 
 
 function App() {
 
-  const [btnShowHide, setBtnShowHide] = useState(true);
+  const [btnShowHide] = useState(true);
 
 
   return (
@@ -83,6 +84,14 @@ function App() {
                 <MeghaMenu />
               </div>
               <Websites />
+            </div>
+          </Route>
+          <Route path="/apps">
+            <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
+              <Apps />
             </div>
           </Route>
           <Route path="/boxes">
@@ -175,6 +184,13 @@ function App() {
           </Route>
 
 
+          {/** REACT APPS */}
+          <Route path="/apps-Redux-Counter" component={ReduxCounter} />
+          <Route path="/apps-Redux-Todo" component={ReduxAppTodo} />
+
+
+
+
 
           {/**  WEBSITE TEMPLATE   */}
           {/** LOTUS */}
@@ -198,7 +214,7 @@ function App() {
           <Route path="/lanpasaa" component={LanPasaa} />
           <Route path="/lanpasaa-shop" component={PageLanPasaaShop} />
           <Route path="/lanpasaa-about" component={PageLanPasaaAbout} />
-          <Route path="/lanpasaa-contact" component={PageLanPasaaContat} />
+          <Route path="/lanpasaa-contact" component={PageLanPasaaContact} />
 
 
         </Switch>

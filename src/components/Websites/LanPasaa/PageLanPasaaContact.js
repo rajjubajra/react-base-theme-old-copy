@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import LanPasaaTitle from './LanPasaaTitle'
 import NavMainLanPasaa from './NavMainLanPasaa';
 
-const PageLanPasaaContat = () => {
+const PageLanPasaaContact = () => {
   const [storeName] = useState('Lan Pasaa');
   return (
     <div className="lanpasaa">
@@ -17,4 +17,4 @@ const PageLanPasaaContat = () => {
   )
 }
 
-export default PageLanPasaaContat
+export default PageLanPasaaContact

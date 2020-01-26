@@ -1,0 +1,15 @@
+.apps{
+  width: 90%;
+  margin: 0px auto;
+  outline: 1px solid $border_lighter;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .btn{
+    max-width: 200px;
+    margin: 5px;
+  }
+  
+}

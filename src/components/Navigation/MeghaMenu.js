@@ -11,6 +11,7 @@ const MeghaMenu = () => {
       <div>
         <ul className="list">
           <li><Link to="/websites">Websites</Link></li>
+          <li><Link to="/Apps">Apps</Link></li>
           <li><Link to="#">Slider</Link></li>
           <li><Link to="/calltoaction">Hero</Link></li>
           <li><Link to="#">Headers</Link></li>

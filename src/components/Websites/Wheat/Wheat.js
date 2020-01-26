@@ -5,7 +5,7 @@ import ThreeColumnWheat from './ThreeColumnWheat'
 import TwoColumnWheat from './TwoColumnWheat'
 import ScrollOnClick from './ScrollOnClick'
 import TwoColPriceWheat from './TwoColPriceWheat'
-import ContactWheat from './ContactWheat'
+
 import CopyRightFooter from './CopyRightFooter'
 
 
@@ -37,11 +37,6 @@ const Wheat = () => {
           <TwoColumnWheat />
           <div className="divider"></div>
           <ScrollOnClick />
-          {/* 
-          
-          <div className="divider"></div>
-
-          <div className="divider"></div> */}
         </div>
       </div>
 

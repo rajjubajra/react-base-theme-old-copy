@@ -1,6 +1,8 @@
 const initialState = {
-  counter: 0
+  counter: 0,
+  storeName: 'Lan Pasaa',
 }
+
 
 function rootReducer(state = initialState, action) {
   switch (action.type) {
@@ -9,6 +11,9 @@ function rootReducer(state = initialState, action) {
 
     case "DECREMENT":
       return { counter: state.counter - 1 }
+
+    case "STORE_NAME":
+      return { storeName: state }
 
     default:
       return state;

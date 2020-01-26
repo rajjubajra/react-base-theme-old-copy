@@ -3,7 +3,6 @@ import NavFixedLeft from './NavFixedLeft';
 import CopyRightFooter from './CopyRightFooter';
 import TitleWide from './TitleWide';
 import ContactWheat from './ContactWheat';
-import SubscriptionWheat from './SubscriptionWheat';
 import FormInBox from './FormInBox';
 
 const PageWheatContact = () => {

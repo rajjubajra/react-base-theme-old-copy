@@ -30,7 +30,7 @@ import PageLanPasaaShop from './components/Websites/LanPasaa/PageLanPasaaShop';
 import PageLanPasaaAbout from './components/Websites/LanPasaa/PageLanPasaaAbout';
 import PageLanPasaaContact from './components/Websites/LanPasaa/PageLanPasaaContact';
 import ReduxCounter from './components/Apps/ReduxCounter/ReduxCounter';
-import ReduxAppTodo from './components/Apps/ReduxAppTodo/ReduxAppTodo';
+//import ReduxAppTodo from './components/Apps/ReduxAppTodo/ReduxAppTodo.js';
 
 
 
@@ -186,9 +186,7 @@ function App() {
 
           {/** REACT APPS */}
           <Route path="/apps-Redux-Counter" component={ReduxCounter} />
-          <Route path="/apps-Redux-Todo" component={ReduxAppTodo} />
-
-
+          {/* <Route path="/apps-Redux-Todo" component={ReduxAppTodo} /> */}
 
 
 

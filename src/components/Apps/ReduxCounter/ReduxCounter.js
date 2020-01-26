@@ -11,7 +11,6 @@ const ReduxCounter = () => {
   /** REDUX  */
   const counter = useSelector(state => state.counter);
   const dispatch = useDispatch();
-
   console.log('num redux', counter);
 
 

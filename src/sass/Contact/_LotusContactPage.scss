@@ -59,10 +59,10 @@
           @media(max-width: $media_medium){
             grid-column: 1 /5 ;
             grid-row: 3 / 3; 
-         }
+        }
           padding: 0px 50px;
           display: flex;
-          justify-content: start;
+          justify-content: flex-start;
           p{
             padding: 3px 10px;
           }

@@ -7,8 +7,10 @@ const LanPasaa = () => {
   const [shopName] = useState('Lan Pasaa');
   return (
     <div className="lanpasaa">
-      <LanPasaaTitle title={shopName} />
-      <NavMainLanPasaa />
+      <div className="landing-page">
+        <LanPasaaTitle title={shopName} />
+        <NavMainLanPasaa />
+      </div>
     </div>
   )
 }

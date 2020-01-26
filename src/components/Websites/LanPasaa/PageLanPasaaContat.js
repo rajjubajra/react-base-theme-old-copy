@@ -6,10 +6,13 @@ const PageLanPasaaContat = () => {
   const [storeName] = useState('Lan Pasaa');
   return (
     <div className="lanpasaa">
-      <LanPasaaTitle title={storeName} />
-      <NavMainLanPasaa />
-
-
+      <div className="contact">
+        <LanPasaaTitle title={storeName} />
+        <div className="page-title">
+          <NavMainLanPasaa />
+          <h1>Contact</h1>
+        </div>
+      </div>
     </div>
   )
 }

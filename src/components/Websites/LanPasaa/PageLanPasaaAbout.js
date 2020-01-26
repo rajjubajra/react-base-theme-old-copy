@@ -10,7 +10,11 @@ const PageLanPasaaAbout = () => {
     <div className="lanpasaa">
       <div className="about">
         <LanPasaaTitle title={storeName} />
-        <NavMainLanPasaa />
+        <div className="page-title">
+          <NavMainLanPasaa />
+          <h1>About us</h1>
+        </div>
+
       </div>
 
     </div>

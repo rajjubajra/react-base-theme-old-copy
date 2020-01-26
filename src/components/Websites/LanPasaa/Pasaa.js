@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 
 const storedata = [
   {
     id: 1,
+    group_id: 3,
     image: 'blank-image',
-    category: 'women',
+    category: 'men',
     product_name: 'Shirt',
     product_size: 'Small',
     rate: '20',
@@ -14,6 +15,7 @@ const storedata = [
   },
   {
     id: 2,
+    group_id: 2,
     image: 'blank-image',
     category: 'women',
     product_name: 'Shirt',
@@ -24,6 +26,7 @@ const storedata = [
   },
   {
     id: 3,
+    group_id: 2,
     image: 'blank-image',
     category: 'women',
     product_name: 'Shirt',
@@ -34,6 +37,7 @@ const storedata = [
   },
   {
     id: 4,
+    group_id: 2,
     image: 'blank-image',
     category: 'women',
     product_name: 'Shirt',
@@ -44,8 +48,9 @@ const storedata = [
   },
   {
     id: 5,
+    group_id: 3,
     image: 'blank-image',
-    category: 'women',
+    category: 'men',
     product_name: 'Shirt',
     product_size: 'Small',
     rate: '16',
@@ -54,6 +59,7 @@ const storedata = [
   },
   {
     id: 6,
+    group_id: 2,
     image: 'blank-image',
     category: 'women',
     product_name: 'Shirt',
@@ -64,8 +70,9 @@ const storedata = [
   },
   {
     id: 7,
+    group_id: 3,
     image: 'blank-image',
-    category: 'women',
+    category: 'men',
     product_name: 'Shirt',
     product_size: 'Small',
     rate: '5',
@@ -74,6 +81,7 @@ const storedata = [
   },
   {
     id: 8,
+    group_id: 2,
     image: 'blank-image',
     category: 'women',
     product_name: 'Shirt',
@@ -84,6 +92,7 @@ const storedata = [
   },
   {
     id: 9,
+    group_id: 2,
     image: 'blank-image',
     category: 'women',
     product_name: 'Shirt',
@@ -94,6 +103,7 @@ const storedata = [
   },
   {
     id: 10,
+    group_id: 2,
     image: 'blank-image',
     category: 'women',
     product_name: 'Shirt',
@@ -104,8 +114,9 @@ const storedata = [
   },
   {
     id: 11,
+    group_id: 3,
     image: 'blank-image',
-    category: 'women',
+    category: 'men',
     product_name: 'Shirt',
     product_size: 'Small',
     rate: '15',
@@ -114,6 +125,7 @@ const storedata = [
   },
   {
     id: 12,
+    group_id: 2,
     image: 'blank-image',
     category: 'women',
     product_name: 'Shirt',
@@ -124,8 +136,9 @@ const storedata = [
   },
   {
     id: 13,
+    group_id: 3,
     image: 'blank-image',
-    category: 'women',
+    category: 'men',
     product_name: 'Shirt',
     product_size: 'Small',
     rate: '10',
@@ -134,6 +147,7 @@ const storedata = [
   },
   {
     id: 14,
+    group_id: 2,
     image: 'blank-image',
     category: 'women',
     product_name: 'Shirt',
@@ -144,6 +158,7 @@ const storedata = [
   },
   {
     id: 15,
+    group_id: 2,
     image: 'blank-image',
     category: 'women',
     product_name: 'Shirt',
@@ -156,28 +171,65 @@ const storedata = [
 ]
 
 
+
 const Pasaa = () => {
+  const [productId, setProductId] = useState(0);
+  const [productList, setProductList] = useState();
+  const [productItem, setProducItem] = useState();
+
+
+
+  useEffect(() => {
+    /** Display all producct list  */
+    setProductList(
+      storedata.map(item => {
+        return (
+          <div className="product" key={item.id} onClick={() => setProductId(item.id - 1)}>
+            <div className="product-image">
+              <img
+                src={require(`../../../images/${item.image}.png`)}
+                alt={item.product_name} />
+            </div>
+            <div className="product-name">
+              <div className="name">{item.category}s' {item.product_name}-{item.id}</div>
+              <div className="status">{item.status}</div>
+            </div>
+            <div className="rate">£ {Number(item.rate).toFixed(2)}</div>
+          </div>
+        );
+      })
+    )
+  }, [])
+
+  useEffect(() => {
+    if (productId !== 0) {
+      setProducItem(
+        <div className="product-item">
+          <img src={require(`../../../images/${storedata[productId].image}.png`)} alt="item" />
+          <div>
+            {storedata[productId].status !== '' ? <div className="status">{storedata[productId].status}</div> : ''}
+            <div className="product-name">
+              {storedata[productId].category} {storedata[productId].product_name} - {storedata[productId].id}
+            </div>
+            <div className="rate">£ {Number(storedata[productId].rate).toFixed(2)}</div>
+            <div className="desc">{storedata[productId].desc}</div>
+            <div className="buy-btn">
+              <button className="btn">Add to basket</button>
+            </div>
+          </div>
+        </div>)
+    } else {
+      setProducItem('Product is not available');
+    }
+  }, [productId]);
+
+
+
+  //  console.log('Product Id', productId);
 
   return (
     <div className="pasaa">
-      {
-        storedata.map(item => {
-          return (
-            <div className="product">
-              <div className="product-image">
-                <img
-                  src={require(`../../../images/${item.image}.png`)}
-                  alt={item.product_name} />
-              </div>
-              <div className="product-name">
-                <div className="name">{item.product_name}</div>
-                <div className="status">{item.status}</div>
-              </div>
-              <div className="rate">£ {Number(item.rate).toFixed(2)}</div>
-            </div>
-          );
-        })
-      }
+      {productId === 0 ? <div className="product-listing">{productList}</div> : productItem}
     </div>
   )
 }

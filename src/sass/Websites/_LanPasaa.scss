@@ -1,9 +1,44 @@
 .lanpasaa{
-  width: 100%;
-  min-height: 100vh;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .landing-page{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about,
+  .contact{
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .lanpasaatitle{
+      h1{
+        margin: 0px;
+        @media(max-width: $media_medium){
+          font-size: $larger;
+        }
+      }
+    }
+
+    .page-title{
+      position: relative;
+      h1{
+        width: 100%;
+        margin-right: 30px;
+          
+        text-align: center;
+
+        font-family: serif;
+        text-transform: capitalize;
+        text-shadow: none;
+      }
+      
+    
+    }
+  }
+  
 }

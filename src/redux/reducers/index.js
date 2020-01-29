@@ -1,9 +1,6 @@
-// import { combineReducers } from "redux";
-// import todos from './todos';
-// import visibilityFilter from './visibilityFilter';
+import { combineReducers } from "redux";
+import postReducer from './postReducer';
 
-
-// export default combineReducers({
-//   todos,
-//   visibilityFilter
-// })
+export default combineReducers({
+  post: postReducer
+})

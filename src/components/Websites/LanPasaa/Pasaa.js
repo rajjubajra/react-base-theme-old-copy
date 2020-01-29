@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 
 
 const storedata = [
@@ -171,13 +172,14 @@ const storedata = [
 ]
 
 
-
 const Pasaa = () => {
   const [productId, setProductId] = useState(0);
   const [productList, setProductList] = useState();
   const [productItem, setProducItem] = useState();
 
-
+  const dispatch = useDispatch();
+  const basket = useSelector(state => state.basket);
+  console.log('BASKET ? ', basket);
 
   useEffect(() => {
     /** Display all producct list  */
@@ -202,26 +204,45 @@ const Pasaa = () => {
   }, [])
 
   useEffect(() => {
+
+    function nextSlide() {
+      return storedata.length - 1 === productId ? '' : setProductId(productId + 1);
+    }
+    function prevSlide() {
+      return productId === 0 ? setProductId(0) : setProductId(productId - 1);
+    }
+
+
     if (productId !== 0) {
       setProducItem(
         <div className="product-item">
-          <img src={require(`../../../images/${storedata[productId].image}.png`)} alt="item" />
+          <img
+            className={storedata[productId].status !== "" ? "sale-item" : ''}
+            src={require(`../../../images/${storedata[productId].image}.png`)} alt="item" />
           <div>
+            <div className="pasaa-next-prev">
+              <div className="prev" onClick={prevSlide}>prev</div>
+              {productId}
+              <div className="next" onClick={nextSlide}>next</div>
+            </div>
             {storedata[productId].status !== '' ? <div className="status">{storedata[productId].status}</div> : ''}
             <div className="product-name">
               {storedata[productId].category} {storedata[productId].product_name} - {storedata[productId].id}
             </div>
             <div className="rate">£ {Number(storedata[productId].rate).toFixed(2)}</div>
-            <div className="desc">{storedata[productId].desc}</div>
+            <div className="desc">{storedata[productId].desc} - [{storedata.length}]</div>
             <div className="buy-btn">
-              <button className="btn">Add to basket</button>
+              <button className="btn"
+                onClick={() => dispatch({ type: 'ADD_TO_BASKET' })}>Add to basket</button>
             </div>
+            <div>Basket: {basket}</div>
           </div>
         </div>)
     } else {
       setProducItem('Product is not available');
     }
-  }, [productId]);
+
+  }, [basket, dispatch, productId]);
 
 
 
@@ -229,7 +250,9 @@ const Pasaa = () => {
 
   return (
     <div className="pasaa">
-      {productId === 0 ? <div className="product-listing">{productList}</div> : productItem}
+      {productId === 0
+        ? <div className="product-listing">{productList}</div>
+        : productItem}
     </div>
   )
 }

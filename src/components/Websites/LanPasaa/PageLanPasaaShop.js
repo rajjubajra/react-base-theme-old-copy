@@ -7,8 +7,6 @@ import Pasaa from './Pasaa';
 const PageLanPasaaShop = () => {
 
   const storeName = useSelector(state => state.storeName);
-  //console.log('LAN PASAA NAME ', nameOfStore);
-
 
   return (
     <div className="pagelanpasaashop">

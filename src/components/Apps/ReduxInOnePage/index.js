@@ -1,68 +1,84 @@
-import React, { Component } from 'react'
-import { combineReducers } from 'redux';
+import React from 'react';
+import { render } from 'react-dom';
+
+import { Provider } from 'react-redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { createLogger } from 'redux-logger';
+
+import App from './components/App';
 
 
-
-combineReducers({
-  posts: postReducer
-})
-
-/** types */
-const FETCH_POSTS = 'FETCH_POSTS';
-const NEW_POST = 'NEW_POST';
-
-/** postReducers */
-const initialStates = {
-  items: [],
-  item: {}
+const initialStateMath = {
+  result: 1,
+  lastValue: []
 }
-
-function postReducer(state = initialStates, action) {
+const mathReducer = (state = initialStateMath, action) => {
+  // eslint-disable-next-line default-case
   switch (action.type) {
-    case FETCH_POSTS:
-      return {
+    case 'ADD':
+      state = {
         ...state,
-        items: action.payload
+        result: state.result + action.payload,
+        lastValue: [...state.lastValue, action.payload]
       }
-    default:
-      return state;
+      // state.lastValue.push(action.payload)
+      break;
+    case 'SUBSTRACT':
+      //state.result -= action.payload;
+      state = {
+        ...state,
+        result: state.result - action.payload,
+        lastValue: [...state.lastValue, action.payload]
+      }
+      //state.lastValue.push(action.payload)
+      break;
   }
+  return state;
 }
 
-
-function fetchPosts() {
-  return function (dispatch) {
-    fetch("https://jsonplaceholder.typicode.com/post")
-      .then(res => res.json())
-      .then(posts => {
-        console.log('DATA POST ?', posts);
-        dispatchEvent({
-          type: FETCH_POSTS,
-          payload: posts
-        })
-      });
+const initialStateUser = {
+  name: 'Max',
+  age: 20
+}
+const userReducer = (state = initialStateUser, action) => {
+  // eslint-disable-next-line default-case
+  switch (action.type) {
+    case 'SET_NAME':
+      state = {
+        ...state,
+        name: action.payload,
+      }
+      // state.lastValue.push(action.payload)
+      break;
+    case 'SET_AGE':
+      //state.result -= action.payload;
+      state = {
+        ...state,
+        age: action.payload,
+      }
+      //state.lastValue.push(action.payload)
+      break;
   }
+  return state;
 }
 
+const myLoagger = (store) => (next) => (action) => {
+  console.log("Logged Action:", action);
+  next(action);
+};
 
-class Index extends Component {
-  componentWillMount() {
-    this.props.fetchPosts();
-  }
+const store = createStore(combineReducers({ mathReducer, userReducer }), {}, applyMiddleware(createLogger()));
 
-  render() {
-    const postItem = this.state.posts.map(post => (
-      <div key={post.id}>
-        <h2>{post.title}</h2>
-        <p>{post.body}</p>
-      </div>
-    ))
-    return (
-      <div>
-        <h1>Add to post in a single page</h1>
-      </div>
-    )
-  }
+
+store.subscribe(() => {
+  console.log("store updated !", store.getState());
+});
+
+
+export default function () {
+  return (<Provider store={store}>
+    <App />
+  </Provider>
+  )
+
 }
-
-export default Index

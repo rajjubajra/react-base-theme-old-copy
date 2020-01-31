@@ -36,7 +36,6 @@ const FormRegular = () => {
   return (
     <>
       <div className="formregular">
-        <h2>Contact Form: </h2>
         <form onSubmit={onSubmit} action="">
           <div className="name">
             <label htmlFor="name">Title</label>

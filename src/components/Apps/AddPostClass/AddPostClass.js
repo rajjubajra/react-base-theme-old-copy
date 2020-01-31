@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import CopyRightFooter from '../../Footers/CopyRightFooter';
 import FormRegular from './FormRegular';
-import fetchPosts from '../../../redux/actions/postAction';
-import { connect } from 'react-redux';
 
 
 
-class AddPostRedux extends Component {
+class AddPostClass extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,11 +12,10 @@ class AddPostRedux extends Component {
     };
   }
   componentWillMount() {
-    // fetch('https://jsonplaceholder.typicode.com/posts')
-    //   .then(res => res.json())
-    //   .then(data => this.setState({ posts: data }));
 
-    this.props.fetchPosts();
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then(res => res.json())
+      .then(data => this.setState({ posts: data }));
   }
 
   render() {
@@ -31,8 +28,8 @@ class AddPostRedux extends Component {
     return (
       <>
         <div className="apps">
+          <h2>Add to post [Class]</h2>
           <FormRegular />
-          <h2>Add to post [Redux]</h2>
           {postItems}
         </div>
         <CopyRightFooter />
@@ -40,8 +37,5 @@ class AddPostRedux extends Component {
     )
   }
 }
-const mapStateToProps = state => ({
-  posts: state.posts.items
-})
 
-export default connect(mapStateToProps, { fetchPosts })(AddPostRedux);
+export default AddPostClass;

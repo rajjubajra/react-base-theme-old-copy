@@ -1,9 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom';
-import ReduxCounter from '../components/Apps/ReduxCounter/ReduxCounter';
 import AddPost from '../components/Apps/AddPost/AddPost';
-import AddPostRedux from '../components/Apps/AddPostRedux/AddPostRedux';
 import ReduxInOnePage from '../components/Apps/ReduxInOnePage';
+import AddPostClass from '../components/Apps/AddPostClass/AddPostClass';
 
 
 const RouterApps = () => {
@@ -11,9 +10,8 @@ const RouterApps = () => {
     <Switch>
       {/** REACT APPS */}
       <Route path="/apps-redux-in-one-page" component={ReduxInOnePage} />
-      <Route path="/apps-Redux-Counter" component={ReduxCounter} />
-      <Route path="/apps-addPost" component={AddPost} />
-      <Route path="/apps-addPostRedux" component={AddPostRedux} />
+      <Route path="/apps-add-post" component={AddPost} />
+      <Route path="/apps-add-post-class" component={AddPostClass} />
     </Switch>
   )
 }

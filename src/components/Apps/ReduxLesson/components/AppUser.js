@@ -1,0 +1,20 @@
+/** REDUX LESSON */
+import React from "react";
+
+export const AppUser = (props) => {
+  return (
+    <div>
+      <div className="row">
+        <div className="col-xs-12">
+          <h1>The User Page</h1>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-xs-12">
+          <p>User Name: {props.username}</p>
+          <p>Age: {props.age}</p>
+        </div>
+      </div>
+    </div>
+  );
+}

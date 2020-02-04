@@ -10,7 +10,6 @@ const Apps = () => {
     <div className="apps">
       <h1>React Apps</h1>
       <AppsRouter />
-
     </div>
   )
 }

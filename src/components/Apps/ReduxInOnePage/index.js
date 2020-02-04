@@ -1,6 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
-
 import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { createLogger } from 'redux-logger';
@@ -76,9 +74,10 @@ store.subscribe(() => {
 
 
 export default function () {
-  return (<Provider store={store}>
-    <App />
-  </Provider>
+  return (
+    <Provider store={store}>
+      <App />
+    </Provider>
   )
 
 }

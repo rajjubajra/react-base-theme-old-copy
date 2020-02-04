@@ -16,6 +16,11 @@ export const AppMain = (props) => {
             onClick={() => props.changeUsername("Ankanld")}>
             Change the Username
           </button>
+          <button
+            className="btn btn-primary"
+            onClick={() => props.changeUserAge(30)}>
+            Change the user Age
+          </button>
         </div>
       </div>
     </div>

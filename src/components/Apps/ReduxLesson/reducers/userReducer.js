@@ -10,7 +10,6 @@ const userReducer = (state = initialStateUser, action) => {
         ...state,
         name: action.payload,
       }
-
       break;
     case 'USER_SET_AGE':
       //state.result -= action.payload;
@@ -25,5 +24,4 @@ const userReducer = (state = initialStateUser, action) => {
   }
   return state;
 }
-
 export default userReducer;

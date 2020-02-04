@@ -20,8 +20,13 @@
     
     
     li{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin: 20px;
       width: 250px;
+      min-height: 100px;
       text-align: center;
       margin: 10px;
       outline: 1px solid $border_lighter;

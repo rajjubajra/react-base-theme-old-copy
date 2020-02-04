@@ -1,5 +1,5 @@
 .btn{
-    
+    outline: none;
     color: $button_color;
     background-color: $button_background;
     text-transform: uppercase;
@@ -15,6 +15,9 @@
         background: $button_background_hover;
         color: $button_color_hover;
         transition: 0.3s ease-in;
+    }
+    &:active{
+        outline: none;
     }
 }
 

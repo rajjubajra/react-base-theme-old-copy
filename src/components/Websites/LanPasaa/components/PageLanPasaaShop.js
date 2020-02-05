@@ -1,22 +1,17 @@
-import React from 'react'
-import { useSelector } from 'react-redux';
+import React from 'react';
 import LanPasaaTitle from './LanPasaaTitle'
 import NavShopLanPasaa from './NavShopLanPasaa'
 import Pasaa from './Pasaa';
 
-const PageLanPasaaShop = () => {
+const PageLanPasaaShop = (props) => {
 
-  const storeName = useSelector(state => state.storeName);
 
   return (
     <div className="pagelanpasaashop">
-
-      <LanPasaaTitle title={storeName} />
+      <LanPasaaTitle title={props.title} />
       <NavShopLanPasaa />
       <div className="divider"></div>
       <Pasaa />
-
-
     </div>
   )
 }

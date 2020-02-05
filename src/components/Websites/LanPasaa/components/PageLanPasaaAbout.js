@@ -4,14 +4,14 @@ import LanPasaaTitle from './LanPasaaTitle';
 import NavMainLanPasaa from './NavMainLanPasaa';
 
 
-const PageLanPasaaAbout = () => {
+const PageLanPasaaAbout = (props) => {
 
   const storeName = useSelector(state => state.storeName);
 
   return (
     <div className="lanpasaa">
       <div className="about">
-        <LanPasaaTitle title={storeName} />
+        <LanPasaaTitle title={props.title} />
         <div className="page-title">
           <NavMainLanPasaa />
           <h1>About us</h1>

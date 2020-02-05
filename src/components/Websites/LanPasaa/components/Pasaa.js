@@ -177,9 +177,9 @@ const Pasaa = () => {
   const [productList, setProductList] = useState();
   const [productItem, setProducItem] = useState();
 
-  const dispatch = useDispatch();
-  const basket = useSelector(state => state.basket);
-  console.log('BASKET ? ', basket);
+  // const dispatch = useDispatch();
+  // const basket = useSelector(state => state.basket);
+  // console.log('BASKET ? ', basket);
 
   useEffect(() => {
     /** Display all producct list  */
@@ -189,7 +189,7 @@ const Pasaa = () => {
           <div className="product" key={item.id} onClick={() => setProductId(item.id - 1)}>
             <div className="product-image">
               <img
-                src={require(`../../../images/${item.image}.png`)}
+                src={require(`../../../../images/${item.image}.png`)}
                 alt={item.product_name} />
             </div>
             <div className="product-name">
@@ -218,7 +218,7 @@ const Pasaa = () => {
         <div className="product-item">
           <img
             className={storedata[productId].status !== "" ? "sale-item" : ''}
-            src={require(`../../../images/${storedata[productId].image}.png`)} alt="item" />
+            src={require(`../../../../images/${storedata[productId].image}.png`)} alt="item" />
           <div>
             <div className="pasaa-next-prev">
               <div className="prev" onClick={prevSlide}>prev</div>
@@ -232,17 +232,16 @@ const Pasaa = () => {
             <div className="rate">£ {Number(storedata[productId].rate).toFixed(2)}</div>
             <div className="desc">{storedata[productId].desc} - [{storedata.length}]</div>
             <div className="buy-btn">
-              <button className="btn"
-                onClick={() => dispatch({ type: 'ADD_TO_BASKET' })}>Add to basket</button>
+              <button className="btn">Add to basket</button>
             </div>
-            <div>Basket: {basket}</div>
+            <div>Basket:</div>
           </div>
         </div>)
     } else {
       setProducItem('Product is not available');
     }
 
-  }, [basket, dispatch, productId]);
+  }, [productId]);
 
 
 

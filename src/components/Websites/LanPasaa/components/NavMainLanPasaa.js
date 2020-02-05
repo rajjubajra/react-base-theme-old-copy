@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -27,7 +27,13 @@ const main_menu = [
 ]
 
 
-const NavMainLanPasaa = () => {
+
+const NavMainLanPasaa = (params) => {
+
+  const [path, setPath] = useState('Home');
+
+
+
   return (
     <>
       <div className="navmainlanpasaa">
@@ -36,7 +42,7 @@ const NavMainLanPasaa = () => {
             main_menu.map(item => {
               return (
                 <li key={item.id}>
-                  <Link to={item.path}>{item.name}</Link>
+                  <Link to="#" onClick={() => params.setPath(item.path)}>{item.name}</Link>
                 </li>)
             })
           }

@@ -9,10 +9,10 @@ import PageWheatAbout from '../components/Websites/Wheat/PageWheatAbout';
 import PageWheatService from '../components/Websites/Wheat/PageWheatService';
 import PageWheatTeam from '../components/Websites/Wheat/PageWheatTeam';
 import PageWheatContact from '../components/Websites/Wheat/PageWheatContact';
-import LanPasaa from '../components/Websites/LanPasaa/LanPasaa';
-import PageLanPasaaShop from '../components/Websites/LanPasaa/PageLanPasaaShop';
-import PageLanPasaaAbout from '../components/Websites/LanPasaa/PageLanPasaaAbout';
-import PageLanPasaaContact from '../components/Websites/LanPasaa/PageLanPasaaContact';
+import index from '../components/Websites/LanPasaa/';
+import PageLanPasaaShop from '../components/Websites/LanPasaa/components/PageLanPasaaShop';
+import PageLanPasaaAbout from '../components/Websites/LanPasaa/components/PageLanPasaaAbout';
+import PageLanPasaaContact from '../components/Websites/LanPasaa/components/PageLanPasaaContact';
 import { Switch, Route } from 'react-router-dom';
 
 const RouterWebsites = () => {
@@ -35,7 +35,7 @@ const RouterWebsites = () => {
       <Route path="/wheat-contact" component={PageWheatContact} />
 
       {/** LAN PASAA */}
-      <Route path="/lanpasaa" component={LanPasaa} />
+      <Route path="/lanpasaa" component={index} />
       <Route path="/lanpasaa-shop" component={PageLanPasaaShop} />
       <Route path="/lanpasaa-about" component={PageLanPasaaAbout} />
       <Route path="/lanpasaa-contact" component={PageLanPasaaContact} />

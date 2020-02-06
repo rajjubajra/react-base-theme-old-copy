@@ -28,7 +28,7 @@ const shop_menu = [
 ]
 
 
-const NavShopLanPasaa = () => {
+const NavShopLanPasaa = (params) => {
   const [groupId, setGroupId] = useState(0);
 
   console.log('group id', groupId);
@@ -37,7 +37,7 @@ const NavShopLanPasaa = () => {
     <>
       <div className="navshoplanpasaa">
         <ul>
-          <li><Link to="lanpasaa" className="group-name">Home</Link></li>
+          <li><Link to="/lanpasaa" className="group-name">Home</Link></li>
           {
             shop_menu.map(item => {
               return (

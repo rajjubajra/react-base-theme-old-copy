@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import NavMainLanPasaa from './NavMainLanPasaa';
 import LanPasaaTitle from './LanPasaaTitle';
@@ -32,7 +32,7 @@ const LanPasaa = (params) => {
       )
     case 'lanpasaa-shop':
       return (
-        <PageLanPasaaShop title={pasaaTitle} />
+        <PageLanPasaaShop title={pasaaTitle} setPath={setLocalRouter} />
       )
     case 'lanpasaa-about':
       return (

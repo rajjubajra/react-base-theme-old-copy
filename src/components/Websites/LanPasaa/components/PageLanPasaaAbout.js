@@ -1,12 +1,10 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import LanPasaaTitle from './LanPasaaTitle';
 import NavMainLanPasaa from './NavMainLanPasaa';
 
 
 const PageLanPasaaAbout = (props) => {
 
-  const storeName = useSelector(state => state.storeName);
 
   return (
     <div className="lanpasaa">

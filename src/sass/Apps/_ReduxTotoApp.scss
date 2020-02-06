@@ -1,0 +1,24 @@
+.todo-list{
+  width: 500px;
+    border: 1px solid;
+    padding: 20px;
+    line-height: 2rem;
+
+    .todo{
+      border: 1px solid $border_lighter;
+      margin: 5px;
+      padding: 0px 10px;
+      font-size: $regular;
+      font-weight: 300;
+    }
+    form{
+      input{
+        width: 93.7%;
+        border: 1px solid #cfcece;
+        margin: 5px;
+        padding: 7px 10px;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
+}

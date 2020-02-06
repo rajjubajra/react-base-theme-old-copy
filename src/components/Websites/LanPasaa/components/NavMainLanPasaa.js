@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+
 import { Link } from 'react-router-dom';
 
 
@@ -29,10 +31,7 @@ const main_menu = [
 
 
 const NavMainLanPasaa = (params) => {
-
-  const [path, setPath] = useState('Home');
-
-
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -42,7 +41,9 @@ const NavMainLanPasaa = (params) => {
             main_menu.map(item => {
               return (
                 <li key={item.id}>
-                  <Link to="#" onClick={() => params.setPath(item.path)}>{item.name}</Link>
+                  {/* <Link to="#" onClick={() => params.setPath(item.path)}>{item.name}</Link> */}
+                  <Link to="#" onClick={() => dispatch({ type: 'PAGE_NAV' })}>{item.name}</Link>
+
                 </li>)
             })
           }

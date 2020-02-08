@@ -1,4 +1,6 @@
 import React from 'react'
+import { Provider } from 'react-redux';
+import { store } from './store';
 import TodoApp from './components/TodoApp';
 
 
@@ -8,7 +10,10 @@ const reduxTodoApp = () => {
 
     <div className="apps">
       <h1>Todo App [Redux]</h1>
-      <TodoApp />
+      <Provider store={store}>
+        <TodoApp />
+      </Provider>
+
     </div>
 
   )

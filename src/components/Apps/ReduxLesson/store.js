@@ -11,6 +11,7 @@ export const store = createStore(combineReducers({
   counterReducer
 }), {}, applyMiddleware(createLogger()));
 
+
 // store.subscribe(() => {
 //   console.log("store updated !", store.getState());
 // });

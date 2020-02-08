@@ -1,25 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useSelector } from 'react-redux';
 import TodoForm from './TodoForm'
+import TodoItem from './TodoItem';
 
 const TodoApp = () => {
-  const [todos, setTodos] = useState([
-    { text: "Learn about React" },
-    { text: "Meet react user" },
-    { text: "Build React app" }
-  ])
 
-  const Todo = ({ todo }) =>
-    <div className="todo">{todo.text}</div>
+  const todos = useSelector(state => state.todoReducer.todos);
+  console.log(todos);
+
 
   return (
     <div className="todo-list">
-      {todos.map((todo, index) => (
-        <Todo
-          key={index}
-          index={index}
-          todo={todo}
-        />
-      ))}
+      <TodoItem todos={todos} />
       <TodoForm />
     </div>
   )

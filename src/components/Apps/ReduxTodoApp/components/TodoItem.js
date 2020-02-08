@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-const TodoItem = ({ todos }) => {
-  console.log("new array", todos);
+const TodoItem = (props) => {
+  console.log("new array", props.todos);
   return (
-    todos.map((item, index) => {
+    props.todos.map((item, index) => {
       return <div key={index} className="todo">
         {item.text}
       </div>

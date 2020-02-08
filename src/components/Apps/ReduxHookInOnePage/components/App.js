@@ -21,21 +21,20 @@ const App = () => {
     })
   }
 
-  function setName(name) {
-    dispatch({
-      type: "SET_NAME",
-      payload: name
-    })
-  }
+  // function setName(name) {
+  //   dispatch({
+  //     type: "SET_NAME",
+  //     payload: name
+  //   })
+  // }
 
 
   return (
     <div className="apps">
       <h3>Redux Lesson in one page</h3>
       <h2>REDUX and REACT HOOK</h2>
-      <h3>Change state on click example</h3>
       <p><strong>Check console for action</strong></p>
-      <UserForm changeUsername={() => setName("TannaA")} />
+      <UserForm />
       <User username={username} />
       <Math
         mathvalue={mathResult}

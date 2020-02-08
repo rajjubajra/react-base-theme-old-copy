@@ -1,8 +1,7 @@
-let nextTodId = 0;
-export const addTodoAction = text => (
+//let nextTodId = 0;
+export const actionAddTodo = text => (
   {
-    type: 'ADD_TODO',
-    id: nextTodId,
+    type: "ADD_TODO",
     payload: text
   }
 )

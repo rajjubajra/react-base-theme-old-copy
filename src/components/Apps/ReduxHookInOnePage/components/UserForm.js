@@ -12,7 +12,7 @@ export const UserForm = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (username.trim("") === "") {
-      setAlertMessage("Please enter name to print");
+      setAlertMessage("Input field is empty");
       return;
     }
     dispatch({
@@ -27,11 +27,6 @@ export const UserForm = () => {
     <div>
       <div className="row">
         <div className="col-xs-12">
-          <h1>The Main Page</h1>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-xs-12">
           <form onSubmit={onSubmit}>
             <input
               className="regular"
@@ -39,12 +34,11 @@ export const UserForm = () => {
               name="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              placeholder="Enter username to print"
+              placeholder="Enter text to print"
             />
-            <p style={{ fontSize: "1rem", textalign: "center" }}>{alertMessage}</p>
+            <p style={{ fontSize: "1rem", textalign: "center", fontWeight: "bold", textAlign: "center", color: "red" }}>{alertMessage}</p>
             <button type="submit" className="btn btn-small-wide">Print Name</button>
           </form>
-
         </div>
       </div>
     </div>

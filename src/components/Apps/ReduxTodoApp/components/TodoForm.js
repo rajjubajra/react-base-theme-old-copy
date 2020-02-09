@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { actionAddTodo } from '../actions/todoAction';
+import { useSelector, useDispatch } from 'react-redux';
+import { actionAddTodo, actionUpdateTodos } from '../actions/todoAction';
+
 
 
 const TodoForm = () => {
@@ -10,20 +11,38 @@ const TodoForm = () => {
   const dispatch = useDispatch();
 
 
+  //GET SELECTED ITEM FROM THE ARRAY in order to populate input field
+  const populateInput = useSelector(state => state.todoReducer.input);
+  const selectedId = useSelector(state => state.todoReducer.selectedId);
+  console.log("FORM: populate input", populateInput, "selected index", selectedId);
+
+  //onSubmit add new todo
   function onSubmit(event) {
     event.preventDefault();
     if (todo.trim() === "") {
       setAlert("Input field is empty");
       return;
     }  //empty value do nothing
-    dispatch(actionAddTodo(todo))
+    //check Update / New add
+    //add New item if there no Edit item into the input field
+    if (populateInput === '') {
+      dispatch(actionAddTodo(todo))
+    } else {
+      //run Update or Edit
+      dispatch(actionUpdateTodos(selectedId, todo))
+    }
     setTodo(""); //set input-field  blank
   }
 
-
-
+  //populate input field for Edit array element
   useEffect(() => {
-    //display alert message for 3second only
+    if (populateInput !== '') {
+      setTodo(populateInput);
+    }
+  }, [populateInput])
+
+  //DISPLAY ALERT MESSAGE FOR 3 SECOND
+  useEffect(() => {
     setTimeout(() => {
       setAlert("");
     }, 3000)

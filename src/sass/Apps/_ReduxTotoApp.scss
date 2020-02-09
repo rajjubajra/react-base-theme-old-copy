@@ -1,8 +1,17 @@
 .todo-list{
-  width: 500px;
+    width: 500px;
     border: 1px solid;
     padding: 20px;
     line-height: 2rem;
+
+    .edit-delete{
+      float: right;
+      i{
+        margin: 0px 10px;
+        font-size: $small;
+        cursor: pointer;
+      }
+    }
 
     .todo{
       border: 1px solid $border_lighter;

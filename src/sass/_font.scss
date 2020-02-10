@@ -14,7 +14,6 @@ body{
 }
 
 
-
 $small: 0.7rem;
 $medium: 0.85rem;
 $regular: 1rem;
@@ -36,6 +35,10 @@ $gaint_font: 8rem;
 //   }
 // }
 
+
+.cross-text{
+  text-decoration: line-through;
+}
 h1, h2{
   font-family: serif;
   text-transform: capitalize;

@@ -62,7 +62,7 @@ const TodoForm = () => {
           onChange={e => setTodo(e.target.value)}
           placeholder="Add new item"
         />
-        <button type="submit" >Submit</button>
+        <button className="btn-small-wide" type="submit" >Submit</button>
       </form>
     </>
   )

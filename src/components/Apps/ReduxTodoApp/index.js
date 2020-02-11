@@ -9,11 +9,10 @@ const reduxTodoApp = () => {
   return (
 
     <div className="apps">
-      <h1>Todo App [Redux]</h1>
+      <h1>Todo App [Redux + React Hook]</h1>
       <Provider store={store}>
         <TodoApp />
       </Provider>
-
     </div>
 
   )

@@ -1,4 +1,4 @@
-import { ADD_TODO, POPULATE_INPUT, UPDATE_TODO, JOB_DONE, DELETE, CLEAR_INPUT_FIELD, JOB_DONE_UNDO } from "./actionType";
+import { ADD_TODO, POPULATE_INPUT, UPDATE_TODO, JOB_DONE, DELETE, CLEAR_INPUT_FIELD, JOB_DONE_UNDO, DELETE_CONFIRMATION } from "./actionType";
 
 
 let nextId = 1;
@@ -42,7 +42,15 @@ export const actionJobDoneUndo = (id) => (
 export const actionDelete = (id) => ({
   id: id,
   type: DELETE
-})
+}
+)
+
+export const actionDeleteConfirmation = (id) => (
+  {
+    id: id,
+    type: DELETE_CONFIRMATION
+  }
+)
 
 export const actionClearIndexObjects = () => ({
   type: CLEAR_INPUT_FIELD

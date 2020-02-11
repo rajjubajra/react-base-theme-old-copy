@@ -1,4 +1,4 @@
-import { ADD_TODO, POPULATE_INPUT, UPDATE_TODO, JOB_DONE, DELETE, CLEAR_INPUT_FIELD, JOB_DONE_UNDO } from "../actions/actionType";
+import { ADD_TODO, POPULATE_INPUT, UPDATE_TODO, JOB_DONE, DELETE, CLEAR_INPUT_FIELD, JOB_DONE_UNDO, DELETE_CONFIRMATION } from "../actions/actionType";
 
 const initialTodos = {
   todos: [
@@ -11,7 +11,9 @@ const initialTodos = {
   st_populateId: '',
   st_jobDonIndex: '',
   st_jobDonUndoIndex: '',
-  st_deleteIndex: ''
+  st_deleteIndex: '',
+  st_msgDeleteConfirmation: '',
+  st_msgDeleteConfirmationId: '',
 }
 
 const todoReducer = (state = initialTodos, action) => {
@@ -82,6 +84,15 @@ const todoReducer = (state = initialTodos, action) => {
       }
       console.log("DELETE 2", state.todos)
       break;
+
+    case DELETE_CONFIRMATION:
+      const msgDeleteConfirmation = "Are you sure, you would like to delete";
+      state = {
+        ...state,
+        st_msgDeleteConfirmation: msgDeleteConfirmation,
+        st_msgDeleteConfirmationId: action.id,
+      }
+      break;
     case CLEAR_INPUT_FIELD:
       console.log('CLEAR INPUT FIELD');
       //if selected input field is blank clear all stored objects
@@ -92,7 +103,9 @@ const todoReducer = (state = initialTodos, action) => {
         st_populateId: '',
         st_populateComplete: '',
         st_jobDonIndex: '',
-        st_deleteIndex: ''
+        st_deleteIndex: '',
+        st_msgDeleteConfirmation: '',
+        st_msgDeleteConfirmationId: '',
       }
       break;
 

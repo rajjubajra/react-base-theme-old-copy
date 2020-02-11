@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import { actionPopulateInput, actionJobDone, actionJobDoneUndo, actionDelete, actionClearIndexObjects } from '../actions/todoAction';
+import { actionPopulateInput, actionJobDone, actionJobDoneUndo, actionDelete, actionClearIndexObjects, actionDeleteConfirmation } from '../actions/todoAction';
 
 
 const TodoItem = () => {
@@ -13,9 +13,15 @@ const TodoItem = () => {
   const jobDonIndex = useSelector(state => state.todoReducer.st_jobDonIndex);
   const jobDonUndoIndex = useSelector(state => state.todoReducer.st_jobDonUndoIndex);
   const deleteIndex = useSelector(state => state.todoReducer.st_deleteIndex);
+  const msgDeleteConfirmation = useSelector(state => state.todoReducer.st_msgDeleteConfirmation);
+  const msgDeleteConfirmationId = useSelector(state => state.todoReducer.st_msgDeleteConfirmationId);
 
 
   useEffect(() => {
+
+    if (msgDeleteConfirmation !== '') {
+      setTodos(getTodos);
+    }
 
     if (deleteIndex !== '') {
       setTodos(getTodos);
@@ -36,14 +42,24 @@ const TodoItem = () => {
       setTodos(getTodos);
     }
 
-  }, [getTodos, dispatch, jobDonIndex, deleteIndex, jobDonUndoIndex])
+  }, [getTodos, dispatch, jobDonIndex, deleteIndex, jobDonUndoIndex, msgDeleteConfirmation])
 
 
   function ButtonJobDone(complete, id) {
     return complete === false
       ? <i onClick={() => dispatch(actionJobDone(id))}>Done</i>
       : <i onClick={() => dispatch(actionJobDoneUndo(id))}>Undo</i>
+  }
 
+  function ButtonDelConfirme(id) {
+    if (msgDeleteConfirmation !== '' && id === msgDeleteConfirmationId) {
+      return <span>
+        <i onClick={() => dispatch(actionDelete(id))}>Sure</i>
+        <i onClick={() => dispatch(actionClearIndexObjects(id))}>No</i>
+      </span>
+    } else {
+      return <i onClick={() => dispatch(actionDeleteConfirmation(id))}>Del</i>
+    }
   }
 
   console.log("TODO-ITEM.JS: Selected Index", populateIndex, "todos - ", getTodos);
@@ -52,6 +68,9 @@ const TodoItem = () => {
     todos.map((item, index) => {
       return <div key={index}
         className={`todo ${index === populateIndex ? 'hide' : ''}`}>
+        {
+          msgDeleteConfirmationId === item.id ? <div>{msgDeleteConfirmation}</div> : ''
+        }
         {item.id <= 9 ? 0 + String(item.id) : item.id} - <span className={`${item.complete === true ? 'cross-text' : ''}`}>
           {item.text}
         </span>
@@ -60,7 +79,7 @@ const TodoItem = () => {
           |
             {ButtonJobDone(item.complete, item.id)}
           |
-            <i onClick={() => dispatch(actionDelete(item.id))}>Del</i>
+            {ButtonDelConfirme(item.id)}
           ]
         </span>
       </div>

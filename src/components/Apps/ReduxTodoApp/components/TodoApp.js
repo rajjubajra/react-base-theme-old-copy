@@ -1,17 +1,16 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
 import TodoForm from './TodoForm'
 import TodoItem from './TodoItem';
+import { useSelector } from 'react-redux';
 
 const TodoApp = () => {
 
-  const todos = useSelector(state => state.todoReducer.todos);
-  console.log(todos);
-
+  const data = useSelector(state => state);
+  console.log('DATA', data);
 
   return (
     <div className="todo-list">
-      <TodoItem todos={todos} />
+      <TodoItem />
       <TodoForm />
     </div>
   )

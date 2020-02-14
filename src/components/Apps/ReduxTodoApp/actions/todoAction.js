@@ -1,10 +1,12 @@
 import { ADD_TODO, POPULATE_INPUT, UPDATE_TODO, JOB_DONE, DELETE, CLEAR_INPUT_FIELD, JOB_DONE_UNDO, DELETE_CONFIRMATION } from "./actionType";
+import uuid from "uuid/v1";
 
 
-let nextId = 1;
+
+//let nextId = 1;
 export const actionAddTodo = text => (
   {
-    id: nextId++,
+    id: uuid(),
     type: ADD_TODO,
     payload: text
   }

@@ -1,11 +1,7 @@
 import { ADD_TODO, POPULATE_INPUT, UPDATE_TODO, JOB_DONE, DELETE, CLEAR_INPUT_FIELD, JOB_DONE_UNDO, DELETE_CONFIRMATION } from "../actions/actionType";
 
 const initialTodos = {
-  todos: [
-    { id: 'a', text: "Job one", complete: false },
-    { id: 'b', text: "Job Two", complete: false },
-    { id: 'c', text: "Job Three", complete: false },
-  ],
+  todos: [],
   input: '',
   st_populateIndex: '',
   st_populateId: '',
@@ -60,7 +56,8 @@ const todoReducer = (state = initialTodos, action) => {
       state = {
         ...state,
         state: state.todos[jobDonIndex].complete = true,
-        st_jobDonIndex: jobDonIndex
+        st_jobDonIndex: jobDonIndex,
+        st_jobDonUndoIndex: ''
       }
       console.log("JOB DONE 2", state.todos, jobDonIndex)
       break;
@@ -69,7 +66,8 @@ const todoReducer = (state = initialTodos, action) => {
       state = {
         ...state,
         state: state.todos[jobDonUndoIndex].complete = false,
-        st_jobDonUndoIndex: jobDonUndoIndex
+        st_jobDonUndoIndex: jobDonUndoIndex,
+        st_jobDonIndex: ''
       }
       console.log("JOB DONE UNDO 2", state.todos, jobDonUndoIndex)
       break;
@@ -108,6 +106,7 @@ const todoReducer = (state = initialTodos, action) => {
         st_msgDeleteConfirmationId: '',
       }
       break;
+
 
     default:
       //console.log("DEFAULT", state.todos)

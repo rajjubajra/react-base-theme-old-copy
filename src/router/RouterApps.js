@@ -6,6 +6,7 @@ import ReduxHookInOnePage from '../components/Apps/ReduxHookInOnePage';
 import AddPostClass from '../components/Apps/AddPostClass/AddPostClass';
 import ReduxLesson from '../components/Apps/ReduxLesson';
 import TodoAppRedux from '../components/Apps/ReduxTodoApp'
+import ReduxShoppingCart from '../components/Apps/ReduxShoppingCart';
 
 
 const RouterApps = () => {
@@ -18,6 +19,8 @@ const RouterApps = () => {
       <Route path="/apps-add-post" component={AddPost} />
       <Route path="/apps-add-post-class" component={AddPostClass} />
       <Route path="/apps-todo-redux" component={TodoAppRedux} />
+      <Route path="/apps-redux-shopping-cart" component={ReduxShoppingCart} />
+
     </Switch>
   )
 }

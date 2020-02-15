@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import CopyRightFooter from './CopyRightFooter'
 
 const Websites = () => {
 
@@ -33,10 +34,8 @@ const Websites = () => {
           <h3>Curry</h3>
           <Link className="btn-small-wide" to="#">Preview</Link>
         </div>
-
-
-
       </div>
+      <CopyRightFooter />
     </>
   )
 }

@@ -81,7 +81,7 @@ const TodoItem = () => {
 
   function ButtonDelConfirme(id) {
     if (msgDeleteConfirmation !== '' && id === msgDeleteConfirmationId) {
-      return <span>
+      return <span style={{ fontWeight: 'bold' }}>
         <i onClick={() => dispatch(actionDelete(id))}>Sure</i>
         <i onClick={() => dispatch(actionClearIndexObjects(id))}>No</i>
       </span>

@@ -9,8 +9,8 @@ const AppsRouter = () => {
       <li><Link to="/apps-redux-lesson" >Redux Lesson</Link></li>
       <li><Link to="/apps-add-post" >Add Post [Hook]</Link></li>
       <li><Link to="/apps-add-post-class" >Add Post [Class]</Link></li>
-      <li><Link to="/apps-todo-redux" >
-        Todo App [Redux]</Link></li>
+      <li><Link to="/apps-todo-redux" >Todo App [Redux]</Link></li>
+      <li><Link to="/apps-redux-shopping-cart" >Shopping Cart[Redux]</Link></li>
     </ul>
   )
 }

@@ -4,7 +4,6 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import todoReducer from './reducers/todoReducer';
 //import thunk from 'redux-thunk';
 
-
 //in order to load data into the localstorage
 let initialState = {}
 const persistedState = localStorage.getItem('reduxState')
@@ -12,7 +11,7 @@ if (persistedState) {
   initialState = JSON.parse(persistedState)
 }
 
-console.log("PERSISTEDstate", persistedState);
+//console.log("PERSISTEDstate", persistedState);
 
 const rootReducer = combineReducers({ todoReducer })
 //console.log('ROOT REDUCERS', rootReducer);
@@ -30,4 +29,4 @@ store.subscribe(() => {
 })
 
 
-console.log("GET STATE", store.getState().todoReducer.todos);
+//console.log("GET STATE", store.getState().todoReducer.todos);

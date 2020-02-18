@@ -1,14 +1,23 @@
-import React from 'react'
-import CopyRightFooter from '../ReduxTodoApp/components/CopyRightFooter'
+import React, { useEffect } from 'react';
+import Main from './components/Main';
+import { Provider } from 'react-redux';
+import { store } from './store';
+
+
 
 const ReduxShoppingCart = () => {
+
+  useEffect(() => {
+    console.log("useEffecIndex");
+  }, [])
+
+
   return (
-    <>
-      <div className="apps">
-        <h1>Shopping Cart [React-Redux]</h1>
+    <Provider store={store}>
+      <div>
+        <Main />
       </div>
-      <CopyRightFooter />
-    </>
+    </Provider>
   )
 }
 

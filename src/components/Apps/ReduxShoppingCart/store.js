@@ -2,12 +2,13 @@ import { createLogger } from 'redux-logger';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
+
+/** REDUCERS */
 import { reducerFetchCategory } from './reducers/reducerFetchCategory';
+import { reducerCart } from './reducers/reducerCart';
 
 
-
-
-const reducers = combineReducers({ reducerFetchCategory });
+const reducers = combineReducers({ reducerFetchCategory, reducerCart });
 const middleware = applyMiddleware(thunk, createLogger());
 
 

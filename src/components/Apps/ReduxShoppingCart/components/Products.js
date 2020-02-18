@@ -1,17 +1,23 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { actionAddToCart } from '../actions/actionCart';
 
 const Products = () => {
 
+  const dispatch = useDispatch();
+
   const categories = useSelector(state => state.reducerFetchCategory.categories);
   const cateId = useSelector(state => state.reducerFetchCategory.categoryId)
+
 
   const productDetail = (id, name, price) => {
     return (
       <li key={id}>
         {name}
         <p>Price: £ {price}</p>
-        <button>Add To Basket</button>
+        <button onClick={() => dispatch(actionAddToCart(id, name, price))}>
+          Add To Basket
+        </button>
       </li>
     )
   }
@@ -20,9 +26,12 @@ const Products = () => {
     {
       categories.map((item, index) => {
         return <ul key={index}>{item.products.map((prod) => {
-          return cateId === 0
-            ? productDetail(prod.id, prod.name, prod.price)
-            : productDetail(prod.id, prod.name, prod.price)
+          if (cateId === 0) {
+            return productDetail(prod.id, prod.name, prod.price);
+          }
+          if (cateId === item.id) {
+            return productDetail(prod.id, prod.name, prod.price);
+          }
         }
         )}
         </ul>

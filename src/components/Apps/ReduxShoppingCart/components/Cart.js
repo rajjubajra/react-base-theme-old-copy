@@ -33,7 +33,7 @@ const Cart = () => {
         }
       </ul>
       {/** TOTAL AMOUT OF THE CART */}
-      <ul><li>Total: £ {cartTtAmount.toFixed(2)} </li></ul>
+      <ul><li><b>Total: £ {cartTtAmount.toFixed(2)} </b></li></ul>
     </div>
   )
 }

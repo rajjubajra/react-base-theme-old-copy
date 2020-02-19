@@ -1,0 +1,94 @@
+.contactform-lanpasaa{
+ 
+  h2{
+    margin: 50px 0xp;
+    text-align: center;
+
+  }
+
+  form{
+    width: 95%;
+    box-sizing: border-box;
+    max-width: 700px;
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 50px;
+
+    label{
+      font-weight: 100;
+      letter-spacing: 2px;
+    }
+
+    input, textarea{
+      box-sizing: border-box;
+      outline: 0;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $border_lighter;
+      font-size: $regular;
+    }
+
+    .firstname{
+      grid-column: 1 / 1;
+      grid-row: 1 / 1;
+    }
+    .lastname{
+      grid-column: 2 / 3;
+      grid-row: 1 / 1;
+    }
+    .phone{
+      grid-column: 1 / 1;
+      grid-row: 2 / 2;
+    }
+    .email{
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
+    }
+    .text{
+      grid-column: 1 / 3;
+      grid-row: 3 / 3 ;
+      display: flex;
+      flex-direction: column;
+    }
+    .button{
+      grid-column: 1 / 3;
+      grid-row: 4 / 4;
+    }
+
+    @media(max-width: $media_small){
+      .firstname{
+        grid-column: 1 / 3;
+        grid-row: 1 / 1;
+      }
+      .lastname{
+        grid-column: 1 / 3;
+        grid-row: 2 / 2;
+      }
+      .phone{
+        grid-column: 1 / 3;
+        grid-row: 3 / 3;
+      }
+      .email{
+        grid-column: 1 / 3;
+        grid-row: 4 / 4;
+      }
+      .text{
+        grid-column: 1 / 3;
+        grid-row: 5 / 5 ;
+        display: flex;
+        flex-direction: column;
+      }
+      .button{
+        grid-column: 1 / 3;
+        grid-row: 6/ 6;
+      }
+  
+
+    }
+
+
+  }
+
+}

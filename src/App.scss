@@ -75,6 +75,10 @@
 @import "./sass/Contact/LotusContactPage";
 @import "./sass/Contact/ContactWheat";
 @import "./sass/Contact/SubscriptioinWheat";
+@import "./sass/Contact/SubscriptioinLanPasaa";
+@import "./sass/Contact/ContactFormLanpasaa";
+@import "./sass/Contact/ContactLanPasaa";
+
 
 /** Headers **/
 @import "./sass/Headers/EcomHeadersTop";
@@ -91,9 +95,13 @@
 @import "./sass/Aboutus/TeamWheat";
 @import "./sass/Aboutus/WheatAboutus";
 @import "./sass/Aboutus/FAQs";
+@import "./sass/Aboutus/LanpasaaAboutus";
 
 /** Shop **/
 @import "./sass/Shop/pasaa";
+
+/** Social Media **/
+@import "./sass/SocialMeida/socialMediaLanPasaa";
 
 /** Apps [ React Applications ]**/
 @import "./sass/Apps/Apps";
@@ -117,11 +125,12 @@
 /** **/
 .ref {
   font-size: 0.7rem;
+  font-weight: 800;
   padding: 10px 20px;
   background: #000;
   color: #ccc;
   letter-spacing: 2px;
-  width: 200px;
+  width: 100%;
   margin: 15px 0px;
 }
 .App {

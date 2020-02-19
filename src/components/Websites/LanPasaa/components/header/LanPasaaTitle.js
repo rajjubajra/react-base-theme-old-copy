@@ -1,11 +1,10 @@
 import React from 'react'
 
-const LanPasaaTitle = (props) => {
+const LanPasaaTitle = () => {
   return (
     <div className="lanpasaatitle">
-      <h1>{props.title}</h1>
+      <h1>La Pasaa</h1>
     </div>
   )
 }
-
 export default LanPasaaTitle

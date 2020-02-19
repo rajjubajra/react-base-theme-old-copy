@@ -1,10 +1,9 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 
-import pasaaInfoReducer from './reducers/pasaaInfoReducer';
-import routerReducer from './reducers/routerReducer';
+const reducer = (state = {}, action) => {
+  return state;
+}
 
+const middleware = applyMiddleware();
 
-export const store = createStore(combineReducers({
-  pasaaInfoReducer,
-  routerReducer
-}));
+export const store = createStore(reducer, middleware);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -28,10 +28,8 @@ const shop_menu = [
 ]
 
 
-const NavShopLanPasaa = (params) => {
-  const [groupId, setGroupId] = useState(0);
+const NavShopLanPasaa = () => {
 
-  console.log('group id', groupId);
 
   return (
     <>
@@ -42,7 +40,7 @@ const NavShopLanPasaa = (params) => {
             shop_menu.map(item => {
               return (
                 <li key={item.id}>
-                  <div className="group-name" onClick={() => setGroupId(item.id)}>{item.name}</div>
+                  <Link to={item.path} >{item.name}</Link>
                 </li>)
             })
           }

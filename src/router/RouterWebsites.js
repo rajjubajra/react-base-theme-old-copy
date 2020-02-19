@@ -1,19 +1,26 @@
 import React from 'react'
-import Wheat from '../components/Websites/Wheat/Wheat';
+import { Switch, Route } from 'react-router-dom';
+
+/** LOTUS */
 import Lotus from '../components/Websites/Lotus/Lotus';
 import PageLotusAbout from '../components/Websites/Lotus/PageLotusAbout';
 import PageLotusWhatWeDo from '../components/Websites/Lotus/PageLotusWhatWeDo';
 import PageLotusContact from '../components/Websites/Lotus/PageLotusContact';
 import PageLotusFAQ from '../components/Websites/Lotus/PageLotusFAQ';
+
+/** WHEAT */
+import Wheat from '../components/Websites/Wheat/Wheat';
 import PageWheatAbout from '../components/Websites/Wheat/PageWheatAbout';
 import PageWheatService from '../components/Websites/Wheat/PageWheatService';
 import PageWheatTeam from '../components/Websites/Wheat/PageWheatTeam';
 import PageWheatContact from '../components/Websites/Wheat/PageWheatContact';
+
+/** LA PASAA */
 import index from '../components/Websites/LanPasaa/';
-import PageLanPasaaShop from '../components/Websites/LanPasaa/components/PageLanPasaaShop';
-import PageLanPasaaAbout from '../components/Websites/LanPasaa/components/PageLanPasaaAbout';
-import PageLanPasaaContact from '../components/Websites/LanPasaa/components/PageLanPasaaContact';
-import { Switch, Route } from 'react-router-dom';
+import PageLanPasaaShop from '../components/Websites/LanPasaa/components/page/PageLanPasaaShop';
+import PageLanPasaaAbout from '../components/Websites/LanPasaa/components/page/PageLanPasaaAbout';
+import PageLanPasaaContact from '../components/Websites/LanPasaa/components/page/PageLanPasaaContact';
+
 
 const RouterWebsites = () => {
   return (

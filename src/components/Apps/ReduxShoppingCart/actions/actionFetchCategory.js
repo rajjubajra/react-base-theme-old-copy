@@ -6,7 +6,7 @@ export function actionFetchCategory() {
   console.log("action fetch category");
   return function (dispatch) {
     dispatch({ type: actionTypes.FETCH_CATEGORY_START });
-    axios.get("https://my-json-server.typicode.com/fmartinsba/shopping-cart/categories")
+    axios.get("https://my-json-server.typicode.com/rajjubajra/shopping-cart/categories")
       .then((res) => {
         dispatch({
           type: actionTypes.FETCH_CATEGORY_RECEIVED,

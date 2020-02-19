@@ -1,0 +1,14 @@
+.socialmedia-lanpasaa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0px;
+  
+  .socialmedia{
+    display: flex;
+    img{
+      width: 50px;
+    }
+  }
+}

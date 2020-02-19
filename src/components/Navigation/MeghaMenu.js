@@ -71,7 +71,7 @@ const MeghaMenu = () => {
                 <li><Link to="#">Typography</Link></li>
                 <li><Link to="#">Icons</Link></li>
                 <li><Link to="#">Buttons</Link></li>
-                <li><Link to="#">Social Media</Link></li>
+                <li><Link to="/social-media">Social Media</Link></li>
                 <li><Link to="#">List and Bullets</Link></li>
               </ul>
               <ul className="submenu-lists" >
@@ -83,7 +83,7 @@ const MeghaMenu = () => {
                 <li><Link to="#">Helper</Link></li>
                 <li><Link to="#">List</Link></li>
                 <li><Link to="#">Buttons</Link></li>
-                <li><Link to="#">Social Media</Link></li>
+                <li><Link to="/social-media">Social Media</Link></li>
                 <li><Link to="#">List and Bullets</Link></li>
                 <li><Link to="#">Timeline</Link></li>
                 <li><Link to="/animation">Animation</Link></li>

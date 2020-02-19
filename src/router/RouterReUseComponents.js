@@ -11,6 +11,7 @@ import Websites from '../components/Websites/Websites';
 import Apps from '../components/Apps/Apps';
 import MeghaMenu from '../components/Navigation/MeghaMenu';
 import Footers from '../components/Footers/Footers';
+import SocialMedia from '../components/SocialMedia/SocialMeida';
 import Columns from '../components/Columns/Columns';
 import ImageSlider from '../components/ImageSlider/ImageSlider';
 import Homepage from '../components/HomePage/Homepage';
@@ -138,6 +139,14 @@ const RouterReUseComponents = () => {
             <MeghaMenu />
           </div>
           <Footers />
+        </div>
+      </Route>
+      <Route path="/social-media">
+        <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
+          <div className={btnShowHide ? 'show' : 'hide'}>
+            <MeghaMenu />
+            <SocialMedia />
+          </div>
         </div>
       </Route>
     </Switch>

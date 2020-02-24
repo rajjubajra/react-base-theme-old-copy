@@ -1,9 +1,9 @@
 import React from 'react';
+import ContactFormLanPasaa from './Contact/ContactFormLanPasaa';
+import ContactLanPasaa from './Contact/ContactLanPasaa';
+import SocialMediaLanPasaa from './Contact/SocialMediaLanPasaa';
 import LanPasaaTitle from '../header/LanPasaaTitle';
 import NavMainLanPasaa from '../nav/NavMainLanPasaa';
-import ContactFormLanPasaa from '../page/ContactFormLanPasaa';
-import ContactLanPasaa from './ContactLanPasaa';
-import SocialMediaLanPasaa from './SocialMediaLanPasaa';
 
 const PageLanPasaaContact = () => {
 
@@ -11,6 +11,7 @@ const PageLanPasaaContact = () => {
     <div className="lanpasaa">
       <LanPasaaTitle />
       <NavMainLanPasaa />
+
       <div className="contact-page">
         <div className="page-title">
           <h1>Contact</h1>

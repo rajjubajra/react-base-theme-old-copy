@@ -1,9 +1,9 @@
 import React from 'react'
 
-const LanPasaaTitle = () => {
+const LanPasaaTitle = (props) => {
   return (
     <div className="lanpasaatitle">
-      <h1>La Pasaa</h1>
+      <h1 className={props.animation}>Lan Pasaa</h1>
     </div>
   )
 }

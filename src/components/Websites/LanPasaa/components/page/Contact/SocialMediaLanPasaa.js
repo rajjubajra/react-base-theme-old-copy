@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import facebook from '../../../../../images/social-media/drw-facebook.png';
-import twitter from '../../../../../images/social-media/drw-twitter.png';
-import youtube from '../../../../../images/social-media/drw-youtube.png';
-import linkedIn from '../../../../../images/social-media/drw-linkedIn.png';
+import facebook from '../../../../../../images/social-media/drw-facebook.png';
+import twitter from '../../../../../../images/social-media/drw-twitter.png';
+import youtube from '../../../../../../images/social-media/drw-youtube.png';
+import linkedIn from '../../../../../../images/social-media/drw-linkedIn.png';
 
 const SocialMediaLanPasaa = () => {
   return (

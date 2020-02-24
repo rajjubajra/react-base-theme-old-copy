@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 
+
 const storedata = [
   {
     id: 1,
@@ -176,6 +177,8 @@ const Pasaa = () => {
   const [productList, setProductList] = useState();
   const [productItem, setProducItem] = useState();
 
+  const imagepath = '';
+
   // const dispatch = useDispatch();
   // const basket = useSelector(state => state.basket);
   // console.log('BASKET ? ', basket);
@@ -188,7 +191,7 @@ const Pasaa = () => {
           <div className="product" key={item.id} onClick={() => setProductId(item.id - 1)}>
             <div className="product-image">
               <img
-                src={require(`../../../../images/${item.image}.png`)}
+                src={require(`../../../../../images/${item.image}.png`)}
                 alt={item.product_name} />
             </div>
             <div className="product-name">
@@ -217,7 +220,7 @@ const Pasaa = () => {
         <div className="product-item">
           <img
             className={storedata[productId].status !== "" ? "sale-item" : ''}
-            src={require(`../../../../images/${storedata[productId].image}.png`)} alt="item" />
+            src={require(`../../../../../images/${storedata[productId].image}.png`)} alt="item" />
           <div>
             <div className="pasaa-next-prev">
               <div className="prev" onClick={prevSlide}>prev</div>

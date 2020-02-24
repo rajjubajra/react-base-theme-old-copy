@@ -1,0 +1,29 @@
+
+/** applied in LanPasaa project in category page **/
+@media(max-width: $media_small){
+
+    .updown-arrow{
+        border-left: 1px solid #333;
+        border-bottom: 1px solid #333;
+        box-sizing: border-box;
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .updown-arrow.down{  
+        transform: rotate(-45deg);
+        transition: 0.4s;
+        top: -4px;
+        left: 10px;
+    }
+    .updown-arrow.up{  
+      transform: rotate(135deg);
+      transition: 0.4s;
+      top: 6px;
+      left: 10px;
+    }
+
+}

@@ -40,6 +40,9 @@
 @import "./sass/Navigation/NavMainLanPasaa";
 @import "./sass/Navigation/NavShopLanPasaa";
 
+/** ICONS **/
+@import "./sass/Icons/UpDownArrow";
+
 
 
 /** Call To Action **/
@@ -97,8 +100,6 @@
 @import "./sass/Aboutus/FAQs";
 @import "./sass/Aboutus/LanpasaaAboutus";
 
-/** Shop **/
-@import "./sass/Shop/pasaa";
 
 /** Social Media **/
 @import "./sass/SocialMeida/socialMediaLanPasaa";
@@ -112,7 +113,12 @@
 @import "./sass/Websites/Websites";
 @import "./sass/Websites/Lotus";
 @import "./sass/Websites/Wheat";
-@import "./sass/Websites/LanPasaa";
+
+@import "./sass/Websites/LanPasaa/LanPasaa";
+@import "./sass/Websites/LanPasaa/Shop";
+@import "./sass/Websites/LanPasaa/ShopUpDownArrow";
+
+
 
 
 /** Footer **/

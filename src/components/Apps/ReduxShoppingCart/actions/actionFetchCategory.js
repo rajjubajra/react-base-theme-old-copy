@@ -3,7 +3,7 @@ import { actionTypes } from './actionTypes';
 
 
 export function actionFetchCategory() {
-  console.log("action fetch category");
+  //console.log("action fetch category");
   return function (dispatch) {
     dispatch({ type: actionTypes.FETCH_CATEGORY_START });
     axios.get("https://my-json-server.typicode.com/rajjubajra/shopping-cart/categories")

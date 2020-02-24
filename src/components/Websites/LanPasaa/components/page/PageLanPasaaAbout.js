@@ -1,8 +1,9 @@
 import React from 'react';
+import LanPasaaAboutus from './About/LanPasaaAboutus';
 import LanPasaaTitle from '../header/LanPasaaTitle';
 import NavMainLanPasaa from '../nav/NavMainLanPasaa';
-import LanPasaaAboutus from './LanPasaaAboutus';
-import SubscriptionLanPasaa from './SubscriptionLanPasaa';
+import SubscrptionLanPasaa from './About/SubscriptionLanPasaa';
+
 
 
 const PageLanPasaaAbout = () => {
@@ -11,12 +12,10 @@ const PageLanPasaaAbout = () => {
     <>
       <div className="lanpasaa">
         <LanPasaaTitle />
-        <div>
-          <NavMainLanPasaa />
-          <LanPasaaAboutus />
-          <SubscriptionLanPasaa />
+        <NavMainLanPasaa />
+        <LanPasaaAboutus />
+        <SubscrptionLanPasaa />
 
-        </div>
       </div>
     </>
   )

@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import LanPasaaTitle from '../header/LanPasaaTitle'
-import NavShopLanPasaa from '../nav/NavShopLanPasaa'
-import Pasaa from '../Pasaa';
-
-const PageLanPasaaShop = (props, params) => {
-
+import NavByGroup from '../nav/NavByGroup'
+import Shop from '../page/Shop/Shop';
+import { actionFetchData } from '../../actions/actionFetchData';
 
 
+
+const PageLanPasaaShop = () => {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(actionFetchData());
+  })
 
   return (
-    <div className="pagelanpasaashop">
+    <div className="lanpasaa">
       <LanPasaaTitle />
-      <NavShopLanPasaa />
+      <NavByGroup />
       <div className="divider"></div>
-      <Pasaa />
+      <Shop />
     </div>
   )
 }

@@ -20,7 +20,6 @@ const RouterApps = () => {
       <Route path="/apps-add-post-class" component={AddPostClass} />
       <Route path="/apps-todo-redux" component={TodoAppRedux} />
       <Route path="/apps-redux-shopping-cart" component={ReduxShoppingCart} />
-
     </Switch>
   )
 }

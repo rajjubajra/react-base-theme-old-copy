@@ -1,5 +1,5 @@
 import React from 'react';
-import fabric from '../../../../../images/LanPasaa/fabrics.jpg'
+import fabric from '../../../../../../images/LanPasaa/fabrics.jpg'
 
 const LanPasaaAboutus = () => {
   return (

@@ -15,11 +15,7 @@ import PageWheatService from '../components/Websites/Wheat/PageWheatService';
 import PageWheatTeam from '../components/Websites/Wheat/PageWheatTeam';
 import PageWheatContact from '../components/Websites/Wheat/PageWheatContact';
 
-/** LA PASAA */
-import index from '../components/Websites/LanPasaa/';
-import PageLanPasaaShop from '../components/Websites/LanPasaa/components/page/PageLanPasaaShop';
-import PageLanPasaaAbout from '../components/Websites/LanPasaa/components/page/PageLanPasaaAbout';
-import PageLanPasaaContact from '../components/Websites/LanPasaa/components/page/PageLanPasaaContact';
+
 
 
 const RouterWebsites = () => {
@@ -40,12 +36,6 @@ const RouterWebsites = () => {
       <Route path="/wheat-services" component={PageWheatService} />
       <Route path="/wheat-ourteam" component={PageWheatTeam} />
       <Route path="/wheat-contact" component={PageWheatContact} />
-
-      {/** LAN PASAA */}
-      <Route path="/lanpasaa" component={index} />
-      <Route path="/lanpasaa-shop" component={PageLanPasaaShop} />
-      <Route path="/lanpasaa-about" component={PageLanPasaaAbout} />
-      <Route path="/lanpasaa-contact" component={PageLanPasaaContact} />
 
     </Switch>
   )

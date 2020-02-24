@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 const main_menu = [
   {
     id: 1,
@@ -26,8 +27,6 @@ const main_menu = [
   },
 ]
 
-
-
 const NavMainLanPasaa = () => {
 
 
@@ -39,7 +38,9 @@ const NavMainLanPasaa = () => {
             main_menu.map(item => {
               return (
                 <li key={item.id}>
-                  <Link to={item.path} >{item.name}</Link>
+                  <Link to={item.path} className="group-name">
+                    {item.name}
+                  </Link>
                 </li>)
             })
           }
@@ -48,5 +49,4 @@ const NavMainLanPasaa = () => {
     </>
   )
 }
-
 export default NavMainLanPasaa

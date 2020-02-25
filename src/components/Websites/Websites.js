@@ -6,7 +6,7 @@ const Websites = () => {
 
   return (
     <>
-      <h1>WEBsites</h1>
+      <h1 style={{ textAlign: "center" }}>WEBSITES</h1>
       <div className="websites">
         <div>
           <h3>Lotus</h3>
@@ -19,6 +19,10 @@ const Websites = () => {
         <div>
           <h3>Lan Pasaa</h3>
           <Link className="btn-small-wide" to="/lanpasaa">Preview</Link>
+        </div>
+        <div>
+          <h3>Coffee</h3>
+          <Link className="btn-small-wide" to="coffee">Preview</Link>
         </div>
         <div>
           <h3>Bamboo</h3>

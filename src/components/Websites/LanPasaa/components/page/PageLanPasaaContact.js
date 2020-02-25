@@ -36,7 +36,6 @@ const PageLanPasaaContact = () => {
       </div>
 
     </div>
-
   )
 }
 

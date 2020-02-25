@@ -9,15 +9,12 @@ import SubscrptionLanPasaa from './About/SubscriptionLanPasaa';
 const PageLanPasaaAbout = () => {
 
   return (
-    <>
-      <div className="lanpasaa">
-        <LanPasaaTitle />
-        <NavMainLanPasaa />
-        <LanPasaaAboutus />
-        <SubscrptionLanPasaa />
-
-      </div>
-    </>
+    <div className="lanpasaa">
+      <LanPasaaTitle />
+      <NavMainLanPasaa />
+      <LanPasaaAboutus />
+      <SubscrptionLanPasaa />
+    </div>
   )
 }
 

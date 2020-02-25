@@ -18,6 +18,7 @@ import PageWheatContact from '../components/Websites/Wheat/PageWheatContact';
 
 
 
+
 const RouterWebsites = () => {
   return (
     <Switch>
@@ -36,6 +37,10 @@ const RouterWebsites = () => {
       <Route path="/wheat-services" component={PageWheatService} />
       <Route path="/wheat-ourteam" component={PageWheatTeam} />
       <Route path="/wheat-contact" component={PageWheatContact} />
+
+
+
+
 
     </Switch>
   )

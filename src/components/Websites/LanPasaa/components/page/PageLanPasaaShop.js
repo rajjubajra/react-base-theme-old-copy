@@ -13,7 +13,7 @@ const PageLanPasaaShop = () => {
 
   useEffect(() => {
     dispatch(actionFetchData());
-  })
+  }, [dispatch])
 
   return (
     <div className="lanpasaa">

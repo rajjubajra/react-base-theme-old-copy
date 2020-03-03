@@ -4,7 +4,7 @@ const initialData = {
   fetching: false,
   fetched: false,
   error: null,
-  categories: []
+  data: []
 }
 
 export const reducerFetchData = (state = initialData, action) => {
@@ -18,18 +18,24 @@ export const reducerFetchData = (state = initialData, action) => {
         }
       }
     case actionTypes.FETCH_LAN_PASAA_DATA_RECEIVED: {
+      console.log("REDUCER: DATA RECEIVED");
       return {
         ...state,
-        categories: action.payload,
+        data: action.payload,
         fetched: true,
         fetching: false,
         error: null
       }
     }
-
-
+    case actionTypes.FETCH_LAN_PASAA_DATA_ERROR:
+      return {
+        ...state,
+        data: action.payload,
+        fetched: false,
+        fetching: false,
+        error: action.payload
+      }
     default:
       return state;
-
   }
 }

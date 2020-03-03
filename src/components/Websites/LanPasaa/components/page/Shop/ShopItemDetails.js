@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { actionClearItemDetails } from '../../../actions/actionNavigation';
-import { actionAddToCart } from '../../../actions/actonCart';
+import { actionAddToCart, actionAddQty } from '../../../actions/actionCart';
 
 const ShopItemDetails = () => {
   const dispatch = useDispatch();
@@ -10,6 +10,17 @@ const ShopItemDetails = () => {
   const itemId = useSelector(state => state.reducerNavigation.itemId);
   const itemName = useSelector(state => state.reducerNavigation.itemName);
   const itemPrice = useSelector(state => state.reducerNavigation.itemPrice);
+
+
+  /** in order to handle ADD_TO_CART and ADD_QTY */
+  /** if Product Id exist take action ADD_QTY else ADD_TO_CART */
+  const cart = useSelector(state => state.reducerCart.cart);
+
+  /** if Product Id exist in the cart array 
+  * take action ADD_QTY else ADD_TO_CART */
+  let indexId = (element) => element.id === itemId;
+  let cartIndex = cart.findIndex(indexId);
+  //console.log("CART INDEX?", cartIndex);
 
   return (
     <div className="product-item">
@@ -25,9 +36,12 @@ const ShopItemDetails = () => {
         </div>
         <div className="buttons">
           <button onClick={() => dispatch(actionClearItemDetails())}>BACK</button>
-          <button
-            onClick={() => dispatch(actionAddToCart(itemId, itemName, itemPrice))} >
-            Add to cart</button>
+          {
+            cartIndex === -1
+              ? <button
+                onClick={() => dispatch(actionAddToCart(itemId, itemName, itemPrice, 1, itemPrice))}>Add to cart</button>
+              : <button onClick={() => dispatch(actionAddQty(cartIndex, itemName, itemPrice, 1, itemPrice))}> Add Quantity </button>
+          }
         </div>
 
       </div>
@@ -36,3 +50,4 @@ const ShopItemDetails = () => {
 }
 export default ShopItemDetails;
 
+/* onClick={() => dispatch(actionAddToCart(itemId, itemName, itemPrice, 1, itemPrice))}  */

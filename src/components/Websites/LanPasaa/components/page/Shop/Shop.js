@@ -6,10 +6,17 @@ import ShopItemDetails from './ShopItemDetails';
 import CartDetails from './CartDetails';
 import CartSummary from './CartSummary';
 
+
+
+
 const Shop = () => {
+
+  console.log('SHOP JS')
   /** DATA FROM REDUX STORE
   being passed in to all the components **/
-  const categories = useSelector(state => state.reducerFetchData.categories)
+  const data = useSelector(state => state.reducerFetchData.data)
+  const products = useSelector(state => state.reducerFetchProducts);
+  console.log("SHOP JS: ", data, products);
 
   /** Item id for view product list or single item */
   const itemId = useSelector(state => state.reducerNavigation.itemId);
@@ -19,12 +26,10 @@ const Shop = () => {
 
   /** cart view : true or false */
   const cartView = useSelector(state => state.reducerCart.viewCart);
-  console.log("CART VIEW", cartView);
+  //console.log("CART VIEW", cartView);
 
   /** category name */
-  const category = useSelector(state => state.reducerNavigation.category)
-
-
+  const category = useSelector(state => state.reducerNavigation.category);
 
   return (
     <div className="shop">
@@ -32,14 +37,14 @@ const Shop = () => {
       {/** CATEGORIES LIST */}
       <section className="categories">
 
-        <ShopCategory data={categories} />
+        <ShopCategory prod={data} />
       </section>
 
       {/** PRODUCT LIST | CART VIEW */}
 
       <section className="product">
         {/** do not view if cart is empty */
-          totalPrice === 0 ? <p style={{ textAlign: "center" }}>Cart is empty</p> : <CartSummary />
+          totalPrice === 0 ? <p className="cart-empty-message">Cart is empty</p> : <CartSummary />
         }
 
         { /** view cart details */
@@ -51,7 +56,7 @@ const Shop = () => {
             ? <>
               <h3>Product List: <b>{category}</b></h3>
               <div className="product-list">
-                <ShopItems data={categories} />
+                <ShopItems prod={data} />
               </div>
             </>
             : ''
@@ -64,16 +69,12 @@ const Shop = () => {
             : <>
               <h3>Product List: <b>{category}</b></h3>
               <div className="product-details">
-                <ShopItemDetails data={categories} />
+                <ShopItemDetails />
               </div>
             </>
         }
-
-
       </section>
     </div>
-
   )
 }
-
 export default Shop

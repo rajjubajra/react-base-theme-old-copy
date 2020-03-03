@@ -25,16 +25,24 @@ const Products = () => {
     )
   }
 
+
+  const productListing = (category_id, product_id, name, price) => {
+    /** list all */
+    if (cateId === 0) {
+      return productDetail(product_id, name, price);
+    }
+    /** list by category */
+    if (cateId === category_id) {
+      return productDetail(product_id, name, price);
+    }
+  }
+
+
   return (<div>
     {
       categories.map((item, index) => {
         return <ul key={index}>{item.products.map((prod) => {
-          if (cateId === 0) {
-            return productDetail(prod.id, prod.name, prod.price);
-          }
-          if (cateId === item.id) {
-            return productDetail(prod.id, prod.name, prod.price);
-          }
+          return productListing(item.id, prod.id, prod.name, prod.price);
         }
         )}
         </ul>

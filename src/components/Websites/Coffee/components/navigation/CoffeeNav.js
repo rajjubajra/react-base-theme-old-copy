@@ -38,7 +38,7 @@ const CoffeeNav = () => {
         <ul className="desktop-nav">
           {
             mainnav.map((item, index) => {
-              return (<li><Link to={item.path}>{item.name}</Link></li>)
+              return (<li key={index}><Link to={item.path}>{item.name}</Link></li>)
             })
           }
         </ul>

@@ -18,7 +18,7 @@ export const reducerNavigation = (state = initialState, action) => {
           category: state.category,
           itemId: action.itemId,
           itemName: action.itemName,
-          itemPrice: action.itemPrice
+          itemPrice: action.itemPrice,
         }
       }
     case actionTypes.ITEM_DETAILS_CLEAR:

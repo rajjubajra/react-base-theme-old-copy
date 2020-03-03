@@ -8,6 +8,16 @@
   // background-color: $background_lighter;
   box-sizing: border-box;
 
+  .cart-empty-message{
+    text-align: center;
+    border: 1px solid $border_lighter;
+    width: 200px;
+    margin: 0px auto;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: $small;
+  }
+
   .buttons{
     display: flex;
     justify-content: space-between;
@@ -202,6 +212,7 @@
 
       div:nth-child(1){
         width: 100px;
+        text-align: center;
         @media(max-width: $media_small){
           width: 50px;
         }
@@ -219,6 +230,20 @@
         }
       }
       div:nth-child(4){
+        width: 100px;
+        @media(max-width: $media_small){
+          width: 50px;
+        }
+      }
+      div:nth-child(5){
+        width: 100px;
+        text-align: right;
+        margin-right: 10px;
+        @media(max-width: $media_small){
+          width: 50px;
+        }
+      }
+      div:nth-child(6){
         width: 100px;
         @media(max-width: $media_small){
           width: 50px;

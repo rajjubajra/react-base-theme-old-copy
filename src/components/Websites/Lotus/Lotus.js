@@ -2,8 +2,8 @@ import React from 'react';
 import NavLotus from './NavLotus';
 import HeroLotus from './HeroLotus';
 import B3Lotus from './B3Lotus';
-import TwoColumns from './TwoColumns';
-import TwoColumnLotus from './TwoColumnLotus';
+import TwoColumnsLotus1 from './TwoColumnsLotus1';
+import TwoColumnsLotus2 from './TwoColumnsLotus2';
 import CopyRightFooter from './CopyRightFooter';
 import TwoColumnContact from './TwoColumnContact';
 
@@ -20,8 +20,8 @@ const Lotus = () => {
           <div className="divider"></div>
           <div className="divider"></div>
           <div className="divider"></div>
-          <TwoColumns />
-          <TwoColumnLotus />
+          <TwoColumnsLotus1 />
+          <TwoColumnsLotus2 />
           <div className="divider"></div>
           <div className="divider"></div>
           <div className="divider"></div>

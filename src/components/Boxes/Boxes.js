@@ -10,11 +10,11 @@ import B3Plans from './B3Plans';
 import B3Prices from './B3Prices';
 import B4BoxBorder from './B4BoxBorder';
 import B4Boxes from './B4Boxes';
-import B3Lotus from './B3Lotus';
+import B3Blocks from './B3Blocks';
 
 const Boxes = () => {
   return (
-    <div className="apps">
+    <div className="app">
       <B4Members />
       <B3Images />
       <B3Services />
@@ -26,7 +26,7 @@ const Boxes = () => {
       <B3Prices />
       <B4BoxBorder />
       <B4Boxes />
-      <B3Lotus />
+      <B3Blocks />
     </div>
   )
 }

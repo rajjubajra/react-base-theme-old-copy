@@ -1,4 +1,4 @@
-.b3lotus{
+.b3blocks{
   *{
     box-sizing: border-box;
   }
@@ -14,16 +14,12 @@
     position: absolute;
     width: 100%;
     min-height: 1000px;
-    @media(max-width: $media_small){
-      min-height: 1550px;
+    @media(max-width: $media_medium){
+      min-height: 1680px;
     }
-    @media only screen and (max-width: 640px) and (orientation: landscape) {
-      min-height: 1470px;
+    @media(max-width: $media_large){
+      min-height: 1680px;
     }
-    @media only screen and (max-width: 768px) and (orientation: portrait) {
-      min-height: 1000px;
-    }
-
     background-image: url('../../images/snow-leopard.jpg');
     filter: grayscale(100%);
     background-repeat: no-repeat;

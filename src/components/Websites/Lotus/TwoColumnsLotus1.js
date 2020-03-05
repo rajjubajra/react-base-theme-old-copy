@@ -1,12 +1,12 @@
 import React from 'react'
 import img_photography from '../../../images/photographer-kid.jpg'
-const TwoColumns = () => {
+const TwoColumnsLotus1 = () => {
   return (
     <>
-      <div className="twocolumns">
+      <div className="twocolumns-lotus-1">
         <div className="text">
           <h4>Plan</h4>
-          <h1>Moments consectetur, adipisicing elit.</h1>
+          <h2>Moments consectetur, adipisicing elit.</h2>
           <section>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sunt voluptatibus maiores facere adipisci reprehenderit placeat est beatae, doloribus eaque accusantium praesentium unde distinctio ratione nesciunt rerum veritatis sit! Consequatur.</p>
@@ -26,4 +26,4 @@ const TwoColumns = () => {
   )
 }
 
-export default TwoColumns
+export default TwoColumnsLotus1

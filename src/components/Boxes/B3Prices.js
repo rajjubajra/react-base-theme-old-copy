@@ -52,15 +52,18 @@ const plans = jsonOBject.map(item => {
 
 const B3Prices = () => {
   return (
-    <div className="b3prices">
-      <h2>B3Plans</h2>
-      <h1>Chose the perfect plan</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nulla consectetur!</p>
-      <div className="price">
+    <>
+      <div className="ref">B3Prices.js and B3Price.js</div>
+      <div className="b3prices">
+        <h2>B3Plans</h2>
+        <h1>Chose the perfect plan</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nulla consectetur!</p>
+        <div className="price">
 
-        {plans}
+          {plans}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

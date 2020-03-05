@@ -4,11 +4,11 @@ import img_file from '../../images/png-image/icon_file.png';
 import img_pen from '../../images/png-image/icon_pen.png';
 
 
-const B3Lotus = () => {
+const B3Blocks = () => {
   return (
     <>
       <div className="ref">B3Lotus.js</div>
-      <div className="b3lotus">
+      <div className="b3blocks">
         <div>
           <h1>Climate Change</h1>
         </div>
@@ -32,11 +32,9 @@ const B3Lotus = () => {
             <p>__________</p>
           </div>
         </div>
-
-
       </div>
     </>
   )
 }
 
-export default B3Lotus
+export default B3Blocks

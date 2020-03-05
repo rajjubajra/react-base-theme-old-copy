@@ -2,11 +2,18 @@
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr;
+  @media(max-width: $media_medium) {
+    grid-template-columns: 1fr;
+  }
   padding: 10px;
 
   div{
+    box-sizing: border-box;
     padding: 10px;
     border: 1px solid $border_lighter;
+    @media(max-width: $media_medium) {
+      border: 0px;
+    }
     min-height: 400px;
     img{
       width: 100%;
@@ -14,22 +21,16 @@
     }
   }
 
-  .boxone{
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-  }
-  .boxtwo{
-    grid-column: 2 / 3;
-    grid-row: 1 / 1;
+  .boxone{ grid-column: 1 / 1; grid-row: 1 / 1; }
+  .boxtwo{ grid-column: 2 / 3; grid-row: 1 / 1; }
+  .boxthree{ grid-column: 2 / 3; grid-row: 2 / 2; }
+  .boxfour{ grid-column: 1 / 1; grid-row: 2 / 2; }
 
-  }
-  .boxthree{
-    grid-column: 2 / 3;
-    grid-row: 2 / 2;
-  }
-  .boxfour{
-    grid-column: 1 / 1;
-    grid-row: 2 / 2;
+  @media(max-width: $media_medium){
+    .boxone{ grid-column: 1 / 1; grid-row: 1 / 1; }
+    .boxtwo{ grid-column: 1 / 1; grid-row: 2 / 2; }
+    .boxthree{ grid-column: 1 / 1; grid-row: 3 / 3; }
+    .boxfour{ grid-column: 1 / 1; grid-row: 4 / 4; }
   }
 
 }

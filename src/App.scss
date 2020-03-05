@@ -17,7 +17,7 @@
 @import "./sass/Boxes/b3prices";
 @import "./sass/Boxes/b4boxborder";
 @import "./sass/Boxes/b4boxes";
-@import "./sass/Boxes/b3Lotus";
+@import "./sass/Boxes/b3blocks";
 
 /** Columns **/
 @import "./sass/Columns/TwoColumns";
@@ -111,9 +111,18 @@
 
 /** Websites **/
 @import "./sass/Websites/Websites";
-@import "./sass/Websites/Lotus";
-@import "./sass/Websites/Wheat";
 
+/** WHEAT **/
+@import "./sass/Websites/Wheat/Wheat";
+
+/** LOTUS **/
+@import "./sass/Websites/Lotus/b3Lotus";
+@import "./sass/Websites/Lotus/TwoColumnsLotus1";
+@import "./sass/Websites/Lotus/TwoColumnsLotus2";
+@import "./sass/Websites/Lotus/Lotus";
+
+
+/** LAN PASAA **/
 @import "./sass/Websites/LanPasaa/LanPasaa";
 @import "./sass/Websites/LanPasaa/Shop";
 @import "./sass/Websites/LanPasaa/ShopUpDownArrow";
@@ -143,6 +152,7 @@
   margin: 200px 0px;
 }
 .App {
+  box-sizing: border-box;
   width: 100%;
   margin: 0px;
   padding: 0px;

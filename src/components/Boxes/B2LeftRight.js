@@ -6,6 +6,7 @@ import B2LeftRightBs from './B2LeftRightBs'
 const B2LeftRight = () => {
   return (
     <>
+      <div className="ref">B2LeftRight.js and B2LeftRightA.js and B2LeftRightBs.js</div>
       <h2>B2LeftRight</h2>
       <div className="b2leftright">
         <div className="left-block">

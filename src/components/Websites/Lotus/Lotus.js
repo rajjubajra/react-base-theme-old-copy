@@ -29,7 +29,6 @@ const Lotus = () => {
           <div className="divider"></div>
         </div>
       </div>
-      <CopyRightFooter />
     </>
   )
 }

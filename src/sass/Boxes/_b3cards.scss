@@ -3,10 +3,13 @@
   background-color: $background_lighter;
   outline: 1px solid $border_dark;
   outline-offset: -10px;
+  text-align: center;
   
     .image{
+      box-sizing: border-box;
+      margin: 20px 0px;
       img{
-        width: 100%;
+        width: 90%;
         height: auto;
       }
     }
@@ -25,9 +28,7 @@
       position: absolute;
       bottom: 25px;
     }
-  
   }
-
 
 .b3cards{
   h2{text-align: center;}

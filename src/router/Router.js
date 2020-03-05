@@ -22,8 +22,10 @@ const Router = () => {
         <LanPasaa />
         <Coffee />
 
+        <div className="copy-right-footer">
+          <CopyRightFooter />
+        </div>
 
-        <CopyRightFooter />
       </BrowserRouter>
 
     </>

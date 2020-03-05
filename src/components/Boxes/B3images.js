@@ -8,12 +8,13 @@ const B3Images = () => {
 
   return (
     <>
-    <h2>B3Images</h2>
-    <div className="b3images">      
-      <img src={img1} alt='top' />
-      <img src={img2} alt='top' />
-      <img src={img3} alt='top' />
-    </div>
+      <div className="ref">b3images.js and b3image.js</div>
+      <h2>B3Images</h2>
+      <div className="b3images">
+        <img src={img1} alt='top' />
+        <img src={img2} alt='top' />
+        <img src={img3} alt='top' />
+      </div>
     </>
   )
 }

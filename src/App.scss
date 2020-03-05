@@ -14,7 +14,7 @@
 @import "./sass/Boxes/b2leftright";
 @import "./sass/Boxes/b2reviews";
 @import "./sass/Boxes/b3plans";
-@import "./sass/Boxes/b3plans-a";
+@import "./sass/Boxes/b3prices";
 @import "./sass/Boxes/b4boxborder";
 @import "./sass/Boxes/b4boxes";
 @import "./sass/Boxes/b3Lotus";
@@ -132,6 +132,7 @@
 
 /** **/
 .ref {
+  box-sizing: border-box;
   font-size: 0.7rem;
   font-weight: 800;
   padding: 10px 20px;
@@ -139,7 +140,7 @@
   color: #ccc;
   letter-spacing: 2px;
   width: 100%;
-  margin: 15px 0px;
+  margin: 200px 0px;
 }
 .App {
   width: 100%;

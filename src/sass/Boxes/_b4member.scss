@@ -7,7 +7,7 @@
   .profile{  
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   } 
   
 }
@@ -20,6 +20,8 @@
   padding: 20px;
   outline: 1px solid $border_lighter;
   outline-offset: -14px;
+
+
   
   .image{
     grid-column: 1 /4;

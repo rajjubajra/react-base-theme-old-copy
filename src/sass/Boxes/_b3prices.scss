@@ -1,0 +1,97 @@
+.b3prices{
+  margin: 20px 0px;
+  padding: 100px 0px;
+  border-top: 1px solid $border_lighter;
+  border-bottom: 1px solid $border_lighter;
+  text-align: center;
+  @media(max-width: $media_extra_small){
+    max-width: 300px;
+  }
+
+
+  .price{
+    box-sizing: border-box;
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+
+        .b3price{
+          box-sizing: border-box;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: minmax(30px, auto);
+          text-align: center;
+          padding: 20px;
+          margin: 10px;
+          color: $color_dark;
+          border: 1px solid $border_lighter;
+          border-radius: 15px;
+          position: relative;
+          box-shadow: 1px 1px 2px #ece7e7;
+
+          h2, h1{
+            color: $color_dark;
+            line-height: 1rem;
+            font-weight: 800;
+          }
+          
+          .fa-coffee{
+            width: 30px;
+            height: 30px;
+          }
+
+          .rate{
+            h1{
+              font-weight: 800;
+            }
+            .period{
+              position: relative;
+              top: -10px;
+              letter-spacing: 1px;
+              font-weight: 100;
+              text-transform: uppercase;
+              font-size: 0.8rem;
+            }
+          }
+
+          .items{
+            width: 100%;
+            margin: 0px auto;
+            min-height: 120px;
+            border-top: 1px solid $border_lighter;
+            ul{
+              margin: 0px;
+              padding: 0px;
+              display: flex;
+              justify-content: center;
+              position: relative;
+              li{
+                list-style: none;
+                text-align: left;
+                line-height: 2.3rem;
+                min-height: auto;
+                outline: 0px;
+                &::before{
+                  content: '-';
+                  position: absolute;
+                  left: 60px;
+                  
+                }
+              }
+            }
+          }
+
+          .text{
+            padding: 0px 20px;
+            line-height: 1.5rem;
+            min-height: 100px;
+          }
+          
+          
+        }
+
+
+  }
+  
+}

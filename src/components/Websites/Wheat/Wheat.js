@@ -39,10 +39,6 @@ const Wheat = () => {
           <ScrollOnClick />
         </div>
       </div>
-
-      <div className="wheat-footer">
-        <CopyRightFooter />
-      </div>
     </>
   )
 }

@@ -7,14 +7,14 @@ import B3TextImages from './B3TextImages';
 import B2LeftRight from './B2LeftRight';
 import B2Reviews from './B2Reviews';
 import B3Plans from './B3Plans';
-import B3PlansA from './B3PlansA';
+import B3Prices from './B3Prices';
 import B4BoxBorder from './B4BoxBorder';
 import B4Boxes from './B4Boxes';
 import B3Lotus from './B3Lotus';
 
 const Boxes = () => {
   return (
-    <div>
+    <div className="apps">
       <B4Members />
       <B3Images />
       <B3Services />
@@ -23,7 +23,7 @@ const Boxes = () => {
       <B2LeftRight />
       <B2Reviews />
       <B3Plans />
-      <B3PlansA />
+      <B3Prices />
       <B4BoxBorder />
       <B4Boxes />
       <B3Lotus />

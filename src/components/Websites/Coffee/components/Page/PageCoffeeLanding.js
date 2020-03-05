@@ -1,12 +1,14 @@
 import React from 'react'
+import CoffeeLanding from './Landing/CoffeeLanding'
+import HowItWorks from './Landing/HowItWorks'
 
 
 const PageCoffeeLanding = () => {
   return (
-    <div className="coffee">
+    <div className="coffee-landing">
       <div className="header">Main Nav</div>
-      <div className="landing">Landing...</div>
-      <div className="block-2">2nd Block</div>
+      <div className="landing"><CoffeeLanding /></div>
+      <div className="block-2"><HowItWorks /></div>
       <div className="block-3">3rd Block</div>
       <div className="block-4">4th block</div>
       <div className="block-5">5th block[subscription]</div>

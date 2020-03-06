@@ -1,8 +1,8 @@
 <h1>WEBSITES</h1>
-<h1>Coffee:</h1>
+<h2>Coffee:</h2>
 <div>Website template with shopping cart option. Work in progress</div>
 
-<h1>Lan Pasaa</h1>
+<h2>Lan Pasaa</h2>
 <div>Shopping cart with product category.
 <h3>Features</h3>
 <ul>
@@ -17,12 +17,23 @@
 <li>About us page with subscription form at the bottom</li>
 <li>Contact Page 
 <ul> 
-<li>Contail Information</li>
+<li>Contact Information</li>
 <li>contact form</li>
-<li>three column Locaton, Opening hours and quick contact information<li>
+<li>three column Locaton, Opening hours and quick contact information</li>
 <li>Social Media Icon</li>
 </ul>
 </li>
 </ul>
+</div>
 
+<h2>Lotus</h2>
+<div>Website template
+<h3>Pages:</h3>
+<ul>
+<li>Home page: landing page with animations</li>
+<li>About us : About us, Team members, Two column contact information</li>
+<li>We we do page with quick message form</li>
+<li>FAQ: onclick collaps show and hide<li>
+<li>Contact: Two colum contact information and Contact form</li>
+</ul>
 </div>

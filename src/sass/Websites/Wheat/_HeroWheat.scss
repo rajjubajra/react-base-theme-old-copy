@@ -1,0 +1,81 @@
+
+.herowheat{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  position: relative;
+
+  &::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+    background-image: url('../../../images/wheat/wheat-1.jpg');
+    filter: grayscale(100%);
+    background-size: cover;
+    transform: scaleX(-1);
+  }
+
+
+  .main{
+    position: absolute;
+    top: 60%;
+    @media(max-width: $media_medium){
+      top: 40%;
+    }
+    @media(max-width: $media_small){
+      top: 15%;
+    }
+    @media only screen and (max-width: $media_medium) and (orientation: landscape) {
+      top: 30%
+    }
+    @media only screen and (max-width: $media_small) and (orientation: landscape) {
+      top: 15%
+    }
+    @media only screen and (max-width: $media_small) and (orientation: portrait){
+      top: 60%;
+    }
+    @media only screen and (max-width: $media_extra_small) and (orientation: portrait){
+      top: 30%;
+    }
+
+    left: 10%;
+    width: 65%;
+    min-height: 400px;
+        h1{
+        font-size: $extra_large;
+        @media(max-width: $media_medium){
+          font-size: $larger;
+        }
+        @media(max-width: $media_small){
+          font-size: $large;
+        }
+        @media only screen and (max-width: $media_medium) and (orientation: landscape){
+          font-size: $large;
+        }
+        text-transform: none;
+        font-weight: 900;
+        text-shadow: none;
+        margin: 0px;
+        color: $color_dark;
+      }
+
+      p{
+        line-height: 1.5rem;
+        @media(max-width: $media_small){
+          font-size: $medium;
+        }
+      }
+      .buttons{
+        margin-top: 30px;
+        button{
+          margin: 3px 5px;
+        }
+      }
+  }
+
+
+}

@@ -1,0 +1,50 @@
+.subscription-lanpasaa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+  .header{
+    font-size: $small;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 100px 0px 30px 0px;
+  }
+  h1{
+    font-size: $larger;
+    font-weight: 800;
+    text-align: center;
+    @media(max-width: $media_small){
+      font-size: $large;
+    }
+  }
+  form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    justify-content: center;
+    align-items: center;
+    input{
+      width: 100%;
+      max-width: 350px;
+      height: 30px;
+      padding: 5px 5px;
+      font-size: $regular;
+      outline: none;
+      border: 0px;
+      border-bottom: 1px solid $border_lighter;
+    }
+    button{
+      width: 150px;
+      margin: 20px 0px;
+    }
+  }
+  p{
+    width: 90%;
+    margin: 0px auto;
+    max-width: 500px;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+}

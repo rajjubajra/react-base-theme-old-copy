@@ -113,7 +113,13 @@
 @import "./sass/Websites/Websites";
 
 /** WHEAT **/
+@import "./sass/Websites/Wheat/HeroWheat";
+@import "./sass/Websites/Wheat/ThreeColumnWheat";
+@import "./sass/Websites/Wheat/TwoColPriceWheat";
+@import "./sass/Websites/Wheat/TwoColumnWheat";
 @import "./sass/Websites/Wheat/Wheat";
+
+
 
 /** LOTUS **/
 @import "./sass/Websites/Lotus/b3Lotus";
@@ -126,6 +132,7 @@
 @import "./sass/Websites/LanPasaa/LanPasaa";
 @import "./sass/Websites/LanPasaa/Shop";
 @import "./sass/Websites/LanPasaa/ShopUpDownArrow";
+
 
 @import "./sass/Websites/Coffee/Coffee";
 

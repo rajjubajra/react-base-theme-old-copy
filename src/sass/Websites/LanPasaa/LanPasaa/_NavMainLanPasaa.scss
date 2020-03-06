@@ -1,0 +1,37 @@
+.navmainlanpasaa{
+  width: 100%;
+  
+  margin: 0px auto;
+  text-align: center;
+  ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 0px;
+    li{
+      margin: 20px;
+      a{
+        text-decoration: none;
+        font-size: $regular;
+        letter-spacing: 0.3rem;
+        color: $color_black;
+      }
+    }
+   @media(max-width: $media_small){
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     li{
+       height: 100px;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 0px;
+     }
+   } 
+    
+  }
+
+}

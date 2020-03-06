@@ -1,0 +1,52 @@
+@keyframes dropDownAnimation{
+  0% {top: -300px}
+  100%{top: 0px;}
+}
+@keyframes textAnimation{
+  0%{ opacity: 0; letter-spacing: 1rem;}
+  5%{letter-spacing: 1rem;}
+100%{letter-spacing: 0.3rem; opacity: 1;}
+}
+
+.lanpasaatitle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+  /** animation back to home page **/
+  h1.dropdown-animation{
+    opacity: 1;
+  animation: dropDownAnimation 1s;
+  }
+  /** animation while landing page **/
+  h1.text-animation{
+    opacity: 1;
+    animation: textAnimation 2s ease;
+  }
+  h1{
+    font-size: $megha_font;
+    font-family: serif;
+    text-transform: lowercase;
+    letter-spacing: 0.3rem;
+    position: relative;
+
+    
+    &::before{
+      content: "a clothes Store";
+      position: absolute;
+      top: 93px;
+      right: 0px;
+      font-size: 1rem;
+      letter-spacing: 0.45rem;
+      @media(max-width: $media_small){
+        top: 44px;
+        right: 2px;
+        font-size: 0.7rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+    @media(max-width: $media_small){
+      font-size: $extra_large;
+    }
+  }
+}

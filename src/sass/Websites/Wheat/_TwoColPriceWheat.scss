@@ -1,0 +1,62 @@
+.twocolpricewheat{
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .header{
+    font-size: $medium;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  h1{
+    text-align: center;
+    font-weight: 800;
+    text-shadow: none;
+    font-size: $larger;
+    margin: 20px 0px 100px 0px;
+    text-transform: none;
+  }
+
+  .price-group{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    div{
+      
+        border-left: 1px solid $border_lighter;
+      
+        h2{
+          font-weight: 400;
+          font-size: $large;
+          text-shadow: none;
+          text-transform: none;
+          text-align: center;
+        }
+
+        div.icon{
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+          margin: 0px auto;
+          border: 1px solid $border_lighter;
+          border-radius: 100px;
+          img{
+            width: 100%;
+          }
+        }
+        p{
+          padding: 5px 20%;
+          line-height: 1.7rem;
+        }
+    }
+  }
+
+  .button{
+    text-align: center;
+    margin: 100px 0px;
+  }
+
+}

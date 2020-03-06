@@ -15,6 +15,11 @@
 <li>From detail cart view addtional item can be plus '+' minus '-' and remove all</li>
 <li>On the product list once the item is added to the cart the button will change to Add Quantity button and if pressed it will add the quantity</li>
 <li>
+<li>About us page with subscription form at the bottom<li>
+<li>Contact Page <ul> 
+<li>Contail Information<li>
+<li>contact form</li><li>three column Locaton, Opening hours and quick contact information<li><li>Social Media Icon</li>
+</ul>
 </ul>
 
 </div>

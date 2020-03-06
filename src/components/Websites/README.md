@@ -4,7 +4,7 @@
 
 <h2>Lan Pasaa</h2>
 <div>Shopping cart with product category.
-<h3>Features</h3>
+<h4>Features</h4>
 <ul>
 <li>Product Grouped by category</li>
 <li>Product listing All or by category</li>
@@ -28,7 +28,7 @@
 
 <h2>Lotus</h2>
 <div>Website template
-<h3>Pages:</h3>
+<h4>Pages:</h4>
 <ul>
 <li>Home page: landing page with animations</li>
 <li>About us : About us, Team members, Two column contact information</li>

@@ -33,7 +33,11 @@
 <li>Home page: landing page with animations</li>
 <li>About us : About us, Team members, Two column contact information</li>
 <li>We we do page with quick message form</li>
-<li>FAQ: onclick collaps show and hide<li>
+<li>FAQ: onclick collaps show and hide</li>
 <li>Contact: Two colum contact information and Contact form</li>
 </ul>
 </div>
+
+
+<h2>Wheat</h2>
+<div>Website template with Aboutus, Services, Our Team and contact page</div>

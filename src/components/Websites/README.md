@@ -3,6 +3,7 @@
 <div>Website template with shopping cart option. Work in progress</div>
 
 <h2>Lan Pasaa</h2>
+[ database: local json server. source: https://my-json-server.typicode.com ]
 <div>Shopping cart with product category.
 <h4>Features</h4>
 <ul>

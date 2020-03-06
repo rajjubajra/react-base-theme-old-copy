@@ -6,7 +6,13 @@
 
 
 
-<p><strong>Website:<a href="https://github.com/rajjubajra/react-base-theme/tree/master/src/components/Websites">[Complete Website Template]</a></strong><br />
+<h3>Website:</h3>
+<a href="https://github.com/rajjubajra/react-base-theme/tree/master/src/components/Websites">[Complete Website Template]</a>
+<div>Website Templates and Website with Shopping cart</div>
 
 
-</p> 
+<h3>Apps<a href="https://github.com/rajjubajra/react-base-theme/tree/master/src/components/Apps">Link</a></h3>
+<div>Worked on small apps in order to understand the Redux</div>
+
+<h3>Folders</h3>
+<div>Planed for reusable components</div>

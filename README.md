@@ -7,7 +7,7 @@
 
 
 <h3>Website:</h3>
-<a href="https://github.com/rajjubajra/react-base-theme/tree/master/src/components/Websites">[Complete Website Template]</a>
+<a href="https://github.com/rajjubajra/react-base-theme/tree/master/src/components/Websites">[Website Template]</a>
 <div>Website Templates and Website with Shopping cart</div>
 
 

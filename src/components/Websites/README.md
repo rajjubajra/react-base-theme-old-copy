@@ -7,13 +7,13 @@
 <h3>Features</h3>
 <ul>
 <li>Product Grouped by category</li>
-<li>Product listing All or by category<li>
-<li>Product Add to cart button and view button for product detail page.<li>
+<li>Product listing All or by category</li>
+<li>Product Add to cart button and view button for product detail page.</li>
 <li>Cart Summary appears at the top of the page once a item is added to the cart</li>
-<li>Cart Summary contains Number of Items, total amount, "Clear" and "Veiw Cart" button<li>
+<li>Cart Summary contains Number of Items, total amount, "Clear" and "Veiw Cart" button</li>
 <li>The "Clear" button clears the cart and "View Cart" button display detail cart view</li>
-<li>From detail cart view addtional item can be added deduct and remove all</li>
-<li>On the product list once the item is added to the cart the button will change to Add Quantity button</li>
+<li>From detail cart view addtional item can be plus '+' minus '-' and remove all</li>
+<li>On the product list once the item is added to the cart the button will change to Add Quantity button and if pressed it will add the quantity</li>
 <li>
 </ul>
 

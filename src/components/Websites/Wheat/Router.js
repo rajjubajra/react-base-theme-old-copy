@@ -13,7 +13,7 @@ const Router = () => {
   return (
     <Switch>
       {/** WHEAT */}
-      <Route exact path="/wheat" component={PageWheatLanding} />
+      <Route exact path="/" component={PageWheatLanding} />
       <Route path="/wheat-aboutus" component={PageWheatAbout} />
       <Route path="/wheat-services" component={PageWheatService} />
       <Route path="/wheat-ourteam" component={PageWheatTeam} />

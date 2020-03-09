@@ -1,0 +1,57 @@
+.teamwheat{
+  display: grid;
+  grid-template-columns: 1fr;
+
+  p{
+    text-transform: uppercase;
+    font-size: $small;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+
+  h1{
+    font-size: $larger;
+    text-shadow: none;
+    text-align: center;
+    font-weight: 800;
+    margin: 10px 0px 80px 0px
+  }
+
+  div.members{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 90%;
+    margin: 0px auto;
+
+    div{
+      min-width: 180px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+      .name{
+        font-size: $large;
+        font-weight: 400;
+        text-align: center;
+        margin: 40px 0px 10px 0px;
+      }
+      .position{
+        text-transform: uppercase;
+        font-size: $small;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .button{
+    text-align: center;
+    button{
+      margin: 80px 0px 50px 0px;
+    }
+  }
+
+  
+}

@@ -1,0 +1,42 @@
+.subscriptionwheat{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .header{
+    font-size: $small;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 100px 0px 30px 0px;
+  }
+  h1{
+    font-size: $larger;
+    font-weight: 800;
+    text-align: center;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    justify-content: center;
+    align-items: center;
+    input{
+      width: 350px;
+      height: 30px;
+      padding: 5px 5px;
+      font-size: $regular;
+      outline: none;
+      border: 0px;
+      border-bottom: 1px solid $border_lighter;
+    }
+    button{
+      width: 150px;
+      margin: 20px 0px;
+    }
+  }
+  p{
+    max-width: 500px;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+}

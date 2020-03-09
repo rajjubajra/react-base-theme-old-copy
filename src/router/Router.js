@@ -6,6 +6,7 @@ import RouterWebsites from './RouterWebsites';
 import CopyRightFooter from '../components/Footers/CopyRightFooter';
 import LanPasaa from '../components/Websites/LanPasaa/LanPasaa';
 import Coffee from '../components/Websites/Coffee/Coffee';
+import Wheat from '../components/Websites/Wheat/Wheat';
 
 
 
@@ -21,15 +22,13 @@ const Router = () => {
         {/** WEBSITES */}
         <LanPasaa />
         <Coffee />
+        <Wheat />
 
         <div className="copy-right-footer">
           <CopyRightFooter />
         </div>
-
       </BrowserRouter>
-
     </>
-
   )
 }
 

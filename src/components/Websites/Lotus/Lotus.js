@@ -4,7 +4,6 @@ import HeroLotus from './HeroLotus';
 import B3Lotus from './B3Lotus';
 import TwoColumnsLotus1 from './TwoColumnsLotus1';
 import TwoColumnsLotus2 from './TwoColumnsLotus2';
-import CopyRightFooter from './CopyRightFooter';
 import TwoColumnContact from './TwoColumnContact';
 
 const Lotus = () => {

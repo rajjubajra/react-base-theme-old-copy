@@ -1,0 +1,87 @@
+
+@keyframes appear{
+  0% {top: 35%; color: rgba(255,255,255,0.0); text-shadow: none; z-index: 1;}
+  100% { top: 40%; color: $color_light;}
+}
+@keyframes expand{
+  0% {letter-spacing: -1em; color: $color_white}
+  50% {letter-spacing: 0em;}
+  100%{letter-spacing: 1em;}
+}
+
+.herolotus{
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  h1{
+    font-size: $megha_font;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 40%;
+    color: $color_light;
+    letter-spacing: 0.3em;
+    animation: ease-in appear 2s;
+    z-index: 5;
+    @media(max-width: $media_extra_small){
+      font-size: $extra_large;
+    }
+  }
+  p{
+    position: absolute;
+    top: 30%;
+    letter-spacing: 1em;
+    animation: expand 4s;
+    color: $color_black;
+    z-index: 6;
+  }
+  .circle{
+    z-index: 0;
+  }
+  img.img1{
+    position: absolute;
+    top: 3%;
+    width: 100%;
+    transform: rotate(-26deg);
+    height: auto;
+    z-index: 9;
+    opacity: 0.3;
+    @media(max-width: $media_extra_small){
+      top: 25%;
+    }
+    @media only screen and (max-width: 568px) and (orientation: landscape) {
+      top: -10%;
+    }
+
+  }
+  img.img2{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    @media(max-width: $media_extra_small){
+      top: 28%;
+    }
+    @media only screen and (max-width: $media_small) and (orientation: landscape){
+      top: -10%;
+    }
+  }
+  button{
+    position: absolute;
+    z-index: 10;
+    bottom: 150px;
+    @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (orientation:landscape) {
+      bottom: 30px;
+    }
+
+  }
+}

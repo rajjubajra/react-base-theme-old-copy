@@ -1,0 +1,76 @@
+button.nav-toggle{
+
+  display: block;
+  cursor: pointer;
+  padding: 20px 10px;
+  border: 0px solid $border_lighter;
+  position: relative;
+  outline: none;
+  background-color: transparent;
+  outline: none;
+
+  &:hover{
+    .threelines::before,
+    .threelines::after{
+      width: 1.5em;
+      transition: 0.4s;
+      }
+  }
+  
+  
+  
+
+  .threelines{
+    display: block;
+    position: relative;
+    &:before,
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+  }
+  
+  .threelines,
+  .threelines::before,
+  .threelines::after{
+    width: 2em;
+    height: 3px;
+    background-color: $background_extra_dark;
+    transition: 0.5s;
+  }
+  
+  .threelines::before{bottom: 6px;}
+  .threelines::after{top: 6px;}
+
+}
+
+button.nav-toggle.open{
+  border: 0px solid $border_lighter;
+  transition: 1s;
+  z-index: 1000;
+
+  &:hover{
+    .threelines::before,
+    .threelines::after{
+      width: 2em;
+      transition: 0.4s;
+      }
+  }
+
+  .threelines{  
+    transition: 0.5s;
+    transform: rotate(45deg);
+  }
+  .threelines::before{
+    transition: 0.5s;
+    transform: rotate(90deg) translate(6px);
+  }
+  .threelines::after{
+    transition: 0.5s;
+    transform: rotate(90deg) translate(-6px);
+    opacity: 0;
+  }
+
+}
+

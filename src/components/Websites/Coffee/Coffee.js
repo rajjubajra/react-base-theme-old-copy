@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { store } from './store';
 
-import RouteCoffee from './components/RouteCoffee';
+import RouteCoffee from './contents/RouteCoffee';
 
 const Coffee = () => {
   return (

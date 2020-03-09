@@ -1,0 +1,60 @@
+.scrollonclick{
+  width: 700px;
+  margin: 0px auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .slide-view-area{
+    display: grid;
+    grid-gap: 10px;
+    width: 700px;
+    height: 400px;
+    margin: 0px auto;
+    border: 2px solid $border_dark;
+    grid-template-columns: repeat(6, 400px);
+    @media(max-width: $media_small){
+      width: 100% !important;
+    }
+    overflow: hidden;
+    div{
+      transition: transform 1s;
+        img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+  
+  }
+
+  .nav-button-area{
+    position: absolute;
+    bottom: 70px;
+    @media(max-width: $media_small){
+      bottom: 10px;
+    }
+    ul{
+      display: flex;
+      li{
+        margin: 10px;
+        width: 15px;
+        height: 15px;
+        background-color: $background_dark;
+        color: $color_dark;
+        list-style: none;
+        border-radius: 10px;
+        text-align: center;
+        border: 2px solid $border_white;
+        cursor: pointer;
+      }
+      li.active{
+        background-color: $background_darker !important;
+        color: $color_darker;
+        border-radius: 0px;
+      }
+    }
+  }
+}

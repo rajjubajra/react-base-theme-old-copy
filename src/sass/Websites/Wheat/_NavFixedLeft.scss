@@ -1,0 +1,108 @@
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  100%{opacity: 1;}
+}
+.navfixedleft{
+  position: relative;
+  
+  .mobileIcon{
+    display: none;
+    position: relative;
+    z-index: 1000;
+    .button.nav-toggle{
+      background: transparent !important;
+      background-color: transparent;
+    }
+    
+    @media(max-width: $media_medium){
+      display: block;
+    }
+
+  }
+
+    .fixed-menu{
+      position: relative;
+      left: 0px;
+      top: 0px;
+      display: flex;
+      width: 200px;
+      height: 100vh;
+      flex-direction: column;
+      background-color: $background_white;
+      text-align: center;
+      
+
+        .logo{
+          width: 40px;
+          margin: 0px auto;
+          margin-top: 40px;
+        }
+
+        .logo-title{
+          text-transform: uppercase;
+          font-size: $small;
+          font-weight: 500;
+          margin: 20px 0px;
+        }
+
+        .nav-main{
+          list-style: none;
+          margin: 100px 0px;
+          @media only screen and (max-width: $media_medium) and (orientation: landscape){
+            margin: 0px 0px;
+          }
+          padding: 0px;
+          border-right: 1px solid $border_lighter;
+          li{
+            line-height: 1.8rem;
+            a{
+              text-decoration: none;
+              font-weight: 300;
+              font-size: $small;
+              text-transform: uppercase;
+              color: $color_black;
+              letter-spacing: 2px;
+              transition: letter-spacing 1s;
+              &:hover{
+                color: $color_light;
+                letter-spacing: 0px;
+                transition: letter-spacing 0.5s;
+              }
+            }
+          }
+        }
+
+        .contact{
+          p{
+            font-size: $medium;
+            line-height: 0.5rem;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
+          }
+          @media only screen and (max-width: $media_medium) and (orientation: landscape){
+            margin: 15px 0px;
+          }
+          @media only screen and (max-width: $media_extra_small) and (orientation: landscape){
+            margin: 0px 0px;
+            p{
+              line-height: 0rem;
+            }
+          }
+
+        }
+
+    }
+
+    @media(max-width: $media_medium){
+      .fixed-menu{
+        display: none;
+        animation: fadeIn 2s ease-in;
+      } 
+      .fixed-menu.open{
+        display: flex;
+        animation: fadeIn 1s ease-out;
+      }   
+    }
+
+
+}

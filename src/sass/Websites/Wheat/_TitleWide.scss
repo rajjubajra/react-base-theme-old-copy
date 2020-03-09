@@ -1,0 +1,29 @@
+.title-wide{
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  position: relative;
+
+  h1{
+    position: absolute;
+    bottom: 10%;
+    left: 40px;
+    font-size: $megha_font;
+    @media only screen and (max-width: $media_medium ) and (orientation: portrait){
+      bottom: 20%;
+    }
+  }
+  img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transform: translateY(-300px);
+    @media only screen and (max-width: $media_large ) and (orientation: portrait){
+      transform: translateY(0px);
+    }
+  }
+
+}

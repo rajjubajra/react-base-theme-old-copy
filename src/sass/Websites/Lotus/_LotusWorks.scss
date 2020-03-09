@@ -1,0 +1,67 @@
+.lotusworks{
+  width: 90%;
+  margin: 0px auto;
+  h1{
+    font-size: $megha_font;
+    font-weight: 800;
+    margin: 150px 0px;
+    text-transform: lowercase;
+  }
+  h2{
+    text-shadow: none;
+    color: $color_black;
+    text-transform: none;
+    text-align: left !important;
+  }
+  section{
+    div{
+      overflow: hidden;
+    }
+  }
+
+  .brief-info{
+    margin: 150px 0px;
+    line-height: 2.5em;
+  }
+  
+  .work-list{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax( 300px , 1fr));
+    img{ 
+      width: 100%;
+      transform-origin: 0 0;
+      transition: transform 1s ease-in;
+      &:hover{
+        transition: ease 2s;
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+    h3{
+      text-shadow: none;
+      color: $color_black;
+      text-transform: none;
+    }
+    div.work-brief{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      h3{
+        grid-column: 1 / 9;
+      }
+      img{
+        grid-column: 10/10;
+        max-width: 25px;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+      }
+      p{
+        grid-column: 11 / 11;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+}

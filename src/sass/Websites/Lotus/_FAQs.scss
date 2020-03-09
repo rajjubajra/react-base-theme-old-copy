@@ -1,0 +1,48 @@
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  100%{ opacity: 1;}
+}
+.faqs{
+  width: 60%;
+  margin: 0px auto;
+  @media(max-width: $media_small){
+    width: 90%;
+  }
+
+  h1.title{
+    font-size: $extra_large;
+  }
+
+  h1, h2{
+    text-transform: none;
+  }
+
+  h1{
+    font-size: $large;
+    text-transform: capitalize;
+    font-weight: 100;
+    text-shadow: none;
+    cursor: pointer;
+  }
+  h2{
+    font-size: $large;
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+  
+  .hide-faq{
+    display: none;
+    animation: fadeIn 2s;
+  }
+
+  .show-faq{
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 2s;
+    border: 1px solid $border_lighter;
+    padding: 20px 35px;
+  }
+
+
+
+}

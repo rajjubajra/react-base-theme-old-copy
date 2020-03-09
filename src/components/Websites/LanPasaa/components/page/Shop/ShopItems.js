@@ -13,11 +13,11 @@ const ShopItems = (props) => {
   function viewCategory(category, item, catg) {
     if (category === '') {
       /** display all items */
-      return <ShopItem item={item} />
+      return <ShopItem item={item} key={item.id} />
     } else {
       if (category === catg.name) {
         /** display selected Category items */
-        return <ShopItem item={item} />
+        return <ShopItem item={item} key={item.id} />
       }
     }
   }

@@ -1,0 +1,36 @@
+
+
+
+
+.search-recipes{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1{
+    text-align: center;
+  }
+
+  form{
+    box-sizing: border-box;
+    input, button{
+      box-sizing: border-box;
+      padding: 6px 10px;
+      font-size: $regular;
+      border: 1px solid $border_lighter;
+      outline: none;
+    }
+    input{
+        width: 300px;
+    }
+    button{
+      background-color: $background_black;
+      color: $color_white;
+      margin: 0px 5px;
+      min-width: 90px;
+      cursor: pointer;
+    }
+  }
+}

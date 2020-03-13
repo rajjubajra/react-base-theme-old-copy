@@ -16,7 +16,7 @@ const Shop = () => {
   being passed in to all the components **/
   const data = useSelector(state => state.reducerFetchData.data)
   const products = useSelector(state => state.reducerFetchProducts);
-  console.log("SHOP JS: ", data, products);
+  console.log("SHOP JS: ", data, products, typeof (data));
 
   /** Item id for view product list or single item */
   const itemId = useSelector(state => state.reducerNavigation.itemId);

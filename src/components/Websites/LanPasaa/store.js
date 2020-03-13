@@ -13,7 +13,6 @@ const reducer = combineReducers(
     reducerFetchProducts,
     reducerFetchData,
     reducerNavigation,
-
     reducerCart
   }
 );

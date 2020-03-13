@@ -36,6 +36,11 @@ const Websites = () => {
           <h3>Curry</h3>
           <Link className="btn-small-wide" to="#">Preview</Link>
         </div>
+        <div>
+          <h3>Search Recipes</h3>
+          <h5>Apps</h5>
+          <Link className="btn-small-wide" to="search-recipes">Preview</Link>
+        </div>
       </div>
 
     </>

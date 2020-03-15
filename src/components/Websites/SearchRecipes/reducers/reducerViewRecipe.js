@@ -1,34 +1,35 @@
 import { actionTypes } from "../action/actionTypes"
 
 const initalState = {
-  result: [],
-  text: '',
+  recipe: [],
+  id: '',
   status: false,
   error: null
 }
 
 
-export const reducerSearch = (state = initalState, action) => {
+export const reducerViewRecipe = (state = initalState, action) => {
   switch (action.type) {
-    case actionTypes.SEARCH_START:
+    case actionTypes.FETCHING_RECIPE:
       state = {
         ...state,
         status: true,
       }
       return state;
-    case actionTypes.SEARCH_FETCHED:
+    case actionTypes.FETCHED_RECIPE:
       state = {
         ...state,
-        result: action.payload.results,
-        text: action.text,
+        recipe: action.payload,
+        id: action.id,
         status: true
       }
       return state;
-    case actionTypes.SEARCH_ERROR:
+    case actionTypes.FETCHING_RECIPE_ERROR:
+      console.log('REDUCER RECIPE ID', action.id);
       state = {
         ...state,
         error: action.payload,
-        text: action.text,
+        id: action.id,
         status: false
       }
       return state;

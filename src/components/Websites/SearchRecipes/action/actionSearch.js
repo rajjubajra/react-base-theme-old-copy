@@ -8,6 +8,13 @@
 
 Example Request and Response
 GET https://api.spoonacular.com/recipes/search?query=cheese&number=2
+
+RECIPE INFORMATION
+GET https://api.spoonacular.com/recipes/{id}/information
+
+IMAGE EXAMPLE
+So for "apple.jpg" the full path for 100x100 is https://spoonacular.com/cdn/ingredients_100x100/apple.jpg
+A complete image path might look like this: https://spoonacular.com/recipeImages/579247-556x370.jpg
  * 
  */
 
@@ -16,12 +23,18 @@ import { actionTypes } from './actionTypes';
 import axios from 'axios';
 require('dotenv').config();
 
+console.log(process.env.REACT_APP_SPOONACULAR_API);
+
+
 
 export function actionSearch(text) {
 
 
   //const url = "https://jsonplaceholder.typicode.com/posts/";
-  const url = "https://api.spoonacular.com/recipes/search?query=cheese&number=2&apiKey=" + process.env.SPOONACULAR_API;
+  const api = process.env.REACT_APP_SPOONACULAR_API;
+  const url = `https://api.spoonacular.com/recipes/search?query=${text}&number=2&apiKey=${api}`;
+
+  console.log("ENV FILE", process.env);
 
 
   return function (dispatch) {

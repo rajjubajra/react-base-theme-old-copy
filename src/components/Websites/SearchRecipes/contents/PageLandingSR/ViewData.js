@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { actionViewRecipe } from '../../action/actionVeiwRecipe';
+import { edamamapi } from '../../utilities/configapi';
 
 /**
    * IMAGE EXAMPLE
@@ -19,7 +20,7 @@ const ViewData = () => {
   return (
     <div>
       <h3>View Data</h3>
-      {
+      {/* {
         result.length > 0
           ? result.map((item) => {
             return <div key={item.id}>
@@ -28,17 +29,17 @@ const ViewData = () => {
                 <li>Cooking Time: {item.readyInMinutes} minutes</li>
                 <li>Servings: {item.servings}</li>
                 <li><img
-                  src={`https://spoonacular.com/recipeImages/ingredients_100x100/${item.image}`}
+                  src=""
                   alt="food" /></li>
                 <li><button onClick={() => dispatch(actionViewRecipe(item.id))} >View Recipe</button></li>
-              </ul>
+              </ul>n
               <hr />
               <br />
             </div>
           })
           : "Search..."
 
-      }
+      } */}
     </div>
   )
 }

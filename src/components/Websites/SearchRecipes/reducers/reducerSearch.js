@@ -19,7 +19,7 @@ export const reducerSearch = (state = initalState, action) => {
     case actionTypes.SEARCH_FETCHED:
       state = {
         ...state,
-        result: action.payload.results,
+        result: action.payload,
         text: action.text,
         status: true
       }

@@ -23,7 +23,7 @@ export function actionViewRecipe(id) {
   console.log("VIEW RECIPE ID", id);
   const api = process.env.REACT_APP_SPOONACULAR_API;
   //const url = "https://jsonplaceholder.typicode.com/posts/";
-  const url = `${apiurl.URL}/recipes/${id}/similar&apiKey=${api}`;
+  const url = `${apiurl.URL}/recipes/${id}/similar&apiKey=${api}&number=5`;
 
 
   return function (dispatch) {

@@ -1,32 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { actionViewData } from '../../action/actionViewData';
-import { actionSearch } from '../../action/actionSearch';
+import { actionSearch, actionText } from '../../action/actionSearch';
+
+
 
 
 const SearchForm = () => {
   const dispatch = useDispatch();
 
-  const [searchWord, setSearchWord] = useState('');
-  console.log("search recipe", searchWord);
+  const [text, setText] = useState('');
 
-  useEffect(() => {
+  console.log("SearchForm SearchWord: ", text);
 
-    searchWord === ''
-      ? dispatch(actionViewData())
-      : dispatch(actionSearch(searchWord))
+  const handleChange = (e) => {
+    setText(e.target.value);
+  }
 
-  }, [dispatch, searchWord])
-
+  const handleSubmit = (e) => {
+    console.log("handle submit.....", text);
+    e.preventDefault();
+    dispatch(actionSearch(text));
+  }
 
   return (
     <>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="search_recipe"
-          value={searchWord}
-          onChange={(e) => setSearchWord(e.target.value)}
+          value={text}
+          onChange={(e) => handleChange(e)}
         />
         <button
           type="submit">

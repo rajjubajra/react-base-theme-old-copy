@@ -2,6 +2,7 @@ import { actionTypes } from "../action/actionTypes"
 
 const initalState = {
   result: [],
+  hits: [],
   text: '',
   status: false,
   error: null
@@ -17,9 +18,11 @@ export const reducerSearch = (state = initalState, action) => {
       }
       return state;
     case actionTypes.SEARCH_FETCHED:
+      console.log("reducerSearch FETCHED", action.payload);
       state = {
         ...state,
         result: action.payload,
+        hits: action.hits,
         text: action.text,
         status: true
       }

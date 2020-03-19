@@ -10,7 +10,7 @@ export function actionSearch(text) {
   const apiId = process.env.REACT_APP_EDAMAM_APP_ID;
   const apiKey = process.env.REACT_APP_EDAMAM_APP_KEY;
 
-  const url = `${apiurl.URL}/search?q=${text}&app_id=${apiId}&app_key=${apiKey}&count=5`;
+  const url = `${apiurl.URL}/search?q=${text}&app_id=${apiId}&app_key=${apiKey}&_limit=5`;
 
   console.log("ENV FILE", apiId, "key", apiKey, "url", url);
 

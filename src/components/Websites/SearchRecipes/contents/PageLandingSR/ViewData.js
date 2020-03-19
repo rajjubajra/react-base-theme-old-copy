@@ -9,33 +9,42 @@ const ViewData = () => {
   const dispatch = useDispatch();
 
   const result = useSelector(state => state.reducerSearch.result);
-  const hits = useSelector(state => state.reducerSearch.hits);
-  console.log('ViewData.js: ', result, "hits", hits);
+  let hits = JSON.stringify(useSelector(state => state.reducerSearch.hits));
+  console.log('ViewData. beforer parse ', result, "hits", hits, "json", hits.recipe);
+
+  hits = JSON.parse(hits);
+
+  console.log('ViewData. after parse', result, "hits", hits.length > 0 ? hits[0].recipe.uri : '', "json");
 
 
   return (
     <div>
       <div>Search :{result.q}</div>
       <h3>View Data</h3>
+
       {
         hits.length > 0
           ? hits.map((item, index) => {
             return <div key={index}>
-              <h3>Recipe: {item.recipe[index].uri}</h3>
               <ul>
-                <li>Cooking Time: {item.readyInMinutes} minutes</li>
-                <li>Servings: {item.servings}</li>
-                <li><img
-                  src=""
-                  alt="food" /></li>
-                <li><button onClick={() => dispatch(actionViewRecipe(item.id))} >View Recipe</button></li>
-              </ul>n
-              <hr />
-              <br />
+                <li><h3>{item.recipe.label}</h3></li>
+                <li><a href={item.recipe.url} target="_blank">Original Recipe</a></li>
+                <li>Number of serving: {item.recipe.yield}</li>
+                <li><img src={item.recipe.image} alt="recipe" /></li>
+                <li>Total Energy: {Number(item.recipe.calories).toFixed(2)} Kcal</li>
+                <li>Source: {item.recipe.source}</li>
+                <li>Ingredients: {item.recipe.ingredients.map((indg) => {
+                  return <ul key={indg.foodId}>
+                    <li>{indg.text} - {Number(indg.weight).toFixed(2)}</li>
+                  </ul>
+                })}</li>
+              </ul>
             </div>
           })
-          : "Search..."
+          : 'Search...'
       }
+
+
     </div>
   )
 }

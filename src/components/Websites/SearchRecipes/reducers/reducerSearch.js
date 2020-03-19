@@ -2,7 +2,7 @@ import { actionTypes } from "../action/actionTypes"
 
 const initalState = {
   result: [],
-  hits: [],
+  hits: '',
   text: '',
   status: false,
   error: null

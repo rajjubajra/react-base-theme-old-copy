@@ -9,10 +9,10 @@ const ViewData = () => {
   const dispatch = useDispatch();
 
   const result = useSelector(state => state.reducerSearch.result);
-  let hits = JSON.stringify(useSelector(state => state.reducerSearch.hits));
-  console.log('ViewData. beforer parse ', result, "hits", hits, "json", hits.recipe);
+  let hits = useSelector(state => state.reducerSearch.hits);
+  console.log('ViewData. beforer parse ', result, "hits", hits);
 
-  hits = JSON.parse(hits);
+  //hits = JSON.parse(hits);
 
   console.log('ViewData. after parse', result, "hits", hits.length > 0 ? hits[0].recipe.uri : '', "json");
 

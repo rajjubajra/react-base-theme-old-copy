@@ -1,8 +1,8 @@
 import React from 'react'
-import SearchForm from './PageLandingSR/SearchForm'
-import ViewData from './PageLandingSR/ViewData'
+import SearchForm from './PageLanding/SearchForm'
+import ViewData from './PageLanding/ViewData'
 
-const PageLandingSR = () => {
+const PageLanding = () => {
 
   return (
     <div className="search-recipes">
@@ -12,4 +12,4 @@ const PageLandingSR = () => {
     </div>
   )
 }
-export default PageLandingSR
+export default PageLanding

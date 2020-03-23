@@ -18,9 +18,10 @@ const SearchForm = () => {
   }
 
   const handleSubmit = (e) => {
-    console.log("handle submit.....", text);
     e.preventDefault();
-    dispatch(actionSearch(text));
+    if (e.target.value) {
+      dispatch(actionSearch(text, 0, 5))
+    }
   }
 
   return (

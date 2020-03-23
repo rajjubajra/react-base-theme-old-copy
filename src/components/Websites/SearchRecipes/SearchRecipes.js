@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom';
-import PageLandingSR from './contents/PageLandingSR';
+import PageLanding from './contents/PageLanding';
 import { Provider } from 'react-redux';
 import { store } from './store';
 
@@ -8,7 +8,7 @@ const SearchRecipes = () => {
   return (
     <Switch>
       <Provider store={store}>
-        <Route path="/search-recipes" component={PageLandingSR} />
+        <Route path="/search-recipes" component={PageLanding} />
       </Provider>
 
     </Switch>

@@ -4,13 +4,12 @@ import { apiurl } from '../utilities/configapi';
 require('dotenv').config();
 
 
-export function actionSearch(text) {
+export function actionSearch(text, from, to) {
 
   //const url = "https://jsonplaceholder.typicode.com/posts/";
   const apiId = process.env.REACT_APP_EDAMAM_APP_ID;
   const apiKey = process.env.REACT_APP_EDAMAM_APP_KEY;
-  let from = 0;
-  let to = 5;
+
 
   const url = `${apiurl.URL}/search?q=${text}&app_id=${apiId}&app_key=${apiKey}&from=${from}&to=${to}`;
 
@@ -26,10 +25,9 @@ export function actionSearch(text) {
           type: actionTypes.SEARCH_FETCHED,
           payload: res.data,
           hits: res.data.hits,
-          searchtext: text,
+          text: text,
           from: from,
-          to: to,
-          status: 'fetched'
+          to: to
         })
       })
       .catch((error) => {

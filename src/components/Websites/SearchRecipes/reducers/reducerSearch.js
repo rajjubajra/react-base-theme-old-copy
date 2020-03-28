@@ -6,8 +6,10 @@ const initalState = {
   text: '',
   from: 0,
   to: 0,
+  health: '',
   status: false,
-  error: null
+  error: null,
+  recipeIndex: ''
 }
 
 
@@ -28,7 +30,9 @@ export const reducerSearch = (state = initalState, action) => {
         text: action.text,
         from: action.from,
         to: action.to,
-        status: true
+        health: action.health,
+        status: true,
+        recipeIndex: action.reducerSearch
       }
       return state;
     case actionTypes.SEARCH_ERROR:

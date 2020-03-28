@@ -1,0 +1,124 @@
+@keyframes flip {
+  0% { opacity: 0; transform: scaleX(-1);}
+  100% {opacity: 1; transform: scaleX(1);}
+}
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  100%{opacity: 1;}
+}
+
+
+    div{
+      ul.main, ul.moreInfo{
+        list-style: none;
+        margin: 0px 15px;
+        padding: 0px;
+        min-height: 530px;
+        position: relative;
+        border-bottom: 1px solid $border_lighter;
+        animation: fadeIn 0.7s;
+          
+        li.recipe_title{
+          height: 75px;
+          padding: 0px 5px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        li.btn-ingredients,
+        li.btn-back{
+          button{
+            border-radius: 0px;
+            padding: 5px 20px;
+            background-color: $background_light;
+            color: $color_white;
+            outline: 0px;
+          }
+        }
+        li.btn-ingredients{
+          position: absolute;
+          bottom: 55px;
+        }
+        li.btn-back{
+          position: absolute;
+          bottom: 55px;
+          right: 5px;
+        }
+      }
+
+    }
+
+   /** Main Result Listing **/
+    div{
+      ul.main{   
+        li.image{
+          display: flex;
+          justify-content: center;
+        }
+        li{
+          p{
+            font-size: $medium;
+          }
+          p.healthLabels{
+            font-size: $small;
+            font-weight: 300;
+          }
+          a{
+            img{
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            filter: grayscale(0%);
+            outline: 1px solid $border_white;
+            outline-offset: -10px;
+            margin: 0px auto;
+            }
+          }
+        }
+        li.source{
+          position: absolute;
+          bottom: 15px;
+          right: 10px;
+          a{
+            text-decoration: none;
+            color: $color_black;
+          }
+        }
+      }
+    }
+
+    /** INGREDIENTS **/
+    div{
+        ul.moreInfo{
+        background-color: $background_lighter;
+        outline: 1px solid $border_white;
+        outline-offset: -5px;
+        animation: flip 0.5s;
+        li{
+          list-style: none;
+          ul{
+            margin: 0px;
+            padding: 0px;
+            li{
+              font-size: $small;
+            }
+          }
+        }
+        li.serving, 
+        li.nutrients, 
+        li.ingredients,
+        li.calories,
+        li.calorie_count{
+          margin: 10px 0px;
+          padding: 0px 20px;
+        }
+        input.serving{
+          width: 50px;
+          padding: 3px;
+          font-size: $medium;
+        }
+      }
+
+    }

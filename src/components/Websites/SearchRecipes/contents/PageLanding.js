@@ -1,6 +1,8 @@
 import React from 'react'
 import SearchForm from './PageLanding/SearchForm'
 import ViewData from './PageLanding/ViewData'
+import DummyData from './PageLanding/DummyData'
+
 
 const PageLanding = () => {
 
@@ -8,6 +10,7 @@ const PageLanding = () => {
     <div className="search-recipes">
       <h1>Search Recipes</h1>
       <SearchForm />
+      {/* <DummyData /> */}
       <ViewData />
     </div>
   )

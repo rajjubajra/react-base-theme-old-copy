@@ -1,0 +1,48 @@
+
+
+form.search{
+  box-sizing: border-box;
+  div.input-search{
+    margin: 15px 0px;
+    
+  }
+  div.input-radio{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0px;
+
+  }
+
+  div.submit-button{
+    display: flex;
+    justify-content: flex-end;
+    button{
+      margin: 0px !important;
+    }
+  }
+  input, button{
+    box-sizing: border-box;
+    padding: 6px 10px;
+    font-size: $regular;
+    border: 1px solid $border_lighter;
+    outline: none;
+  }
+  lable{
+    font-size: $medium;
+  }
+  input{
+      width: 300px;
+  }
+  input[type='radio']{
+    width: 25px;
+    position: relative;
+    top: -3px;
+  }
+  button{
+    background-color: $background_black;
+    color: $color_white;
+    margin: 0px 5px;
+    min-width: 90px;
+    cursor: pointer;
+  }
+}

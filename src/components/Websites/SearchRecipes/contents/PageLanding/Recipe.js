@@ -1,7 +1,13 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-const List = ({ item }) => {
+const Recipe = ({ item }) => {
+
+  const recipeIndex = useSelector(state => state.reducerSearch.recipeIndex);
+  console.log("RECIPE INDEX: ", recipeIndex);
+
+
   return (
     <ul>
       <li><h3>{item.label}</h3></li>
@@ -85,5 +91,4 @@ const List = ({ item }) => {
 
   )
 }
-
-export default List
+export default Recipe;

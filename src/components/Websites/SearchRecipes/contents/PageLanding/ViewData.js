@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import List from './List';
-//import { actionViewRecipe } from '../../action/actionVeiwRecipe';
-import { actionSearch } from '../../action/actionSearch';
+
+
 import Loading from './Loading';
 import NextPrev from './NextPrev';
-//import { edamamapi } from '../../utilities/configapi';
-
+import Recipes from './Recipies';
 
 
 const ViewData = () => {
-  const dispatch = useDispatch();
 
   const status = useSelector(state => state.reducerSearch.status);
   const result = useSelector(state => state.reducerSearch.result);
@@ -29,22 +27,30 @@ const ViewData = () => {
 
   return (
     <div>
-      <div>
+      <div className="search-text">
         {status ? <h3>Search item:  {result.q} </h3> : ''}
       </div>
+      <div className="recipes">
+        {
+          status ?
+            hits.length > 0
+              ? hits.map((item, index) => {
+                return <div key={index} >
+                  <Recipes item={item.recipe} />
+                  {/* <List item={item.recipe} /> */}
+                </div>
+              })
+              : <Loading />
+            : ''
+        }
+      </div>
+
+
       {
-        status ?
-          hits.length > 0
-            ? hits.map((item, index) => {
-              return <div key={index}>
-                <List item={item.recipe} />
-              </div>
-            })
-            : <Loading />
+        hits.length > 0
+          ? <div><NextPrev text={result.q} from={from} to={to} /></div>
           : ''
       }
-
-      {hits.length > 0 ? <div><NextPrev text={result.q} from={from} to={to} /></div> : ''}
 
     </div>
   )

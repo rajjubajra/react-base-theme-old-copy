@@ -46,25 +46,3 @@ export const reducerDummyData = (state = initalState, action) => {
 }
 
 
-const initialIngredients = {
-  recipeUrl: '',
-}
-
-export const reducerIngredients = (state = initialIngredients, action) => {
-
-  switch (action.type) {
-    case actionTypes.RECIPE_INGREDIENTS:
-      return state = {
-        ...state,
-        recipeUrl: action.recipeUrl
-      }
-    case actionTypes.RECIPE_DETAIL_CLEAR:
-      return state = {
-        ...state,
-        recipeUrl: ''
-      }
-    default:
-      return state;
-  }
-
-}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { actionBack, actionIngredients } from '../../action/actionRecipe';
+import { actionBack, actionIngredients, actionRecipe } from '../../action/actionRecipe';
 import CalorieCount from './CalorieCount';
 
 const Recipes = ({ item }) => {
@@ -13,6 +13,10 @@ const Recipes = ({ item }) => {
 
   const hideItem = recipeUrl === item.url ? 'hide' : 'show';
   const moreInfo = recipeUrl === item.url ? 'moreInfo' : 'hide';
+
+  const openSourcepage = (sourceUrl) => {
+    window.open(sourceUrl);
+  }
 
 
   return (
@@ -38,7 +42,8 @@ const Recipes = ({ item }) => {
             More
           </button>
         </li>
-        <li className="source">
+        <li className="source"
+          onClick={() => openSourcepage(item.url)}>
           - {item.source}
         </li>
       </ul>
@@ -109,7 +114,10 @@ const Recipes = ({ item }) => {
         <li className="btn-back">
           <button onClick={() => dispatch(actionBack())}>Back</button>
         </li>
-        <li className="source">- {item.source}</li>
+        <li className="source"
+          onClick={() => openSourcepage(item.url)}>
+          - {item.source}
+        </li>
 
       </ul>
     </>

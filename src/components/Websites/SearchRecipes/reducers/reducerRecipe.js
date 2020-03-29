@@ -7,29 +7,25 @@ const initalState = {
   error: null
 }
 
-
-export const reducerViewRecipe = (state = initalState, action) => {
+export const reducerRecipe = (state = initalState, action) => {
   switch (action.type) {
-    case actionTypes.FETCHING_RECIPE:
+    case actionTypes.RECIPE_DETAIL_START:
       state = {
         ...state,
         status: true,
       }
       return state;
-    case actionTypes.FETCHED_RECIPE:
+    case actionTypes.RECIPE_DETAIL_FETCHED:
       state = {
         ...state,
         recipe: action.payload,
-        id: action.id,
         status: true
       }
       return state;
-    case actionTypes.FETCHING_RECIPE_ERROR:
-      console.log('REDUCER RECIPE ID', action.id);
+    case actionTypes.RECIPE_DETAIL_ERROR:
       state = {
         ...state,
         error: action.payload,
-        id: action.id,
         status: false
       }
       return state;

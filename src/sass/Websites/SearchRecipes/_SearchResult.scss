@@ -46,6 +46,16 @@
           bottom: 55px;
           right: 5px;
         }
+        li.source{
+          position: absolute;
+          bottom: 15px;
+          right: 10px;
+          cursor: pointer;
+          a{
+            text-decoration: none;
+            color: $color_black;
+          }
+        }
       }
 
     }
@@ -75,15 +85,6 @@
             outline-offset: -10px;
             margin: 0px auto;
             }
-          }
-        }
-        li.source{
-          position: absolute;
-          bottom: 15px;
-          right: 10px;
-          a{
-            text-decoration: none;
-            color: $color_black;
           }
         }
       }

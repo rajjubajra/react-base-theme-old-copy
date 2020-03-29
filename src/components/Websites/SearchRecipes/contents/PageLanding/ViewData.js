@@ -48,7 +48,7 @@ const ViewData = () => {
 
       {
         hits.length > 0
-          ? <div><NextPrev text={result.q} from={from} to={to} /></div>
+          ? <div className="page-nav"><NextPrev text={result.q} from={from} to={to} /></div>
           : ''
       }
 

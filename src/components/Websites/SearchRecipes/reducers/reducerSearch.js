@@ -12,7 +12,6 @@ const initalState = {
   recipeIndex: ''
 }
 
-
 export const reducerSearch = (state = initalState, action) => {
   switch (action.type) {
     case actionTypes.SEARCH_START:
@@ -22,7 +21,6 @@ export const reducerSearch = (state = initalState, action) => {
       }
       return state;
     case actionTypes.SEARCH_FETCHED:
-      console.log("reducerSearch FETCHED", action.payload);
       state = {
         ...state,
         result: action.payload,
@@ -46,4 +44,28 @@ export const reducerSearch = (state = initalState, action) => {
     default:
       return state;
   }
+}
+
+
+const initialIngredients = {
+  recipeUrl: '',
+}
+
+export const reducerIngredients = (state = initialIngredients, action) => {
+
+  switch (action.type) {
+    case actionTypes.RECIPE_INGREDIENTS:
+      return state = {
+        ...state,
+        recipeUrl: action.recipeUrl
+      }
+    case actionTypes.RECIPE_INGREDIENTS_CLEAR:
+      return state = {
+        ...state,
+        recipeUrl: ''
+      }
+    default:
+      return state;
+  }
+
 }

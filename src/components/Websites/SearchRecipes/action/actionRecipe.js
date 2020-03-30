@@ -39,7 +39,7 @@ export function actionRecipe(recipeUrl) {
 export const actionIngredients = (recipeUrl) => (
   {
     type: actionTypes.RECIPE_INGREDIENTS,
-    recipeUrl: recipeUrl
+    recipeUrl: recipeUrl,
   }
 )
 

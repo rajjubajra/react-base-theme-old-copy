@@ -51,6 +51,7 @@ const initialIngredients = {
   recipeUrl: '',
 }
 
+
 export const reducerIngredients = (state = initialIngredients, action) => {
 
   switch (action.type) {
@@ -67,5 +68,4 @@ export const reducerIngredients = (state = initialIngredients, action) => {
     default:
       return state;
   }
-
 }

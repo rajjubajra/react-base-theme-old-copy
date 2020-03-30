@@ -2,11 +2,19 @@
   0% { opacity: 0; transform: scaleX(-1);}
   100% {opacity: 1; transform: scaleX(1);}
 }
-@keyframes fadeIn{
-  0% {opacity: 0;}
+
+@keyframes fadeIn {
+  0%{opacity: 0;}
+  50%{opacity: 0;}
   100%{opacity: 1;}
 }
 
+  .animationFlip{
+    animation: flip 0.5s;
+  }
+  .animationFadeIn{
+    animation: fadeIn 0.5s;
+  }
 
     div{
       ul.main, ul.moreInfo{
@@ -16,8 +24,6 @@
         min-height: 530px;
         position: relative;
         border-bottom: 1px solid $border_lighter;
-        animation: fadeIn 0.7s;
-          
         li.recipe_title{
           height: 75px;
           padding: 0px 5px;
@@ -111,14 +117,35 @@
         li.nutrients, 
         li.ingredients,
         li.calories,
-        li.calorie_count{
+        li.calorie_count,
+        li.nutrition-label{
           margin: 10px 0px;
           padding: 0px 20px;
+          p{
+            margin: 2px 0px;
+          }
         }
         input.serving{
           width: 50px;
           padding: 3px;
           font-size: $medium;
+        }
+        li.nutrition-label {
+          margin-bottom: 100px;
+          p{
+            margin: 0px;
+            padding: 1px 0px;
+          }
+          ul{
+              display: grid;
+              grid-template-columns: repeat(5, 40px);
+              grid-gap: 2px;
+
+              li{
+                font-size: $small;
+                text-align: center;
+              }
+            }
         }
       }
 

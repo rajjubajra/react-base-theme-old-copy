@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { actionBack, actionIngredients } from '../../action/actionRecipe';
+import NutritionLabel from './NutritionLabel';
 import CalorieCount from './CalorieCount';
 
 const Recipes = ({ item }) => {
@@ -30,8 +31,8 @@ const Recipes = ({ item }) => {
 
   const nutritionLabel = (nutrition, serving) => (
     nutrition
-      ? Number(nutrition.quantity / serving).toFixed(2) + nutrition.unit
-      : 'FAT: NA'
+      ? Math.round(nutrition.quantity / serving) + nutrition.unit
+      : 'NA'
   )
 
   const totalNutrients = (nutrients) => (
@@ -79,9 +80,6 @@ const Recipes = ({ item }) => {
 
 
 
-
-
-
       {/** INDGREDIENTS  display on click to Ingredients button */}
       <ul className={`main ${moreInfo}`}>
         <li className="recipe_title"><h3>{item.label}</h3></li>
@@ -120,36 +118,7 @@ const Recipes = ({ item }) => {
         </li>
         <li className="nutrition-label">
           <p>Each Serve contains:</p>
-          <ul>
-            <li>
-              <div className="label">Energy</div>
-              <div className="contain">{Math.round(item.calories / item.yield)}</div>
-            </li>
-            <li>
-              <div className="label">Fat</div>
-              <div className="contain">
-                {nutritionLabel(item.totalNutrients.FAT, item.yield)}
-              </div>
-            </li>
-            <li>
-              <div className="label">Fat-Sat</div>
-              <div className="contain">
-                {nutritionLabel(item.totalNutrients.FASAT, item.yield)}
-              </div>
-            </li>
-            <li>
-              <div className="label">Sugar</div>
-              <div className="contain">
-                {nutritionLabel(item.totalNutrients.SUGAR, item.yield)}
-              </div>
-            </li>
-            <li>
-              <div className="label">Salt</div>
-              <div className="contain">
-                {nutritionLabel(item.totalNutrients.NA, item.yield)}
-              </div>
-            </li>
-          </ul>
+          <NutritionLabel nutrition={item.totalNutrients} serving={item.yield} />
         </li>
         <li className="btn-back">
           <button onClick={() => flipBackToRecipe()}>Back</button>

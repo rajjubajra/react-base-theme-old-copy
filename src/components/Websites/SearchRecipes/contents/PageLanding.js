@@ -10,7 +10,7 @@ const PageLanding = () => {
     <div className="search-recipes">
       <h1>Search Recipes</h1>
       <SearchForm />
-      {/* <DummyData /> */}
+      <DummyData />
       <ViewData />
     </div>
   )

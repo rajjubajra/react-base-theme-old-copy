@@ -39,9 +39,11 @@ const NutritionLabel = (nutrition, serving) => {
     if (label === Energy) {
       if (qty >= EnergyHigh) {
         bgColour = bgColourHigh;
-      } if (qty <= EnergyLow) {
+      }
+      if (qty <= EnergyLow) {
         bgColour = bgColourLow;
-      } else {
+      }
+      if (qty < EnergyHigh && qty > EnergyLow) {
         bgColour = bgColourMedium;
       }
     }
@@ -51,7 +53,8 @@ const NutritionLabel = (nutrition, serving) => {
         bgColour = bgColourHigh;
       } if (qty <= FatLow) {
         bgColour = bgColourLow;
-      } else {
+      }
+      if (qty < FatHigh && qty > FatLow) {
         bgColour = bgColourMedium;
       }
     }
@@ -61,7 +64,8 @@ const NutritionLabel = (nutrition, serving) => {
         bgColour = bgColourHigh;
       } if (qty <= SaturatedLow) {
         bgColour = bgColourLow;
-      } else {
+      }
+      if (qty < SaturatedHigh && qty > SaturatedLow) {
         bgColour = bgColourMedium;
       }
     }
@@ -71,7 +75,8 @@ const NutritionLabel = (nutrition, serving) => {
         bgColour = bgColourHigh;
       } if (qty <= SugarLow) {
         bgColour = bgColourLow;
-      } else {
+      }
+      if (qty < SugarHigh && qty > SugarLow) {
         bgColour = bgColourMedium;
       }
     }
@@ -81,7 +86,8 @@ const NutritionLabel = (nutrition, serving) => {
         bgColour = bgColourHigh;
       } if (qty <= SaltLow) {
         bgColour = bgColourLow;
-      } else {
+      }
+      if (qty < SaltHigh && qty > SaltLow) {
         bgColour = bgColourMedium;
       }
     }

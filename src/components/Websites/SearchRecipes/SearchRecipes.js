@@ -10,7 +10,6 @@ const SearchRecipes = () => {
       <Provider store={store}>
         <Route path="/search-recipes" component={PageLanding} />
       </Provider>
-
     </Switch>
   )
 }

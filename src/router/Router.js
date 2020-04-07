@@ -8,6 +8,7 @@ import LanPasaa from '../components/Websites/LanPasaa/LanPasaa';
 import Coffee from '../components/Websites/Coffee/Coffee';
 import Wheat from '../components/Websites/Wheat/Wheat';
 import SearchRecipes from '../components/Websites/SearchRecipes/SearchRecipes';
+import Covid from '../components/Websites/Covid/Covid';
 
 
 
@@ -21,6 +22,7 @@ const Router = () => {
         {/** APPS */}
         <RouterApps />
         <SearchRecipes />
+        <Covid />
 
 
 

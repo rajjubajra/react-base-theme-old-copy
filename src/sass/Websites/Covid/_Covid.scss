@@ -1,0 +1,24 @@
+li.country-summary{
+  display: grid;
+  grid-template-columns: 200px 100px 100px 100px;
+  font-size: $medium;
+  padding: 10px;
+}
+
+.header{
+  position: relative;
+  padding-left: 15px;
+  &::after{
+    content: ' ';
+    border-left: 1px solid $border_dark;
+    border-bottom: 1px solid $border_dark;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  font-weight: 800; 
+}

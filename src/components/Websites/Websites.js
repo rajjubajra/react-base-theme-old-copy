@@ -41,6 +41,11 @@ const Websites = () => {
           <h5>Apps</h5>
           <Link className="btn-small-wide" to="search-recipes">Preview</Link>
         </div>
+        <div>
+          <h3>Covid-19</h3>
+          <h5>Apps</h5>
+          <Link className="btn-small-wide" to="covid">Preview</Link>
+        </div>
       </div>
 
     </>

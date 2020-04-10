@@ -1,8 +1,37 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect, PureComponent } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { actionDayOneTotal } from '../action/actionDayOneTotal';
-import Chart from "react-google-charts";
 
+import {
+  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+  BarChart, Bar, Cell,
+} from 'recharts';
+
+
+
+// const recharts_data = [
+//   {
+//     name: 'Page A', uv: 4000, pv: 2400, amt: 2400,
+//   },
+//   {
+//     name: 'Page B', uv: 3000, pv: 1398, amt: 2210,
+//   },
+//   {
+//     name: 'Page C', uv: 2000, pv: 9800, amt: 2290,
+//   },
+//   {
+//     name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
+//   },
+//   {
+//     name: 'Page E', uv: 1890, pv: 4800, amt: 2181,
+//   },
+//   {
+//     name: 'Page F', uv: 2390, pv: 3800, amt: 2500,
+//   },
+//   {
+//     name: 'Page G', uv: 3490, pv: 4300, amt: 2100,
+//   },
+// ];
 
 // const data = [
 //   ["Year", "Sales", "Expenses"],
@@ -12,44 +41,71 @@ import Chart from "react-google-charts";
 //   ["2007", 1030, 540]
 // ];
 
-const options = {
-  title: "Company Performance",
-  curveType: "function",
-  legend: { position: "bottom" }
-};
+
+
+
+const month = ["Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
 
 
 const DayOneTotal = () => {
   const dispatch = useDispatch();
-  const country = 'United Kingdom';
+
+  const recharts_data = useSelector(state => state.reducerDayOneTotal.recharts_data);
+
+  const [country, setCountry] = useState('United Kingdom');
 
   useEffect(() => {
     dispatch(actionDayOneTotal(country));
-  }, [dispatch]);
-
-  const countries = useSelector(state => state.reducerDayOneTotal.countries);
-
-  //var result = [];
-  countries.reduce(function (res, value) {
-    console.log("RESULT:", res, "VALUES: ", value);
-    return res + value;
-  }, {});
+  }, [country, dispatch]);
 
 
-  const header = [["Month", "Cases"]];
-  const data = header.concat(countries);
-  console.log("DAY ONE TOTAL: ", data);
 
   return (
     <div>
-      <h1>Day one Total</h1>
-      <Chart
-        chartType="LineChart"
-        width="100%"
-        height="400px"
-        data={data}
-        options={options}
-      />
+
+      <form className="day-one-total">
+        <input type="text"
+          value={country}
+          onChange={(e) => setCountry(e.target.value)}
+          placeholder="Country"
+        />
+      </form>
+
+      <h1>Number of Cases: {country}</h1>
+
+      <LineChart
+        width={1000}
+        height={300}
+        data={recharts_data}
+        margin={{
+          top: 5, right: 30, left: 20, bottom: 5,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="Date" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Line type="monotone" dataKey="Cases" stroke="#8884d8" activeDot={{ r: 8 }} />
+      </LineChart>
+      {/** BAR CHART */}
+      <BarChart
+        width={1000}
+        height={300}
+        data={recharts_data}
+        margin={{
+          top: 5, right: 30, left: 20, bottom: 5,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="Date" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="Cases" fill="#8884d8" />
+      </BarChart>
+
     </div>
   )
 }

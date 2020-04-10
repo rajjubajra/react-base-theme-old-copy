@@ -21,7 +21,7 @@ const GeoChart = () => {
 
   return (
     <div>
-      <h1>Geo Chart: Covid-19 Number of cases</h1>
+      <h1>Covid-19 Number of cases: Geo Chart</h1>
       <Chart
         chartEvents={[
           {

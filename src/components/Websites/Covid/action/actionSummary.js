@@ -2,7 +2,6 @@ import { actionTypes } from "./actionTypes";
 import axios from 'axios';
 import { summaryapi } from '../utilities/configapi';
 
-
 export function actionSummary() {
 
   const url = summaryapi.URL;
@@ -15,7 +14,7 @@ export function actionSummary() {
           type: actionTypes.API_FETCHED,
           summary: res.data.Countries,
           payload: res.data.Countries.map((item, index) => {
-            return [item.Country, item.TotalConfirmed]
+            return [item.CountryCode, item.TotalConfirmed]
           })
         })
       })

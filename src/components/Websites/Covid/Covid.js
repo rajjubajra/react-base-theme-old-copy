@@ -8,8 +8,11 @@ const Covid = () => {
   return (
 
     <Provider store={store}>
-      <Nav />
-      <RouterCovid />
+      <div className="covid-19">
+        <Nav />
+        <RouterCovid />
+      </div>
+
     </Provider>
 
   )

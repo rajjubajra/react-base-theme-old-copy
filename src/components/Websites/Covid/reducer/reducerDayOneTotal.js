@@ -1,12 +1,15 @@
 import { actionTypes } from "../action/actionTypes"
-import { actionDayOneTotal } from "../action/actionDayOneTotal";
+
 
 const initalState = {
   summary: [],
   countries: [],
+  recharts_data: [],
   data: [],
   status: ''
 }
+
+const d = new Date();
 
 export const reducerDayOneTotal = (state = initalState, action) => {
   switch (action.type) {
@@ -21,6 +24,7 @@ export const reducerDayOneTotal = (state = initalState, action) => {
         ...state,
         summary: action.summary,
         countries: action.payload,
+        recharts_data: action.recharts_data,
         status: 'loaded'
       }
       return state;

@@ -1,10 +1,20 @@
 .covid-19{
-  filter: grayscale(0%) !important;
+  img, svg{
+    filter: grayscale(0%) !important;
+  }
+  
   h1{
     text-align: center;
     text-shadow: none;
   }
+  h2{
+    margin-left: 50px;
+  }
 
+  section{
+    width: 90%;
+    margin: 0px auto;
+  }
   .nav{
     width: 100%;
     display: flex;

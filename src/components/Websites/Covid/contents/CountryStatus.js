@@ -1,6 +1,6 @@
 import React, { useState, useEffect, PureComponent } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { actionDayOneTotal } from '../action/actionDayOneTotal';
+import { actionCountryStatus } from '../action/actionCountryStatus';
 
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
@@ -48,17 +48,42 @@ const month = ["Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "S
 
 
 
-const DayOneTotal = () => {
+const CountryStatus = () => {
   const dispatch = useDispatch();
 
-  const summary = useSelector(state => state.reducerDayOneTotal.summary);
-  const recharts_data = useSelector(state => state.reducerDayOneTotal.recharts_data);
+  const summary = useSelector(state => state.reducerCountryStatus.summary);
+  const recharts_data = useSelector(state => state.reducerCountryStatus.recharts_data);
+
 
   const [country, setCountry] = useState('United Kingdom');
+  const [data, setData] = useState([]);
+
+  console.log("DATA:", data);
+
 
   useEffect(() => {
-    dispatch(actionDayOneTotal(country));
+    setData(
+      !recharts_data ? '' :
+        recharts_data.map(item => {
+          let mnth = new Date(item.Date).getMonth();
+          let day = new Date(item.Date).getDate();
+          let year = new Date(item.Date).getFullYear();
+          return {
+            Date: `${day}-${month[mnth]}`,
+            Cases: item.Confirmed,
+            Recovered: item.Recovered,
+            Deaths: item.Deaths,
+            Active: item.Active
+          }
+        }))
+  }, [recharts_data]);
+
+
+  useEffect(() => {
+    dispatch(actionCountryStatus(country));
   }, [country, dispatch]);
+
+
 
   // const dataLength = recharts_data[0];
   // // const today = recharts_data[2].Date;
@@ -87,7 +112,7 @@ const DayOneTotal = () => {
         <LineChart
           width={1000}
           height={300}
-          data={recharts_data}
+          data={data}
           margin={{
             top: 5, right: 30, left: 20, bottom: 5,
           }}
@@ -97,7 +122,10 @@ const DayOneTotal = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="Cases" stroke="#8884d8" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="Cases" stroke="#32CD32" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="Recovered" stroke="#008000" />
+          <Line type="monotone" dataKey="Deaths" stroke="#8884d8" />
+          <Line type="monotone" dataKey="Active" stroke="#ff0000" />
         </LineChart>
       </section>
       <section>
@@ -107,7 +135,7 @@ const DayOneTotal = () => {
         <BarChart
           width={1000}
           height={300}
-          data={recharts_data}
+          data={data}
           margin={{
             top: 5, right: 30, left: 20, bottom: 5,
           }}
@@ -118,6 +146,9 @@ const DayOneTotal = () => {
           <Tooltip />
           <Legend />
           <Bar dataKey="Cases" fill="#8884d8" />
+          <Bar dataKey="Recovered" fill="#008000" />
+          <Bar dataKey="Active" fill="#ff0000" />
+          <Bar dataKey="Deaths" fill="#000000" />
         </BarChart>
       </section>
 
@@ -142,15 +173,13 @@ const DayOneTotal = () => {
               })
           }
         </ul>
-
       </section>
+      <section>
+        {
 
-
-
-
-
+        }
+      </section>
     </div>
   )
 }
-
-export default DayOneTotal
+export default CountryStatus;

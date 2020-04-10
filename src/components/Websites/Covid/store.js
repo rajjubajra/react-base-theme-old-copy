@@ -4,12 +4,14 @@ import thunk from 'redux-thunk';
 
 import { reducerSummary } from './reducer/reducerSummary';
 import { reducerDayOneTotal } from './reducer/reducerDayOneTotal';
+import { reducerCountryStatus } from './reducer/reducerCountryStatus';
 
 
 const reducer = combineReducers(
   {
     reducerSummary,
     reducerDayOneTotal,
+    reducerCountryStatus,
   }
 )
 

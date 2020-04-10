@@ -40,7 +40,6 @@ const ListByCountry = () => {
         {
           arr.map((item, index) => {
             if (item.TotalConfirmed > 0) {
-
               return <li className="country-summary">
                 <div>{item.Country}</div>
                 <div>{item.TotalConfirmed}</div>

@@ -15,3 +15,7 @@ export const countryapi = {
 export const dayONeTotal = {
   URL: 'https://api.covid19api.com/total/dayone/country'
 }
+
+export const countryStatus = {
+  URL: 'https://api.covid19api.com/live/country'
+}

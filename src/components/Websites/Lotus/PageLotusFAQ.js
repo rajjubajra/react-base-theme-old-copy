@@ -1,6 +1,5 @@
 import React from 'react'
 import NavLotus from './NavLotus';
-import CopyRightFooter from './CopyRightFooter';
 import FAQs from './FAQs';
 import TwoColumnContact from './TwoColumnContact';
 import FormInBox from './FormInBox';
@@ -26,7 +25,6 @@ const PageLotusFAQ = () => {
         <div className="divider"></div>
         <TwoColumnContact />
       </div>
-      <CopyRightFooter />
     </>
   )
 }

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import NavFixedLeft from './NavFixedLeft';
-import CopyRightFooter from './CopyRightFooter';
 import TitleWide from './TitleWide';
 import TeamWheat from './TeamWheat';
 import ContactWheat from './ContactWheat';
@@ -36,9 +35,7 @@ const PageWheatTeam = () => {
         </div>
       </div>
 
-      <div className="wheat-footer">
-        <CopyRightFooter />
-      </div>
+
     </>
   )
 }

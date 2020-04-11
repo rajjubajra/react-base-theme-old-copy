@@ -1,5 +1,4 @@
 import React from 'react'
-import CopyRightFooter from './CopyRightFooter'
 import NavLotus from './NavLotus'
 import LotusWhatWeDo from './LotusWhatWeDo'
 import TwoColumnContact from './TwoColumnContact'
@@ -28,7 +27,7 @@ const PageLotusWhatWeDo = () => {
 
         </div>
       </div>
-      <CopyRightFooter />
+
     </>
   )
 }

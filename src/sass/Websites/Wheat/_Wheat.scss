@@ -79,8 +79,11 @@ $large: 2rem;
     h1{
       @include font-head();
     }
+    .members .name{
+      font-size: $medium;
+      font-weight: 800;
+    }
     h2,
-    .members .name,
     .price-group h2,
     .contactwheat h1{
       @include font-subhead();

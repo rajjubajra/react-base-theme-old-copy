@@ -9,6 +9,42 @@ const Websites = () => {
       <h1 style={{ textAlign: "center" }}>WEBSITES</h1>
       <div className="websites">
         <div>
+          <h3>Dark Mode</h3>
+          <Link className="btn-small-wide" to="/" >Preview</Link>
+        </div>
+        <div>
+          <h3>Illustration</h3>
+          <Link className="btn-small-wide" to="/" >Preview</Link>
+        </div>
+        <div>
+          <h3>Video Heros</h3>
+          <Link className="btn-small-wide" to="/" >Preview</Link>
+        </div>
+        <div>
+          <h3>Micro Interactions</h3>
+          <Link className="btn-small-wide" to="/" >Preview</Link>
+        </div>
+        <div>
+          <h3>3D Elements</h3>
+          <Link className="btn-small-wide" to="/" >Preview</Link>
+        </div>
+        <div>
+          <h3>Geometric Shapes</h3>
+          <Link className="btn-small-wide" to="/" >Preview</Link>
+        </div>
+        <div>
+          <h3>Black and White</h3>
+          <Link className="btn-small-wide" to="/" >Preview</Link>
+        </div>
+        <div>
+          <h3>Massive Bold Fonts</h3>
+          <Link className="btn-small-wide" to="/" >Preview</Link>
+        </div>
+        <div>
+          <h3>Trandy Colour Scheme</h3>
+          <Link className="btn-small-wide" to="/" >Preview</Link>
+        </div>
+        <div>
           <h3>Lotus</h3>
           <Link className="btn-small-wide" to="/lotus" >Preview</Link>
         </div>

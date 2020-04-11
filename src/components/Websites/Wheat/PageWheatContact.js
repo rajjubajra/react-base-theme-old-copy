@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import NavFixedLeft from './NavFixedLeft';
-import CopyRightFooter from './CopyRightFooter';
 import TitleWide from './TitleWide';
 import ContactWheat from './ContactWheat';
 import FormInBox from './FormInBox';
@@ -33,9 +32,7 @@ const PageWheatContact = () => {
         </div>
       </div>
 
-      <div className="wheat-footer">
-        <CopyRightFooter />
-      </div>
+
     </>
   )
 }

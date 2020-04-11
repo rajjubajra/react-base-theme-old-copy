@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import NavFixedLeft from './NavFixedLeft';
 import WheatAboutus from './WheatAboutus';
-import CopyRightFooter from './CopyRightFooter';
 import HeroWheatTwo from './HeroWheatTwo';
 import TeamWheat from './TeamWheat';
 import SubscriptionWheat from './SubscriptionWheat';
@@ -41,9 +40,7 @@ const PageWheatAbout = () => {
         </div>
       </div>
 
-      <div className="wheat-footer">
-        <CopyRightFooter />
-      </div>
+
     </>
   )
 }

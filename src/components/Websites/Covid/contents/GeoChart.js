@@ -1,6 +1,7 @@
 import React from 'react'
 import { Chart } from "react-google-charts";
 import { useSelector } from 'react-redux';
+import Nav from './Nav';
 
 // const testData = [
 //   ["Country", "Popularity"],
@@ -20,27 +21,30 @@ const GeoChart = () => {
   const data = header.concat(countries);
 
   return (
-    <div>
-      <h1>Covid-19 Number of cases: Geo Chart</h1>
-      <Chart
-        chartEvents={[
-          {
-            eventName: "select",
-            callback: ({ chartWrapper }) => {
-              const chart = chartWrapper.getChart();
-              const selection = chart.getSelection();
-              if (selection.length === 0) return;
-              const region = data[selection[0].row + 1];
-              console.log("Selected : " + region);
+    <>
+      <Nav />
+      <div>
+        <h1>Covid-19 Number of cases: Geo Chart</h1>
+        <Chart
+          chartEvents={[
+            {
+              eventName: "select",
+              callback: ({ chartWrapper }) => {
+                const chart = chartWrapper.getChart();
+                const selection = chart.getSelection();
+                if (selection.length === 0) return;
+                const region = data[selection[0].row + 1];
+                console.log("Selected : " + region);
+              }
             }
-          }
-        ]}
-        chartType="GeoChart"
-        width="100%"
-        height="400px"
-        data={data}
-      />
-    </div>
+          ]}
+          chartType="GeoChart"
+          width="100%"
+          height="400px"
+          data={data}
+        />
+      </div>
+    </>
   )
 }
 export default GeoChart

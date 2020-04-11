@@ -1,5 +1,4 @@
 import React from 'react'
-import CopyRightFooter from './CopyRightFooter'
 import NavLotus from './NavLotus'
 import LotusAboutUs from './LotusAboutUs'
 import LotusTeam from './LotusTeam'
@@ -21,7 +20,6 @@ const PageLotusAbout = () => {
         </div>
 
       </div>
-      <CopyRightFooter />
     </>
   )
 }

@@ -36,7 +36,7 @@ const Recipe = ({ item }) => {
       })}
       </li>
       <li>Total Nutrients:
-                  <ul>
+          <ul>
           <li>
             {item.totalNutrients.FAT
               ? item.totalNutrients.FAT.label + ': ' +

@@ -10,16 +10,6 @@ import PageLotusFAQ from '../components/Websites/Lotus/PageLotusFAQ';
 
 
 
-/** WHEAT */
-// import Wheat from '../components/Websites/Wheat/Wheat';
-// import PageWheatAbout from '../components/Websites/Wheat/PageWheatAbout';
-// import PageWheatService from '../components/Websites/Wheat/PageWheatService';
-// import PageWheatTeam from '../components/Websites/Wheat/PageWheatTeam';
-// import PageWheatContact from '../components/Websites/Wheat/PageWheatContact';
-
-
-
-
 
 const RouterWebsites = () => {
   return (
@@ -31,17 +21,6 @@ const RouterWebsites = () => {
       <Route path='/lotus-What-we-do' component={PageLotusWhatWeDo} />
       <Route path='/lotus-contact' component={PageLotusContact} />
       <Route path='/lotus-faq' component={PageLotusFAQ} />
-
-
-      {/* * WHEAT
-      <Route path="/wheat" component={Wheat} />
-      <Route path="/wheat-aboutus" component={PageWheatAbout} />
-      <Route path="/wheat-services" component={PageWheatService} />
-      <Route path="/wheat-ourteam" component={PageWheatTeam} />
-      <Route path="/wheat-contact" component={PageWheatContact} /> */}
-
-
-
 
 
     </Switch>

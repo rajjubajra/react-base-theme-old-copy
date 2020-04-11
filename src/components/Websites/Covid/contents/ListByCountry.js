@@ -15,7 +15,7 @@ const ListByCountry = () => {
   console.log("DATA", data);
 
   return (
-    <>
+    <div className="covid-19">
       <Nav />
       <div>
         <h1>Covid - 19</h1>
@@ -57,7 +57,7 @@ const ListByCountry = () => {
 
 
       </div>
-    </>
+    </div>
   )
 }
 

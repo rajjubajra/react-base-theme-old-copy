@@ -93,7 +93,7 @@ const CountryStatus = () => {
 
 
   return (
-    <>
+    <div className="covid-19">
       <Nav />
       <div>
 
@@ -184,7 +184,7 @@ const CountryStatus = () => {
           }
         </section>
       </div>
-    </>
+    </div>
   )
 }
 export default CountryStatus;

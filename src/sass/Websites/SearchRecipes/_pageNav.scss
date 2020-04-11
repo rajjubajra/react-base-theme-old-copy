@@ -12,6 +12,7 @@ div.page-nav{
           width: 80px;
           border: none;
           cursor: pointer;
+          outline: none;
           &:hover{
             letter-spacing: 2px;
             transition: 0.5s;

@@ -21,7 +21,7 @@ const GeoChart = () => {
   const data = header.concat(countries);
 
   return (
-    <>
+    <div className="covid-19">
       <Nav />
       <div>
         <h1>Covid-19 Number of cases: Geo Chart</h1>
@@ -44,7 +44,7 @@ const GeoChart = () => {
           data={data}
         />
       </div>
-    </>
+    </div>
   )
 }
 export default GeoChart

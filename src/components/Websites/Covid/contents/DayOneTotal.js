@@ -68,7 +68,8 @@ const DayOneTotal = () => {
 
 
   return (
-    <>
+    <div className="covid-19">
+
       <Nav />
       <div>
         <section>
@@ -149,7 +150,7 @@ const DayOneTotal = () => {
         </section>
 
       </div>
-    </>
+    </div>
   )
 }
 

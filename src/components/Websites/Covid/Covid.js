@@ -5,14 +5,9 @@ import RouterCovid from './contents/RouterCovid';
 
 const Covid = () => {
   return (
-
     <Provider store={store}>
-      <div className="covid-19">
-        <RouterCovid />
-      </div>
-
+      <RouterCovid />
     </Provider>
-
   )
 }
 export default Covid;

@@ -26,7 +26,7 @@ const DummyData = () => {
 
   return (
     <div>
-      <div>
+      <div className="search-text">
         {status ? <h3>Search item:  {result.q} </h3> : ''}
       </div>
       <div className="recipes">

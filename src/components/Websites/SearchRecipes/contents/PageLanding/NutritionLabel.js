@@ -97,7 +97,7 @@ const NutritionLabel = (nutrition, serving) => {
     return nutrition
       ?
       <li className="nutrition-value" style={{ backgroundColor: bgColour }} >
-        <div className="label">{label}</div>
+        <div className="label"><i>{label}</i></div>
         <div className="contain">
           <span className="qty">{qty}</span>
           <span className="unit">{nutrition.unit}</span>

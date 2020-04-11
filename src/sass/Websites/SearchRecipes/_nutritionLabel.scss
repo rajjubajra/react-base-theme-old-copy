@@ -1,5 +1,23 @@
 .nutrition-value{
-  border: 1px solid $border_white;
+  border: 0px solid $border_white;
+  outline: none;
   height: 100px;
+  div.label{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-small;
+    i{
+      transform: rotate(90deg);
+    }
+  }
+  .contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+  }
 
 }

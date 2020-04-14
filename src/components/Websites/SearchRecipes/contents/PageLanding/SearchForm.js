@@ -24,7 +24,7 @@ const SearchForm = () => {
 
 
     return text !== '' ?
-      dispatch(actionSearch(text, 0, 15, type))
+      dispatch(actionSearch(text, 0, 25, type))
       : ''
   }
 

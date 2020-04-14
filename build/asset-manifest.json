@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-base-theme/build/static/css/main.5e75792d.chunk.css",
-    "main.js": "/react-base-theme/build/static/js/main.0f05d7fe.chunk.js",
-    "main.js.map": "/react-base-theme/build/static/js/main.0f05d7fe.chunk.js.map",
-    "runtime-main.js": "/react-base-theme/build/static/js/runtime-main.ea4ac167.js",
-    "runtime-main.js.map": "/react-base-theme/build/static/js/runtime-main.ea4ac167.js.map",
-    "static/js/2.ac355719.chunk.js": "/react-base-theme/build/static/js/2.ac355719.chunk.js",
-    "static/js/2.ac355719.chunk.js.map": "/react-base-theme/build/static/js/2.ac355719.chunk.js.map",
+    "main.css": "/react-base-theme/build/static/css/main.77a82512.chunk.css",
+    "main.js": "/react-base-theme/build/static/js/main.b9d649c3.chunk.js",
+    "main.js.map": "/react-base-theme/build/static/js/main.b9d649c3.chunk.js.map",
+    "runtime-main.js": "/react-base-theme/build/static/js/runtime-main.f69b8f10.js",
+    "runtime-main.js.map": "/react-base-theme/build/static/js/runtime-main.f69b8f10.js.map",
+    "static/js/2.e01678f7.chunk.js": "/react-base-theme/build/static/js/2.e01678f7.chunk.js",
+    "static/js/2.e01678f7.chunk.js.map": "/react-base-theme/build/static/js/2.e01678f7.chunk.js.map",
     "index.html": "/react-base-theme/build/index.html",
-    "precache-manifest.a726f270228f3ab8f97549404ff244e6.js": "/react-base-theme/build/precache-manifest.a726f270228f3ab8f97549404ff244e6.js",
+    "precache-manifest.6709624b0335fe2a55857ff33b619eae.js": "/react-base-theme/build/precache-manifest.6709624b0335fe2a55857ff33b619eae.js",
     "service-worker.js": "/react-base-theme/build/service-worker.js",
-    "static/css/main.5e75792d.chunk.css.map": "/react-base-theme/build/static/css/main.5e75792d.chunk.css.map",
-    "static/js/2.ac355719.chunk.js.LICENSE": "/react-base-theme/build/static/js/2.ac355719.chunk.js.LICENSE",
+    "static/css/main.77a82512.chunk.css.map": "/react-base-theme/build/static/css/main.77a82512.chunk.css.map",
+    "static/js/2.e01678f7.chunk.js.LICENSE.txt": "/react-base-theme/build/static/js/2.e01678f7.chunk.js.LICENSE.txt",
     "static/media/b3card-1.jpg": "/react-base-theme/build/static/media/b3card-1.bcfdccd3.jpg",
     "static/media/b3card-2.jpg": "/react-base-theme/build/static/media/b3card-2.3df78267.jpg",
     "static/media/b3card-3.jpg": "/react-base-theme/build/static/media/b3card-3.72776ef7.jpg",
@@ -108,9 +108,9 @@
     "static/media/workplace-1245776_1920.jpg": "/react-base-theme/build/static/media/workplace-1245776_1920.e57168b6.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ea4ac167.js",
-    "static/js/2.ac355719.chunk.js",
-    "static/css/main.5e75792d.chunk.css",
-    "static/js/main.0f05d7fe.chunk.js"
+    "static/js/runtime-main.f69b8f10.js",
+    "static/js/2.e01678f7.chunk.js",
+    "static/css/main.77a82512.chunk.css",
+    "static/js/main.b9d649c3.chunk.js"
   ]
 }

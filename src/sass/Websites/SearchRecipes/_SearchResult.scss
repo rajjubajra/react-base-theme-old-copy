@@ -99,10 +99,10 @@
     /** INGREDIENTS **/
     div{
         ul.moreInfo{
-        background-color: $background_lighter;
         outline: 1px solid $border_white;
         outline-offset: -5px;
         animation: flip 0.5s;
+        border-top: 1px solid $border_lighter;
         li{
           list-style: none;
           ul{
@@ -122,9 +122,10 @@
           margin: 10px 0px;
           padding: 0px 20px;
           p{
-            margin: 2px 0px;
+            margin: 12px 0px;
           }
         }
+        
         input.serving{
           width: 50px;
           padding: 3px;

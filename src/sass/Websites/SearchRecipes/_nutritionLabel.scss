@@ -1,7 +1,9 @@
 .nutrition-value{
-  border: 0px solid $border_white;
+  border: 2px solid $border_white;
+  border-radius: 0px 0px 15px 5px;
   outline: none;
   height: 100px;
+
   div.label{
     height: 50px;
     display: flex;

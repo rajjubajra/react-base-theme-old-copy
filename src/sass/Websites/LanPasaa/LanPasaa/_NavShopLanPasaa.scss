@@ -47,6 +47,9 @@
     li.cart{
       position: absolute;
       right: 5px;
+      @media(max-width: $media_small){
+        top: 30px;
+      }
       a{
         text-decoration: none;
       }

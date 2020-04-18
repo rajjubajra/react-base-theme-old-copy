@@ -1,6 +1,5 @@
 
 .shopping-cart{
-
   /** CART **/
   .cart-title{
     text-align: center;
@@ -11,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
-
+    position: relative;
     button {
       padding: 10px;
       background-color: #000000;
@@ -19,8 +18,12 @@
       letter-spacing: 1px;
       color: #ffffff;
       cursor: pointer;
-  }
-    
+      @media(max-width: $media_small){
+        padding: 4px;
+        font-weight: 500;
+        letter-spacing: 0px;
+      }
+    }
     .cart-header{
       display: flex;
       div{
@@ -54,25 +57,25 @@
         width: 100px;
         text-align: center;
         @media(max-width: $media_small){
-          width: 50px;
+          width: 40px;
         }
       }
       div:nth-child(2){
         width: 300px;
         @media(max-width: $media_small){
-          width: 170px;
+          width: 100px;
         }
       }
       div:nth-child(3){
         width: 100px;
         @media(max-width: $media_small){
-          width: 50px;
+          width: 25px;
         }
       }
       div:nth-child(4){
         width: 100px;
         @media(max-width: $media_small){
-          width: 50px;
+          width: 30px;
         }
       }
       div:nth-child(5){
@@ -80,7 +83,7 @@
         text-align: right;
         margin-right: 10px;
         @media(max-width: $media_small){
-          width: 50px;
+          width: 40px;
         }
       }
       div:nth-child(6){
@@ -91,6 +94,20 @@
       }
     }
   }
-
-
 }
+
+a.btn-cart-close{
+  position: absolute;
+  right: 30px;
+  text-decoration: none;
+  &:hover::before{
+    content: "Close";
+    font-size: $small;
+    position: relative;
+    top: -20px;
+    left: 24px;
+    animation: fadeIn 0.7s;
+  }   
+}
+
+

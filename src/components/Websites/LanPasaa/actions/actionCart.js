@@ -37,6 +37,12 @@ export const actionClearCart = () => ({
   type: actionTypes.CLEAR_CART
 })
 
+
+
+export const actionClearCartConfirmed = () => ({
+  type: actionTypes.CLEAR_CART_CONFIRMED
+})
+
 export const actionVeiwCart = () => ({
   type: actionTypes.VIEW_CART,
 })

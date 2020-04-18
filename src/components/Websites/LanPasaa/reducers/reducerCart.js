@@ -5,6 +5,7 @@ const initialState = {
   totalPrice: 0,
   cartProductId: [],/** is to handle ADD_TO_CART and ADD_QTY */
   viewCart: false,
+  popup_message: false,
   set: []
 }
 
@@ -51,14 +52,22 @@ export const reducerCart = (state = initialState, action) => {
     case actionTypes.CLEAR_CART:
       state = {
         ...state,
+        popup_message: true,
+      }
+      return state;
+    case actionTypes.CLEAR_CART_CONFIRMED:
+      state = {
+        ...state,
         cart: [],
         totalPrice: 0,
+        popup_message: false,
       }
       return state;
     case actionTypes.VIEW_CART:
       state = {
         ...state,
-        viewCart: state.viewCart ? false : true
+        viewCart: state.viewCart ? false : true,
+        popup_message: false,
       }
       return state;
     default:

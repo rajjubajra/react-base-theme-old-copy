@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import LanPasaaTitle from '../header/LanPasaaTitle';
 import CartDetails from './Shop/CartDetails';
 import NavMainLanPasaa from '../nav/NavMainLanPasaa';
@@ -9,12 +10,8 @@ export const PageCart = () => {
       <LanPasaaTitle />
       <NavMainLanPasaa />
       <div className="divider"></div>
-      <div className="shopping-cart">
-        <section className="product">
-          <CartDetails />
-        </section>
-      </div>
-
+      <Link to='/lanpasaa-shop' className="btn-cart-close" alt="Close"> X </Link>
+      <CartDetails />
     </div>
   )
 }

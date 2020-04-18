@@ -1,3 +1,9 @@
+@keyframes lanPasaafadeIn {
+  0% {opacity: 0.0;}
+  25%{opacity: 0.3;}
+  100% {opacity: 1;}
+}
+
 .lanpasaa{
   width: 90%;
   margin: 0px auto;
@@ -27,6 +33,7 @@
 @import "./LanPasaa/NavShopLanPasaa";
 @import "./LanPasaa/Shop";
 @import "./LanPasaa/CartDetails";
+@import "./LanPasaa/CartSummary";
 @import "./LanPasaa/ShopUpDownArrow";
 @import "./LanPasaa/ContactLanPasaa";
 @import "./LanPasaa/LanPasaaPageContact";

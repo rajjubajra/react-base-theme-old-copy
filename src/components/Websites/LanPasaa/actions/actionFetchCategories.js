@@ -6,7 +6,6 @@ export function actionFetchCategories() {
     dispatch({ type: actionTypes.FETCH_LAN_PASAA_CATEGORIES_START })
     axios.get("http://localhost:3000/LanPasaa")
       .then((res) => {
-        console.log("ACTION CATEGORY:", res.data[0].products);
         dispatch({
           type: actionTypes.FETCH_LAN_PASAA_CATEGORIES_RECEIVED,
           catgFetched: true, catgFetching: false,

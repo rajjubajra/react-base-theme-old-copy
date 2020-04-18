@@ -6,8 +6,13 @@
 
 .shop{
   // background-color: $background_lighter;
+  display: grid;
+  grid-template-columns: 200px 1fr;
   box-sizing: border-box;
-  margin-top: 50px;
+  @media(max-width: $media_small){
+    grid-template-columns: 1fr;
+  }
+  
 
   .cart-empty-message{
     text-align: center;
@@ -76,6 +81,11 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    @media(max-width: $media_small){
+      h3{
+        font-size: $medium;
+      }
+    }
     /** CART-SUMMARY **/
     div.cart-summary{
       display: flex;
@@ -105,7 +115,9 @@
           margin: 30px;
           border: 1px solid $border_lighter;
           @media(max-width: $media_small){
-            width: 300px;
+            max-width: 300px;
+            width: 100%;
+            margin: 7px;
           }
     
             .product-image{
@@ -161,100 +173,12 @@
         }
         div.description{
           margin: 60px 0px;
-        }
-
-       
+        }  
       }
 
 
     }  
     
     }
-
-
-  /** CART **/
-  .cart-title{
-    text-align: center;
-  }
-  .cart-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
-    
-    .cart-header{
-      display: flex;
-      div{
-        border-bottom: 1px solid $border_lighter;
-      }
-    }
-    .cart-items{
-      .items{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-    .cart-footer{
-      display: flex;
-      border-bottom: 1px solid $border_lighter;
-      padding-bottom: 20px;
-    }
-
-    .cart-header,
-    .cart-items .items,
-    .cart-footer{
-
-      @media(max-width: $media_small){
-        font-size: $small;
-      }
-
-      margin: 5px 0px;
-
-      div:nth-child(1){
-        width: 100px;
-        text-align: center;
-        @media(max-width: $media_small){
-          width: 50px;
-        }
-      }
-      div:nth-child(2){
-        width: 300px;
-        @media(max-width: $media_small){
-          width: 170px;
-        }
-      }
-      div:nth-child(3){
-        width: 100px;
-        @media(max-width: $media_small){
-          width: 50px;
-        }
-      }
-      div:nth-child(4){
-        width: 100px;
-        @media(max-width: $media_small){
-          width: 50px;
-        }
-      }
-      div:nth-child(5){
-        width: 100px;
-        text-align: right;
-        margin-right: 10px;
-        @media(max-width: $media_small){
-          width: 50px;
-        }
-      }
-      div:nth-child(6){
-        width: 100px;
-        @media(max-width: $media_small){
-          width: 50px;
-        }
-      }
-    }
-  }
-
-
-
-
 
 }

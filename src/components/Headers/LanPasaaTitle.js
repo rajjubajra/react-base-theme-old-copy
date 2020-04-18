@@ -4,7 +4,7 @@ const LanPasaaTitle = (props) => {
   return (
     <>
       <div className="ref">LanPasaaTitle.js</div>
-      <div className="lanpasaatitle">
+      <div className="_lanpasaatitle">
         <h1>{props.title}</h1>
       </div>
     </>

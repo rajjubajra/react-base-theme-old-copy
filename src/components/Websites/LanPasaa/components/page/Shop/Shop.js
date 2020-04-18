@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
 import ShopCategory from './ShopCategory'
 import ShopItems from './ShopItems'
@@ -11,12 +11,15 @@ import CartSummary from './CartSummary';
 
 const Shop = () => {
 
-  console.log('SHOP JS')
+
   /** DATA FROM REDUX STORE
   being passed in to all the components **/
-  const data = useSelector(state => state.reducerFetchData.data)
+  const data = useSelector(state => state.reducerFetchData.list);
   const products = useSelector(state => state.reducerFetchProducts);
   console.log("SHOP JS: ", data, products, typeof (data));
+
+
+
 
   /** Item id for view product list or single item */
   const itemId = useSelector(state => state.reducerNavigation.itemId);
@@ -30,21 +33,22 @@ const Shop = () => {
 
   /** category name */
   const category = useSelector(state => state.reducerNavigation.category);
+  const categoryname = category === '' ? '' : `'s ${category}`;
+  const groupname = useSelector(state => state.reducerFetchData.groupname);
 
   return (
     <div className="shop">
 
       {/** CATEGORIES LIST */}
       <section className="categories">
-
-        <ShopCategory prod={data} />
+        <ShopCategory />
       </section>
 
       {/** PRODUCT LIST | CART VIEW */}
 
       <section className="product">
         {/** do not view if cart is empty */
-          totalPrice === 0 ? <p className="cart-empty-message">Cart is empty</p> : <CartSummary />
+          totalPrice === 0 ? '' : <CartSummary />
         }
 
         { /** view cart details */
@@ -54,7 +58,7 @@ const Shop = () => {
         {/** LIST OF PRODUCTS */
           itemId === 0
             ? <>
-              <h3>Product List: <b>{category}</b></h3>
+              <h3><b>{groupname}{categoryname}</b></h3>
               <div className="product-list">
                 <ShopItems prod={data} />
               </div>

@@ -3,6 +3,7 @@ import PageLanPasaaLanding from './page/PageLanPasaaLanding';
 import PageLanPasaaAbout from './page/PageLanPasaaAbout';
 import PageLanPasaaContact from './page/PageLanPasaaContact';
 import PageLanPasaaShop from './page/PageLanPasaaShop';
+import PageCart from './page/PageCart';
 import { Switch, Route } from 'react-router-dom';
 
 
@@ -19,6 +20,7 @@ const RouteLanPasaa = () => {
         <Route path="/lanpasaa-shop" component={PageLanPasaaShop} />
         <Route path="/lanpasaa-about" component={PageLanPasaaAbout} />
         <Route path="/lanpasaa-contact" component={PageLanPasaaContact} />
+        <Route path="/cart" component={PageCart} />
       </Switch>
     </>
   )

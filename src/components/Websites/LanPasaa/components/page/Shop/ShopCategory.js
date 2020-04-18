@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { actionCategoryNav } from '../../../actions/actionNavigation';
 import { actionFetchCategories } from '../../../actions/actionFetchCategories';
 
-const ShopCategory = (props) => {
-  console.log("SHOP-CATEGORY JS");
-  const [upDownArrow, setUpDownArrow] = useState('up');
+const ShopCategory = () => {
 
-  // const categories = useState(state => state.reducerFetchCategories.categories);
-  // console.log("CATEGORIES: - ", categories);
+  const [upDownArrow, setUpDownArrow] = useState('up');
+  const list = useSelector(state => state.reducerFetchData.list);
 
   const dispatch = useDispatch();
 
@@ -25,7 +23,7 @@ const ShopCategory = (props) => {
       <h3>Category <i onClick={() => changeArrow()} className={`shop-updown-arrow ${upDownArrow}`}></i></h3>
       <ul className={upDownArrow} onClick={() => changeArrow()}>
         {
-          props.prod.map((item, index) => {
+          list.map((item, index) => {
             return <li
               key={index}
               /** pass Item name to redux store */

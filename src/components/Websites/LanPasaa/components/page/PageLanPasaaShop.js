@@ -7,13 +7,17 @@ import { actionFetchData } from '../../actions/actionFetchData';
 
 
 
+
+
 const PageLanPasaaShop = () => {
 
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(actionFetchData());
+    dispatch(actionFetchData('Women'));
   }, [dispatch])
+
+
 
   return (
     <div className="lanpasaa">
@@ -21,6 +25,7 @@ const PageLanPasaaShop = () => {
       <NavByGroup />
       <div className="divider"></div>
       <Shop />
+
     </div>
   )
 }

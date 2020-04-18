@@ -1,7 +1,10 @@
 import axios from 'axios';
 import { actionTypes } from './actionTypes';
 
-export function actionFetchData() {
+
+
+export const actionFetchData = (group) => {
+
   return function (dispatch) {
     dispatch({ type: actionTypes.FETCH_LAN_PASAA_DATA_START });
     // axios.get("https://my-json-server.typicode.com/rajjubajra/lan-pasaa-json/categories")
@@ -10,7 +13,10 @@ export function actionFetchData() {
         dispatch({
           type: actionTypes.FETCH_LAN_PASAA_DATA_RECEIVED,
           feched: true, fetching: false,
-          payload: res.data
+          // eslint-disable-next-line array-callback-return
+          payload: res.data.filter(element => {
+            if (element.group === group) return element
+          })
         })
       })
       .catch((error) => {

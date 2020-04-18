@@ -3,7 +3,7 @@ import fabric from '../../../../../../images/LanPasaa/fabrics.jpg'
 
 const LanPasaaAboutus = () => {
   return (
-    <div className="lanpasaa-aboutus">
+    <div className="lanpasaa-about-us">
       <div>
         <h1>About us</h1>
       </div>

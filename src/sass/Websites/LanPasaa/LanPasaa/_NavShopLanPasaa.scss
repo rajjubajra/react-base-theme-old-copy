@@ -12,9 +12,12 @@
     margin: 0px;
     margin-left: 47px;    
     padding: 0px;
+    position: relative;
+
     @media(max-width: $media_small){
       margin-left: 20px;
     }
+
     li{
       margin: 0px 48px 0px 0px;
       padding: 0px;
@@ -38,6 +41,14 @@
         &:active{
           color: $color_black;
         }
+      }
+    }
+
+    li.cart{
+      position: absolute;
+      right: 5px;
+      a{
+        text-decoration: none;
       }
     }
   }

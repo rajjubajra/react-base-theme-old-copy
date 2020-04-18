@@ -4,7 +4,10 @@ const initialData = {
   fetching: false,
   fetched: false,
   error: null,
-  data: []
+  data: [],
+  groupname: '',
+  list: [],
+
 }
 
 export const reducerFetchData = (state = initialData, action) => {
@@ -18,10 +21,11 @@ export const reducerFetchData = (state = initialData, action) => {
         }
       }
     case actionTypes.FETCH_LAN_PASAA_DATA_RECEIVED: {
-      console.log("REDUCER: DATA RECEIVED");
       return {
         ...state,
         data: action.payload,
+        groupname: action.payload[0].group,
+        list: action.payload[0].list,
         fetched: true,
         fetching: false,
         error: null

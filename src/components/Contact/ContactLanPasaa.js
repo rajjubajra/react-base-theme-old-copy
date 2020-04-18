@@ -4,7 +4,7 @@ const ContactWheat = () => {
   return (
     <>
       <div className="ref">ContactLanPasaa</div>
-      <div className="contact-lanpasaa">
+      <div className="_contact-lanpasaa">
         <div>
           <h3>Location</h3>
           <p>24 High Street</p>

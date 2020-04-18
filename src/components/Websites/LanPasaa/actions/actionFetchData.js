@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { actionTypes } from './actionTypes';
+import { LanPasaaApiUrl } from '../utilities/configapi';
 
 
 
@@ -8,7 +9,7 @@ export const actionFetchData = (group) => {
   return function (dispatch) {
     dispatch({ type: actionTypes.FETCH_LAN_PASAA_DATA_START });
     // axios.get("https://my-json-server.typicode.com/rajjubajra/lan-pasaa-json/categories")
-    axios.get("http://localhost:3000/LanPasaa")
+    axios.get(LanPasaaApiUrl.URL)
       .then((res) => {
         dispatch({
           type: actionTypes.FETCH_LAN_PASAA_DATA_RECEIVED,

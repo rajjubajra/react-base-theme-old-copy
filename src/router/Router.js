@@ -1,14 +1,14 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom';
 import RouterReUseComponents from './RouterReUseComponents';
-import RouterApps from './RouterApps';
-import RouterWebsites from './RouterWebsites';
-import CopyRightFooter from '../components/Footers/CopyRightFooter';
+import RouterApps from '../components/Apps/RouterApps';
 import LanPasaa from '../components/Websites/LanPasaa/LanPasaa';
 import Coffee from '../components/Websites/Coffee/Coffee';
 import Wheat from '../components/Websites/Wheat/Wheat';
 import SearchRecipes from '../components/Websites/SearchRecipes/SearchRecipes';
 import Covid from '../components/Websites/Covid/Covid';
+import LotusRouter from '../components/Websites/Lotus/LotusRouter';
+import CopyRightFooter from '../components/Footers/CopyRightFooter';
 
 
 
@@ -25,13 +25,11 @@ const Router = () => {
         <Covid />
 
 
-
         {/** WEBSITES */}
-        <RouterWebsites />
+        <LotusRouter />
         <LanPasaa />
         <Coffee />
         <Wheat />
-
 
 
         <div className="copy-right-footer">

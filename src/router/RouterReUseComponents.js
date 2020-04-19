@@ -23,9 +23,6 @@ const RouterReUseComponents = () => {
 
   const [btnShowHide] = useState(true);
 
-
-
-
   return (
 
     <Switch>

@@ -1,7 +1,5 @@
 import React from 'react'
 import AppsRouter from './AppsRouter';
-import CopyRightFooter from './CopyRightFooter';
-
 
 const Apps = () => {
 
@@ -11,7 +9,6 @@ const Apps = () => {
         <h1>React Apps</h1>
         <AppsRouter />
       </div>
-      <CopyRightFooter />
     </>
   )
 }

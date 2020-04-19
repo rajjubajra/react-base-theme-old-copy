@@ -1,12 +1,12 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom';
-import AddPost from '../components/Apps/AddPost/AddPost';
-import ReduxInOnePage from '../components/Apps/ReduxInOnePage';
-import ReduxHookInOnePage from '../components/Apps/ReduxHookInOnePage';
-import AddPostClass from '../components/Apps/AddPostClass/AddPostClass';
-import ReduxLesson from '../components/Apps/ReduxLesson';
-import TodoAppRedux from '../components/Apps/ReduxTodoApp'
-import ReduxShoppingCart from '../components/Apps/ReduxShoppingCart';
+import AddPost from './AddPost/AddPost';
+import ReduxInOnePage from './ReduxInOnePage';
+import ReduxHookInOnePage from './ReduxHookInOnePage';
+import AddPostClass from './AddPostClass/AddPostClass';
+import ReduxLesson from './ReduxLesson';
+import TodoAppRedux from './ReduxTodoApp'
+import ReduxShoppingCart from './ReduxShoppingCart';
 
 
 const RouterApps = () => {

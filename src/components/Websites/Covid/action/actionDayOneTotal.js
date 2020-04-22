@@ -27,7 +27,6 @@ export function actionDayOneTotal(country) {
           recharts_data: res.data.map((item, index) => {
             let month = new Date(item.Date).getMonth();
             let day = new Date(item.Date).getDate();
-            let year = new Date(item.Date).getFullYear();
             return {
               Date: `${day}/${monthname[month]}`,
               Cases: item.Cases

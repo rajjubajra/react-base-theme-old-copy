@@ -40,6 +40,7 @@ const ListByCountry = () => {
             <div className="header">New Cases</div>
           </li>
           {
+            // eslint-disable-next-line array-callback-return
             arr.map((item, index) => {
               if (item.TotalConfirmed > 0) {
                 return <li className="country-summary">

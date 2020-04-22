@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux';
+import { actionSummary } from '../action/actionSummary';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(actionSummary());
+  }, [dispatch])
+
   return (
     <div className="nav">
       <Link to="/covid">List by Country</Link>

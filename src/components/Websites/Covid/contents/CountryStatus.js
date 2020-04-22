@@ -1,11 +1,11 @@
-import React, { useState, useEffect, PureComponent } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { actionCountryStatus } from '../action/actionCountryStatus';
 import Nav from './Nav';
 
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
-  BarChart, Bar, Cell,
+  BarChart, Bar
 } from 'recharts';
 
 
@@ -68,7 +68,6 @@ const CountryStatus = () => {
         recharts_data.map(item => {
           let mnth = new Date(item.Date).getMonth();
           let day = new Date(item.Date).getDate();
-          let year = new Date(item.Date).getFullYear();
           return {
             Date: `${day}-${month[mnth]}`,
             Cases: item.Confirmed,

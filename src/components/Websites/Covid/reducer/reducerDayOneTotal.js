@@ -9,8 +9,6 @@ const initalState = {
   status: ''
 }
 
-const d = new Date();
-
 export const reducerDayOneTotal = (state = initalState, action) => {
   switch (action.type) {
     case actionTypes.API_DAYONETOTAL_FETCHING:

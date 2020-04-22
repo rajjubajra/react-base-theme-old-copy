@@ -29,11 +29,11 @@ const Recipes = ({ item }) => {
     window.open(sourceUrl);
   }
 
-  const nutritionLabel = (nutrition, serving) => (
-    nutrition
-      ? Math.round(nutrition.quantity / serving) + nutrition.unit
-      : 'NA'
-  )
+  // const nutritionLabel = (nutrition, serving) => (
+  //   nutrition
+  //     ? Math.round(nutrition.quantity / serving) + nutrition.unit
+  //     : 'NA'
+  // )
 
   const totalNutrients = (nutrients) => (
     nutrients

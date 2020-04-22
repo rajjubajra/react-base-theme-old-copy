@@ -9,7 +9,6 @@ const initalState = {
   status: ''
 }
 
-const d = new Date();
 
 export const reducerCountryStatus = (state = initalState, action) => {
   switch (action.type) {

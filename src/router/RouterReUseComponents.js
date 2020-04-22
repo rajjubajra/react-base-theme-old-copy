@@ -15,6 +15,7 @@ import SocialMedia from '../components/SocialMedia/SocialMeida';
 import Columns from '../components/Columns/Columns';
 import ImageSlider from '../components/ImageSlider/ImageSlider';
 import Homepage from '../components/HomePage/Homepage';
+import ComingSoon from '../components/Websites/ComingSoon/ComingSoon';
 
 
 const RouterReUseComponents = () => {
@@ -28,10 +29,7 @@ const RouterReUseComponents = () => {
     <Switch>
       <Route exact path="/" >
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
-          <div className={btnShowHide ? 'show' : 'hide'}>
-            <MeghaMenu />
-          </div>
-          <Websites />
+          <ComingSoon />
         </div>
       </Route>
       <Route path="/websites" >

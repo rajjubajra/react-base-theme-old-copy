@@ -1,18 +1,11 @@
-import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux';
+import React from 'react'
 import { Switch, Route } from 'react-router-dom';
-import { actionSummary } from '../action/actionSummary';
 import ListByCountry from './ListByCountry';
 import GeoChart from './GeoChart';
 import DayOneTotal from './DayOneTotal';
 import CountryStatus from './CountryStatus';
 
 const RouterCovid = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(actionSummary());
-  }, [dispatch])
 
   return (
     <Switch>

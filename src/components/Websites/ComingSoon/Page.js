@@ -1,31 +1,54 @@
-import React from 'react'
-import { baseUrl } from './utilities/configApi';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux';
+import { actionFetchText, actionFetchLogo } from './action';
 import Buttons from './Buttons';
+import LogoVerticle from './LogoVerticle';
+import LogoSquare from './LogoSquare';
+import Body from './Body';
+import Contact from './Contact';
 
-const Page = (props) => {
+const Page = () => {
 
-  console.log('IMG', props.logo.url);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(actionFetchText());
+    dispatch(actionFetchLogo());
+  }, [dispatch]);
+
+
+
+  const btnFreeImageTitle = useSelector(state => state.reducerFetchText.btnFreeImageTitle);
+  const btnFreeImageUri = useSelector(state => state.reducerFetchText.btnFreeImageUri);
+  const btnWebHostingTitle = useSelector(state => state.reducerFetchText.btnWebHostingTitle);
+  const btnWebHostingUri = useSelector(state => state.reducerFetchText.btnWebHostingUri);
+
+
+  const logoFetched = useSelector(state => state.reducerFetchLogo.fetched);
+
+
+
   return (
-    <>
-      <div>
-        <img src={`${baseUrl.URL}/${props.logo.url}`} alt="logo" />
+    <div className="coming-soon-page">
+      <LogoVerticle />
+      <div className="main-body">
+        <Body />
       </div>
+      <div className="contact-me">
+        <Contact />
+      </div>
+      <div className="links">
+        {
+          logoFetched ?
+            <>
+              <Buttons title={btnWebHostingTitle} uri={btnWebHostingUri} />
+              <Buttons title={btnFreeImageTitle} uri={btnFreeImageUri} />
+            </>
+            : ''
+        }
 
-      <div>
-        <div dangerouslySetInnerHTML={{ __html: props.body.value }} />
       </div>
-
-      <div>
-        <img src={`${baseUrl.URL}/${props.logo_sqr.url}`} alt="logo" />
-        <Link to="#"> {props.contact.title}</Link>
-      </div>
-      <div>
-        <Buttons btnFreeImage={props.btnFreeImage} />
-        <Buttons btnWebHosting={props.btnWebHosting} />
-      </div>
-
-    </>
+    </div>
   )
 }
 

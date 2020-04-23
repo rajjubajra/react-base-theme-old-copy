@@ -1,8 +1,89 @@
-.coming-soon{
+@keyframes smoothDrop {
+  0% {
+    position: relative;
+    top: -20px;
+    opacity: 0px;
+  }
+  100%{
+    position: relative;
+    top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.coming-soon-page{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 95%;
+  margin: 0px auto;
   min-height: 100vh;
+
+
+  img{
+    filter: grayscale(0%) !important;
+  }
+
+  .logo-verticle{
+    animation: smoothDrop 2s;
+    img{
+      max-width: 250px;
+      width: 100%;
+    }
+  }
+
+  .main-body{
+    margin: 30px 0px;
+    text-align: center;
+    line-height: 0.5rem;
+    animation-delay: 1s;
+    animation: fadeOut 2s;
+    h2{
+      text-shadow: none;
+    }
+    p{
+      font-size: $medium;
+      font-weight: 500;
+    }
+  }
+
+  .contact-me{
+    animation-delay: 2s;
+    animation: fadeOut 2s;
+    text-align: center;
+    p{
+      font-size: $medium;
+      font-weight: 100;
+    }
+  }
+  .links{
+    animation-delay: 3s;
+    animation: fadeOut 2s;
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr; 
+    .btn-small-wide{
+      text-align: center;
+      font-size: $small;
+      font-weight: 100;
+    }
+  }
+  
+  .logo-square{
+    img{
+      animation-delay: 3s;
+      max-width: 130px;
+      width: 30%;
+    }
+  }
+
 }

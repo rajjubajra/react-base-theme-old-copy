@@ -28,9 +28,7 @@ const RouterReUseComponents = () => {
 
     <Switch>
       <Route exact path="/" >
-        <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
-          <ComingSoon />
-        </div>
+        <ComingSoon />
       </Route>
       <Route path="/websites" >
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>

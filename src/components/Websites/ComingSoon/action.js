@@ -5,10 +5,16 @@ import { comingsoon_contents, config_logo } from './utilities/configApi';
 /** FETCH TEXT DATA */
 export const actionFetchText = () => {
 
+  const axiosConfig = {
+    headers: {
+      'Content-Type': 'Accept: application/vnd.api+json'
+    }
+  };
+
   return function (dispatch) {
     dispatch({ type: actionTypes.TEXT_DATA_FETCHING });
 
-    axios.get(comingsoon_contents.URL)
+    axios.get(comingsoon_contents.URL, axiosConfig)
       .then((res) => {
         dispatch({
           type: actionTypes.TEXT_DATA_FETCHED,
@@ -34,10 +40,16 @@ export const actionFetchText = () => {
 /** FETCH LOGO DATA */
 export const actionFetchLogo = () => {
 
+  const axiosConfig = {
+    headers: {
+      'Content-Type': 'Accept: application/vnd.api+json'
+    }
+  };
+
   return function (dispatch) {
     dispatch({ type: actionTypes.LOGO_FETCHING });
 
-    axios.get(config_logo.URL)
+    axios.get(config_logo.URL, axiosConfig)
       .then((res) => {
         dispatch({
           type: actionTypes.LOGO_FETCHED,

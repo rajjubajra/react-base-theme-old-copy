@@ -7,7 +7,8 @@ export const actionFetchText = () => {
 
   const axiosConfig = {
     headers: {
-      'Content-Type': 'Accept: application/vnd.api+json'
+      'Accept': 'application/vnd.api+json',
+      'Content-Type': 'application/vnd.api+json'
     }
   };
 
@@ -42,7 +43,8 @@ export const actionFetchLogo = () => {
 
   const axiosConfig = {
     headers: {
-      'Content-Type': 'Accept: application/vnd.api+json'
+      'Accept': 'application/vnd.api+json',
+      'Content-Type': 'application/vnd.api+json'
     }
   };
 

@@ -2,20 +2,27 @@ import axios from 'axios';
 import { actionTypes } from './actionTypes';
 import { comingsoon_contents, config_logo } from './utilities/configApi';
 
+
+
+
+
+
 /** FETCH TEXT DATA */
 export const actionFetchText = () => {
+  let h = new Headers();
+  h.append('Accept', 'application/json');
+  let req = new Request(comingsoon_contents.URL, {
+    method: 'GET',
+    headers: h,
+    mode: 'cors'
+  })
 
-  const axiosConfig = {
-    headers: {
-      'Accept': 'application/vnd.api+json',
-      'Content-Type': 'application/vnd.api+json'
-    }
-  };
+
 
   return function (dispatch) {
     dispatch({ type: actionTypes.TEXT_DATA_FETCHING });
 
-    axios.get(comingsoon_contents.URL, axiosConfig)
+    axios.get(comingsoon_contents.URL)
       .then((res) => {
         dispatch({
           type: actionTypes.TEXT_DATA_FETCHED,
@@ -29,7 +36,7 @@ export const actionFetchText = () => {
       })
       .catch((error) => {
         dispatch({
-          type: actionTypes.TEXT_DATA_FETCH_EROOR,
+          type: actionTypes.TEXT_DATA_FETCH_ERROR,
           fetching: false,
           fetched: false,
           error: error
@@ -41,17 +48,19 @@ export const actionFetchText = () => {
 /** FETCH LOGO DATA */
 export const actionFetchLogo = () => {
 
-  const axiosConfig = {
-    headers: {
-      'Accept': 'application/vnd.api+json',
-      'Content-Type': 'application/vnd.api+json'
-    }
-  };
+  let h = new Headers();
+  h.append('Accept', 'application/json');
+  let req = new Request(config_logo.URL, {
+    method: 'GET',
+    headers: h,
+    mode: 'cors'
+  })
+
 
   return function (dispatch) {
     dispatch({ type: actionTypes.LOGO_FETCHING });
 
-    axios.get(config_logo.URL, axiosConfig)
+    axios.get(req)
       .then((res) => {
         dispatch({
           type: actionTypes.LOGO_FETCHED,
@@ -63,7 +72,7 @@ export const actionFetchLogo = () => {
       })
       .catch((error) => {
         dispatch({
-          type: actionTypes.LOGO_FETCH_EROOR,
+          type: actionTypes.LOGO_FETCH_ERROR,
           fetching: false,
           fetched: false,
           error: error

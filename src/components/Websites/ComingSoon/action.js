@@ -9,21 +9,20 @@ import { comingsoon_contents, config_logo } from './utilities/configApi';
 
 /** FETCH TEXT DATA */
 export const actionFetchText = () => {
-  let h = new Headers();
-  h.append('Accept', 'application/json');
-  let req = new Request(comingsoon_contents.URL, {
-    method: 'GET',
-    headers: h,
-    mode: 'cors'
-  })
-
 
 
   return function (dispatch) {
     dispatch({ type: actionTypes.TEXT_DATA_FETCHING });
 
-    axios.get(comingsoon_contents.URL)
+    axios({
+      method: 'GET',
+      url: comingsoon_contents.URL,
+      headers: {
+        'Accept': 'application/vnd.api+json'
+      }
+    })
       .then((res) => {
+        console.log(res);
         dispatch({
           type: actionTypes.TEXT_DATA_FETCHED,
           feched: true,
@@ -60,7 +59,7 @@ export const actionFetchLogo = () => {
   return function (dispatch) {
     dispatch({ type: actionTypes.LOGO_FETCHING });
 
-    axios.get(req)
+    axios.get(config_logo.URL)
       .then((res) => {
         dispatch({
           type: actionTypes.LOGO_FETCHED,

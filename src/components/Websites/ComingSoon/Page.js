@@ -13,7 +13,7 @@ const Page = () => {
 
   useEffect(() => {
     dispatch(actionFetchText());
-    // dispatch(actionFetchLogo());
+    dispatch(actionFetchLogo());
   }, [dispatch]);
 
 
@@ -31,11 +31,13 @@ const Page = () => {
   return (
     <div className="coming-soon-page">
 
+
       <div className="main-body">
+        <LogoVerticle />
         <Body />
       </div>
       <div className="contact-me">
-
+        <Contact />
       </div>
       <div className="links">
         {

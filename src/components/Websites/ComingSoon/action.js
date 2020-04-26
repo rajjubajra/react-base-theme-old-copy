@@ -47,19 +47,17 @@ export const actionFetchText = () => {
 /** FETCH LOGO DATA */
 export const actionFetchLogo = () => {
 
-  let h = new Headers();
-  h.append('Accept', 'application/json');
-  let req = new Request(config_logo.URL, {
-    method: 'GET',
-    headers: h,
-    mode: 'cors'
-  })
-
 
   return function (dispatch) {
     dispatch({ type: actionTypes.LOGO_FETCHING });
 
-    axios.get(config_logo.URL)
+    axios({
+      method: 'GET',
+      url: config_logo.URL,
+      headers: {
+        'Accept': 'application/vnd.api+json'
+      }
+    })
       .then((res) => {
         dispatch({
           type: actionTypes.LOGO_FETCHED,

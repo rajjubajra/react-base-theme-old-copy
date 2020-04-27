@@ -20,14 +20,14 @@ import ComingSoon from '../components/Websites/ComingSoon/ComingSoon';
 
 const RouterReUseComponents = () => {
 
-
+  const [urlRoot] = useState('https://www.yellow-website.com/react-base-theme/build/');
 
   const [btnShowHide] = useState(true);
 
   return (
 
     <Switch>
-      <Route exact path="/" >
+      <Route exact path={urlRoot} >
         <ComingSoon />
       </Route>
       <Route path="/websites" >

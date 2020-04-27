@@ -11,14 +11,11 @@ import LotusRouter from '../components/Websites/Lotus/LotusRouter';
 import CopyRightFooter from '../components/Footers/CopyRightFooter';
 
 
-
 const Router = () => {
 
   return (
     <>
       <BrowserRouter>
-        <RouterReUseComponents />
-
         {/** APPS */}
         <RouterApps />
         <SearchRecipes />
@@ -31,7 +28,7 @@ const Router = () => {
         <Coffee />
         <Wheat />
 
-
+        <RouterReUseComponents />
         <div className="copy-right-footer">
           <CopyRightFooter />
         </div>

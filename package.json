@@ -1,6 +1,5 @@
 {
   "name": "react-base-theme",
-  "homepage": "http://profile.yellow-website.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -27,7 +27,7 @@ const RouterReUseComponents = () => {
   return (
 
     <Switch>
-      <Route path='http://localhost:3001/react-base-theme/build' >
+      <Route exact path='/' >
         <MeghaMenu />
         <ComingSoon />
       </Route>

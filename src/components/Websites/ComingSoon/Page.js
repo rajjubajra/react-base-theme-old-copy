@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { actionFetchText, actionFetchLogo } from './action';
 import Buttons from './Buttons';
 import LogoVerticle from './LogoVerticle';
-import LogoSquare from './LogoSquare';
 import Body from './Body';
 import Contact from './Contact';
 

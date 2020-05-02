@@ -1,5 +1,5 @@
 ---
 deployment:
- tasks:
- - export DEPLOYPATH=/home/yellowcp/public_html/react-base-theme
- - /bin/cp * $DEPLOYPATH
+  tasks:
+  - export DEPLOYPATH=/home/yellowcp/public_html/react-base-theme
+  - /bin/cp * $DEPLOYPATH

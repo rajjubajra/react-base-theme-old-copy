@@ -12,6 +12,10 @@ export const config_logo = {
   URL: `${baseUrl.URL}/d8.yellow-website.com/jsonapi/node/logo?include=field_image`,
 }
 
+export const contactFormUrl = {
+  URL: `${baseUrl.URL}/d8.yellow-webiste.com/jsonapi/contact_message/feedback`
+}
+
 
 
 /**

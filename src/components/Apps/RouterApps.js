@@ -7,6 +7,7 @@ import AddPostClass from './AddPostClass/AddPostClass';
 import ReduxLesson from './ReduxLesson';
 import TodoAppRedux from './ReduxTodoApp'
 import ReduxShoppingCart from './ReduxShoppingCart';
+import Axios from './Axios/Axios';
 
 
 const RouterApps = () => {
@@ -20,6 +21,7 @@ const RouterApps = () => {
       <Route path="/apps-add-post-class" component={AddPostClass} />
       <Route path="/apps-todo-redux" component={TodoAppRedux} />
       <Route path="/apps-redux-shopping-cart" component={ReduxShoppingCart} />
+      <Route path="/app-axios" component={Axios} />
     </Switch>
   )
 }

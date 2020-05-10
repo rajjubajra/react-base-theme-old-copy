@@ -11,6 +11,7 @@ const AppsRouter = () => {
       <li><Link to="/apps-add-post-class" >Add Post [Class]</Link></li>
       <li><Link to="/apps-todo-redux" >Todo App [Redux]</Link></li>
       <li><Link to="/apps-redux-shopping-cart" >Shopping Cart [Redux]</Link></li>
+      <li><Link to="/app-axios">Axios Crash Course</Link></li>
     </ul>
   )
 }

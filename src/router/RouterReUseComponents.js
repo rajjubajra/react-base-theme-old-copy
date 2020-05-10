@@ -16,6 +16,7 @@ import Columns from '../components/Columns/Columns';
 import ImageSlider from '../components/ImageSlider/ImageSlider';
 import Homepage from '../components/HomePage/Homepage';
 import ComingSoon from '../components/Websites/ComingSoon/ComingSoon';
+import LiveStream from '../components/LiveStream/LiveStream';
 
 
 const RouterReUseComponents = () => {
@@ -37,6 +38,14 @@ const RouterReUseComponents = () => {
             <MeghaMenu />
           </div>
           <Websites />
+        </div>
+      </Route>
+      <Route path="/live-stream" >
+        <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
+          <div className={btnShowHide ? 'show' : 'hide'}>
+            <MeghaMenu />
+          </div>
+          <LiveStream />
         </div>
       </Route>
       <Route path="/apps">

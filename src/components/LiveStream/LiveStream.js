@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { liveUrl } from './urlconfig';
+import ShowOutPut from './ShowOutPut';
 
 
 
 function LiveStream() {
-  const [youTubeShare, setYouTubeShare] = useState('');
+  const [allData, setAllData] = useState([]);
+  const [youTubeShare, setYouTubeShare] = useState([]);
 
 
   useEffect(() => {
@@ -19,29 +21,23 @@ function LiveStream() {
 
     axios.get(liveUrl.URL, axiosConfig)
       .then(res => {
-        console.log(res.data);
-        setYouTubeShare(JSON.stringify(res.data.data))
+        setAllData(res.data);
+        setYouTubeShare(res.data.data)
       })
   }, [])
 
-
-
-  console.log('share youtube ', JSON.stringify(youTubeShare), 'nostringy', youTubeShare, 'PARSE')
-
+  console.log('share youtube ', youTubeShare.data, 'PARSE')
 
   return (
 
     < div >
-      {
-        youTubeShare.map(item => {
-          return item;
-        })
-      }
+      <ShowOutPut allData={allData} youTubeShare={youTubeShare} />
+
       <iframe
         style={{ width: "560", height: "315" }}
         src="https://www.youtube.com/embed/NKzd_YiW9AQ"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
       </iframe>
     </div >
   )

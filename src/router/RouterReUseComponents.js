@@ -29,7 +29,6 @@ const RouterReUseComponents = () => {
 
     <Switch>
       <Route exact path='/' >
-        <MeghaMenu />
         <ComingSoon />
       </Route>
       <Route path="/websites" >

@@ -4,9 +4,6 @@ import axios from 'axios';
 
 
 
-
-
-
 const FormInBox = () => {
 
   const [name, setName] = useState('');
@@ -53,9 +50,9 @@ const FormInBox = () => {
 
   return (
     <>
-      <div>Post data {data}</div>
+      <div>{data}</div>
       <div className="forminbox" onSubmit={(evn) => postContact(evn)}>
-        <div className="title"><h2>Contact: </h2></div>
+        <div className="title"></div>
         <form action="">
           <div className="name">
             <label htmlFor="name">Name</label>

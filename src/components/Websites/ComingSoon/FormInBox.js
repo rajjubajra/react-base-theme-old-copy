@@ -12,21 +12,44 @@ const FormInBox = () => {
   const [data, setData] = useState('');
 
 
-
-
+  console.log("POST DATA? : ", data);
   function postContact(evn) {
     evn.preventDefault();
 
-    axios.post({
-      method: 'POST',
-      url: `http://yellow-website.com/d8.yellow-website.com/jsonapi/contact_form/contact_form/6dfd8a4c-987c-4f06-aefa-7c14e37e5019`,
-      data: {
-        name: name,
-        email: email,
-        message: message
+    const config = {
+      headers: {
+        'Accept': 'application/vnd.api+json',
+        'Content-Type': 'application/vnd.api+json',
       }
-    })
+    }
+
+    // axios({
+    //   method: 'POST',
+    //   url: 'https://www.yellow-website.com/d8.yellow-website.com/jsonapi/contact_message/message_me',
+    //   data: {
+    //     name: name,
+    //     email: email,
+    //     message: message
+    //   },
+    //   headers: {
+    //     'Accept': 'application/vnd.api+json',
+    //     'Content-Type': 'application/vnd.api+json',
+    //   }
+    // })
+
+
+    axios.post('https://www.yellow-website.com/d8.yellow-website.com/jsonapi/webform_submission/message_me', {
+      "data": {
+        "webform_id": {
+          "target_id": "message_me"
+        },
+        "mobile_number": [{ "value": "123456789" }],
+        "name": [{ "value": "Test" }],
+      }
+    }, config)
       .then((res) => {
+        setData(res.data);
+        console.log("RESULT: ", res);
         setData(res.data);
 
       })

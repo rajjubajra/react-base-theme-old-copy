@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/d8.yellow-website.com/react-app.com/build/static/css/main.1feda788.chunk.css",
-    "main.js": "/d8.yellow-website.com/react-app.com/build/static/js/main.689cc5bf.chunk.js",
-    "main.js.map": "/d8.yellow-website.com/react-app.com/build/static/js/main.689cc5bf.chunk.js.map",
+    "main.js": "/d8.yellow-website.com/react-app.com/build/static/js/main.07698643.chunk.js",
+    "main.js.map": "/d8.yellow-website.com/react-app.com/build/static/js/main.07698643.chunk.js.map",
     "runtime-main.js": "/d8.yellow-website.com/react-app.com/build/static/js/runtime-main.0a1ee221.js",
     "runtime-main.js.map": "/d8.yellow-website.com/react-app.com/build/static/js/runtime-main.0a1ee221.js.map",
     "static/js/2.c962da8d.chunk.js": "/d8.yellow-website.com/react-app.com/build/static/js/2.c962da8d.chunk.js",
     "static/js/2.c962da8d.chunk.js.map": "/d8.yellow-website.com/react-app.com/build/static/js/2.c962da8d.chunk.js.map",
     "index.html": "/d8.yellow-website.com/react-app.com/build/index.html",
-    "precache-manifest.e15089793476ac2555697d6bdc6e3740.js": "/d8.yellow-website.com/react-app.com/build/precache-manifest.e15089793476ac2555697d6bdc6e3740.js",
+    "precache-manifest.073d93a326f64da43a9273782f848311.js": "/d8.yellow-website.com/react-app.com/build/precache-manifest.073d93a326f64da43a9273782f848311.js",
     "service-worker.js": "/d8.yellow-website.com/react-app.com/build/service-worker.js",
     "static/css/main.1feda788.chunk.css.map": "/d8.yellow-website.com/react-app.com/build/static/css/main.1feda788.chunk.css.map",
     "static/js/2.c962da8d.chunk.js.LICENSE.txt": "/d8.yellow-website.com/react-app.com/build/static/js/2.c962da8d.chunk.js.LICENSE.txt",
@@ -111,6 +111,6 @@
     "static/js/runtime-main.0a1ee221.js",
     "static/js/2.c962da8d.chunk.js",
     "static/css/main.1feda788.chunk.css",
-    "static/js/main.689cc5bf.chunk.js"
+    "static/js/main.07698643.chunk.js"
   ]
 }

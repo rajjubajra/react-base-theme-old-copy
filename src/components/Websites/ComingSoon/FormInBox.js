@@ -20,6 +20,7 @@ const FormInBox = () => {
       headers: {
         'Accept': 'application/vnd.api+json',
         'Content-Type': 'application/vnd.api+json',
+        'Authorization': 'Basic YXBpOmFwaQ=='
       }
     }
 

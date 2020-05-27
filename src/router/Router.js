@@ -9,6 +9,8 @@ import SearchRecipes from '../components/Websites/SearchRecipes/SearchRecipes';
 import Covid from '../components/Websites/Covid/Covid';
 import LotusRouter from '../components/Websites/Lotus/LotusRouter';
 import CopyRightFooter from '../components/Footers/CopyRightFooter';
+import Portfolio2020 from '../components/WebsitesBootstrap/Bootstrap_4/Portfolio2020/Portfolio2020';
+
 
 
 const Router = () => {
@@ -21,13 +23,18 @@ const Router = () => {
         <SearchRecipes />
         <Covid />
 
-
-
         {/** WEBSITES */}
         <LotusRouter />
         <LanPasaa />
         <Coffee />
         <Wheat />
+
+        {/** WEBSITES - BOOTSTRAPS */}
+        <Portfolio2020 />
+
+
+
+
 
 
         <RouterReUseComponents />

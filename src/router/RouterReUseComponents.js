@@ -17,6 +17,7 @@ import ImageSlider from '../components/ImageSlider/ImageSlider';
 import Homepage from '../components/HomePage/Homepage';
 import ComingSoon from '../components/Websites/ComingSoon/ComingSoon';
 import LiveStream from '../components/LiveStream/LiveStream';
+import WebsitesBootstrap from '../components/WebsitesBootstrap/WebsitesBootstrap';
 
 
 const RouterReUseComponents = () => {
@@ -29,6 +30,9 @@ const RouterReUseComponents = () => {
 
     <Switch>
       <Route exact path='/' >
+        <div className={btnShowHide ? 'show' : 'hide'}>
+          <MeghaMenu />
+        </div>
         <ComingSoon />
       </Route>
       <Route path="/websites" >
@@ -37,6 +41,14 @@ const RouterReUseComponents = () => {
             <MeghaMenu />
           </div>
           <Websites />
+        </div>
+      </Route>
+      <Route path="/websites-bootstrap" >
+        <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
+          <div className={btnShowHide ? 'show' : 'hide'}>
+            <MeghaMenu />
+          </div>
+          <WebsitesBootstrap />
         </div>
       </Route>
       <Route path="/live-stream" >

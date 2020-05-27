@@ -1,0 +1,33 @@
+html, body{
+  margin: 0%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+
+/** FONT FACE **/
+@font-face{
+  font-family: "Roboto";
+  src: '../../../../../fonts/Roboto/Roboto-Regular.tff';
+}
+
+
+/* COLORS */
+$primary_color: #4458dc;
+$secondar_color: #854fee;
+$title_color: #141313;
+$text_color: #777777;
+$border_color: #201f1f17;
+$gradient_color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+$shadow_color: 0px 10px 30px rgba(118,85,225,0.3);
+$box_shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+/* FONT */
+$primary_font: 'Roboto';
+
+
+.navbar{
+  outline: none;
+}
+

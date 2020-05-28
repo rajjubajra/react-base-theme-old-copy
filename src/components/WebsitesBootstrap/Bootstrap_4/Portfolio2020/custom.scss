@@ -27,7 +27,96 @@ $box_shadow: 0px 10px 30px rgba(57,56,61,0.205);
 $primary_font: 'Roboto';
 
 
+/** GLOBAL */
+section{
+  width: 100%;
+  min-height: 95vh;
+}
+
+
+/** NAVBAR **/
 .navbar{
   outline: none;
 }
+
+
+
+/** TOOLS AREA **/
+.single-tool{
+    margin: 10px;
+    border: 1px solid #eee;
+    padding: 20px;
+    outline: 1px dotted #eee;
+    outline-offset: -10px;
+
+    &:hover{
+      transition: 0.5s ease-in;
+      border: 0px;
+      outline: 0px;
+      outline-offset: 0px;
+      box-shadow: 0px 2px 7px 0px #777777;
+    }
+}
+
+.tool-text-area{
+  padding-left: 1rem;
+
+  span{
+    display: block;
+  }
+
+  .years-area{
+    // background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+    .years{
+      font: normal bold 84px/40px $primary_font;
+      color: $text_color;
+      z-index: 2;
+    }
+    h2 > span{
+      font: normal 600 22px/30px $primary_font;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      top: 22px;
+      left: 60px;
+      width: 150px;
+      height: 150px;
+      border: 1px dotted #ccc;
+    }
+    
+  }
+
+  .bg-panel{
+    position: absolute;
+    left: -190px; top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+  }
+
+  .call-area{
+    padding-left: 10rem;
+  }
+
+}
+
+
+/** SERVICES **/
+.services {
+  &:hover{
+    transition: 0.5s ease-in;
+    border: 1px solid #ddd;
+  }
+}
+
+
+
 

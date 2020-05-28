@@ -3,6 +3,12 @@ import '../portfolio2020.scss';
 import Header from './headers/Header';
 import SiteBanner from './site_banner/SiteBanner';
 import Aboutus from './aboutus/Aboutus';
+import Tools from './tools/Tools';
+import Services from './services/Services';
+import Project from './projects/Project';
+import Review from './review/Review';
+import Subscribe from './subscribe/Subscribe';
+import SocialMedia from './socialmedia/SocialMedia';
 
 
 function Page() {
@@ -23,10 +29,39 @@ function Page() {
           <Aboutus />
         </section>
 
-        {/** SITE BRAND */}
-        <section className="brand-area">
-
+        {/** TOOLS BRAND */}
+        <section className="tools-area">
+          <Tools />
         </section>
+
+
+        {/** SERVICES */}
+        <section className="services-area">
+          <Services />
+        </section>
+
+        {/** PROJECTS */}
+        <section className="project-area">
+          <Project />
+        </section>
+
+
+        {/** REVIEW SECTION */}
+        <section className="review-area">
+          <Review />
+        </section>
+
+        {/** SUBSCRIPTION */}
+        <section className="subscribe-area">
+          <Subscribe />
+        </section>
+
+
+        {/** SOCIAL MEDIA */}
+        <section className="social-media-area">
+          <SocialMedia />
+        </section>
+
 
 
 

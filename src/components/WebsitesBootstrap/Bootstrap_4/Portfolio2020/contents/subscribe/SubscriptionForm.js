@@ -1,19 +1,17 @@
 import React from 'react'
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 function SubscriptionForm() {
   return (
-    <form class="w-50">
-      <div class="row d-flex flex-row flex-wrap">
-        <div class="col input-textbox">
-          <input type="text" id="txtemail" class="form-control" placeholder="Email" />
-        </div>
-        <div class="col">
-          <div class="btn-submit">
-            <button type="submit" class="btn btn-success float-right">Subscribe</button>
-          </div>
-        </div>
-      </div>
-    </form>
+    <Form>
+      <Form.Group controlId="formBasicEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" />
+      </Form.Group>
+
+      <Button variant="primary" type="submit">Submit</Button>
+    </Form>
   )
 }
 

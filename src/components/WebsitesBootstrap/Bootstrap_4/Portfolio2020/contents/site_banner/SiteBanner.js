@@ -11,8 +11,12 @@ function SiteBanner() {
   return (
     <Container>
       <Row>
-        <Col lg={6} md={12} className="site-title"><SiteBannerTitle /></Col>
-        <Col lg={6} md={12} className="banner-image"><SiteBannerImage /></Col>
+        <Col lg={6} md={12} className="site-title text-center">
+          <SiteBannerTitle />
+        </Col>
+        <Col lg={6} md={12} className="banner-image">
+          <SiteBannerImage />
+        </Col>
       </Row>
     </Container>
   )

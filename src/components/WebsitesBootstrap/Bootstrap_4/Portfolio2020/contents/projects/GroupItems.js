@@ -1,5 +1,6 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
+import CardColumns from 'react-bootstrap/CardColumns';
 import GroupItem from './GroupItem';
 import shirt01 from '../../../../../../images/Products/shirt01.jpg';
 import shirt02 from '../../../../../../images/Products/shirt02.jpg';
@@ -17,7 +18,7 @@ import Pants05 from '../../../../../../images/Products/Pants05.jpg';
 function GroupItems() {
 
   return (
-    <Row className="grid">
+    <CardColumns>
       <GroupItem groupTitle="Minumum design" groupBrief="Latest, Shirt" img={shirt01} />
       <GroupItem groupTitle="Paint design" groupBrief="New Brand, Shirt" img={shirt02} />
       <GroupItem groupTitle="Stylist design" groupBrief="Latest, Shirt" img={shirt03} />
@@ -28,7 +29,7 @@ function GroupItems() {
       <GroupItem groupTitle="Youth collection" groupBrief="Youth style, Pants" img={Pants03} />
       <GroupItem groupTitle="Stylist Design" groupBrief="Collections, Pants" img={Pants04} />
       <GroupItem groupTitle="New Design" groupBrief="Style, Pants" img={Pants05} />
-    </Row>
+    </CardColumns>
   )
 }
 

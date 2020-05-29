@@ -1,5 +1,8 @@
 import React from 'react'
 import '../portfolio2020.scss';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
 import Header from './headers/Header';
 import SiteBanner from './site_banner/SiteBanner';
 import Aboutus from './aboutus/Aboutus';
@@ -9,6 +12,13 @@ import Project from './projects/Project';
 import Review from './review/Review';
 import Subscribe from './subscribe/Subscribe';
 import SocialMedia from './socialmedia/SocialMedia';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+
+
+library.add(fab)
+
 
 
 function Page() {
@@ -62,14 +72,7 @@ function Page() {
           <SocialMedia />
         </section>
 
-
-
-
       </main>
-
-
-
-
 
     </>
   )

@@ -1,22 +1,21 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card';
 
 function ServiceItem(props) {
   return (
-    <div class="col-lg-3 col-md-6 col-sm-12">
-      <div class="services">
-        <div class="sevices-img text-center py-4">
-          <img style={{ width: '100%', maxWidth: '200px' }} src={props.img} alt="Services-1" />
-        </div>
-        <div class="card-body text-center">
-          <h5 class="card-title text-uppercase font-roboto">Wp developer</h5>
-          <p class="card-text text-secondary">
-            Some quick example text to build on the card
-            title and make up
-            the bulk of the card's content.
-          </p>
-        </div>
-      </div>
-    </div>
+    <Card>
+      <Card.Img variant="top" style={{ padding: "20px", maxHeight: "230px" }} src={props.img} />
+      <Card.Body>
+        <Card.Title>Card title</Card.Title>
+        <Card.Text>
+          This is a wider card with supporting text below as a natural lead-in to
+          additional content. This content is a little bit longer.
+      </Card.Text>
+      </Card.Body>
+      <Card.Footer>
+        <small className="text-muted">Last updated 3 mins ago</small>
+      </Card.Footer>
+    </Card>
   )
 }
 

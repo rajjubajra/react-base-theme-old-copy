@@ -8,7 +8,7 @@ import SubscriptionForm from './SubscriptionForm'
 function Subscribe() {
   return (
     <Container className="subscribe">
-      <Row><Title title="Get updated" /></Row>
+      <Row> <Title title="Subscribe me" /></Row>
       <Row>
         <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, consequuntur." />
       </Row>

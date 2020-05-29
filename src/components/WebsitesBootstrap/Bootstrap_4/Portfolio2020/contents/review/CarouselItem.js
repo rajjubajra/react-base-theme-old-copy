@@ -1,18 +1,33 @@
 import React from 'react'
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Media from 'react-bootstrap/Media';
+import Container from 'react-bootstrap/Container';
 
 function CarouselItem(props) {
   return (
-    <Row className="cleint">
-      <Col lg={4} md={12} className="client-img">
-        <img style={{ maxWidth: '100px' }} src={props.img} alt={props.alt} class="img-fluid" />
-      </Col>
-      <Col lg={8} md={12} className="about-client">
-        <h4 className="text-uppercase">{props.cleintName}</h4>
-        <p className="para">{props.reviewText}</p>
-      </Col>
-    </Row>
+    <Container>
+      <Row className="justify-content-md-center">
+        <Col lg={6}>
+          <Media>
+            <img
+              style={{ maxWidth: '100px' }}
+              width={64}
+              height={64}
+              className="mr-3"
+              src={props.img}
+              alt={props.alt}
+            />
+            <Media.Body>
+              <h5>{props.cleintName}</h5>
+              <p>{props.reviewText}</p>
+            </Media.Body>
+          </Media>
+        </Col>
+      </Row>
+    </Container>
+
+
   )
 }
 

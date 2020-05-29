@@ -26,7 +26,9 @@ function AboutusContent() {
           </p>
       ' />
 
-      <button type="button" class="btn button primary-button text-uppercase">More</button>
+      <button type="button" class="btn button primary-button text-uppercase">
+        More
+      </button>
 
 
     </div>

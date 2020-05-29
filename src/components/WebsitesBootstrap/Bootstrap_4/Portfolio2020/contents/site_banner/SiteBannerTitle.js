@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Title from '../global/Title';
+import SubTitle from '../global/SubTitle';
 
 
 
@@ -10,8 +12,8 @@ function SiteBannerTitle() {
       justifyContent: "center"
     }} className="site-title">
       <h3 className="title-tex" style={{ paddingTop: "35%" }}>Hello</h3>
-      <h1 className="title-text text-uppercase">I am a Lion</h1>
-      <h4 className="title-text text-uppercase">King of the jungle</h4>
+      <Title title="I am a Lion" />
+      <SubTitle title="King of the jungle" />
       <div className="site-buttons">
         <div className="d-flex flex-rw flex-wrap justify-content-center">
           <button type="button" className="btn button primary-button mr-4 text-uppercase">Why me?</button>

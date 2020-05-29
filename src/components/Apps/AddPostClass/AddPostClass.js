@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CopyRightFooter from '../../Footers/CopyRightFooter';
+
 import FormRegular from './FormRegular';
 
 
@@ -32,7 +32,7 @@ class AddPostClass extends Component {
           <FormRegular />
           {postItems}
         </div>
-        <CopyRightFooter />
+
       </>
     )
   }

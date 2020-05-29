@@ -12,15 +12,15 @@ const Animation = () => {
   return (
     <div>
       <h2>Animation</h2>
-        <div style={page}>
-          <SmokeText />
-        </div>
-        <div style={page}>
-          <Rotation />
-        </div>
-        <div style={page}>
-          <Circle />
-        </div>
+      <div style={page}>
+        <SmokeText />
+      </div>
+      <div style={page}>
+        <Rotation />
+      </div>
+      <div style={page}>
+        <Circle />
+      </div>
     </div>
   )
 }

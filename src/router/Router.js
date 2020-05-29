@@ -1,15 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import RouterReUseComponents from './RouterReUseComponents';
-import RouterApps from '../components/Apps/RouterApps';
-import LanPasaa from '../components/Websites/LanPasaa/LanPasaa';
-import Coffee from '../components/Websites/Coffee/Coffee';
-import Wheat from '../components/Websites/Wheat/Wheat';
-import SearchRecipes from '../components/Websites/SearchRecipes/SearchRecipes';
-import Covid from '../components/Websites/Covid/Covid';
-import LotusRouter from '../components/Websites/Lotus/LotusRouter';
-import CopyRightFooter from '../components/Footers/CopyRightFooter';
-import Portfolio2020 from '../components/WebsitesBootstrap/Bootstrap_4/Portfolio2020/Portfolio2020';
+import RouterCustomStyle from './RouterCustomStyle';
+import RouterBootstrap4Style from './RouterBootstrap4Style';
+import CopyRightFooter from '../components/CopyRightFooter/CopyRightFooter';
 
 
 
@@ -18,30 +11,16 @@ const Router = () => {
   return (
     <>
       <BrowserRouter>
-        {/** APPS */}
-        <RouterApps />
-        <SearchRecipes />
-        <Covid />
-
-        {/** WEBSITES */}
-        <LotusRouter />
-        <LanPasaa />
-        <Coffee />
-        <Wheat />
-
-        {/** WEBSITES - BOOTSTRAPS */}
-        <Portfolio2020 />
+        <RouterCustomStyle />
 
 
-
-
-
-
-        <RouterReUseComponents />
         <div className="copy-right-footer">
           <CopyRightFooter />
         </div>
+
       </BrowserRouter>
+
+
     </>
   )
 }

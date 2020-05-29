@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer3Column from './Footer3Column'
-import CopyRightFooter from './CopyRightFooter'
+
 
 
 const Footers = () => {
@@ -14,9 +14,7 @@ const Footers = () => {
           <Footer3Column />
         </div>
 
-        <div>
-          <CopyRightFooter />
-        </div>
+
 
 
 

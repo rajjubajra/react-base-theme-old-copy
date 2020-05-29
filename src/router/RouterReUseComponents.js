@@ -18,6 +18,7 @@ import Homepage from '../components/HomePage/Homepage';
 import ComingSoon from '../components/Websites/ComingSoon/ComingSoon';
 import LiveStream from '../components/LiveStream/LiveStream';
 import WebsitesBootstrap from '../components/WebsitesBootstrap/WebsitesBootstrap';
+import Portfolio2020 from '../components/WebsitesBootstrap/Bootstrap_4/Portfolio2020/Portfolio2020';
 
 
 const RouterReUseComponents = () => {
@@ -29,12 +30,14 @@ const RouterReUseComponents = () => {
   return (
 
     <Switch>
+      {/** LANDING PAGE *************************************/}
       <Route exact path='/' >
         <div className={btnShowHide ? 'show' : 'hide'}>
           <MeghaMenu />
         </div>
         <ComingSoon />
       </Route>
+      {/** WEBSITES PAGE *************************************/}
       <Route path="/websites" >
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -43,14 +46,22 @@ const RouterReUseComponents = () => {
           <Websites />
         </div>
       </Route>
+      {/** WEBSITES-BOOTSTRAP PAGE *************************************/}
       <Route path="/websites-bootstrap" >
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
-          <div className={btnShowHide ? 'show' : 'hide'}>
-            <MeghaMenu />
-          </div>
           <WebsitesBootstrap />
         </div>
       </Route>
+
+      <Route path="/Websites-bootstrap/Project2020" >
+        <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
+          <Portfolio2020 />
+        </div>
+      </Route>
+
+
+
+      {/** LIVE STREAM PAGE *************************************/}
       <Route path="/live-stream" >
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -59,6 +70,7 @@ const RouterReUseComponents = () => {
           <LiveStream />
         </div>
       </Route>
+      {/** APPS PAGE *************************************/}
       <Route path="/apps">
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -67,6 +79,7 @@ const RouterReUseComponents = () => {
           <Apps />
         </div>
       </Route>
+      {/** BOXES PAGE *************************************/}
       <Route path="/boxes">
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -75,6 +88,7 @@ const RouterReUseComponents = () => {
           <Boxes />
         </div>
       </Route>
+      {/** HOMEPAGE PAGES *************************************/}
       <Route path="/homepage">
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -83,6 +97,7 @@ const RouterReUseComponents = () => {
           <Homepage />
         </div>
       </Route>
+      {/** ABOUT US PAGES *************************************/}
       <Route path="/aboutus">
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -91,6 +106,7 @@ const RouterReUseComponents = () => {
           <Aboutus />
         </div>
       </Route>
+      {/** COLUMNS *************************************/}
       <Route path="/columns">
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -99,6 +115,7 @@ const RouterReUseComponents = () => {
           <Columns />
         </div>
       </Route>
+      {/** NAVIGATIONS *************************************/}
       <Route path="/navigation">
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -107,6 +124,7 @@ const RouterReUseComponents = () => {
           <Navigation />
         </div>
       </Route>
+      {/** CALL TO ACTIONS *************************************/}
       <Route path="/calltoaction" >
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -115,6 +133,7 @@ const RouterReUseComponents = () => {
           <CallToAction />
         </div>
       </Route>
+      {/** ANIMATIONS *************************************/}
       <Route path="/animation" >
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -123,6 +142,7 @@ const RouterReUseComponents = () => {
           <Animation />
         </div>
       </Route>
+      {/** IMAGE SLIDERS *************************************/}
       <Route path="/imageslider" >
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -131,6 +151,7 @@ const RouterReUseComponents = () => {
           <ImageSlider />
         </div>
       </Route>
+      {/** CONTACT PAGES *************************************/}
       <Route path="/contact" >
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -139,6 +160,7 @@ const RouterReUseComponents = () => {
           <Contact />
         </div>
       </Route>
+      {/** HEADERS *************************************/}
       <Route path="/headers" >
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -147,6 +169,7 @@ const RouterReUseComponents = () => {
           <Headers />
         </div>
       </Route>
+      {/** FOOTERS *************************************/}
       <Route path="/footers">
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -155,6 +178,7 @@ const RouterReUseComponents = () => {
           <Footers />
         </div>
       </Route>
+      {/** SOCIAL MEDIAS *************************************/}
       <Route path="/social-media">
         <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
           <div className={btnShowHide ? 'show' : 'hide'}>
@@ -163,6 +187,7 @@ const RouterReUseComponents = () => {
           </div>
         </div>
       </Route>
+
     </Switch>
   )
 }

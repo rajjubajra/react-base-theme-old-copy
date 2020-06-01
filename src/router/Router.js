@@ -1,26 +1,55 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import RouterCustomStyle from './RouterCustomStyle';
-import RouterBootstrap4Style from './RouterBootstrap4Style';
+import React, { useState } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import CopyRightFooter from '../components/CopyRightFooter/CopyRightFooter';
+import RouterComponents from './RouterComponents';
+import RouterWebsites from './RouterWebsites';
+import RouterWebsiteBootstrap4 from './RouterWebsiteBootstrap4';
+import MeghaMenu from '../components/Navigation/MeghaMenu';
+import ComingSoon from '../components/Websites/ComingSoon/ComingSoon';
 
 
 
 const Router = () => {
 
+  const [btnShowHide] = useState(true);
+
   return (
     <>
       <BrowserRouter>
-        <RouterCustomStyle />
+
+        <Switch>
+          <Route exact path="/" >
+            <div className={`App ${btnShowHide} ? 'with-menu' : 'without-menu'`}>
+              <div className={btnShowHide ? 'show' : 'hide'}>
+                <MeghaMenu />
+              </div>
+              <ComingSoon />
+            </div>
+          </Route>
+        </Switch>
+
+        {/** RE-USABLE COMPONENTS *************************************/}
+        <Switch>
+          <RouterComponents />
+        </Switch>
+
+        {/** WEBSITES PAGE *************************************/}
+        <Switch>
+          <RouterWebsites />
+        </Switch>
+
+        {/** WEBSITES WITH BOOTSTRAP-4  *************************************/}
+        <Switch>
+          <RouterWebsiteBootstrap4 />
+        </Switch>
 
 
-        <div className="copy-right-footer">
+        {/** COPYRIGHT COMPONENT  *************************************/}
+        <div className="App copy-right-footer">
           <CopyRightFooter />
         </div>
 
       </BrowserRouter>
-
-
     </>
   )
 }

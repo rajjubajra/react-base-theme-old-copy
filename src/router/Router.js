@@ -8,6 +8,12 @@ import MeghaMenu from '../components/Navigation/MeghaMenu';
 import ComingSoon from '../components/Websites/ComingSoon/ComingSoon';
 
 
+/**
+ * NOTE: 
+ * CSS class "App" is only for Custom-made css.
+ * Do not use "App" class on Bootstrap or other CSS framework 
+ */
+
 
 const Router = () => {
 

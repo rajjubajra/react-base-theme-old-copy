@@ -59,8 +59,7 @@ section{
 }
 
 .tool-text-area{
-  padding-left: 1rem;
-
+  
   span{
     display: block;
   }
@@ -70,7 +69,7 @@ section{
     padding: 2rem 0;
     width: 40rem;
     height: 18rem;
-    padding-left: 8rem;
+    padding-left: 9rem;
     position: relative;
     .years{
       font: normal bold 84px/40px $primary_font;
@@ -84,7 +83,7 @@ section{
       content: '';
       position: absolute;
       top: 22px;
-      left: 60px;
+      left: 74px;
       width: 150px;
       height: 150px;
       border: 1px dotted #ccc;

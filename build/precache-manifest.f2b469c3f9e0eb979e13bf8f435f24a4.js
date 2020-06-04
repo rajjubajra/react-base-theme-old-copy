@@ -1,27 +1,55 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cf9275694ee8575c5f9921b273c6959a",
+    "revision": "685f6c8e634e12c26f681618014386b8",
     "url": "/d8.yellow-website.com/react-app.com/build/index.html"
   },
   {
-    "revision": "a1ff8f44e869be9640d0",
-    "url": "/d8.yellow-website.com/react-app.com/build/static/css/main.1feda788.chunk.css"
+    "revision": "7c455e03cb28c0dc88db",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "4fbf75591055d8ef7bb7",
-    "url": "/d8.yellow-website.com/react-app.com/build/static/js/2.c962da8d.chunk.js"
+    "revision": "2e5145949457b1c15f8e",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/css/main.6fb4a595.chunk.css"
+  },
+  {
+    "revision": "7c455e03cb28c0dc88db",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/js/2.01aa0044.chunk.js"
   },
   {
     "revision": "a5baca1c6ad4d7d6812837b45afe3ee2",
-    "url": "/d8.yellow-website.com/react-app.com/build/static/js/2.c962da8d.chunk.js.LICENSE.txt"
+    "url": "/d8.yellow-website.com/react-app.com/build/static/js/2.01aa0044.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a1ff8f44e869be9640d0",
-    "url": "/d8.yellow-website.com/react-app.com/build/static/js/main.07698643.chunk.js"
+    "revision": "2e5145949457b1c15f8e",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/js/main.5e4bf65b.chunk.js"
   },
   {
     "revision": "0d85a3af536db9bea526",
     "url": "/d8.yellow-website.com/react-app.com/build/static/js/runtime-main.0a1ee221.js"
+  },
+  {
+    "revision": "b4d0daa5ddbb2e9229ab45aa0eb79f13",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/Designer.b4d0daa5.svg"
+  },
+  {
+    "revision": "f007aaf041e0fc0f2bd6a87ec4eb19d0",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/Pants01.f007aaf0.jpg"
+  },
+  {
+    "revision": "6235d72d998c3b77ebddf60d9e52bf28",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/Pants02.6235d72d.jpg"
+  },
+  {
+    "revision": "df1dcd4182b9b246f5e702ecf804942f",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/Pants03.df1dcd41.jpg"
+  },
+  {
+    "revision": "37a9de11087f6a95a109b716941ebf5a",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/Pants04.37a9de11.jpg"
+  },
+  {
+    "revision": "033105890b398a755a5cb06c9404d4c7",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/Pants05.03310589.jpg"
   },
   {
     "revision": "bcfdccd30cfbafc702b0f70077020593",
@@ -68,6 +96,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/basket.ae790275.png"
   },
   {
+    "revision": "efb60db3472b0d653f9bd1312dfe3121",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/belt01.efb60db3.jpg"
+  },
+  {
+    "revision": "1cccca3d3d63baef0fa3dac55d3f0f24",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/belt02.1cccca3d.jpg"
+  },
+  {
     "revision": "4bb3227622adc6b68c49834e3f528827",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/bg-colorful.4bb32276.jpg"
   },
@@ -102,6 +138,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "49f989517e9d307fb42f57c373fd192b",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/desk-pen.49f98951.jpg"
+  },
+  {
+    "revision": "aa58bf115dfe5a6b0d8f95c798d9cdfe",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/dev.aa58bf11.svg"
   },
   {
     "revision": "5545ce02c5bbe5cda3927ccc29e8b9c1",
@@ -194,6 +234,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6bf2976b29386824a90bc002b64d7ad5",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/ink-42.6bf2976b.png"
+  },
+  {
+    "revision": "516b7a3838f1cb4a1ba3e6da614f1c75",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/jacket01.516b7a38.jpg"
+  },
+  {
+    "revision": "ce7ea70a534719eab8ed2c790282cf58",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/jacket02.ce7ea70a.jpg"
   },
   {
     "revision": "854d2a083733651fbf1eba376821d5a8",
@@ -338,6 +386,86 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "340fdd9ba92cdee32fee946b4f09b1cb",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/seo-1970475_640.340fdd9b.png"
+  },
+  {
+    "revision": "44be0720efb519706a8db03d5174c3df",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/service_01.44be0720.svg"
+  },
+  {
+    "revision": "ee5dacdd2c44465e3c29a6066c9b7b2c",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/service_02.ee5dacdd.svg"
+  },
+  {
+    "revision": "a40730b21df5c1421daaed73d98c0f01",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/service_03.a40730b2.svg"
+  },
+  {
+    "revision": "b70172d4eb2edbf5dfb3dff5849f9033",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shirt01.b70172d4.jpg"
+  },
+  {
+    "revision": "3b80bf6516acca8f2668c8b6e213c6c8",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shirt02.3b80bf65.jpg"
+  },
+  {
+    "revision": "2b7f0f5df5f683b5f6d923024c962629",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shirt03.2b7f0f5d.jpg"
+  },
+  {
+    "revision": "7b9d3f8a6c119c45414ab29d9c7f045c",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shirt04.7b9d3f8a.jpg"
+  },
+  {
+    "revision": "083b95589870d6fbb862249e9e2a1059",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shirt05.083b9558.jpg"
+  },
+  {
+    "revision": "1c3136c0beefe936bdc0629b35d1e35b",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shirt06.1c3136c0.jpg"
+  },
+  {
+    "revision": "9308f016affd347c22ea443688666d70",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shirt07.9308f016.jpg"
+  },
+  {
+    "revision": "2774ab2d385aa32ee79f5dda338a4897",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shirt08.2774ab2d.jpg"
+  },
+  {
+    "revision": "8d71f9fdca4d4d58e97e9107be1bd11f",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shoes01.8d71f9fd.jpg"
+  },
+  {
+    "revision": "a72b3a40985295361c5132366a9ee6d4",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shoes02.a72b3a40.jpg"
+  },
+  {
+    "revision": "e5bf7cc5ab3c778a0dcbec5d14513a6a",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shoes03.e5bf7cc5.jpg"
+  },
+  {
+    "revision": "1a1c56cad671201c601b1aab449841cb",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shorts01.1a1c56ca.jpg"
+  },
+  {
+    "revision": "5298c5007ebbf236c8bf4ab5cb67e34e",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shorts02.5298c500.jpg"
+  },
+  {
+    "revision": "c0f8f3404d6260568e487332d15d023f",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shorts03.c0f8f340.jpg"
+  },
+  {
+    "revision": "bbc059cadc9c848d1bc2ed78c7975526",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shorts04.bbc059ca.jpg"
+  },
+  {
+    "revision": "59da1aeade7313c28652a15643308e0d",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shorts05.59da1aea.jpg"
+  },
+  {
+    "revision": "1ecf01416c17c495e49b518e056b1da2",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/shorts06.1ecf0141.jpg"
   },
   {
     "revision": "e69fa96e392b766467c1944c4d42229e",

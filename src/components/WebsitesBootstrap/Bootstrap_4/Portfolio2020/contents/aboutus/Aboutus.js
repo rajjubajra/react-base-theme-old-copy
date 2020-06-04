@@ -11,7 +11,7 @@ function Aboutus() {
     <Container>
       <Row>
         <Col lg={6} md={12} sm={12}><AboutusImage /></Col>
-        <Col lg={6} md={12} sm={12}><AboutusContent /></Col>
+        <Col lg={6} md={12} sm={12} className="d-flex justify-content-center"><AboutusContent /></Col>
       </Row>
     </Container>
 

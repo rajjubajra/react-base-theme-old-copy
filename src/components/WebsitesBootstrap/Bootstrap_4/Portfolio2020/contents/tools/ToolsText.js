@@ -1,11 +1,28 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 
 function ToolsText() {
   return (
-    <div class="tool-text-area">
+    <Card>
+      <Card.Body>
+        <Card.Title>Special title treatment</Card.Title>
+        <Card.Text>
+          With supporting text below as a natural lead-in to additional content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+  )
+}
+
+export default ToolsText
+
+/**
+ *   <div class="tool-text-area">
       <div class="d-flex flex-row years-area">
         <h2 class="p-3 years">10</h2>
         <h2>
@@ -23,8 +40,4 @@ function ToolsText() {
       </div>
       <div class="bg-panel"></div>
     </div>
-  )
-}
-
-export default ToolsText
-
+ */

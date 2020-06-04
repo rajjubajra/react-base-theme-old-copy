@@ -14,11 +14,19 @@ function SocialMedia(props) {
         <Title title="Follow me" />
       </Row>
       <Row>
-        <Badge variant="light"><Link href="#"><FontAwesomeIcon icon={['fab', 'facebook']} /></Link></Badge>
-        <Badge variant="light"><Link href="#"><FontAwesomeIcon icon={['fab', 'twitter']} /></Link></Badge>
+        <Badge variant="light">
+          <Link to="#"><FontAwesomeIcon icon={['fab', 'facebook']} /></Link>
+        </Badge>
+        <Badge variant="light">
+          <Link to="#"><FontAwesomeIcon icon={['fab', 'twitter']} /></Link>
+        </Badge>
         <Badge variant="light"><FontAwesomeIcon icon={['fab', 'youtube']} /></Badge>
-        <Badge variant="light"><Link href="#"><FontAwesomeIcon icon={['fab', 'instagram']} /></Link></Badge>
-        <Badge variant="light"><Link href="#"><FontAwesomeIcon icon={['fab', 'linkedin']} /></Link></Badge>
+        <Badge variant="light">
+          <Link to="#"><FontAwesomeIcon icon={['fab', 'instagram']} /></Link>
+        </Badge>
+        <Badge variant="light">
+          <Link to="#"><FontAwesomeIcon icon={['fab', 'linkedin']} /></Link>
+        </Badge>
       </Row>
     </Container >
   )

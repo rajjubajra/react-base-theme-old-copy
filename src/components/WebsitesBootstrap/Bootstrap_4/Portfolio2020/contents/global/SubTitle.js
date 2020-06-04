@@ -3,7 +3,7 @@ import React from 'react'
 function SubTitle(props) {
   return (
     <div>
-      <h4 class="text-uppercase">
+      <h4 className="text-uppercase">
         <span></span>
         <span>{props.title}</span>
         <span></span>

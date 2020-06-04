@@ -12,7 +12,7 @@ function AboutusContent() {
 
   return (
     <div className="aboutus-content">
-      <Title title="Introduction" />
+      <Title title="About me" />
       <Text text='
       <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel
@@ -26,7 +26,7 @@ function AboutusContent() {
           </p>
       ' />
 
-      <button type="button" class="btn button primary-button text-uppercase">
+      <button type="button" className="btn button primary-button text-uppercase">
         More
       </button>
 

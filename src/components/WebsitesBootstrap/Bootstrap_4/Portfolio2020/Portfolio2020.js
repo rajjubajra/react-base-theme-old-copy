@@ -1,5 +1,7 @@
 import React from 'react'
 import RouterPortfolio2020 from './contents/RouterPortfolio2020'
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 function Portfolio2020() {
   /** DO NOT DEFINE css div classs and component in this page
@@ -7,9 +9,9 @@ function Portfolio2020() {
     *  This page is only for Switch / Route 
    */
   return (
-    <div>
+    <Provider store={store}>
       <RouterPortfolio2020 />
-    </div>
+    </Provider>
   )
 }
 

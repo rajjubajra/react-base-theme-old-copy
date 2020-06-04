@@ -3,8 +3,8 @@ import NavigationBar from './NavigationBar'
 
 function Header() {
   return (
-    <header class="header_area">
-      <div class="main-menu">
+    <header className="header_area">
+      <div className="main-menu">
         <NavigationBar />
       </div>
     </header>

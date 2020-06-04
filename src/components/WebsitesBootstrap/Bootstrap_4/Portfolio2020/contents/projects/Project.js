@@ -4,15 +4,25 @@ import Row from 'react-bootstrap/Row'
 import ButtonGroup from './ButtonGroup';
 import Title from '../global/Title';
 import GroupItems from '../projects/GroupItems';
+import Col from 'react-bootstrap/Col';
 
 function Project() {
   return (
     <Container>
       <Row>
-        <Title title="Recently Done Projects" />
-        <ButtonGroup />
-        <GroupItems />
-
+        <Col>
+          <Title title="Recently Done Projects" />
+        </Col>
+      </Row>
+      <Row className='mt-3 mb-3'>
+        <Col>
+          <ButtonGroup />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <GroupItems />
+        </Col>
       </Row>
     </Container>
   )

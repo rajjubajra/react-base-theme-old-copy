@@ -4,7 +4,7 @@ import Button from './Button';
 
 function ButtonGroup() {
   return (
-    <div class="button-group">
+    <div className="button-group">
       <Button name="All" datafilter="*" />
       <Button name="Popular" datafilter=".popular" />
       <Button name="Latest" datafilter=".latest" />

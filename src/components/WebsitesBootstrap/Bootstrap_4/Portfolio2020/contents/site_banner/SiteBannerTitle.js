@@ -1,6 +1,8 @@
 import React from 'react';
 import Title from '../global/Title';
 import SubTitle from '../global/SubTitle';
+import Button from 'react-bootstrap/Button';
+
 
 
 
@@ -16,8 +18,8 @@ function SiteBannerTitle() {
       <SubTitle title="King of the jungle" />
       <div className="site-buttons">
         <div className="d-flex flex-rw flex-wrap justify-content-center">
-          <button type="button" className="btn button primary-button mr-4 text-uppercase">Why me?</button>
-          <button type="button" className="btn button primary-button mr-4 text-uppercase">Get Quote</button>
+          <Button className="mr-1" variant="primary">Why me?</Button>
+          <Button className="ml-1" variant="primary">Get Quote</Button>
         </div>
       </div>
     </div>

@@ -1,7 +1,5 @@
 import React from 'react'
 import '../portfolio2020.scss';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 
 import Header from './headers/Header';
 import SiteBanner from './site_banner/SiteBanner';
@@ -15,13 +13,14 @@ import SocialMedia from './socialmedia/SocialMedia';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
-
-
 library.add(fab)
 
 
 
 function Page() {
+
+
+
   return (
     <>
       {/** HEADER AREA */}
@@ -34,7 +33,7 @@ function Page() {
           <SiteBanner />
         </section>
 
-        {/** ABOUT US */}
+        {/** ABOUT US  */}
         <section className='about-area'>
           <Aboutus />
         </section>
@@ -43,7 +42,6 @@ function Page() {
         <section className="tools-area">
           <Tools />
         </section>
-
 
         {/** SERVICES */}
         <section className="services-area">
@@ -55,7 +53,6 @@ function Page() {
           <Project />
         </section>
 
-
         {/** REVIEW SECTION */}
         <section className="review-area">
           <Review />
@@ -66,11 +63,11 @@ function Page() {
           <Subscribe />
         </section>
 
-
         {/** SOCIAL MEDIA */}
         <section className="social-media-area">
           <SocialMedia />
         </section>
+
 
       </main>
 

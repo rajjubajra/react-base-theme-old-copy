@@ -6,16 +6,20 @@ import SiteBannerTitle from './SiteBannerTitle';
 import SiteBannerImage from './SiteBannerImage';
 
 
-
 function SiteBanner() {
+
   return (
     <Container>
       <Row>
         <Col lg={6} md={12} className="site-title text-center">
-          <SiteBannerTitle />
+          <div>
+            <SiteBannerTitle />
+          </div>
         </Col>
         <Col lg={6} md={12} className="banner-image">
-          <SiteBannerImage />
+          <div>
+            <SiteBannerImage />
+          </div>
         </Col>
       </Row>
     </Container>

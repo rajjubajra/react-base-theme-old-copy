@@ -6,16 +6,40 @@ import Button from 'react-bootstrap/Button';
 
 
 function ToolsText() {
+  const beforeContent = " Quam ollitia pariat";
+
   return (
-    <Card>
-      <Card.Body>
-        <Card.Title>Special title treatment</Card.Title>
-        <Card.Text>
-          With supporting text below as a natural lead-in to additional content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <>
+      <style dangerouslySetInnerHTML={{
+        __html: [
+          '.add-before:before {',
+          '  content: "' + beforeContent + '";',
+          'font-size: 2em;',
+          ' text-align: center;',
+          ' width: 100px;',
+          ' height: 200px;',
+          ' border: 1px solid #ccc;',
+          ' position: absolute;',
+          ' left: -30px;',
+          ' background: #ccc;',
+
+          '}'
+        ].join('\n')
+      }}></style>
+      <Card>
+        <Card.Body style={{ paddingLeft: "100px", position: "relative", minHeight: "350px" }} className="add-before">
+          <Card.Title>Tools</Card.Title>
+          <Card.Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus magni itaque, rerum nisi laboriosam eaque omnis! Sunt voluptates sint quam iusto mollitia pariatur, nisi possimus delectus quisquam aut quibusdam.
+            <div className='mt-5'>
+              <FontAwesomeIcon icon={faPhone} /> 4444 5555 6666
+            </div>
+
+          </Card.Text>
+          <Button variant="primary">Contact</Button>
+        </Card.Body>
+      </Card>
+    </>
   )
 }
 

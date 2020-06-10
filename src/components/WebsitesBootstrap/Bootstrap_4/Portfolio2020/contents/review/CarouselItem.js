@@ -1,31 +1,51 @@
 import React from 'react'
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import './Carousel.scss';
 import Media from 'react-bootstrap/Media';
-import Container from 'react-bootstrap/Container';
+
 
 function CarouselItem(props) {
+
+  function giveClassName(slideId, id, dataLength) {
+
+    if ((slideId - 1) === id) {
+      return 'slide-left';
+    } else if (slideId === id) {
+      return 'slide-middle';
+    } else if ((slideId + 1) === id) {
+      return 'slide-right';
+    } else if (slideId === 1) {
+      return 'slide-middle'
+    }
+    else {
+      return '';
+    }
+  }
+
   return (
-    <Container>
-      <Row className="justify-content-md-center">
-        <Col lg={6}>
-          <Media>
-            <img
-              style={{ maxWidth: '100px' }}
-              width={64}
-              height={64}
-              className="mr-3"
-              src={props.img}
-              alt={props.alt}
-            />
-            <Media.Body>
-              <h5>{props.cleintName}</h5>
-              <p>{props.reviewText}</p>
-            </Media.Body>
-          </Media>
-        </Col>
-      </Row>
-    </Container>
+    <div className={`
+    set-position
+    ${giveClassName(props.slide, props.id)}
+    `} >
+      <Media>
+        <img
+          style={{
+            maxWidth: '100px',
+            display: "flex",
+            justifySelf: 'center',
+            alignSelf: 'center'
+          }}
+          width={74}
+          height={74}
+          className="mr-3"
+          src={props.img}
+          alt={props.alt}
+        />
+        <Media.Body style={{ background: "#ffffff" }}>
+          <h5>{props.clientName}</h5>
+          <p>{props.reviewText} [ {props.slide} | {props.id} ]</p>
+        </Media.Body>
+      </Media>
+    </div >
 
 
   )

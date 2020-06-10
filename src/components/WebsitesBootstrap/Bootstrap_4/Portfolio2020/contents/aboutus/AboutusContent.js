@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Title from '../global/Title'
 import Text from '../global/Text';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -25,12 +26,7 @@ function AboutusContent() {
           here
           </p>
       ' />
-
-      <button type="button" className="btn button primary-button text-uppercase">
-        More
-      </button>
-
-
+      <Button variant="primary">More</Button>
     </div>
   )
 }

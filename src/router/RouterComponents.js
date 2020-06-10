@@ -15,6 +15,7 @@ import Columns from '../components/Columns/Columns';
 import ImageSlider from '../components/ImageSlider/ImageSlider';
 import Homepage from '../components/HomePage/Homepage';
 import LiveStream from '../components/LiveStream/LiveStream';
+import EmbedIframe from '../components/EmbedIframe/EmbedIframe';
 
 
 
@@ -168,6 +169,15 @@ const RouterComponents = () => {
         </div>
       </Route>
 
+      {/** IFRAME *************************************/}
+      <Route path="/iframe">
+        <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
+          <div className={btnShowHide ? 'show' : 'hide'}>
+            <MeghaMenu />
+          </div>
+          <EmbedIframe />
+        </div>
+      </Route>
     </div>
   )
 }

@@ -1,16 +1,33 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import InputGroup from 'react-bootstrap/InputGroup';
+import FormControl from 'react-bootstrap/FormControl';
+
 
 function SubscriptionForm() {
   return (
     <Form>
-      <Form.Group controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-      </Form.Group>
+      <Form.Row className="align-items-center">
 
-      <Button variant="primary" type="submit">Submit</Button>
+        <Col xs="auto">
+          <Form.Label for="inlineFormInputGroup" srOnly>
+            Username
+      </Form.Label>
+          <InputGroup className="mb-2">
+            <InputGroup.Prepend>
+              <InputGroup.Text>@</InputGroup.Text>
+            </InputGroup.Prepend>
+            <FormControl id="inlineFormInputGroup" placeholder="email address" />
+          </InputGroup>
+        </Col>
+        <Col xs="auto">
+          <Button type="submit" className="mb-2">
+            Submit
+      </Button>
+        </Col>
+      </Form.Row>
     </Form>
   )
 }

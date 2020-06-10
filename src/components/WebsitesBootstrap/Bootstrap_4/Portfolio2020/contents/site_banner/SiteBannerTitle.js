@@ -8,11 +8,7 @@ import Button from 'react-bootstrap/Button';
 
 function SiteBannerTitle() {
   return (
-    <div style={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center"
-    }} className="site-title">
+    <div className="site-title">
       <h3 className="title-tex" style={{ paddingTop: "35%" }}>Hello</h3>
       <Title title="I am a Lion" />
       <SubTitle title="King of the jungle" />

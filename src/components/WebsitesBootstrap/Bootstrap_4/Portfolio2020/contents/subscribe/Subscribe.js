@@ -18,7 +18,7 @@ function Subscribe() {
             <Card.Body>
               <Card.Title><Title title="Subscribe me" /></Card.Title>
               <Card.Text className="d-flex justify-content-center">
-                <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, consequuntur." />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, consequuntur
               </Card.Text>
               <div className="d-flex justify-content-center">
                 <SubscriptionForm />

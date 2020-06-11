@@ -31,10 +31,9 @@ function ToolsText() {
           <Card.Title>Tools</Card.Title>
           <Card.Text>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus magni itaque, rerum nisi laboriosam eaque omnis! Sunt voluptates sint quam iusto mollitia pariatur, nisi possimus delectus quisquam aut quibusdam.
-            <div className='mt-5'>
-              <FontAwesomeIcon icon={faPhone} /> 4444 5555 6666
-            </div>
-
+          </Card.Text>
+          <Card.Text>
+            <FontAwesomeIcon icon={faPhone} /> 4444 5555 6666
           </Card.Text>
           <Button variant="primary">Contact</Button>
         </Card.Body>

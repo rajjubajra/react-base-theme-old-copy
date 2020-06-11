@@ -22,7 +22,7 @@ const MeghaMenu = () => {
           <li><Link to="/columns">Columns</Link></li>
           <li><Link to="/boxes">Boxes</Link></li>
           <li><Link to="/Apps">Apps</Link></li>
-          <li><Link to="#">Slider</Link></li>
+          <li><Link to="/carousel">Carousel</Link></li>
           <li><Link to="/calltoaction">Hero</Link></li>
           <li><Link to="#">Headers</Link></li>
           <li className="submenu">

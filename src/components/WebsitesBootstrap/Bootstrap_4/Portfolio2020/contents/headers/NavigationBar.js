@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 
 function NavigationBar() {
 
+  const [navPosition, setNavPosition] = useState(0);
+
+
+  console.log("nav positions", navPosition);
+
   return (
-    <Navbar expand="lg">
+    <Navbar onScroll={() => setNavPosition(+1)} expand="lg" bg="light" >
       <Navbar.Brand href="#home">YW-Template</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">

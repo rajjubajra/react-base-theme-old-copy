@@ -12,9 +12,6 @@ function SubscriptionForm() {
       <Form.Row className="align-items-center">
 
         <Col xs="auto">
-          <Form.Label for="inlineFormInputGroup" srOnly>
-            Username
-      </Form.Label>
           <InputGroup className="mb-2">
             <InputGroup.Prepend>
               <InputGroup.Text>@</InputGroup.Text>

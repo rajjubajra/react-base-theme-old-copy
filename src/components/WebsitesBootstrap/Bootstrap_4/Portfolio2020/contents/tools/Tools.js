@@ -86,7 +86,7 @@ function Tools() {
           <Row>
             {
               data.map((item, index) => {
-                return <Tool logo={item.logo} alt={item.alt} text={item.text} />
+                return <Tool key={index} logo={item.logo} alt={item.alt} text={item.text} />
               })
             }
           </Row>

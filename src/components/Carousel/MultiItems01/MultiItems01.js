@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import CarouselItem from './CarouselItem'
-import Portrait01 from '../../../../../../images/portrait/portrait01.jpg';
-import Portrait02 from '../../../../../../images/portrait/portrait02.jpg';
-import Portrait03 from '../../../../../../images/portrait/portrait03.jpg';
-import Portrait04 from '../../../../../../images/portrait/portrait04.jpg';
-import Portrait05 from '../../../../../../images/portrait/portrait05.jpg';
-import Portrait06 from '../../../../../../images/portrait/portrait06.jpg';
+import MultiItem01 from './MultiItem01'
+import Portrait01 from '../../../images/portrait/portrait01.jpg';
+import Portrait02 from '../../../images/portrait/portrait02.jpg';
+import Portrait03 from '../../../images/portrait/portrait03.jpg';
+import Portrait04 from '../../../images/portrait/portrait04.jpg';
+import Portrait05 from '../../../images/portrait/portrait05.jpg';
+import Portrait06 from '../../../images/portrait/portrait06.jpg';
+
 
 
 const data = [
@@ -73,7 +74,7 @@ function Carousel() {
 
   }, [])
 
-  //console.log("SLIDE ID", slide, "---", data.length);
+  console.log("SLIDE ID", slide, "---", data.length);
 
   function showNextSlide(slide, length) {
     slide === length ? setSlide(1) : setSlide(slide + 1);
@@ -86,6 +87,9 @@ function Carousel() {
 
   return (
     <Container className="carousel py-lg-5">
+      <Row>
+        <h2>Mulit Images 01</h2>
+      </Row>
       <Row style={{
         display: "flex",
         justifyContent: "center",
@@ -95,7 +99,7 @@ function Carousel() {
         {
           data.map((item, index) => {
             return (
-              <CarouselItem
+              <MultiItem01
                 key={index}
                 img={item.img}
                 alt={item.alt}

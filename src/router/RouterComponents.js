@@ -16,6 +16,7 @@ import ImageSlider from '../components/ImageSlider/ImageSlider';
 import Homepage from '../components/HomePage/Homepage';
 import LiveStream from '../components/LiveStream/LiveStream';
 import EmbedIframe from '../components/EmbedIframe/EmbedIframe';
+import Carousel from '../components/Carousel/Carousel';
 
 
 
@@ -176,6 +177,16 @@ const RouterComponents = () => {
             <MeghaMenu />
           </div>
           <EmbedIframe />
+        </div>
+      </Route>
+
+      {/** Carousel *************************************/}
+      <Route path="/carousel">
+        <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
+          <div className={btnShowHide ? 'show' : 'hide'}>
+            <MeghaMenu />
+          </div>
+          <Carousel />
         </div>
       </Route>
     </div>

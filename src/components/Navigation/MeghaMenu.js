@@ -46,7 +46,6 @@ const MeghaMenu = () => {
                 <li><Link to="#">Blank Page</Link></li>
               </ul>
             </div>
-
           </li>
           <li className="submenu">
             <Link to="#">Misc</Link>
@@ -98,6 +97,10 @@ const MeghaMenu = () => {
                 <li><Link to="#">Timeline</Link></li>
                 <li><Link to="/animation">Animation</Link></li>
                 <li><Link to="/imageslider">Image Slider</Link></li>
+              </ul>
+              <ul className="submenu-lists" >
+                <h4>Code Reference</h4>
+                <li><Link to="/hooks">Hooks</Link></li>
               </ul>
             </div>
           </li>

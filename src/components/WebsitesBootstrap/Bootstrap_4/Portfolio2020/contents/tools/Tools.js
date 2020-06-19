@@ -4,6 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Tool from './Tool';
 import ToolsText from './ToolsText';
+import { useInView } from 'react-intersection-observer';
+import './Tools.scss'
+
 import logo_drupal from '../../../../../../images/Portfolio2020/logo_drupal_8.png';
 import logo_bootstrap from '../../../../../../images/Portfolio2020/logo_bootstrap.png';
 import logo_javascript from '../../../../../../images/Portfolio2020/logo_javascript.png';
@@ -73,17 +76,16 @@ const data = [
 ]
 
 
-
-
-
-
-
 function Tools() {
+  const [refTool, refInView] = useInView({
+    threshold: 0.3,
+  });
   return (
-    <Container>
+    <Container ref={refTool} className="tools">
       <Row>
+
         <Col xl={7} lg={12} md={12}>
-          <Row>
+          <Row className={refInView ? 'fade-in' : 'fade-out'}>
             {
               data.map((item, index) => {
                 return <Tool key={index} logo={item.logo} alt={item.alt} text={item.text} />
@@ -91,9 +93,12 @@ function Tools() {
             }
           </Row>
         </Col>
+
         <Col xl={3} lg={12} md={12}>
           <Row>
-            <ToolsText />
+            <div className={refInView ? 'flip-left' : 'flip-right'}>
+              <ToolsText />
+            </div>
           </Row>
         </Col>
       </Row>

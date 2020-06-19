@@ -17,6 +17,7 @@ import Homepage from '../components/HomePage/Homepage';
 import LiveStream from '../components/LiveStream/LiveStream';
 import EmbedIframe from '../components/EmbedIframe/EmbedIframe';
 import Carousel from '../components/Carousel/Carousel';
+import Hooks from '../components/Hooks/Hooks';
 
 
 
@@ -189,6 +190,19 @@ const RouterComponents = () => {
           <Carousel />
         </div>
       </Route>
+
+      {/** UseHooks [code reference]  *************************************/}
+      <Route path="/hooks">
+        <div className={btnShowHide ? 'with-menu' : 'without-menu'}>
+          <div className={btnShowHide ? 'show' : 'hide'}>
+            <MeghaMenu />
+          </div>
+          <Hooks />
+        </div>
+      </Route>
+
+
+
     </div>
   )
 }

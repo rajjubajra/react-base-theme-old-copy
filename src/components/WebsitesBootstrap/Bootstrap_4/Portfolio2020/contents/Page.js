@@ -20,9 +20,8 @@ library.add(fab)
 function Page() {
 
 
-
   return (
-    <>
+    <div className="portfolio2020">
       {/** HEADER AREA */}
       <Header />
 
@@ -71,7 +70,7 @@ function Page() {
 
       </main>
 
-    </>
+    </div>
   )
 }
 

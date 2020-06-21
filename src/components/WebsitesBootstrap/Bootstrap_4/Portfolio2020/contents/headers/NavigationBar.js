@@ -7,7 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 function NavigationBar(props) {
 
   return (
-    <Navbar className={props.css_class} expand="lg" bg="light" >
+    <Navbar className={props.css_class} expand="lg" bg="dark" variant="dark" >
       <Navbar.Brand href="#home">YW-Template</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">

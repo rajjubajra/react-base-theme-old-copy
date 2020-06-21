@@ -10,9 +10,12 @@ import Project from './projects/Project';
 import Review from './review/Review';
 import Subscribe from './subscribe/Subscribe';
 import SocialMedia from './socialmedia/SocialMedia';
+import ColourMode from './ColourMode/ColourMode';
+import { useSelector } from 'react-redux';
+
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-
 library.add(fab)
 
 
@@ -20,56 +23,62 @@ library.add(fab)
 function Page() {
 
 
+  const colorMode = useSelector(state => state.reducerSelectColourMode.colourMode);
+
+  console.log(colorMode);
+
   return (
     <div className="portfolio2020">
-      {/** HEADER AREA */}
-      <Header />
+      <div className={colorMode}>
+        {/** HEADER AREA */}
+        <Header />
 
-      <main className="site-main">
+        <main className="site-main">
+          <ColourMode />
 
-        {/** SITE-BANNER */}
-        <section className="site-banner">
-          <SiteBanner />
-        </section>
+          {/** SITE-BANNER */}
+          <section className="site-banner">
+            <SiteBanner />
+          </section>
 
-        {/** ABOUT US  */}
-        <section className='about-area'>
-          <Aboutus />
-        </section>
+          {/** ABOUT US  */}
+          <section className='about-area'>
+            <Aboutus />
+          </section>
 
-        {/** TOOLS BRAND */}
-        <section className="tools-area">
-          <Tools />
-        </section>
+          {/** TOOLS BRAND */}
+          <section className="tools-area">
+            <Tools />
+          </section>
 
-        {/** SERVICES */}
-        <section className="services-area">
-          <Services />
-        </section>
+          {/** SERVICES */}
+          <section className="services-area">
+            <Services />
+          </section>
 
-        {/** PROJECTS */}
-        <section className="project-area">
-          <Project />
-        </section>
+          {/** PROJECTS */}
+          <section className="project-area">
+            <Project />
+          </section>
 
-        {/** REVIEW SECTION */}
-        <section className="review-area">
-          <Review />
-        </section>
+          {/** REVIEW SECTION */}
+          <section className="review-area">
+            <Review />
+          </section>
 
-        {/** SUBSCRIPTION */}
-        <section className="subscribe-area">
-          <Subscribe />
-        </section>
+          {/** SUBSCRIPTION */}
+          <section className="subscribe-area">
+            <Subscribe />
+          </section>
 
-        {/** SOCIAL MEDIA */}
-        <section className="social-media-area">
-          <SocialMedia />
-        </section>
+          {/** SOCIAL MEDIA */}
+          <section className="social-media-area">
+            <SocialMedia />
+          </section>
 
 
-      </main>
-
+        </main>
+      </div>
     </div>
   )
 }

@@ -1,12 +1,15 @@
 
-
-
 .portfolio2020{
 
+  .black-white-theme{
+    @import "colour_bw"; //black and white theme
+    img{filter: grayscale(100%)}
+  }
+  
+  @import "keyframes";
   @import "animation";
   @import "custom";
   @import "~bootstrap/scss/bootstrap";
-
-
+  
 }
 

@@ -5,10 +5,15 @@ import ButtonGroup from './ButtonGroup';
 import Title from '../global/Title';
 import GroupItems from '../projects/GroupItems';
 import Col from 'react-bootstrap/Col';
+import { useInView } from 'react-intersection-observer';
+
 
 function Project() {
+  const [refProject, inViewProject] = useInView({
+    threshold: 0.15,
+  })
   return (
-    <Container>
+    <Container ref={refProject}>
       <Row>
         <Col>
           <Title title="Recently Done Projects" />
@@ -19,7 +24,7 @@ function Project() {
           <ButtonGroup />
         </Col>
       </Row>
-      <Row>
+      <Row className={inViewProject ? 'fade-in' : 'fade-out'}>
         <Col>
           <GroupItems />
         </Col>

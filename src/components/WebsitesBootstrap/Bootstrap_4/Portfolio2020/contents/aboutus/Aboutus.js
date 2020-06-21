@@ -5,12 +5,12 @@ import Col from 'react-bootstrap/Col';
 import AboutusContent from './AboutusContent';
 import AboutusImage from './AboutusImage';
 import { useInView } from 'react-intersection-observer';
-import './Aboutus.scss';
+
 
 
 
 function Aboutus() {
-  const [ref, inView, entry] = useInView({
+  const [ref, inView] = useInView({
     /* Optional options */
     //triggerOnce: true, //trigger animation first time only
     threshold: 0.5,

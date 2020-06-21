@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Tool from './Tool';
 import ToolsText from './ToolsText';
 import { useInView } from 'react-intersection-observer';
-import './Tools.scss'
+
 
 import logo_drupal from '../../../../../../images/Portfolio2020/logo_drupal_8.png';
 import logo_bootstrap from '../../../../../../images/Portfolio2020/logo_bootstrap.png';

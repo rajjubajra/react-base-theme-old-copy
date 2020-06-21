@@ -1,38 +1,46 @@
-@keyframes fadeIn{
- 0%   {opacity: 0;}
- 100% {opacity: 1;}  
-}
-@keyframes fadeOut{
-  0%  {opacity: 1;}
-  100%{opacity: 0;}
-}
 
-@keyframes fadeInScale  { 
-  0% {
-    opacity: 0;
-    transform: scale(.1);
-  }
 
-  85% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
+.flip-left{
+  animation: flipLeft 2s linear;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+.flip-right{
+  animation: flipRight 2s linear;
+  animation-fill-mode: both;
 }
 
 
-@keyframes flipLeft {
-  0% {transform: rotateY(100deg); opacity: 0;}
-  100%{transform: rotateY(0deg); opacity: 1;}
+.fade-in{
+  animation: fadeIn 1s linear;
+  animation-fill-mode: both;
+}
+.fade-out{
+  animation: fadeOut 1s linear;
+  animation-fill-mode: both;
+}
+.img-visible{
+  animation: fadeIn 1s linear;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
 }
 
-@keyframes flipRight {
-  0% {transform: rotateY(0deg); opacity: 1;}
-  100%{transform: rotateY(100deg); opacity: 0;}
+.img-invisible{
+  animation: fadeOut 1s linear;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
 
+.text-visible{
+  animation: fadeIn 1s linear;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
 
+.text-invisible{
+  animation: fadeOut 1s linear;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
 
 

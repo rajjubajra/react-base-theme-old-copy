@@ -17,6 +17,7 @@ import './GroupItems.scss';
 
 
 
+
 const data = [
   {
     id: 1,
@@ -113,6 +114,7 @@ function GroupItems() {
   let delay = 0;
 
 
+
   return (
     <CardColumns>
       {
@@ -124,7 +126,7 @@ function GroupItems() {
               itemBrief={item.itemBrief}
               itemImg={item.itemImg}
               itemGroup={item.itemGroup}
-              delay={delay += 1}
+              delay={item.itemGroup !== 'd-none' ? ++delay : ''}
             />
           )
         })

@@ -5,7 +5,7 @@ import { actionSelectGroup } from '../../actions/actionsSelectGroup'
 
 const btnStyle = {
   border: '0px',
-  backgroundColor: '#fff',
+  background: 'none',
   margin: '0px 20px',
   outline: '0px'
 }

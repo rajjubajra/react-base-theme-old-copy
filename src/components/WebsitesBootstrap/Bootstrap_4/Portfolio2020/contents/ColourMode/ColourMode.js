@@ -12,13 +12,14 @@ function ColourMode() {
     <div>
       <ul className="colour-mode">
         <li className="colour-icon-bw"
-          onClick={() => dispatch(actionSelectColourMode('black-white-theme'))}></li>
+          onClick={() => dispatch(actionSelectColourMode('black-white-theme', 'dark'))}></li>
         <li className="colour-icon-light"
-          onClick={() => dispatch(actionSelectColourMode('light-theme'))}></li>
+          onClick={() => dispatch(actionSelectColourMode('light-theme', 'light'))}>
+        </li>
         <li className="colour-icon-dark"
-          onClick={() => dispatch(actionSelectColourMode('dark-theme'))}></li>
+          onClick={() => dispatch(actionSelectColourMode('dark-theme', 'dark'))}></li>
         <li className="colour-icon-colour"
-          onClick={() => dispatch(actionSelectColourMode('colour-theme'))}></li>
+          onClick={() => dispatch(actionSelectColourMode('colour_theme', 'danger'))}></li>
       </ul>
 
     </div>

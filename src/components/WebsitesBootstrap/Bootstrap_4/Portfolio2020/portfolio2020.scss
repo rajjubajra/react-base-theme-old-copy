@@ -1,15 +1,39 @@
 
 .portfolio2020{
 
+
   .black-white-theme{
-    @import "colour_bw"; //black and white theme
-    img{filter: grayscale(100%)}
+    @import "./scss/BlackWhiteTheme"; //black and white theme
+    img, svg{filter: grayscale(100%)}
+    background-color: $background;
   }
+
+  .colour-theme{
+    @import "./scss/ColourTheme";
+    img{filter: grayscale(0);}
+    background-color: $background;
+
+  }
+
+  .light-theme{
+    @import "./scss/LightTheme";
+    img{filter: grayscale(0);}
+    background-color: $background;
+  }
+
+  .dark-theme{
+    @import "./scss/DarkTheme";
+    img{filter: grayscale(0);}
+    background-color: $background;
+    
+  }
+
   
-  @import "keyframes";
-  @import "animation";
-  @import "custom";
+  @import "./scss/keyframes";
+  @import "./scss/animation";
+  @import "./scss/custom";
   @import "~bootstrap/scss/bootstrap";
   
+
 }
 

@@ -1,9 +1,11 @@
 import { actionTypes } from './actionType';
 
+export const actionSelectColourMode = (colourMode, variant) => {
 
-export const actionSelectColourMode = (colourMode) => (
-  {
+  return {
     type: actionTypes.SELECT_COLOUR_MODE,
-    payload: colourMode
+    payload: colourMode,
+    variant: variant
   }
-)
+
+}

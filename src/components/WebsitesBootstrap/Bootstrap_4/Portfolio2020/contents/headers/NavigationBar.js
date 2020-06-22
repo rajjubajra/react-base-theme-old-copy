@@ -1,13 +1,17 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { useSelector } from 'react-redux';
 
 
 
 function NavigationBar(props) {
 
+  const variant = useSelector(state => state.reducerSelectColourMode.variant);
+  //console.log('variant', variant);
+
   return (
-    <Navbar className={props.css_class} expand="lg" bg="dark" variant="dark" >
+    <Navbar className={props.css_class} expand="lg" bg="dark" variant={variant} >
       <Navbar.Brand href="#home">YW-Template</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">

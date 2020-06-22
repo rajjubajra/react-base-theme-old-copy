@@ -40,7 +40,7 @@ function CarouselItem(props) {
           src={props.img}
           alt={props.alt}
         />
-        <Media.Body style={{ background: "#ffffff" }}>
+        <Media.Body>
           <h5>{props.clientName}</h5>
           <p>{props.reviewText} [ {props.slide} | {props.id} ]</p>
         </Media.Body>

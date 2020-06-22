@@ -27,8 +27,9 @@ function Page() {
 
   console.log(colorMode);
 
+
   return (
-    <div className="portfolio2020">
+    <div className="portfolio2020" >
       <div className={colorMode}>
         {/** HEADER AREA */}
         <Header />

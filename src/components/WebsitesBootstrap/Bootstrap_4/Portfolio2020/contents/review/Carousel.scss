@@ -45,9 +45,15 @@
 }
 
 .slide-left, .slide-right{
-  z-index: -1;
-  h5, p, img{
-    filter: blur(0.08rem);
+  z-index: 50;
+  h5, p{
+    filter: blur(0.1rem);
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  }
+  img{
+    filter: blur(5px);
+    opacity: 0.5;
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
   }
 }
 .slide-left{
@@ -55,11 +61,11 @@
 }
 .slide-middle{
   transform: translateX(0px);
-  z-index: 1;
+  z-index: 100;
   animation: fadeEffect 1s;
-  box-shadow: 2px 3px 3px 1px #ccc;
   outline: 1px solid #ccc;
   outline-offset: -5px;
+  box-shadow: none;
 }
 .slide-right{
   transform: translateX(-100px);

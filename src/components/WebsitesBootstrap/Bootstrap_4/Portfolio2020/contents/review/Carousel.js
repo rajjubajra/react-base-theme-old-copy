@@ -69,7 +69,7 @@ function Carousel() {
       counter += 1;
       setSlide(counter);
       if (counter === dataLength) { return counter = 1 }
-    }, 5000)
+    }, 6000)
 
   }, [])
 

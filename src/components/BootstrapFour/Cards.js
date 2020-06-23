@@ -8,7 +8,8 @@ function Cards(props) {
       width: '18rem',
       height: '200px',
       position: 'relative',
-      margin: "10px"
+      margin: "10px",
+      borderRadius: '0px'
     }} >
       <Card.Body>
         <Card.Title style={{

@@ -25,17 +25,26 @@ $box_shadow: 0px 10px 30px rgba(57,56,61,0.205);
 
   @mixin linkText($background) {
     @if $background == $dark {
-      color: $white
+      color: $light !important;
     } @else if $background == $light {
-      color: $dark
+      color: $dark !important;
     } @else{
-      color: $dark
+      color: $dark !important;
     }
   }
 
-  a{
-    @include linkText($background)
+  .card, .media, .set-position{
+    background-color: $background !important;
   }
+  .set-position{
+    border-color: $background !important; 
+  }
+  .project-area .card{
+    background-color: $success !important;
+    color: $text !important;
+  }
+
+  @include linkText($background);
     
 
   .text-primary{color: $primary !important}

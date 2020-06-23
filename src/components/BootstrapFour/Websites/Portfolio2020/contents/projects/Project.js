@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import ButtonGroup from './ButtonGroup';
 import Title from '../global/Title';
-import GroupItems from '../projects/GroupItems';
+import GroupItems from './GroupItems';
 import Col from 'react-bootstrap/Col';
 import { useInView } from 'react-intersection-observer';
 

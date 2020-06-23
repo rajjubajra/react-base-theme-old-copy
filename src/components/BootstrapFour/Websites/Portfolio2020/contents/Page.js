@@ -34,31 +34,34 @@ function Page() {
         {/** HEADER AREA */}
         <Header />
 
+
         <main className="site-main">
           <ColourMode />
 
+
           {/** SITE-BANNER */}
-          <section className="site-banner">
+          <section className="site-banner" id="portfolio2020-home">
             <SiteBanner />
           </section>
 
+
           {/** ABOUT US  */}
-          <section className='about-area'>
+          <section className='about-area' id="portfolio2020-about">
             <Aboutus />
           </section>
 
           {/** TOOLS BRAND */}
-          <section className="tools-area">
+          <section className="tools-area" id="portfolio2020-pages">
             <Tools />
           </section>
 
           {/** SERVICES */}
-          <section className="services-area">
+          <section className="services-area" id="portfolio2020-services">
             <Services />
           </section>
 
           {/** PROJECTS */}
-          <section className="project-area">
+          <section className="project-area" id="portfolio2020-gallery">
             <Project />
           </section>
 
@@ -68,17 +71,19 @@ function Page() {
           </section>
 
           {/** SUBSCRIPTION */}
-          <section className="subscribe-area">
+          <section className="subscribe-area" id="portfolio2020-subscribe">
             <Subscribe />
           </section>
 
           {/** SOCIAL MEDIA */}
-          <section className="social-media-area">
+          <section className="social-media-area" id="portfolio2020-contact">
             <SocialMedia />
           </section>
 
 
+
         </main>
+
       </div>
     </div>
   )

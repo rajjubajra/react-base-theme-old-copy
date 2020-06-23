@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 
 
 
-const WebsitesBootsrap = () => {
+const BootsrapFour = () => {
 
   return (
     <Container className='mt-5'>
@@ -20,10 +20,9 @@ const WebsitesBootsrap = () => {
         <Cards title="Blank Card 3" linkref="#" />
         <Cards title="Blank Card 4" linkref="#" />
         <Cards title="Blank Card 5" linkref="#" />
-
       </Row>
     </Container>
   )
 }
 
-export default WebsitesBootsrap
+export default BootsrapFour

@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Title from '../global/Title';
 import SocialMediaLinks from './SocialMediaLinks';
 import './SocialMedia.scss';
-import CircleBackground from './CircleBackground';
+// import CircleBackground from './CircleBackground';
 
 
 
@@ -24,7 +24,9 @@ function SocialMedia(props) {
       </Row>
       <Row className="text-align-center">
         <SocialMediaLinks />
-        <CircleBackground />
+        {/*
+         width exceed 100% need correction
+         <CircleBackground /> */}
       </Row>
     </Container >
   )

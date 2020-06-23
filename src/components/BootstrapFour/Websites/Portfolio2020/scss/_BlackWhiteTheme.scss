@@ -22,7 +22,7 @@ $box_shadow: 0px 10px 30px rgba(57,56,61,0.205);
   $text_three: #000;
   
 
-  $background: none;
+  $background: $white;
 
   @mixin linkText($background) {
     @if $background == $dark {

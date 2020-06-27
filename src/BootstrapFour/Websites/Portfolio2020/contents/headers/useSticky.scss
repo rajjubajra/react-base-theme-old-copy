@@ -1,0 +1,20 @@
+.main-menu{
+
+  
+    .fixed-nav{
+      position: fixed;
+      width: 100%;
+      top: 0px;
+      z-index: 100000;
+      animation: fadeIn 1.5s; //fadeIn defined in animation.scss 
+    }
+
+    .float-nav{
+      position: relative;
+      width: 100%;
+      top: 0px;
+      z-index: 1;
+    }
+
+}
+

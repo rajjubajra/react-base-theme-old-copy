@@ -1,0 +1,34 @@
+
+.colour-mode{
+  position: fixed;
+  right: 10px;
+  top: 20%;
+  list-style: none;
+    .colour-icon-bw,
+    .colour-icon-light,
+    .colour-icon-dark,
+    .colour-icon-colour{
+      width: 15px;
+      height: 15px;
+      border: 1px solid #999;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .colour-icon-bw{
+      background-color: #ffffff;
+    }
+    .colour-icon-light{
+      background-color: #ccc;
+    }
+    .colour-icon-dark{
+      background-color: #000000;
+    }
+    .colour-icon-colour{
+      background-color: #ff0000;
+    }
+    .back-icon{
+      position: relative;
+      left: 4px;
+    }
+}

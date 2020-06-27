@@ -1,0 +1,39 @@
+
+.portfolio2020{
+   transition: all 2s linear;
+
+
+  .black-white-theme{
+    @import "./scss/BlackWhiteTheme"; //black and white theme
+    img, svg{filter: grayscale(100%)}
+    background-color: $background;
+  }
+
+  .colour-theme{
+    @import "./scss/ColourTheme";
+    img{filter: grayscale(0);}
+    background-color: $background;
+  }
+
+  .light-theme{
+    @import "./scss/LightTheme";
+    img{filter: grayscale(50%);}
+    background-color: $background;
+  }
+
+  .dark-theme{
+    @import "./scss/DarkTheme";
+    img{filter: grayscale(0);}
+    background-color: $background;
+    
+  }
+
+  
+  @import "./scss/keyframes";
+  @import "./scss/animation";
+  @import "./scss/custom";
+  @import "~bootstrap/scss/bootstrap";
+  
+
+}
+

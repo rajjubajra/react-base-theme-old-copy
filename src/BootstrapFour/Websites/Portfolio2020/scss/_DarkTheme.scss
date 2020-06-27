@@ -1,0 +1,77 @@
+/* COLORS */
+$gradient_color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+$shadow_color: 0px 10px 30px rgba(118,85,225,0.3);
+$box_shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+
+/* Black and White Colour*/
+  $primary: #999;
+  $secondary: #777;
+  $success: #555;
+  $danger: #333;
+  $warning: #444;
+  $info: #222;
+  $dark: #000;
+  $light: #ddd;
+  $muted: #eee;
+  $white: #fff;
+
+  $text: #817f7f;
+  $text_one: #000000;
+  $text_two: #000000;
+  $text_three: #000;
+  
+  $background: $warning;
+
+  @mixin linkText($background) {
+    @if $background == $dark {
+      color: $light !important;
+    } @else if $background == $light {
+      color: $dark !important;
+    } @else{
+      color: $dark !important;
+    }
+  }
+
+  .card, .media, .set-position{
+    background-color: $background !important;
+  }
+  .set-position{
+    border-color: $background !important; 
+  }
+  .project-area .card{
+    background-color: $success !important;
+    color: $text !important;
+  }
+
+  @include linkText($background);
+    
+
+  .text-primary{color: $primary !important}
+  .text-secondary{color: $secondary !important}
+  .text-success{color: $success !important}
+  .text-danger{color: $danger !important}
+  .text-warning{color: $warning !important}
+  .text-info{color: $info !important}
+  .text-light{color: $light !important}
+  .text-dark{color: $dark !important}
+  .text-muted{color: $muted !important}
+  .text-white{color: $white !important}
+
+  .bg-primary{background-color: $primary !important}
+  .bg-secondary{background-color: $secondary !important}
+  .bg-success{background-color: $success !important}
+  .bg-danger{background-color: $danger !important}
+  .bg-warning{background-color: $warning !important}
+  .bg-info{background-color: $info !important}
+  .bg-light{background-color: $light !important}
+  .bg-dark{background-color: $dark !important}
+  .bg-muted{background-color: $muted !important}
+  .bg-white{background-color: $white !important}
+
+  
+  button{
+    background-color: $primary;
+    border-color: $secondary;
+  }
+

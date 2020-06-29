@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import EmailNTel from '../address/EmailNTel';
 
 
 const bigFont = {
@@ -23,6 +24,7 @@ function Text() {
         <Col lg={6}></Col>
       </Row>
       <Row>
+        <EmailNTel />
 
       </Row>
     </Container>

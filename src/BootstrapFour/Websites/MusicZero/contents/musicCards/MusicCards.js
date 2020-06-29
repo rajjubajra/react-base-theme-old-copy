@@ -11,6 +11,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
+
 const data = [
   {
     id: 1,
@@ -20,17 +21,17 @@ const data = [
   {
     id: 2,
     img: music,
-    title: 'Sounds'
+    title: 'Sounds',
   },
   {
     id: 3,
     img: sheet,
-    title: 'Legands'
+    title: 'Legands',
   },
   {
     id: 4,
     img: string,
-    title: 'Guitar Man'
+    title: 'Guitar Man',
   },
   {
     id: 5,
@@ -46,13 +47,19 @@ const data = [
 ]
 
 function MusicCards() {
+
+
   return (
     <Container>
       <Row>
         {
           data.map((item, index) => {
-            return <Col lg={4}>
-              <MusicCard img={item.img} alt={item.title} title={item.title} />
+            return <Col key={index} lg={4}>
+              <MusicCard
+                id={item.id}
+                img={item.img}
+                alt={item.title}
+                title={item.title} />
             </Col>
           })
         }

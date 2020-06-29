@@ -13,13 +13,15 @@ function ShowOutPut(props) {
         })
       }
       {
-        props.youTubeShare.map(item => {
-          return <iframe
-            style={{ width: "560", height: "315" }}
-            src={item.attributes.field_youtube}
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
-          </iframe>
+        props.youTubeShare.map((item, index) => {
+          return <div key={index}>
+            <iframe
+              style={{ width: "560", height: "315" }}
+              src={item.attributes.field_youtube}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+            </iframe>
+          </div>
         })
 
       }

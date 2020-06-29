@@ -8,6 +8,9 @@ import Text from './text/Text';
 
 
 
+
+
+
 function Page() {
 
   const colorMode = useSelector(state => state.reducerSelectColourMode.colourMode);
@@ -22,7 +25,7 @@ function Page() {
 
         <main>
           <ColourMode />
-          <section className="mt-5 pt-5">
+          <section className="mt-2">
             <MusicCards />
           </section>
 

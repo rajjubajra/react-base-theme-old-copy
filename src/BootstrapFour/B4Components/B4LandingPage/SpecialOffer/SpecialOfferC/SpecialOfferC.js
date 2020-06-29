@@ -15,8 +15,6 @@ function SpecialOfferC() {
           <Col
             lg={6}
             sm={12}
-            lg={{ order: 'first' }}
-            sm={{ order: 2 }}
           >
             <OfferImage />
 
@@ -24,9 +22,7 @@ function SpecialOfferC() {
           <Col
             lg={6}
             sm={12}
-            lg={{ order: 'last' }}
-            sm={{ order: 1 }}
-            xs={{ order: 1 }}>
+          >
             <OfferText />
           </Col>
         </Row>

@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "685f6c8e634e12c26f681618014386b8",
+    "revision": "b990b4b4bfe10a31e4d362bc9150f3f3",
     "url": "/d8.yellow-website.com/react-app.com/build/index.html"
   },
   {
-    "revision": "7c455e03cb28c0dc88db",
+    "revision": "d984aaa86917a018437c",
     "url": "/d8.yellow-website.com/react-app.com/build/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "2e5145949457b1c15f8e",
-    "url": "/d8.yellow-website.com/react-app.com/build/static/css/main.6fb4a595.chunk.css"
+    "revision": "f9394809c9613a54fb2b",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/css/main.e6b3ca9c.chunk.css"
   },
   {
-    "revision": "7c455e03cb28c0dc88db",
-    "url": "/d8.yellow-website.com/react-app.com/build/static/js/2.01aa0044.chunk.js"
+    "revision": "d984aaa86917a018437c",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/js/2.8a1d9617.chunk.js"
   },
   {
     "revision": "a5baca1c6ad4d7d6812837b45afe3ee2",
-    "url": "/d8.yellow-website.com/react-app.com/build/static/js/2.01aa0044.chunk.js.LICENSE.txt"
+    "url": "/d8.yellow-website.com/react-app.com/build/static/js/2.8a1d9617.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2e5145949457b1c15f8e",
-    "url": "/d8.yellow-website.com/react-app.com/build/static/js/main.5e4bf65b.chunk.js"
+    "revision": "f9394809c9613a54fb2b",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/js/main.a2faafb7.chunk.js"
   },
   {
     "revision": "0d85a3af536db9bea526",
@@ -50,6 +50,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "033105890b398a755a5cb06c9404d4c7",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/Pants05.03310589.jpg"
+  },
+  {
+    "revision": "b3f9c28c78e4aa9838e2fa21596590e2",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/ama-dablam-00.b3f9c28c.jpg"
+  },
+  {
+    "revision": "0018e6b54d0acf6dd2bd895cedb4b01c",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/audio00.0018e6b5.jpg"
   },
   {
     "revision": "bcfdccd30cfbafc702b0f70077020593",
@@ -130,6 +138,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0ead18d6d8a6256edae30a67ac5a72b9",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/cir-basket.0ead18d6.png"
+  },
+  {
+    "revision": "95d6c5ea00396be4338e722022eda829",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/concert00.95d6c5ea.jpg"
+  },
+  {
+    "revision": "4396f663c40f9842c45079345cf8a26c",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/cornflaks004.4396f663.jpg"
   },
   {
     "revision": "6f6a2f0ce8546d4918dfbc2f0d5b39ea",
@@ -260,6 +276,34 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/location-colors.dfcd55dd.png"
   },
   {
+    "revision": "cdf4b4599d51803a0f0f7d928bf7e66f",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/logo_bootstrap.cdf4b459.png"
+  },
+  {
+    "revision": "ba9195e68ba1be86582f41492ce9ff77",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/logo_html5.ba9195e6.png"
+  },
+  {
+    "revision": "0cded3a3276425911d55a2552bf361bf",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/logo_javascript.0cded3a3.png"
+  },
+  {
+    "revision": "943b76340b152c95237b68a7d067025f",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/logo_php_mysql.943b7634.png"
+  },
+  {
+    "revision": "3909c2042d2568bf42ccaa2ba3856b15",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/logo_react_bootstrap.3909c204.png"
+  },
+  {
+    "revision": "4912f6d800e1b75354e0b5d4794e1856",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/logo_redux.4912f6d8.png"
+  },
+  {
+    "revision": "74c362907475d0d7f0d59d0fb662135c",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/logo_sass.74c36290.png"
+  },
+  {
     "revision": "b4f3cfc777e93a0e67027587517c24a0",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/lotus-1889735_640.b4f3cfc7.png"
   },
@@ -274,6 +318,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d8c3a1ac1b4c60f0c7757c9e5b49b918",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/men-1979261_1920.d8c3a1ac.jpg"
+  },
+  {
+    "revision": "28f82687e1f31c57f15650726dd6ccbb",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/music00.28f82687.png"
   },
   {
     "revision": "de589ae3fcc478f856e495abdcc9a06a",
@@ -310,6 +358,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c7472477ba75ce84baa035b8c76179d1",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/person-4.c7472477.jpg"
+  },
+  {
+    "revision": "23be56b20402dd5f10fd68918f775239",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/phewatal00.23be56b2.jpg"
   },
   {
     "revision": "7d8757801272a9c596b1a163467c6ad8",
@@ -398,6 +450,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a40730b21df5c1421daaed73d98c0f01",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/service_03.a40730b2.svg"
+  },
+  {
+    "revision": "192af66f3d5d659de443e6f81e69492d",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/sheet00.192af66f.jpg"
   },
   {
     "revision": "b70172d4eb2edbf5dfb3dff5849f9033",
@@ -504,6 +560,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/sqr02.32e67e86.jpg"
   },
   {
+    "revision": "5f32866cab091298ee72e901385055ae",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/string00.5f32866c.jpg"
+  },
+  {
+    "revision": "9ae4be534d3e65f00eda94401541fffb",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/swoyambhu00_v.9ae4be53.jpg"
+  },
+  {
     "revision": "2883407dbd3a8b547eb0bf657c44558f",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/thumsUp.2883407d.png"
   },
@@ -516,6 +580,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/user.a0beab99.png"
   },
   {
+    "revision": "41c8263c42d7d7cedcbbf59ac0a4a1f1",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/vinyl00.41c8263c.jpg"
+  },
+  {
     "revision": "5ffd26620c6e6c0bb66c7f4e09640946",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/waffles-21.5ffd2662.jpg"
   },
@@ -526,6 +594,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "adc317dced7fe3763e20245524d36cbc",
     "url": "/d8.yellow-website.com/react-app.com/build/static/media/wheat-1.adc317dc.jpg"
+  },
+  {
+    "revision": "2d6d246727d843b581098566ec060a4d",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/wine80.2d6d2467.jpg"
+  },
+  {
+    "revision": "a7b32e1b0b78f80e65204a8c76592089",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/media/wine81.a7b32e1b.jpg"
   },
   {
     "revision": "99082d4da717b94aff63e85cf8f3f02e",

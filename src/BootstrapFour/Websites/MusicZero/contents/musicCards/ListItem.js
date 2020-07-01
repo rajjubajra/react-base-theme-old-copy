@@ -2,6 +2,8 @@ import React from 'react'
 import Alert from 'react-bootstrap/Alert';
 import { useSelector, useDispatch } from 'react-redux';
 import { actionPlayTheTrack, actionPauseTheTrack, actionStopTheTrack } from '../../actions/actionPlayTheTrack';
+import PlayingTrack from './PlayingTrack';
+
 
 
 function ListItem(props) {
@@ -9,6 +11,7 @@ function ListItem(props) {
   const dispatch = useDispatch();
 
   const variant = useSelector(state => state.reducerSelectColourMode.variant);
+  const id = useSelector(state => state.reducerPlayTheTrack.id);
   //console.log('variant', variant);
 
   return (
@@ -19,11 +22,13 @@ function ListItem(props) {
         <p>Artist: {props.artist}</p>
         <p>Album: {props.album}</p>
         <hr />
-        <p className="mb-0">
-          <button onClick={() => dispatch(actionPlayTheTrack(props.preview))}>Play</button>
-          <button onClick={() => dispatch(actionPauseTheTrack(props.preview))}>Pause</button>
-          <button onClick={() => dispatch(actionStopTheTrack(props.preview))}>Stop</button>
-        </p>
+        {props.id === id ? <PlayingTrack /> :
+          <p className="mb-0">
+            <button onClick={() => dispatch(actionPlayTheTrack(props.preview, props.id))}>Play</button>
+            {/* <button onClick={() => dispatch(actionPauseTheTrack(props.preview, props.id))}>Pause</button>
+            <button onClick={() => dispatch(actionStopTheTrack('', props.id))}>Stop</button> */}
+          </p>
+        }
       </Alert>
     </>
   )

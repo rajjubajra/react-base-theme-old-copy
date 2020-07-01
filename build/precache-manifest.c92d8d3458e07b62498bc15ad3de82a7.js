@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b990b4b4bfe10a31e4d362bc9150f3f3",
+    "revision": "c42e0ee3d46026cfbd844b6e19b6fef6",
     "url": "/d8.yellow-website.com/react-app.com/build/index.html"
   },
   {
-    "revision": "d984aaa86917a018437c",
+    "revision": "72a2417186e8936da1f3",
     "url": "/d8.yellow-website.com/react-app.com/build/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "f9394809c9613a54fb2b",
+    "revision": "1312198091a00180ae7f",
     "url": "/d8.yellow-website.com/react-app.com/build/static/css/main.e6b3ca9c.chunk.css"
   },
   {
-    "revision": "d984aaa86917a018437c",
-    "url": "/d8.yellow-website.com/react-app.com/build/static/js/2.8a1d9617.chunk.js"
+    "revision": "72a2417186e8936da1f3",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/js/2.1ccac77a.chunk.js"
   },
   {
-    "revision": "a5baca1c6ad4d7d6812837b45afe3ee2",
-    "url": "/d8.yellow-website.com/react-app.com/build/static/js/2.8a1d9617.chunk.js.LICENSE.txt"
+    "revision": "dec57b6d3a34f5aa7a4ff803c484a789",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/js/2.1ccac77a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f9394809c9613a54fb2b",
-    "url": "/d8.yellow-website.com/react-app.com/build/static/js/main.a2faafb7.chunk.js"
+    "revision": "1312198091a00180ae7f",
+    "url": "/d8.yellow-website.com/react-app.com/build/static/js/main.82893e9a.chunk.js"
   },
   {
     "revision": "0d85a3af536db9bea526",

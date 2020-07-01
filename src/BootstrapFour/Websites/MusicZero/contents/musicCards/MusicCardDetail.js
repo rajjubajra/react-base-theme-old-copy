@@ -16,6 +16,7 @@ import audio from '../../../../../../src/images/Music/audio00.jpg';
 import axios from 'axios';
 import ListItem from './ListItem';
 import PlayingTrack from './PlayingTrack';
+import { reducerPlayTheTrack } from '../../reducers/reducerPlayTheTrack';
 
 
 const data = [
@@ -59,8 +60,10 @@ function MusicCardDetail() {
 
 
   const [trackList, setTrackList] = useState([]);
+  const [statusCode, setStatusCode] = useState(0);
 
   const colorMode = useSelector(state => state.reducerSelectColourMode.colourMode);
+  const id = useSelector(state => state.reducerPlayTheTrack.id);
 
   useEffect(() => {
     axios({
@@ -71,7 +74,7 @@ function MusicCardDetail() {
       }
     })
       .then(res => setTrackList(res.data.data))
-      .catch(err => console.log(err))
+      .catch(err => setStatusCode(err.response.status))
   }, [])
 
   console.log(trackList);
@@ -81,31 +84,31 @@ function MusicCardDetail() {
       <div className={colorMode}>
         <Headers />
         <ColourMode />
-        <PlayingTrack />
+
 
         <img src={data[0].img} alt={data[0].title} />
         <Row>
           <Col lg={8}>
-
             {
-              trackList.map(item => {
-                return <div key={item.id}>
-                  <ListItem
-                    title={item.title}
-                    preview={item.preview}
-                    cover={item.album.cover_medium}
-                    artist={item.artist.name}
-                    album={item.album.title}
-                  />
-                </div>
-
-              })
+              statusCode === 429 ? "Exceeds rate limite" :
+                trackList.map(item => {
+                  return <div key={item.id}>
+                    <ListItem
+                      id={item.id}
+                      title={item.title}
+                      preview={item.preview}
+                      cover={item.album.cover_medium}
+                      artist={item.artist.name}
+                      album={item.album.title}
+                    />
+                  </div>
+                })
             }
           </Col>
         </Row>
 
       </div>
-    </Container>
+    </Container >
   )
 }
 
